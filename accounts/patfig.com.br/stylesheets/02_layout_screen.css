@@ -1,0 +1,613 @@
+﻿html * {
+	padding:                0;
+	border:                 none;
+	margin:                 0;
+}
+
+#stage {
+  width:                  62.5em;
+	margin:                 auto;
+}
+
+#header, #main_content, #footer {
+  padding-right:          3.9em;
+  padding-left:           3.9em;
+}
+
+hr, .emtpy, .empty, 
+#thumbnails li.empty, 
+#selected_pictures li.empty {
+	display:                block;
+	float:                  none;
+	height:                 0;
+	padding:                0;
+	margin:                 0;
+	clear:                  both;
+	visibility:             hidden;
+}
+
+a {
+	outline:                none;
+}
+
+
+/* Header tabbed menu */
+#header {
+	min-height:             38px;
+	height:                 2.38em;
+  padding-top:            .44em;
+  padding-bottom:         0;
+	position:               relative;
+}
+
+#header h1#logo_print {
+	display:                none;
+}
+
+#header h1#logo_screen {
+	margin:                 0;
+	width:                  168px;
+	height:                 30px;
+	overflow:               hidden;
+}
+
+#header ul {
+	height:                 2.38em;
+	margin-top:             6px;
+  margin-left:            168px;
+	position:               absolute;
+  right:                  0;
+	bottom:                 0;
+	left:                   6.75em;
+	overflow:               hidden;
+}
+
+#header li {
+	display:                inline;
+	padding:                .5em 0 1.1em 0;
+  margin-right:           .2em;
+	position:               relative;
+	top:                    1em;
+}
+
+#header li a {
+	padding:                .5em 1.2em 1em 2.4em;
+  margin-right:           -.5em;
+}
+
+body.best_galleries #header li.best_galleries, 
+body.full_galleries #header li.full_galleries, 
+body.quem_somos #header li.quem_somos, 
+body.contact #header li.contact, 
+body.blog #header li.blog {
+	top:                    .7em;
+}
+/* /Header tabbed menu */
+
+
+/* Main content top segment */
+#main_content {
+	padding:                1.56em 3.9em;
+}
+
+#subnavigation {
+	padding:                0;
+	margin:                 -1.85em 0 .3em 0;
+}
+
+#subnavigation a {
+  margin-right:           2.5em;
+}
+
+#subnavigation a, #see_data_sheet {
+	padding-left:           20px;
+}
+
+h1 {
+	margin-bottom:          .7em;
+}
+body#selection h1 {
+	float:                  left;
+}
+/* /Main content top segment */
+
+
+/* Thumbnails */
+ul#thumbnails {
+  margin-right:           -3.9em;
+}
+
+ul#thumbnails li {
+	float:                  left;
+  margin:                 0 3.9em 2.5em 0;
+}
+
+ul#thumbnails li div {
+	position:               relative;
+}
+
+/* Vertically centering images 
+(conditional comments for IE required) */
+ul#thumbnails li div a {
+	display:                table-cell;
+	width:                  250px;
+	height:                 250px;
+	vertical-align:         middle;
+}
+ul#thumbnails li div img {
+	vertical-align:         middle;
+}
+
+ul#thumbnails li div a label {
+	width:                  auto;
+	position:               absolute;
+	bottom:                 3px;
+	left:                   6px;
+}
+/* /Thumbnails */
+
+
+/* Summary */
+#summary, #about_us, #data_sheet, .error_hints {
+	padding:                .65em 7.5em;
+	border:                 3px double;
+  margin-bottom:          10px;
+}
+
+#summary {
+	min-height:             4.5em;
+	height:                 auto !important;
+	height:                 4.5em;
+	padding-right:          20em;
+	position:               relative;
+	clear:                  both;
+}
+/* /Summary */
+
+
+/* Link to Selection */
+#select_pictures a {
+	width:                  7em;
+	height:                 6em;
+	padding-left:           85px;
+	position:               absolute;
+	top:                    1em;
+	right:                  8em;
+}
+/* /Link to Selection */
+
+
+/* Paging */
+.pages {
+  padding:                1px 20px 3px 20px;
+  margin:                 5px 0;
+  border:                 3px double;
+  clear:                  both;
+}
+
+.pages a, .pages strong {
+  padding:                0 .25em;
+}
+
+.pages strong {
+	position:               relative;
+	top:                    .15em;
+}
+
+.pages a.previous {
+  padding-left:           15px;
+}
+
+.pages a.next {
+  padding-right:          15px;
+}
+
+.second {
+  position:               relative;
+  bottom:                 35px;
+}
+/* /Paging */
+
+
+/* Data sheet */
+#data_sheet {
+	padding-top:            0;
+	padding-bottom:         1.5em;
+	clear:                  both;
+}
+
+#data_sheet h2 {
+  margin:                 1.5em 0 1em 0;
+}
+
+#data_sheet dt {
+	float:                  left;
+	clear:                  left;
+  margin-right:           .5em;
+}
+/* /Data sheet */
+
+
+/* Big picture page */
+#big_picture {
+	width:                  54.5em;
+	min-height:             33.25em;
+	height:                 auto !important;
+	height:                 33.25em;
+	margin-bottom:          1em;
+	position:               relative;
+}
+
+#big_picture a {
+	width:                  4.75em;
+	position:               absolute;
+	top:                    18em;
+}
+
+#big_picture #previous {
+	left:                   -2.5em;
+}
+#big_picture #next {
+	right:                  -2.5em;
+}
+
+#big_picture a span {
+	width:                  101%;
+	height:                 60px;
+	position:               absolute;
+}
+
+#big_picture img {
+	padding:                2px;
+	border:                 1px solid;
+}
+
+#big_picture label {
+	width:                  13%;
+	padding:                3px;
+	position:               absolute;
+	bottom:                 -6px;
+	right:                  43.5%;
+	left:                   43.5%;
+}
+/* /Big picture page */
+
+
+/* Tags */
+#tags {
+  margin:                 .6em 0;
+}
+
+#tags h3, #tags p, #tags a {
+	display:                inline;
+  margin-right:           .7em;
+}
+/* /Tags */
+
+
+/* Selection */
+#all_pictures {
+	float:                  left;
+	width:                  31em;
+	margin-top:             .5em;
+	position:               relative;
+	z-index:                3;
+}
+
+#cart_items {
+  width:                  20.25em;
+	min-height:             405px;
+	height:                 25.3em;
+	border:                 1px solid;
+	margin-top:             .75em;
+	margin-left:            34.35em;
+	position:               relative;
+	z-index:                2;
+}
+
+#all_pictures li, #cart_items li, #selected_pictures li {
+	float:                  left;
+	width:                  75px;
+	height:                 75px;
+	margin:                 3px;
+	position:               relative;
+}
+
+#all_pictures li label, #all_pictures li a, 
+#cart_items label, #cart_items a, 
+#selected_pictures label, #selected_pictures a {
+	width:                  auto;
+	padding:                1px 3px;
+	margin:                 0;
+	position:               absolute;
+	bottom:                 1px;	
+}
+
+#all_pictures label, #cart_items label, 
+#selected_pictures label {
+	left:                   1px;
+}
+
+#all_pictures a, #cart_items a, 
+#selected_pictures a {
+	right:                  1px;
+}
+
+#all_pictures a:hover, 
+#cart_items a:hover, 
+#selected_pictures a:hover {
+	width:                  12px;
+	height:                 16px;
+}
+
+#selected_pictures a.remove_picture {
+	padding:                0;
+	position:               static;
+}
+
+.cart-active, .move {
+	cursor:                 move;
+}
+
+body#selection #selection_size {
+  float:                  right;
+  margin-right:           -22.75em;
+	position:               relative;
+	top:                    .5em;
+  right:                  37em;
+	z-index:                1;
+}
+body#selection #selection_size label {
+	display:                inline;
+	padding:                .34em 1.5em .35em .8em;
+	margin-left:            3em;
+	visibility:             visible;
+}
+
+body#checkout #selection_size {
+  margin-bottom:          20px;
+}
+body#checkout #selection_size label {
+  display:                inline;
+  margin:                 0;
+}
+
+/* Deveria ser .go_to_checkout, porque é um link. */
+.checkout {
+	min-height:             40px;
+	height:                 auto !important;
+	height:                 2.5em;
+ 	padding:                15px 75px 0 0;
+  margin:                 .5em 0 -.6em 40em;
+}
+
+#first_checkout {
+	position:               relative;
+	bottom:                 1.2em;
+}
+
+#back_to_gallery a {
+	display:                block;
+	margin:                 1.5em 0;
+}
+/* /Selection */
+
+
+/* Who */
+#us {
+	margin:                 1.5em 0 .8em 0;
+}
+
+#us dt, #us dd {
+  display:                inline;
+}
+
+#us dd {
+  margin:                 0 4em 0 .5em;
+}
+
+#about_us dt {
+  float:                  left;
+  margin-right:           .5em;
+}
+
+#about_us p {
+  margin:                 1em 0;
+}
+
+dd {
+  margin:                 .25em 0 .25em 2.5em;
+}
+
+#about_us cite, #testimonials cite {
+  display:                block;
+}
+
+#about_us cite {
+	padding:                46px 58px 14px 0;
+}
+
+#testimonials {
+	margin:                  3em 0;
+}
+
+#testimonials blockquote {
+	padding:                1.5em 3em 2.5em 3em;
+}
+
+#testimonials cite {
+  margin:                 -3em 3em 0 3em;
+}
+/* /Who */
+
+
+/* Forms (contact, checkout, search) */
+label {
+	display:                block;
+	width:                  29%;
+	margin-top:             .2em;
+	margin-right:           1em;
+}
+
+input, textarea {
+	display:                block;
+	width:                  40%;
+	padding:                0 .3em;
+	border:                 1px inset;
+  margin:                 -1.25em 0 .75em 18em;
+}
+
+input:hover, textarea:hover {
+	border:                 1px solid;
+}
+
+button {
+	display:                block;
+  padding:                .2em .5em;
+	border:                 1px outset;
+  margin:                 auto;
+}
+button:active {
+	border-style:           inset;
+}
+
+.submitting {
+  padding-right:          2.5em;
+	position:               relative;
+	left:                   1em;
+}
+.submitting:active {
+	border-style:           outset;
+}
+
+button * {
+	outline:                none;
+}
+
+#submit_error, #submit_success {
+	padding:                .5em 8em;
+	margin-bottom:          1em;
+}
+
+/* Specific for checkout e-mail form */
+body#checkout #order_form p {
+  padding-left:            1.75em;
+}
+
+/* Specific for global search form */
+#global_search {
+	width:                  7.5em;
+	padding-left:           25px;
+	position:               absolute;
+	top:                    .8em;
+	right:                  2.5em;
+}
+
+#global_search fieldset {
+	padding-right:          10px;
+}
+
+#global_search #search_type {
+	display:                none;
+}
+
+#global_search #query {
+	width:                  100%;
+	height:                 1.22em;
+	padding:                0;
+	border:                 none;
+	border-top:             1px solid;
+	border-bottom:          1px solid;
+  margin:                 0;
+}
+/* /Forms (contact, checkout, search) */
+
+
+/* Errors (404, 500, timeout, empty search results) */
+p#not_found {
+  margin:                 2em 0 -2em 0;
+	position:               relative;
+	z-index:                1;
+}
+	
+.error_description {
+	padding-top:            210px;
+  margin:                 0 0 2em 0;
+}
+
+.error_hints {
+	margin-top:             .5em;
+}
+
+#valid_search_suggestions {
+	padding-left:           23em;
+	margin-top:             1.2em;
+}
+/* /Errors (404, 500, timeout, empty search results) */
+
+
+/* Facebox */
+#facebox {
+	position:               absolute;
+	top:                    5em;
+	z-index:                100;
+}
+#stage > #facebox {
+	right:                  0;
+	left:                   0;
+}
+
+#facebox div {
+	min-width:              50px;
+	width:                  50px;
+	padding-top:            10px;
+  margin:                 auto;
+}
+#facebox > div {
+	width:                  auto;
+	display:                table;
+}
+
+#facebox p {
+	padding:                0 0 0 18px;
+	background-position:    bottom left;
+	position:               relative;
+}
+
+#facebox a {
+	padding:                15px 18px 0 0;
+	background-position:    top right;
+	outline:                none;
+	position:               absolute;
+	top:                    -10px;
+	right:                  0;
+}
+#facebox p > a {
+	left:                   10px;
+}
+
+#facebox img {
+	padding:                20px 18px 18px 0;
+	background-position:    bottom right;
+	margin-bottom:          -3px;
+}
+#facebox p > img {
+	margin-bottom:          -6px;
+}
+*:first-child + html #facebox img {
+	margin-bottom:          -3px;
+}
+/* /Facebox */
+
+
+/* Footer */
+#footer {
+  padding:                1.25em 3.9em;
+	border-top:             2px solid;
+	border-bottom:          .2em solid;
+	margin-bottom:          2em;
+}
+
+#footer p {
+	margin-bottom:          .5em;
+}

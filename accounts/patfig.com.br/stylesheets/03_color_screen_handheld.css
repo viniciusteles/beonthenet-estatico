@@ -1,0 +1,491 @@
+/*
+Cores utilizadas no site:
+Input lighting:           #F6F0DF;
+Bege claro:					      #F6F0DB;
+Bege médio:					      #EFE3C3;
+Bege escuro:				      #E0C99B;
+Input shading:				    #BAA984;
+Bege escuro para marrom:  #B09A6F;
+Marrom:						        #7F6B43;
+Cinza claro:				      #555;
+Cinza escuro:				      #111;
+Rosa:						          #BF667F;					
+Vinho:                    #940029;
+*/
+
+/* Color global attributes */
+html * {
+  color:                  #555;
+}
+
+html {
+  background:             #EFE3C3 url(../images/background/hachura_site.gif);
+}
+
+a:visited {
+  color:                  #7F6B43;
+}
+
+a:focus, a:hover, a:active {
+  color:                  #940029;
+}
+
+h1 {
+  color:                  #940029;
+}
+
+h2 {
+  color:                  #7F6B43;
+}
+
+h3, h3 a {
+  color:                  #555;
+}
+
+h4, h4 a {
+  color:                  #940029;
+}
+/* /Color global attributes */
+
+
+/* Header tabbed menu */
+#header {
+  background:             #E0C99B url(../images/background/header_shading.png) repeat-x bottom;
+}
+
+#header h1 img {
+  color:                  #940029;
+}
+
+#header li {
+	background:             #EFE3C3 no-repeat left top;
+}
+
+#header li a {
+	background:             url(../images/background/tab_corner_right.gif) no-repeat right top;
+}
+#header li a:visited {
+  color:                  #555;
+}
+#header li a:hover {
+  color:                  #111;
+}
+#header li a:active {
+  color:                  #940029;
+}
+
+body.best_galleries #header li.best_galleries, 
+body.full_galleries #header li.full_galleries, 
+body#quem_somos #header li.quem_somos, 
+body.contact #header li.contact, 
+body.blog #header li.blog {
+	background-color:       #F6F0DB;
+}
+
+body.best_galleries #header li.best_galleries a,
+body.full_galleries #header li.full_galleries a,
+body#quem_somos #header li.quem_somos a,
+body.contact #header li.contact a, 
+body.blog #header li.blog a {
+	background-image:       url(../images/background/current_tab_corner_right.gif);
+}
+
+#header li.best_galleries {
+	background-image:       url(../images/icones/best_pictures.gif);
+}
+body.best_galleries #header li.best_galleries {
+	background-image:       url(../images/icones/best_pictures_h.gif);
+}
+
+#header li.full_galleries {
+	background-image:       url(../images/icones/pictures.gif);
+}
+body.full_galleries #header li.full_galleries {
+	background-image:       url(../images/icones/pictures_h.gif);
+}
+
+#header li.blog {
+	background-image:       url(../images/icones/blog.gif);
+}
+body.blog #header li.blog {
+	background-image:       url(../images/icones/blog_h.gif);
+}
+
+#header li.quem_somos {
+	background-image:       url(../images/icones/who.gif);
+}
+body#quem_somos #header li.quem_somos {
+	background-image:       url(../images/icones/who_h.gif);
+}
+
+#header li.contact {
+	background-image:       url(../images/icones/contact.gif);
+}
+body.contact #header li.contact {
+	background-image:       url(../images/icones/contact_h.gif);
+}
+/* /Header tabbed menu */
+
+
+/* Main content top segment */
+#main_content {
+	background-color:       #F6F0DB;
+}
+
+#go_back_to_thumbnails {
+	background:             transparent url(../images/botoes/seta_esq.gif) no-repeat left center;
+}
+
+#go_to_gallery {
+	background:             transparent url(../images/botoes/gallery_p.gif) no-repeat left center;
+}
+
+#see_data_sheet {
+	background:             transparent url(../images/botoes/seta_baixo.gif) no-repeat left center;
+}
+/* /Main content top segment */
+
+
+/* Thumbnails */
+
+/* Vertically centering images 
+(conditional comments for IE required) */
+ul#thumbnails li div a {
+	background:             #E0C99B url(../images/background/large_thumb_box.gif);
+}
+
+ul#thumbnails li div a:visited {
+	background:             #EFE3C3 url(../images/background/large_thumb_box_v.gif);
+}
+ul#thumbnails li div a:hover {
+	background:             #940029 url(../images/background/large_thumb_box_h.gif);
+}
+
+
+ul#thumbnails a img, 
+#thumbnails label {
+	color:                  #7F6B43;
+}
+
+ul#thumbnails a:hover img, 
+ul#thumbnails a:hover label {
+	color:                  #FFF;
+}
+/* /Thumbnails */
+
+
+/* Summary */
+#summary, #about_us, #data_sheet, .error_hints {
+	background-color:       #EFE3C3;
+	border-color:           #F6F0DB;
+}
+/* /Summary */
+
+
+/* Link to Selection */
+#select_pictures a {
+	background:             #EFE3C3 url(../images/botoes/selecionar_fotos.gif) no-repeat top left;
+}
+#select_pictures a:link, 
+#select_pictures a:visited {
+  color:                  #940029;
+}
+
+#select_pictures a:hover {
+  color:                  #BF667F;
+}
+/* /Link to Selection */
+
+
+/* Paging */
+.pages {
+  background-color:       #EFE3C3;
+  border-color:           #F6F0DB;
+}
+
+.pages a:visited {
+  color:                  #B09A6F;
+}
+
+.pages a.previous {
+  background:             transparent url(../images/botoes/seta_esq.gif) no-repeat left center;
+}
+.pages a.previous:visited,
+.pages a.next:visited {
+	color:                  #555;
+}
+.pages a.previous:hover {
+  background-image:       url(../images/botoes/seta_esq_h.gif);
+}
+.pages a.next {
+  background:             transparent url(../images/botoes/seta_dir.gif) no-repeat right center;
+}
+.pages a.next:hover {
+  background-image:       url(../images/botoes/seta_dir_h.gif);
+}
+.pages a:hover {
+    background-color:     #7F6B43;
+}
+.pages a:hover, 
+.pages a.previous:hover,
+.pages a.next:hover {
+  color:                  #FFF;
+}
+
+.pages strong {
+  color:                  #940029;
+}
+/* /Paging */
+
+
+/* Data sheet */
+#data_sheet li {
+	color:                  #7F6B43;
+}
+/* /Data sheet */
+
+
+/* Big picture page */
+#big_picture a span {
+	background:             transparent url(../images/botoes/anterior.gif) no-repeat center right;
+}
+#big_picture a#previous:hover span {
+	background-image:       url(../images/botoes/anterior_h.gif);
+}
+#big_picture a#previous:active span {
+	background-image:       url(../images/botoes/anterior_a.gif);
+}
+#big_picture #next span {
+	background:             transparent url(../images/botoes/proxima.gif) no-repeat center left;
+}
+#big_picture a#next:hover span {
+	background-image:       url(../images/botoes/proxima_h.gif);
+}
+#big_picture a#next:active span {
+	background-image:       url(../images/botoes/proxima_a.gif);
+}
+
+#big_picture img {
+  color:                  #7F6B43;
+	border-color:           #940029;
+}
+
+#big_picture label {
+  color:                  #940029;
+  background:             #F6F0DB;
+}
+/* /Big picture page */
+
+
+/* Tags */
+#tags a {
+  color:                  #940029;
+}
+
+#tags a:visited {
+  color:                  #7F6B43;
+}
+
+#tags a:hover {
+  color:                  #fff;
+  background-color:       #940029;
+}
+/* /Tags */
+
+
+/* Selection */
+.checkout a {
+  color:                  #940029;
+}
+
+body#selection #selection_size, 
+body#selection #selection_size label {
+	color:                  #F6F0DB;
+}
+
+#cart_items {
+	background:             #F6F0DB;
+	border-color:           #940029;
+}
+
+#cart_items.instructions {
+	background:             #F6F0DB url(../images/selection/selection_instructions.gif) no-repeat center center;	
+}
+
+#all_pictures li label, #all_pictures li a, 
+#cart_items label, #cart_items a, 
+#selected_pictures label, #selected_pictures a {
+	background-color:       #F6F0DB;
+}
+
+#all_pictures label, #cart_items label, 
+#selected_pictures label {
+  color:                  #7F6B43;
+	opacity:                .7;
+}
+
+#all_pictures a:hover, 
+#cart_items a:hover, 
+#selected_pictures a:hover {
+	background:             transparent url(../images/background/magnifying_glass.gif) no-repeat center center;
+}
+
+#selected_pictures a.remove_picture:hover {
+	background:             none;
+}
+
+body#selection #selection_size label {
+	background:             #940029 url(../images/selection/selection_size.gif) no-repeat left center;
+}
+
+/* Deveria ser .go_to_checkout, porque é um link. */
+.checkout {
+	background:             transparent url(../images/selection/shopping_cart.gif) no-repeat right center;
+}
+
+.moved_to_cart {
+	opacity:                .3;
+}
+/* /Selection */
+
+
+/* Who */
+#us dt {
+  color:                  #7F6B43;
+}
+
+#us dd, #about_us dt, #about_us strong {
+  color:                  #940029;
+}
+
+#about_us cite {
+	background:             transparent url(../images/background/patfig_signature.gif) no-repeat right top;
+}
+
+#testimonials .odd {
+	background:             #EFE3C3 url(../images/background/30px_tl_corner.gif) no-repeat left top;
+}
+
+#testimonials em, #testimonials strong, 
+#testimonials cite, #testimonials cite a:link {
+	color:                  #940029;
+}
+
+#testimonials cite a:hover {
+	color:                  #BF667F;
+}
+/* /Who */
+
+
+/* Forms (contact, checkout, search) */
+label {
+	color:                  #940029;
+}
+
+input, textarea {
+  color:                  #111;
+	background-color:       #EFE3C3;
+	border-color:           #7F6B43;
+}
+
+input:hover, textarea:hover {
+	border-color:           #940029;
+}
+
+input:active, input:focus,
+textarea:active, textarea:focus {
+	background-color:       #E0C99B;
+	border-color:           #940029;
+}
+
+button {
+  color:                  #111;
+	background-color:       #E0C99B;
+	border-color:           #E0C99B;
+}
+button:hover {
+	border-color:           #7F6B43;
+}
+
+.submitting {
+	color:                  #B09A6F;
+	background:             #EFE3C3 url(../images/spinner/spinner_16_efe3c3.gif) no-repeat 95% center;
+	border-color:           #EFE3C3;
+}
+
+.email_field_with_errors {
+  color:                  #fff;
+	background-color:       #BF667F;
+}
+
+#submit_error {
+	background-color:       #940029;
+}
+
+#submit_success {
+	background-color:       #B09A6F;
+}
+
+#submit_error, #submit_success {
+  color:                  #fff;
+}
+
+/* Specific for global search form */
+#global_search {
+	background:             transparent url(../images/background/search_corner_left.gif) no-repeat left center;
+}
+
+#global_search fieldset {
+	background:             transparent url(../images/background/search_corner_right.gif) no-repeat right center;
+}
+
+#global_search #query {
+	color:                  #555;
+  background:             #EFE3C3 url(../images/background/input_shading.gif) repeat-x left top;
+  border-top-color:       #BAA984;
+  border-bottom-color:    #F6F0DF;
+}
+/* /Forms (contact, checkout, search) */
+
+
+/* Errors (404, 500, timeout, empty search results) */
+.error_description {
+	background:             #F6F0DB url(../images/errors/error_404.gif) no-repeat center top;
+}
+
+#error_500 {
+	background-image:       url(../images/errors/error_500.gif);
+}
+
+#error_timeout {
+	background-image:       url(../images/errors/error_timeout.gif);
+}
+
+#searched_item {
+	color:                  #940029;
+}
+/* /Errors (404, 500, timeout, empty search results) */
+
+
+/* Facebox */
+#facebox * {
+	background:             transparent url(../images/facebox/facebox_bg.gif) top left;
+}
+
+#facebox {
+	background:             none;
+}
+/* /Facebox */
+
+
+/* Footer */
+#footer {
+	background:             #F6F0DB url(../images/background/sombra.png) repeat-x;
+	border-top-color:       #EFE3C3;
+	border-bottom-color:    #940029;
+	margin-bottom:          2em;
+}
+
+#footer p {
+	margin-bottom:          .5em;
+}

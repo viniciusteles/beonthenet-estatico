@@ -1,0 +1,133 @@
+*[type="hidden"] {
+	display:                none;
+}
+
+/* This part of ths stylesheet changes 
+according to the current application.css.
+Therefore, it must be incorporated into application.css. */
+#access_to_admin {
+	text-align:             center;
+	height:                 20px;
+	padding-bottom:         1px;
+}
+
+#access_to_admin label, 
+#access_to_admin input {
+	font-size:              70%;
+	float:                  none;
+	display:                inline;
+	width:                  10em;
+	margin:                 0;
+}
+
+#access_to_admin label {
+	color:                  #555;
+}
+
+#link_to_access a, 
+#access_to_admin input {
+	height:                 16px;
+}
+
+#link_to_access a, 
+#access_to_admin .submit {
+	color:                  #FFF;
+	padding:                0;
+	background:             #D6B985 url(../images/first_tests/submit_button_160x16.gif) no-repeat center center;
+}
+
+#link_to_access a {
+	font-size:              95%;
+	line-height:            1.25em;
+	text-align:             center;
+	text-decoration:        none;
+	display:                block;
+	width:                  160px;
+	margin:                 3px auto 2px auto;
+}
+
+#access_to_admin input {
+	width:                  94px;
+	padding:                0 8px;
+	background:             #E9D8B2 url(../images/first_tests/access_input_bg.gif) no-repeat center center;
+	border:                 none;
+	margin-right:           1.75em;
+}
+
+#access_to_admin .submit {
+	width:                  60px;
+	background:             #D6B985 url(../images/first_tests/submit_button_60x16.gif) no-repeat center center;
+	margin:                 0;
+	position:               relative;
+	top:                    .1em;
+}
+#link_to_access a:hover, 
+#access_to_admin .submit:hover {
+	background-color:       #DBC291;
+}
+#link_to_access a:active, 
+#access_to_admin .submit:active {
+	background-color:       #BAA984;
+	background-image:       url(../images/first_tests/submit_button_160x16_active.gif);
+}
+/* /This part of ths stylesheet changes 
+according to the current application.css.
+Therefore, it must be incorporated into application.css. */
+
+
+/* A temporary selector. Disappears as soon as *[type='hidden'] gets to work */
+#access_to_admin div {
+	display:                none;
+}
+
+
+#restricted_area {
+/*  height:                 15em;*/
+	background:             #FFF;
+}
+
+#login_container p.feedback {
+	color:                  #C0C0C0;
+	font-size:              140%;
+	text-transform:         uppercase;
+	text-align:             center;
+	clear:                  both;
+	height:                 1.7em;
+	background:             #F5F5F5;
+}
+
+#restricted_area .spinner {
+	color:                  #C0C0C0;
+  text-align:             center;
+	line-height:            2em;
+	display:                block;
+/*	border: 1px solid #999;*/
+	width:                  96px;
+	height:                 96px;
+	margin:                 3em auto 3em auto;
+}
+
+#restricted_area ul, #restricted_area li {
+	text-align:             center;
+}
+
+#restricted_area ul {
+	height:                 9.5em;
+	padding:                1.5em 5em 0em 5em;
+/*  margin-bottom:    -1.7em;*/
+/*  background:gray;*/
+}
+
+#restricted_area li {
+	float:                  left;
+	width:                  49.9%;
+/*  border: 1px dotted gray;*/
+}
+
+#restricted_area li, #restricted_area li p {
+	font-size:              95%;
+}
+
+#restricted_area li p {
+	margin-bottom:          1.75em;
+}

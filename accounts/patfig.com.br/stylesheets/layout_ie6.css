@@ -1,0 +1,61 @@
+/* Style sheet with conditions for IE6. */
+
+
+#stage {
+	overflow:               hidden;
+}
+
+#header ul {
+	bottom:                 -1px;
+}
+
+#all_pictures li, #cart_items li {
+	margin:                 1px;
+}
+
+#all_pictures label {
+	margin-bottom:          3px;
+}
+
+#summary p {
+	margin-bottom:          .7em;
+}
+
+#select_pictures a {
+	line-height:            1.3em;
+}
+
+#cart_items {
+	margin-left:            34.2em;
+}
+#cart_items li, #selected_pictures li {
+	margin:                 1px 2px;
+}
+
+#all_pictures li label, #all_pictures li a, 
+#cart_items label, #cart_items a {
+	bottom:                 0;	
+}
+#selected_pictures label, #selected_pictures a {
+	bottom:                 4px;
+}
+#all_pictures a, #cart_items a, 
+#selected_pictures a {
+	right:                  0;
+}
+
+body#selection #selection_size {
+  right:                  38.25em;
+}
+
+#checkout #submit_error {
+	margin-top:             1em;
+	margin-left:            0.1em;
+	margin-right:           4.4em;
+	padding:                1.5em;
+}
+
+.email_field_with_errors {
+	position:               relative;
+	top:                    .2em;
+}
