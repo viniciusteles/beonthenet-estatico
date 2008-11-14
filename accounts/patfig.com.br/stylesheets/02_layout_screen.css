@@ -584,3 +584,28 @@ body > #facebox {
 #footer p {
 	margin-bottom:          .5em;
 }
+/* /Footer */
+
+
+
+/* Instrucitons */
+body.instructions #main_content p {
+  margin:                 1em 0;
+}
+
+body.instructions #main_content h2 {
+  margin:                 2em 0 1.5em 0;
+}
+
+body.instructions #main_content dl {
+  margin:                 1.6em 6em;
+}
+
+body.instructions #main_content dd {
+  margin:                 0 0 1em 2.5em;
+}
+
+code {
+  padding:                .5em;
+}
+/* /Instructions */

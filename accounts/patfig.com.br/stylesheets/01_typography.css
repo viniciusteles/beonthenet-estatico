@@ -306,3 +306,20 @@ p#not_found, .error_description {
   font-size:							70%;
 }
 /* /Footer */
+
+
+
+/* Instructions */
+body.instructions #main_content dt {
+  font-weight:            bold;
+  font-size:              80%;
+}
+
+body.instructions #main_content dd {
+  text-align:             justify;
+}
+
+code {
+  font:                   normal normal normal 110%/1.2em "Lucida Console", "Monaco", monospace; 
+}
+/* /Instructions */

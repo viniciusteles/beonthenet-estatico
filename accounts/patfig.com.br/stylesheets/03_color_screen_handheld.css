@@ -475,3 +475,17 @@ button:hover {
 #footer p {
 	margin-bottom:          .5em;
 }
+/* /Footer */
+
+
+
+/* Instructions */
+body.instructions #main_content dt {
+  color:                  #940029;
+}
+
+code {
+  color:                  #111;
+  background:             #EFE3C3; 
+}
+/* /Instructions */
