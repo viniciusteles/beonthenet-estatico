@@ -4,7 +4,7 @@
 	margin:                 0;
 }
 
-#stage {
+body {
   width:                  62.5em;
 	margin:                 auto;
 }
@@ -33,46 +33,44 @@ a {
 
 /* Header tabbed menu */
 #header {
-	min-height:             38px;
-	height:                 2.38em;
+  min-height:             38px;
+  height:                 2.38em;
   padding-top:            .44em;
   padding-bottom:         0;
-	position:               relative;
+  position:               relative;
 }
 
 #header h1#logo_print {
-	display:                none;
+  display:                none;
 }
 
 #header h1#logo_screen {
-	margin:                 0;
-	width:                  168px;
-	height:                 30px;
-	overflow:               hidden;
+  margin:                 0;
+  width:                  168px;
+  height:                 30px;
+  overflow:               hidden;
 }
 
 #header ul {
-	height:                 2.38em;
-	margin-top:             6px;
+  height:                 2.38em;
   margin-left:            168px;
-	position:               absolute;
+  position:               absolute;
   right:                  0;
-	bottom:                 0;
-	left:                   6.75em;
-	overflow:               hidden;
+  bottom:                 0;
+  left:                   8em;
+  overflow:               hidden;
 }
 
 #header li {
-	display:                inline;
-	padding:                .5em 0 1.1em 0;
-  margin-right:           .2em;
-	position:               relative;
-	top:                    1em;
+  display:                inline;
+  padding:                .5em 0 1.1em 0;
+  position:               relative;
+  top:                    1em;
 }
 
 #header li a {
-	padding:                .5em 1.2em 1em 2.4em;
-  margin-right:           -.5em;
+  padding:                .5em 1.2em 1em 2.4em;
+  margin-right:           -.25em;
 }
 
 body.best_galleries #header li.best_galleries, 
@@ -80,7 +78,7 @@ body.full_galleries #header li.full_galleries,
 body.quem_somos #header li.quem_somos, 
 body.contact #header li.contact, 
 body.blog #header li.blog {
-	top:                    .7em;
+  top:                    .7em;
 }
 /* /Header tabbed menu */
 
@@ -290,6 +288,7 @@ ul#thumbnails li div a label {
 	float:                  left;
 	width:                  31em;
 	margin-top:             .5em;
+	margin-bottom:          -3.5em;
 	position:               relative;
 	z-index:                3;
 }
@@ -349,6 +348,7 @@ ul#thumbnails li div a label {
 	cursor:                 move;
 }
 
+
 body#selection #selection_size {
   float:                  right;
   margin-right:           -22.75em;
@@ -367,13 +367,13 @@ body#selection #selection_size label {
 body#checkout #selection_size {
   margin-bottom:          20px;
 }
-body#checkout #selection_size label {
+body#checkout #selection_size label, 
+body#search #search_result_count label {
   display:                inline;
   margin:                 0;
 }
 
-/* Deveria ser .go_to_checkout, porque é um link. */
-.checkout {
+.go_to_checkout {
 	min-height:             40px;
 	height:                 auto !important;
 	height:                 2.5em;
@@ -381,7 +381,7 @@ body#checkout #selection_size label {
   margin:                 .5em 0 -.6em 40em;
 }
 
-#first_checkout {
+#first.go_to_checkout {
 	position:               relative;
 	bottom:                 1.2em;
 }
@@ -394,49 +394,22 @@ body#checkout #selection_size label {
 
 
 /* Who */
-#us {
-	margin:                 1.5em 0 .8em 0;
+.quem_somos #main_content p {
+  margin:                 1em 0;
 }
 
-#us dt, #us dd {
-  display:                inline;
-}
-
-#us dd {
-  margin:                 0 4em 0 .5em;
-}
-
-#about_us dt {
+.quem_somos dt {
   float:                  left;
   margin-right:           .5em;
 }
 
-#about_us p {
-  margin:                 1em 0;
+.quem_somos dd {
+  margin:                 .25em 0 1em 2.5em;
 }
 
-dd {
-  margin:                 .25em 0 .25em 2.5em;
-}
-
-#about_us cite, #testimonials cite {
+.quem_somos #main_content cite {
   display:                block;
-}
-
-#about_us cite {
 	padding:                46px 58px 14px 0;
-}
-
-#testimonials {
-	margin:                  3em 0;
-}
-
-#testimonials blockquote {
-	padding:                1.5em 3em 2.5em 3em;
-}
-
-#testimonials cite {
-  margin:                 -3em 3em 0 3em;
 }
 /* /Who */
 
@@ -552,7 +525,7 @@ p#not_found {
 	top:                    5em;
 	z-index:                100;
 }
-#stage > #facebox {
+body > #facebox {
 	right:                  0;
 	left:                   0;
 }

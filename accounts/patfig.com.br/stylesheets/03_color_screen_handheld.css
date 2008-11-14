@@ -11,15 +11,16 @@ Cinza claro:				      #555;
 Cinza escuro:				      #111;
 Rosa:						          #BF667F;					
 Vinho:                    #940029;
-*/
 
-/* Color global attributes */
+
+
+  Color global attributes */
 html * {
   color:                  #555;
 }
 
 html {
-  background:             #EFE3C3 url(../images/background/hachura_site.gif);
+  background:             #EFE3C3 url(../images/site_hatching.gif);
 }
 
 a:visited {
@@ -50,7 +51,7 @@ h4, h4 a {
 
 /* Header tabbed menu */
 #header {
-  background:             #E0C99B url(../images/background/header_shading.png) repeat-x bottom;
+  background:             #E0C99B url(../images/header_shading.png) repeat-x bottom;
 }
 
 #header h1 img {
@@ -58,11 +59,11 @@ h4, h4 a {
 }
 
 #header li {
-	background:             #EFE3C3 no-repeat left top;
+  background:             #EFE3C3 no-repeat left top;
 }
 
 #header li a {
-	background:             url(../images/background/tab_corner_right.gif) no-repeat right top;
+	background:             url(../images/tab_corner_right.gif) no-repeat right top;
 }
 #header li a:visited {
   color:                  #555;
@@ -76,7 +77,7 @@ h4, h4 a {
 
 body.best_galleries #header li.best_galleries, 
 body.full_galleries #header li.full_galleries, 
-body#quem_somos #header li.quem_somos, 
+body.quem_somos #header li.quem_somos, 
 body.contact #header li.contact, 
 body.blog #header li.blog {
 	background-color:       #F6F0DB;
@@ -84,45 +85,47 @@ body.blog #header li.blog {
 
 body.best_galleries #header li.best_galleries a,
 body.full_galleries #header li.full_galleries a,
-body#quem_somos #header li.quem_somos a,
+body.quem_somos #header li.quem_somos a,
 body.contact #header li.contact a, 
 body.blog #header li.blog a {
-	background-image:       url(../images/background/current_tab_corner_right.gif);
+	background-image:       url(../images/tab_corner_right_current.gif);
 }
 
 #header li.best_galleries {
-	background-image:       url(../images/icones/best_pictures.gif);
+	background-image:       url(../images/tab_best_galleries.gif);
 }
+
 body.best_galleries #header li.best_galleries {
-	background-image:       url(../images/icones/best_pictures_h.gif);
+	background-image:       url(../images/tab_best_galleries_current.gif);
 }
 
 #header li.full_galleries {
-	background-image:       url(../images/icones/pictures.gif);
+	background-image:       url(../images/tab_full_galleries.gif);
 }
 body.full_galleries #header li.full_galleries {
-	background-image:       url(../images/icones/pictures_h.gif);
+	background-image:       url(../images/tab_full_galleries_current.gif);
 }
 
 #header li.blog {
-	background-image:       url(../images/icones/blog.gif);
+	background-image:       url(../images/tab_blog.gif);
 }
 body.blog #header li.blog {
-	background-image:       url(../images/icones/blog_h.gif);
+	background-image:       url(../images/tab_blog_current.gif);
 }
 
 #header li.quem_somos {
-	background-image:       url(../images/icones/who.gif);
+	background-image:       url(../images/tab_who.gif);
 }
-body#quem_somos #header li.quem_somos {
-	background-image:       url(../images/icones/who_h.gif);
+
+body.quem_somos #header li.quem_somos {
+	background-image:       url(../images/tab_who_current.gif);
 }
 
 #header li.contact {
-	background-image:       url(../images/icones/contact.gif);
+	background-image:       url(../images/tab_contact.gif);
 }
 body.contact #header li.contact {
-	background-image:       url(../images/icones/contact_h.gif);
+	background-image:       url(../images/tab_contact_current.gif);
 }
 /* /Header tabbed menu */
 
@@ -133,15 +136,15 @@ body.contact #header li.contact {
 }
 
 #go_back_to_thumbnails {
-	background:             transparent url(../images/botoes/seta_esq.gif) no-repeat left center;
+	background:             transparent url(../images/arrow_left.gif) no-repeat left center;
 }
 
 #go_to_gallery {
-	background:             transparent url(../images/botoes/gallery_p.gif) no-repeat left center;
+	background:             transparent url(../images/gallery_album.gif) no-repeat left center;
 }
 
 #see_data_sheet {
-	background:             transparent url(../images/botoes/seta_baixo.gif) no-repeat left center;
+	background:             transparent url(../images/arrow_down.gif) no-repeat left center;
 }
 /* /Main content top segment */
 
@@ -151,14 +154,14 @@ body.contact #header li.contact {
 /* Vertically centering images 
 (conditional comments for IE required) */
 ul#thumbnails li div a {
-	background:             #E0C99B url(../images/background/large_thumb_box.gif);
+	background:             #E0C99B url(../images/thumbnail_box.gif);
 }
 
 ul#thumbnails li div a:visited {
-	background:             #EFE3C3 url(../images/background/large_thumb_box_v.gif);
+	background:             #EFE3C3 url(../images/thumbnail_box_visited.gif);
 }
 ul#thumbnails li div a:hover {
-	background:             #940029 url(../images/background/large_thumb_box_h.gif);
+	background:             #940029 url(../images/thumbnail_box_hover.gif);
 }
 
 
@@ -184,7 +187,7 @@ ul#thumbnails a:hover label {
 
 /* Link to Selection */
 #select_pictures a {
-	background:             #EFE3C3 url(../images/botoes/selecionar_fotos.gif) no-repeat top left;
+	background:             #EFE3C3 url(../images/select_pictures.gif) no-repeat top left;
 }
 #select_pictures a:link, 
 #select_pictures a:visited {
@@ -208,20 +211,20 @@ ul#thumbnails a:hover label {
 }
 
 .pages a.previous {
-  background:             transparent url(../images/botoes/seta_esq.gif) no-repeat left center;
+  background:             transparent url(../images/arrow_left.gif) no-repeat left center;
 }
 .pages a.previous:visited,
 .pages a.next:visited {
 	color:                  #555;
 }
 .pages a.previous:hover {
-  background-image:       url(../images/botoes/seta_esq_h.gif);
+  background-image:       url(../images/arrow_left_hover.gif);
 }
 .pages a.next {
-  background:             transparent url(../images/botoes/seta_dir.gif) no-repeat right center;
+  background:             transparent url(../images/arrow_right.gif) no-repeat right center;
 }
 .pages a.next:hover {
-  background-image:       url(../images/botoes/seta_dir_h.gif);
+  background-image:       url(../images/arrow_right_hover.gif);
 }
 .pages a:hover {
     background-color:     #7F6B43;
@@ -247,22 +250,22 @@ ul#thumbnails a:hover label {
 
 /* Big picture page */
 #big_picture a span {
-	background:             transparent url(../images/botoes/anterior.gif) no-repeat center right;
+	background:             transparent url(../images/arrow_previous.gif) no-repeat center right;
 }
 #big_picture a#previous:hover span {
-	background-image:       url(../images/botoes/anterior_h.gif);
+	background-image:       url(../images/arrow_previous_hover.gif);
 }
 #big_picture a#previous:active span {
-	background-image:       url(../images/botoes/anterior_a.gif);
+	background-image:       url(../images/arrow_previous_active.gif);
 }
 #big_picture #next span {
-	background:             transparent url(../images/botoes/proxima.gif) no-repeat center left;
+	background:             transparent url(../images/arrow_next.gif) no-repeat center left;
 }
 #big_picture a#next:hover span {
-	background-image:       url(../images/botoes/proxima_h.gif);
+	background-image:       url(../images/arrow_next_hover.gif);
 }
 #big_picture a#next:active span {
-	background-image:       url(../images/botoes/proxima_a.gif);
+	background-image:       url(../images/arrow_next_active.gif);
 }
 
 #big_picture img {
@@ -294,7 +297,7 @@ ul#thumbnails a:hover label {
 
 
 /* Selection */
-.checkout a {
+.go_to_checkout a {
   color:                  #940029;
 }
 
@@ -309,7 +312,7 @@ body#selection #selection_size label {
 }
 
 #cart_items.instructions {
-	background:             #F6F0DB url(../images/selection/selection_instructions.gif) no-repeat center center;	
+	background:             #F6F0DB url(../images/selection_instructions.gif) no-repeat center center;	
 }
 
 #all_pictures li label, #all_pictures li a, 
@@ -327,7 +330,7 @@ body#selection #selection_size label {
 #all_pictures a:hover, 
 #cart_items a:hover, 
 #selected_pictures a:hover {
-	background:             transparent url(../images/background/magnifying_glass.gif) no-repeat center center;
+	background:             transparent url(../images/magnifying_glass.gif) no-repeat center center;
 }
 
 #selected_pictures a.remove_picture:hover {
@@ -335,12 +338,11 @@ body#selection #selection_size label {
 }
 
 body#selection #selection_size label {
-	background:             #940029 url(../images/selection/selection_size.gif) no-repeat left center;
+	background:             #940029 url(../images/tab_selection_size.gif) no-repeat left center;
 }
 
-/* Deveria ser .go_to_checkout, porque é um link. */
-.checkout {
-	background:             transparent url(../images/selection/shopping_cart.gif) no-repeat right center;
+.go_to_checkout {
+	background:             transparent url(../images/shopping_cart.gif) no-repeat right center;
 }
 
 .moved_to_cart {
@@ -350,29 +352,13 @@ body#selection #selection_size label {
 
 
 /* Who */
-#us dt {
-  color:                  #7F6B43;
-}
-
-#us dd, #about_us dt, #about_us strong {
+.quem_somos dt, 
+.quem_somos #main_content strong {
   color:                  #940029;
 }
 
-#about_us cite {
-	background:             transparent url(../images/background/patfig_signature.gif) no-repeat right top;
-}
-
-#testimonials .odd {
-	background:             #EFE3C3 url(../images/background/30px_tl_corner.gif) no-repeat left top;
-}
-
-#testimonials em, #testimonials strong, 
-#testimonials cite, #testimonials cite a:link {
-	color:                  #940029;
-}
-
-#testimonials cite a:hover {
-	color:                  #BF667F;
+.quem_somos cite {
+	background:             transparent url(../images/signature_patfig.gif) no-repeat right top;
 }
 /* /Who */
 
@@ -409,7 +395,7 @@ button:hover {
 
 .submitting {
 	color:                  #B09A6F;
-	background:             #EFE3C3 url(../images/spinner/spinner_16_efe3c3.gif) no-repeat 95% center;
+	background:             #EFE3C3 url(../images/form_spinner.gif) no-repeat 95% center;
 	border-color:           #EFE3C3;
 }
 
@@ -432,16 +418,16 @@ button:hover {
 
 /* Specific for global search form */
 #global_search {
-	background:             transparent url(../images/background/search_corner_left.gif) no-repeat left center;
+	background:             transparent url(../images/search_corner_left.gif) no-repeat left center;
 }
 
 #global_search fieldset {
-	background:             transparent url(../images/background/search_corner_right.gif) no-repeat right center;
+	background:             transparent url(../images/search_corner_right.gif) no-repeat right center;
 }
 
 #global_search #query {
 	color:                  #555;
-  background:             #EFE3C3 url(../images/background/input_shading.gif) repeat-x left top;
+  background:             #EFE3C3 url(../images/search_input_shading.gif) repeat-x left top;
   border-top-color:       #BAA984;
   border-bottom-color:    #F6F0DF;
 }
@@ -450,15 +436,15 @@ button:hover {
 
 /* Errors (404, 500, timeout, empty search results) */
 .error_description {
-	background:             #F6F0DB url(../images/errors/error_404.gif) no-repeat center top;
+	background:             #F6F0DB url(../images/error_404.gif) no-repeat center top;
 }
 
 #error_500 {
-	background-image:       url(../images/errors/error_500.gif);
+	background-image:       url(../images/error_500.gif);
 }
 
 #error_timeout {
-	background-image:       url(../images/errors/error_timeout.gif);
+	background-image:       url(../images/error_timeout.gif);
 }
 
 #searched_item {
@@ -469,7 +455,7 @@ button:hover {
 
 /* Facebox */
 #facebox * {
-	background:             transparent url(../images/facebox/facebox_bg.gif) top left;
+	background:             transparent url(../images/facebox_bg.gif) top left;
 }
 
 #facebox {
@@ -480,7 +466,7 @@ button:hover {
 
 /* Footer */
 #footer {
-	background:             #F6F0DB url(../images/background/sombra.png) repeat-x;
+	background:             #F6F0DB url(../images/footer_shading.png) repeat-x;
 	border-top-color:       #EFE3C3;
 	border-bottom-color:    #940029;
 	margin-bottom:          2em;
