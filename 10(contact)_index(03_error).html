@@ -35,7 +35,7 @@
     </h1>
     <div id="submit_result"><p id="submit_error">O e-mail informado é inválido.</p></div>
     <div id="contact_content">
-    <form action="contact/send_message" method="post" onsubmit="$.ajax({beforeSend:function(request){contactLoading();}, complete:function(request){hideSpinner();enableContactSubmit()}, data:$.param($(this).serializeArray()), dataType:'script', type:'post', url:'/contact/send_message'}); return false;">
+    <form action="contact/send_message" method="post">
         <fieldset>
           <label for="message_name" id="name">Nome:</label>
           <input id="message_name" name="message[name]" size="30" type="text" />
