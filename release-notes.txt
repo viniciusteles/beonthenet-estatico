@@ -13,3 +13,4 @@
 * Indentação nos links para os arquivos CSS.
 * Movemos os diretórios images e stylesheets para a raiz.
 * Retiramos todos os eventos de javascript que estavam presentes em algumas páginas HTML.
+* Melhoramos a formatação da ficha técnica para facilitar a compreensão de sua organização.
