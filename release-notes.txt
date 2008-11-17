@@ -8,3 +8,4 @@
 * Retiramos as referências para os arquivos javascript, pois são desnecessárias para o processo de estilização.
 * Retiramos as referências para o arquivo 04_admin.css. A parte de admin não é englobada pelo template.
 * Reduzimos o tamanho das propriedades alt e title para reduzir a poluição.
+* Fizemos com que todos os links passem a apontar apenas para "#". Isso também ajudou a reduzir a poluição visual.
