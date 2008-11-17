@@ -28,3 +28,15 @@ Sim. O layout pode ser feito da maneira que você preferir, desde que, para isso
 # Os arquivos CSS estão divididos de modo a separar tipografia, formatação e cores. Nunca trabalhei desta forma. Sou obrigado a usar este padrão?
 
 Não. Este padrão reflete uma organização que o Leandro adotou e vem funcionando bem para nós. Entretanto, se você preferir se organizar de outra forma, sinta-se à vontade para fazê-lo. Apenas sugerimos que, como exercício, você tente se organizar também neste padrão para ver se funciona para você. Em nossa experiência, ele tem sido bastante útil e facilita bastante as modificações.
+
+# Como é o funcionamento dos spinners?
+
+Chamamos de spinners aqueles gifs animados que são apresentados ao usuário quando alguma operação mais lenta precisa ser efetuada pelo sistema. Os dois casos de uso disso no Be on the Net são:
+
+* Formulários: quando um usuário envia um formulário, um spinner é apresentado até que o sistema complete a operação de envio de email que está associada ao envio do formulário.
+* Ampliação de uma foto na seleção: na parte de seleção de fotos para um álbum, o usuário pode solicitar a ampliação de uma foto, já que elas aparecem em thumbnails bem pequenos nesta parte do sistema. Quando isto acontece, é necessário carregar um novo arquivo em um componente chamado 'facebox' o que, em alguns casos, pode demorar alguns segundos. Para lidar com isso, o sistema permite apresentar um spinner específico para esta área.
+
+Os spinners seguem uma convenção de nomes que deve ser respeitada pelo desginer:
+
+* Spinners para formulário: spinner_form.gif
+* Spinner para a ampliação de foto na seleção: spinner_selection.gif 

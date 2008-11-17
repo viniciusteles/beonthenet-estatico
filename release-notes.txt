@@ -1,0 +1,6 @@
+# 17/nov/2008
+
+* Retiramos o conteúdo da tag <title> para deixar os arquivos menos poluídos.
+* Retiramos a maior parte das tags <meta> para reduzir a poluição dos arquivos.
+* Renomeamos form_spinner.gif para spinner_form.gif.
+* Renomeados facebox_spinner.gif para spinner_selection.gif.

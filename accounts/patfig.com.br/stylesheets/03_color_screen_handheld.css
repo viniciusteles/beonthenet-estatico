@@ -395,7 +395,7 @@ button:hover {
 
 .submitting {
 	color:                  #B09A6F;
-	background:             #EFE3C3 url(../images/form_spinner.gif) no-repeat 95% center;
+	background:             #EFE3C3 url(../images/spinner_form.gif) no-repeat 95% center;
 	border-color:           #EFE3C3;
 }
 
