@@ -11,3 +11,4 @@
 * Fizemos com que todos os links passem a apontar apenas para "#". Isso também ajudou a reduzir a poluição visual.
 * Retiramos uma chamada javascript relativa ao Google Analytics que aparecia ao final de cada arquivo.
 * Indentação nos links para os arquivos CSS.
+* Movemos os diretórios images e stylesheets para a raiz.
