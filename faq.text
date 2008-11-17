@@ -1,0 +1,30 @@
+
+# A marcação (HTML) poderá ser alterada?
+
+Em princípio não, isto é, o designer não tem como alterar o HTML. Entretanto, até a data do lançamento, podemos fazer alterações no HTML com base nas sugestões de vocês, caso consideremos adequado ao sistema como um todo. Sendo assim, se houver algo que você queira sugerir, por favor, faça isso.
+
+# Caso o item acima seja falso, sem poder alterar a marcação, as imagens deverão ter sempre os mesmos nomes das imagens da pasta /images, correto?
+
+Não, as imagens podem assumir o nome que você considerar mais conveniente. Na área administrativa do site de cada cliente do Be on the Net, ele poderá fazer upload das imagens com o nome que achar melhor. No seu CSS, coloque os nomes correspondentes das imagens que você for utilizar. Em princípio, você como designer só tem como alterar nomes de imagens que são referenciadas no CSS como imagens de fundo. Uma exceção é a parte de logotipo que será explicada a seguir. 
+
+# Os logotipos serão sempre em padrão texto estilizado? (até porque o cliente vai escolher o template e vai desejar dar um nome qualquer ao site)
+
+Não. Caso o cliente tenha um logotipo em forma de imagem, ele poderá fazer o upload através da área administrativa. O Be on the Net segue uma convenção que determina o seguinte: 
+
+* Se houver um arquivo chamado logo.gif (ou .jpg, .jpeg, .png), será gerada uma tag <img> no source do HTML apontando para este arquivo, exatamente como está no HTML que foi enviado para você como exemplo.
+* Se houver um arquivo chamado logo_print.gif (ou .jpg, .jpeg, .png), será gerada outra tag <img> no source do HTML para que este logo seja mostrado apenas no caso de impressão da página.
+* Se nenhum destes arquivos for localizado, o sistema simplesmente mostrará o nome fantasia do domínio (nome do site). No caso da Patricia, por exemplo, seria "Patricia Figueira". Este nome é cadastrado na área administrativa do Be on the Net.
+
+Em suma, um cliente pode ter um logo em formato de imagem, desde que ele nos forneça um. No exercício que você irá fazer de criar um template, se você quiser criar um negócio fictício e associar um logo a ele, sinta-se à vontade para fazê-lo.
+
+# Será possível inserir tags de CSS e/ou Script adicionais (para image replacement, talvez)?
+
+Scripts adicionais não são permitidos em princípio. Porém, se você tiver alguma sugestão neste sentido, por favor nos envie explicando a motivação e, dependendo de como for, poderemos adotar.
+
+# O layout poderá sofrer modificações "drásticas"? Tipo menu na lateral ou algo parecido?
+
+Sim. O layout pode ser feito da maneira que você preferir, desde que, para isso, você utilize apenas CSS. Mas, voltando à primeira pergunta, se você tiver alguma sugestão de mudança nas marcações, por favor nos envie.
+
+# Os arquivos CSS estão divididos de modo a separar tipografia, formatação e cores. Nunca trabalhei desta forma. Sou obrigado a usar este padrão?
+
+Não. Este padrão reflete uma organização que o Leandro adotou e vem funcionando bem para nós. Entretanto, se você preferir se organizar de outra forma, sinta-se à vontade para fazê-lo. Apenas sugerimos que, como exercício, você tente se organizar também neste padrão para ver se funciona para você. Em nossa experiência, ele tem sido bastante útil e facilita bastante as modificações.
