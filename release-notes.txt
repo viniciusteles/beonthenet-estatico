@@ -4,3 +4,6 @@
 * Retiramos a maior parte das tags <meta> para reduzir a poluição dos arquivos.
 * Renomeamos form_spinner.gif para spinner_form.gif.
 * Renomeados facebox_spinner.gif para spinner_selection.gif.
+* Retiramos os números que haviam após os nomes dos arquivos CSS. Exemplo: layout_ie.css passou a ser apenas layout_ie.css. Estes números não tinham nenhuma importância para o trabalho de estilização, mas tornavam o código ligeiramente mais poluído.
+* Retiramos as referências para os arquivos javascript, pois são desnecessárias para o processo de estilização.
+* Retiramos as referências para o arquivo 04_admin.css. A parte de admin não é englobada pelo template.
