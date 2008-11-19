@@ -492,4 +492,13 @@ code {
 .instructions table * {
   border-color:           #E0C99B;
 }
+
+.instructions th {
+  color:                  #940029;
+  background:             #EFE3C3;
+}
+
+.instructions td span {
+  color:                  #BAA984;
+}
 /* /Instructions */

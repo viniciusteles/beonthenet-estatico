@@ -606,6 +606,10 @@ body.instructions #toc {
   padding:                1.5em 0 1em 0;
 }
 
+.instructions #main_content h3 {
+  padding:                1.5em 0 1em 0;
+}
+
 .instructions #main_content dl, 
 .instructions #main_content ul {
   margin:                 1.6em 6em;
@@ -624,7 +628,7 @@ code {
 }
 
 .instructions table {
-  width:                  70%;
+/*  width:                  100%;*/
   border-collapse:        collapse;
   margin:                 auto;
 }
@@ -633,7 +637,29 @@ code {
   border:                 1px solid;
 }
 
+.instructions th {
+  padding:                .5em 1.5em;
+}
+
 .instructions td {
-  padding:                .3em 1em;
-} 
+  padding:                .5em 1.5em;
+}
+
+.instructions td span {
+  display:                block;
+  border:                 none;
+  margin:                 0 1.5em;
+}
+
+.instructions td a, 
+.instructions td code {
+  border:                 none;
+  margin:                 0 -1em;
+  white-space:            nowrap;
+}
+
+.instructions td code {
+  display:                block;
+  margin-top:             .75em;
+}
 /* /Instructions */

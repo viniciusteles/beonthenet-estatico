@@ -328,8 +328,20 @@ code {
   font:                   normal normal normal 110%/1.2em "Lucida Console", "Monaco", monospace; 
 }
 
+.instructions th {
+  font-size:              90%;
+}
+
 .instructions td {
   font-size:              85%;
 } 
 
+.instructions td span {
+  font-size:              82%;
+}
+
+.instructions td a, 
+.instructions td code {
+  font-size:              80%;
+}
 /* /Instructions */

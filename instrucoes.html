@@ -54,6 +54,13 @@
 
       <p>Olá, designer. Você acaba de receber um pacote com todas as páginas que existem no <strong>Be on the Net</strong> até agora. Esta página contém instruções e macetes para entender melhor o sistema <strong>Be on the Net</strong> e seu HTML.</p>
 
+      <h2>Para começo de conversa: o que eu, designer, tenho de fazer afinal?</h2>
+
+      <p>Bem simples. Você tem de pegar os arquivos HTML contidos neste pacote e dar <strong>todo um novo CSS a ele</strong>.</p>
+      <p>Estas páginas, por enquanto, estão com o CSS que as tornam semelhantes ao site da fotógrafa de casamentos <a href="http://patriciafigueira.com.br">Patricia Figueira</a>. Imagine que ela contratou você pedindo uma reformulação geral do layout do site. Pois é esta a tarefa: usar o HTML já existente e construir um novo template sobre ele, usando <strong>puro CSS</strong>.</p>
+      <p>Como designer, você não precisa tocar no HTML nem no JavaScript &mdash; aliás, recomendamos que, para que seu CSS seja compatível com o <strong>Be on the Net</strong>, você realmente mantenha intactos os HTML&rsquo;s destes arquivos!</p>
+      <p>Como vai ficar a aparência, como vão ser diagramadas os thumbnails das imagens e os outros elementos, isso só é limitado pela sua criatividade. As instruções a seguir vão servir como orientação para você se encontrar no HTML e saber todos os macetes necessários para levar sua arte aos limites.</p>
+
       <h3>Índice:</h3>
       <ul id="toc">
         <li><a href="#o_que_voce_ve">O que você vê no site</a></li>
@@ -61,10 +68,7 @@
         <li><a href="#flexibilidade_do_css">A flexibilidade do CSS</a></li>
         <li><a href="#divisao_do_css">A divisão do CSS</a></li>
         <li><a href="#modulos_paginas_situacoes">Conhecendo o <strong>body</strong> &mdash;<br />módulos, páginas e situações</a></li>
-
       </ul>
-
-
 
       <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram junto com este no pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma idéia de como é o fluxo de navegação do usuário.</p>
       <p>Não, sério, navegue mesmo. Nos arquivos do pacote e no site da <a href="http://patriciafigueira.com.br" title="Sério. Navegue e compare, isso vai te ajudar a entender a estrutura.">Patricia</a>. Depois que tiver brincado um pouquinho, continue lendo esta página.</p>
@@ -145,7 +149,7 @@
         <li>O número no início (<code>04</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <strong>quarta página</strong> do módulo <em>pictures</em> &mdash; que trata da seleção de fotos;</li>
         <li>O primeiro par de parênteses (<code>(pictures)</code>) apresenta o <strong>módulo</strong>. O arquivo em questão pertence ao módulo <em>pictures</em>;</li>
         <li>A seqüência de palavras que há entre o primeiro e o segundo pares de parênteses (<code>_best_galleries_selection</code>) reflete a combinação de <code>classes</code> e <code>id&rsquo;s</code> que aparece na tag <code>body</code> deste arquivo. Neste exemplo, o HTML vai exibir <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code> &mdash; ou seja, esta página pertence à categoria <em>best_galleries</em> (melhores galerias de imagens) e sua identidade é <em>selection</em>. Lembre que o &ldquo;pictures&rdquo; que aparece no <code>body</code> é a última palavra da <code>classe</code>, logo reflete o <em>módulo</em>;</li>
-        <li>O segundo par de parênteses (<code>(04_pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; logo, apresentam vários estágios de comportamento; para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda a precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo;: o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência.</li>
+        <li>O segundo par de parênteses (<code>(04_pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; logo, apresentam vários estágios de comportamento; para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
       </ul>
 
       <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todos</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>4</strong> módulos distintos, <strong>13</strong> páginas diferentes e <strong>24</strong> situações possíveis.</p>
@@ -153,88 +157,192 @@
 
       <table>
         <tr>
-          <th>4 Módulos</th><th>13 Páginas</th><th>24 situações</th>
+          <th>4 Módulos</th><th>13 Páginas</th><th>24 situações</th><th>Arquivo / Detalhes da tag body</th>
         </tr>
         <tr>
           <td rowspan="16">.pictures</td>
           <td>#index</td>
+          <td><span>(página inicial do módulo de imagens, com todas as melhores galerias de imagens)</span></td>
+          <td>
+            <a href="01(pictures)_best_galleries_index.html">01(pictures)_best_galleries_index.html</a>
+            <code>&lt;body class="best_galleries pictures" id="index"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td>#gallery</td>
+          <td><span>(interior de uma galeria de imagens)</span></td>
+          <td>
+            <a href="02(pictures)_best_galleries_gallery.html">02(pictures)_best_galleries_gallery.html</a>
+            <code>&lt;body class="best_galleries pictures" id="gallery"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td rowspan="2">#picture</td>
-          <td>horizontal</td>
+          <td>1. horizontal <span>(imagem em tamanho grande, deitada)</span></td>
+          <td>
+            <a href="03(pictures)_best_galleries_picture(1_horizontal).html">03(pictures)_best_galleries_picture(1_horizontal).html</a>
+            <code>&lt;body class="best_galleries pictures" id="picture"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>vertical</td>
+          <td>2. vertical <span>(imagem em tamanho grande, em pé)</span></td>
+          <td>
+            <a href="03(pictures)_best_galleries_picture(2_vertical).html">03(pictures)_best_galleries_picture(2_vertical).html</a>
+            <code>&lt;body class="best_galleries pictures" id="picture"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td rowspan="4">#selection</td>
-          <td>initial</td>
+          <td>1. initial <span>(seleção de imagens: estado inicial)</span></td>
+          <td>
+            <a href="04(pictures)_best_galleries_selection(01_initial).html">04(pictures)_best_galleries_selection(01_initial).html</a>
+            <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>facebox spinner</td>
+          <td>2. facebox spinner <span>(seleção de imagens: spinner de ampliação de imagem)</span></td>
+          <td>
+            <a href="04(pictures)_best_galleries_selection(02_facebox_spinner).html">04(pictures)_best_galleries_selection(02_facebox_spinner).html</a>
+            <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>facebox</td>
+          <td>3. facebox <span>(seleção de imagens: imagem ampliada via &ldquo;facebox&rdquo;)</span></td>
+          <td>
+            <a href="04(pictures)_best_galleries_selection(03_facebox).html">04(pictures)_best_galleries_selection(03_facebox).html</a>
+            <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>pictures in cart</td>
+          <td>4. pictures in cart <span>(seleção de imagens: imagens selecionas)</span></td>
+          <td>
+            <a href="04(pictures)_best_galleries_selection(04_pictures_in_cart).html">04(pictures)_best_galleries_selection(04_pictures_in_cart).html</a>
+            <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td rowspan="4">#checkout</td>
-          <td>initial</td>
+          <td>1. initial  <span>(checkout de imagens: estado inicial)</span></td>
+          <td>
+            <a href="05(pictures)_best_galleries_checkout(01_initial).html">05(pictures)_best_galleries_checkout(01_initial).html</a>
+            <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>facebox spinner</td>
+          <td>2. facebox spinner <span>(checkout de imagens: spinner de ampliação de imagem)</span></td>
+          <td>
+            <a href="05(pictures)_best_galleries_checkout(02_facebox_spinner).html">05(pictures)_best_galleries_checkout(02_facebox_spinner).html</a>
+            <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>facebox</td>
+          <td>3. facebox <span>(checkout de imagens: imagem ampliada via &ldquo;facebox&rdquo;)</span></td>
+          <td>
+            <a href="05(pictures)_best_galleries_checkout(03_facebox).html">05(pictures)_best_galleries_checkout(03_facebox).html</a>
+            <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>pictures in cart</td>
+          <td>4. form spinner <span>(checkout de imagens: envio da confirmação)</span></td>
+          <td>
+            <a href="05(pictures)_best_galleries_checkout(04_form_spinner).html">05(pictures)_best_galleries_checkout(04_form_spinner).html</a>
+            <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td>#pictures_sent</td>
+          <td><span>(fim da seleção de imagens, com link de volta para a galeria)</span></td>
+          <td>
+            <a href="06(pictures)_best_galleries_pictures_sent.html">06(pictures)_best_galleries_pictures_sent.html</a>
+            <code>&lt;body class="pictures" id="pictures_sent"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td rowspan="2">#search</td>
-          <td>invalid</td>
+          <td>invalid  <span>(busca inválida, com sugestões válidas de busca)</span></td>
+          <td>
+            <a href="07(pictures)_search(01_invalid).html">07(pictures)_search(01_invalid).html</a>
+            <code>&lt;body class=" pictures" id="search"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>valid</td>
+          <td>valid  <span>(busca válida, com imagens vindas de galerias diversas)</span></td>
+          <td>
+            <a href="07(pictures)_search(02_valid).html">07(pictures)_search(02_valid).html</a>
+            <code>&lt;body class=" pictures" id="search"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td>#search_picture</td>
+          <td><span>(imagem em tamanho grande encontrada numa busca, com link para sua respectiva galeria)</span></td>
+          <td>
+            <a href="08(pictures)_full_galleries_search_picture.html">08(pictures)_full_galleries_search_picture.html</a>
+            <code>&lt;body class="full_galleries pictures" id="search_picture"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td>.text</td>
           <td>#index</td>
+          <td><span>(página inicial do módulo de texto, com texto institucional)</span></td>
+          <td>
+            <a href="09(text)_quem_somos_index.html">09(text)_quem_somos_index.html</a>
+            <code>&lt;body class="quem_somos text" id="index"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td rowspan="4">.contact</td>
           <td rowspan="4">#index</td>
-          <td>initial</td>
+          <td>initial <span>(página inicial do módulo de contato, com o formulário de contato em estado inicial)</span></td>
+          <td>
+            <a href="10(contact)_index(01_initial).html">10(contact)_index(01_initial).html</a>
+            <code>&lt;body class="contact" id="index"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>form spinner</td>
+          <td>form spinner <span>(página de contato: envio da mensagem)</span></td>
+          <td>
+            <a href="10(contact)_index(02_form_spinner).html">10(contact)_index(02_form_spinner).html</a>
+            <code>&lt;body class="contact" id="index"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>error</td>
+          <td>error <span>(página de contato: mensagem de erro com destaque para e-mail inválido)</span></td>
+          <td>
+            <a href="10(contact)_index(03_error).html">10(contact)_index(03_error).html</a>
+            <code>&lt;body class="contact" id="index"&gt;</code>
+          </td>
         </tr>
         <tr>
-          <td>success</td>
+          <td>success <span>(página de contato: mensagem de envio bem-sucedido)</span></td>
+          <td>
+            <a href="10(contact)_index(03_success).html">10(contact)_index(03_success).html</a>
+            <code>&lt;body class="contact" id="index"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td rowspan="3">.application</td>
           <td>#page_not_found</td>
+          <td><span>(página de erro 404: página não encontrada)</span></td>
+          <td>
+            <a href="11(application)_page_not_found.html">11(application)_page_not_found.html</a>
+            <code>&lt;body class="application" id="page_not_found"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td>#server_error</td>
+          <td><span>(página de erro 500: erro no servidor remoto)</span></td>
+          <td>
+            <a href="12(application)_server_error.html">12(application)_server_error.html</a>
+            <code>&lt;body class="application" id="server_error"&gt;</code>
+          </td>
         </tr>
         <tr>
           <td>#timeout</td>
+          <td><span>(página de erro timeout: demora do repositório em enviar as fotos ao servidor)</span></td>
+          <td>
+            <a href="13(application)_timeout.html">13(application)_timeout.html</a>
+            <code>&lt;body class="application" id="timeout"&gt;</code>
+          </td>
         </tr>
       </table>
 <!--

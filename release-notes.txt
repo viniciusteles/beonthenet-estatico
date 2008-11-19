@@ -21,3 +21,8 @@
 * Consertamos os links da página instrucoes.html. Agora eles levam a algum lugar.
 * Inserimos uma linha com a folha de estilo 03_color_screen_handheld contendo efetivamente o media="handheld".
 * Novas seções, e uma tabela com todas as situações possíveis.
+
+# 19/nov/2008
+
+* Inserimos uma introdução que explica ao designer exatamente o que ele deve fazer: **puro CSS**.
+* Aprimoramento da tabela de situações possíveis, relacionando todos os arquivos HTML a cada uma delas, e suas respectivas tags ``body``.
