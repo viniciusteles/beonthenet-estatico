@@ -488,4 +488,8 @@ code {
   color:                  #111;
   background:             #EFE3C3; 
 }
+
+.instructions table * {
+  border-color:           #E0C99B;
+}
 /* /Instructions */

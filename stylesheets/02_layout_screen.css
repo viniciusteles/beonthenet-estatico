@@ -588,24 +588,52 @@ body > #facebox {
 
 
 
-/* Instrucitons */
-body.instructions #main_content p {
+/* Instructions */
+body.instructions #toc {
+  float:                  left;
+  padding:                .75em .75em .75em 1.5em;
+  background:             #EFE3C3;
+  border:                 1px solid #E0C99B;
+  margin:                 0 2em 1em 0 !important;
+}
+
+.instructions #main_content p {
   margin:                 1em 0;
 }
 
-body.instructions #main_content h2 {
-  margin:                 2em 0 1.5em 0;
+.instructions #main_content h2 {
+  clear:                  left;
+  padding:                1.5em 0 1em 0;
 }
 
-body.instructions #main_content dl {
+.instructions #main_content dl, 
+.instructions #main_content ul {
   margin:                 1.6em 6em;
 }
 
-body.instructions #main_content dd {
+.instructions #main_content dd {
   margin:                 0 0 1em 2.5em;
 }
 
 code {
-  padding:                .5em;
+  padding:                .3em .5em;
 }
+
+.instructions #main_content ul li {
+  margin-bottom:          1em;
+}
+
+.instructions table {
+  width:                  70%;
+  border-collapse:        collapse;
+  margin:                 auto;
+}
+
+.instructions table * {
+  border:                 1px solid;
+}
+
+.instructions td {
+  padding:                .3em 1em;
+} 
 /* /Instructions */

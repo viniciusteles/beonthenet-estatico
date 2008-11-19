@@ -14,3 +14,10 @@
 * Movemos os diretórios images e stylesheets para a raiz.
 * Retiramos todos os eventos de javascript que estavam presentes em algumas páginas HTML.
 * Melhoramos a formatação da ficha técnica para facilitar a compreensão de sua organização.
+
+# 18/nov/2008
+
+* Página de instruções atualizada, com índice.
+* Consertamos os links da página instrucoes.html. Agora eles levam a algum lugar.
+* Inserimos uma linha com a folha de estilo 03_color_screen_handheld contendo efetivamente o media="handheld".
+* Novas seções, e uma tabela com todas as situações possíveis.
