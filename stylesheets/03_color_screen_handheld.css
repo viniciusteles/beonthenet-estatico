@@ -480,6 +480,11 @@ button:hover {
 
 
 /* Instructions */
+body.instructions #toc {
+  background:             #EFE3C3;
+  border-color:           #E0C99B;
+}
+
 body.instructions #main_content dt {
   color:                  #940029;
 }
@@ -500,5 +505,10 @@ code {
 
 .instructions td span {
   color:                  #BAA984;
+}
+
+pre {
+  background:             #EFE3C3;
+  border-color:           #E0C99B;
 }
 /* /Instructions */

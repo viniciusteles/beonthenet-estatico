@@ -12,6 +12,7 @@
     <link href="stylesheets/02_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/03_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/03_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/04_layout_print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
       <link href="stylesheets/layout_ie.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -24,14 +25,8 @@
 
   <body class="instructions text" id="index">  
     <div id='header'>
-      <h1 id='logo_print'>
-        <img alt="Texto alternativo." height="0" src="images/logo_print.gif" width="0" />
-      </h1>
-      <h1 id='logo_screen'>
-        <a href="#">
-          <img alt="Texto alternativo." src="images/logo.gif" title="Um title." />
-        </a>
-      </h1>
+      <h1 id='logo_print'><img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" /></h1>
+      <h1 id='logo_screen'><a href="#"><img alt="Patricia Figueira" src="images/logo.gif" title="Título do logotipo de tela. Existe também um de impressão." /></a></h1>
       <ul>
         <li class="best_galleries"><a href="#">Melhores</a></li>
         <li class="full_galleries"><a href="#">Álbuns</a></li>
@@ -58,16 +53,26 @@
 
       <p>Bem simples. Você tem de pegar os arquivos HTML contidos neste pacote e dar <strong>todo um novo CSS a ele</strong>.</p>
       <p>Estas páginas, por enquanto, estão com o CSS que as tornam semelhantes ao site da fotógrafa de casamentos <a href="http://patriciafigueira.com.br">Patricia Figueira</a>. Imagine que ela contratou você pedindo uma reformulação geral do layout do site. Pois é esta a tarefa: usar o HTML já existente e construir um novo template sobre ele, usando <strong>puro CSS</strong>.</p>
-      <p>Como designer, você não precisa tocar no HTML nem no JavaScript &mdash; aliás, recomendamos que, para que seu CSS seja compatível com o <strong>Be on the Net</strong>, você realmente mantenha intactos os HTML&rsquo;s destes arquivos!</p>
+      <p>Como designer, você não precisa tocar no HTML nem no JavaScript &mdash; aliás, recomendamos que, para que seu CSS seja compatível com o <strong>Be on the Net</strong>, você realmente mantenha intactos os HTML&rsquo;s destes arquivos! Ou melhor: a <strong>única</strong> parte dos HTML&rsquo;s em que você vai mexer livremente são as tags <code>link</code> dentro do <code>head</code>, que chamam seus arquivos CSS.</p>
       <p>Como vai ficar a aparência, como vão ser diagramadas os thumbnails das imagens e os outros elementos, isso só é limitado pela sua criatividade. As instruções a seguir vão servir como orientação para você se encontrar no HTML e saber todos os macetes necessários para levar sua arte aos limites.</p>
 
       <h3>Índice:</h3>
+
       <ul id="toc">
         <li><a href="#o_que_voce_ve">O que você vê no site</a></li>
         <li><a href="#modulos_do_beonthenet">Os módulos do Be on the Net</a></li>
         <li><a href="#flexibilidade_do_css">A flexibilidade do CSS</a></li>
         <li><a href="#divisao_do_css">A divisão do CSS</a></li>
-        <li><a href="#modulos_paginas_situacoes">Conhecendo o <strong>body</strong> &mdash;<br />módulos, páginas e situações</a></li>
+        <li><a href="#modulos_paginas_situacoes">Conhecendo o <strong>body</strong> &mdash;<br />módulos, páginas e situações</a>
+          <ul>
+            <li><a href="#tabela_modulos_paginas_situacoes">Tabela de modulos, páginas e situações</a></li>
+          </ul>
+        </li>
+        <li><a href="#convencoes">Convenções</a>
+          <ul>
+            <li><a href="#logotipos">Logotipos</a></li>
+          </ul>
+        </li>
       </ul>
 
       <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram junto com este no pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma idéia de como é o fluxo de navegação do usuário.</p>
@@ -153,7 +158,9 @@
       </ul>
 
       <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todos</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>4</strong> módulos distintos, <strong>13</strong> páginas diferentes e <strong>24</strong> situações possíveis.</p>
-      <p>Segue uma tabela que mostra a divisão nítida entre módulos, páginas e situações:</p>
+      <p>A seguir, uma tabela que mostra a divisão nítida entre módulos, páginas e situações, e aponta os respectivos arquivos deste projeto.</p>
+
+      <h3 id="tabela_modulos_paginas_situacoes">Tabela de módulos, páginas e situações:</h3>
 
       <table>
         <tr>
@@ -345,13 +352,37 @@
           </td>
         </tr>
       </table>
-<!--
-      <h2>Convenções:</h2>
 
+      <p>Este conhecimento sobre módulos, páginas, situações e tags <code>body</code> vai ser bem útil daqui para frente.</p>
+
+
+      <h2 id="convencoes">Convenções:</h2>
+
+      <p>Certas partes do seu design vão ser integradas diretamente ao HTML: logotipos, chamadas de CSS, declarações de mídia, favicons etc. Mas como o designer não vai ter acesso direto à estrutura (HTML) dinâmica do <strong>Be on the Net</strong>, a solução é recorrer a certas <strong>convenções</strong>. Se o designer criar seus arquivos seguindo estas convenções, o sistema do <strong>Be on the Net</strong> cuida de automatizar tudo e injeta o que for necessário direto no HTML. São elas:</p>
+
+      <h3 id="logotipos">Logotipos</h3>
+
+      <p>Os logotipos são imagens especiais. Das imagens que o designer pode inserir livremente, os logotipos são as únicas que não se tornam <em>background-images</em>, mas são integradas ao próprio HTML, por causa de sua importância para o Google. Há dois tipos de logotipos: para a visualização em tela e para visualização em impressos.</p>
+
+      <p><strong>Para logotipos de tela:</strong> o nome do seu arquivo deve ser somente <strong>&ldquo;logo&rdquo;</strong>. O sistema reconhece as extensões <em>.gif</em>, <em>.jpeg</em>, <em>.jpg</em> e <em>.png</em>; logo, vai aceitar seu logotipo se ele se chamar <strong>logo.gif</strong>, <strong>logo.jpeg</strong>, <strong>logo.jpg</strong> ou <strong>logo.png</strong>. Por exemplo, se você criou um logotipo para tela chamado <strong>logo.png</strong>, o sistema vai identificá-lo e gerar o seguinte código HTML:</p>
+
+      <pre><code>&lt;h1 id="logo_screen"&gt;
+  &lt;a href="/"&gt;
+    &lt;img alt="" src="images/logo.png" title="" /&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;</code></pre>
+
+      <h4>Nota: as propriedades <code>alt</code> e <code>title</code> vão variar dependendo da configuração da conta do cliente.</h4>
+
+      <p><strong>Para logotipos de impressão:</strong> a convenção é nomear o arquivo como <strong>&ldquo;logo_print&rdquo;</strong>. O sistema reconhece as mesmas extensões do logo de tela, logo vai aceitar seu logotipo se ele se chamar <strong>logo_print.gif</strong>, <strong>logo_print.jpeg</strong>, <strong>logo_print.jpg</strong> ou <strong>logo_print.png</strong>. Inserir um logotipo de impressão não é obrigatório. Mas fica bonitão!</p>
+
+      <p>Se o sistema não encontrar nenhum arquivo de logotipo, vai em vez disso usar o <strong>nome da conta</strong> do usuário como &ldquo;logo textual&rdquo;. Por exemplo, experimente retirar os arquivos de logotipo que vieram neste pacote, e você vai ver que o site vai se chamar somente &ldquo;Patricia Figueira&rdquo;.</p>
+        
+        
+<!--
       <h3>CSS e mídia</h3>
       <h3>Ordenação do CSS por mídia</h3>
       <h3>Comentários condicionais para o IEca</h3>
-      <h3>Logotipos (screen, print)</h3>
       <h3>Spinners</h3>
       <h3>Favicon</h3>
 

@@ -592,8 +592,7 @@ body > #facebox {
 body.instructions #toc {
   float:                  left;
   padding:                .75em .75em .75em 1.5em;
-  background:             #EFE3C3;
-  border:                 1px solid #E0C99B;
+  border:                 1px solid;
   margin:                 0 2em 1em 0 !important;
 }
 
@@ -607,7 +606,7 @@ body.instructions #toc {
 }
 
 .instructions #main_content h3 {
-  padding:                1.5em 0 1em 0;
+  padding:                1em 0 .75em 0;
 }
 
 .instructions #main_content dl, 
@@ -619,16 +618,19 @@ body.instructions #toc {
   margin:                 0 0 1em 2.5em;
 }
 
-code {
-  padding:                .3em .5em;
-}
-
 .instructions #main_content ul li {
   margin-bottom:          1em;
 }
 
+.instructions #main_content ul ul {
+  margin:                 0 1em;
+}
+
+code {
+  padding:                .3em .5em;
+}
+
 .instructions table {
-/*  width:                  100%;*/
   border-collapse:        collapse;
   margin:                 auto;
 }
@@ -661,5 +663,16 @@ code {
 .instructions td code {
   display:                block;
   margin-top:             .75em;
+}
+
+pre {
+  padding:                .5em 3em;
+  border:                 1px solid;
+  margin:                 1em 0;
+  overflow:               auto;
+}
+
+.instructions #main_content h4 {
+  margin-top:             -1em;
 }
 /* /Instructions */

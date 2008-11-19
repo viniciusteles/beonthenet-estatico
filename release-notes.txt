@@ -25,4 +25,7 @@
 # 19/nov/2008
 
 * Inserimos uma introdução que explica ao designer exatamente o que ele deve fazer: **puro CSS**.
-* Aprimoramento da tabela de situações possíveis, relacionando todos os arquivos HTML a cada uma delas, e suas respectivas tags ``body``.
+* Aprimoramos a tabela de situações possíveis, relacionando todos os arquivos HTML a cada uma delas, e suas respectivas tags ``body``.
+* Começamos a falar de **convenções**, abordando o tópico de _logotipos_.
+* Inserimos uma nova folha de estilos: 04_layout_print.css, para demonstrar como fica o logotipo de impressão.
+* Fizemos pequenas mudanças no ``div#header``, ajustando o ``alt`` e o ``title`` dos logotipos para melhor ilustrar o caso do logotipo de impressão.

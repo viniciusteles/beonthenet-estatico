@@ -42,6 +42,12 @@ h4 a:focus, h4 a:hover {
 
 
 /* Header tabbed menu */
+#header h1 img {
+  font-size:              60%;
+  text-transform:         lowercase;
+  word-spacing:           1em;
+}
+
 #header li {
   font-size:              85%;
 	line-height:            1em;
@@ -324,8 +330,17 @@ body.instructions #main_content dt {
   list-style:             circle;
 }
 
+.instructions #main_content ul ul li {
+  list-style:             disc;
+  font-size:              95%;
+}
+
 code {
-  font:                   normal normal normal 110%/1.2em "Lucida Console", "Monaco", monospace; 
+  font:                   normal normal normal 80%/1.2em "Lucida Console", "Monaco", monospace; 
+}
+
+p code {
+  font-size:              110%;
 }
 
 .instructions th {
@@ -340,8 +355,7 @@ code {
   font-size:              82%;
 }
 
-.instructions td a, 
-.instructions td code {
+.instructions td a {
   font-size:              80%;
 }
 /* /Instructions */
