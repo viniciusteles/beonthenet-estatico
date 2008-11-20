@@ -29,3 +29,4 @@
 * Começamos a falar de **convenções**, abordando o tópico de _logotipos_.
 * Inserimos uma nova folha de estilos: 04_layout_print.css, para demonstrar como fica o logotipo de impressão.
 * Fizemos pequenas mudanças no ``div#header``, ajustando o ``alt`` e o ``title`` dos logotipos para melhor ilustrar o caso do logotipo de impressão.
+* Novas perguntas e respostas foram acrescentas ao final do arquivo de FAQ.

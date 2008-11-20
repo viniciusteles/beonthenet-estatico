@@ -1,4 +1,3 @@
-
 # A marcação (HTML) poderá ser alterada?
 
 Em princípio não, isto é, o designer não tem como alterar o HTML. Entretanto, até a data do lançamento, podemos fazer alterações no HTML com base nas sugestões de vocês, caso consideremos adequado ao sistema como um todo. Sendo assim, se houver algo que você queira sugerir, por favor, faça isso.
@@ -40,3 +39,27 @@ Os spinners seguem uma convenção de nomes que deve ser respeitada pelo desgine
 
 * Spinners para formulário: spinner_form.gif
 * Spinner para a ampliação de foto na seleção: spinner_selection.gif 
+
+# Existe algum briefing mesmo que mínimo para ser seguido?
+
+Não há nenhum briefing. Mas, nossa sugestão inicial é que você leia com atenção as instruções que seguem juntamente com os arquivos HTML. Em seguida, pense em como você refaria o site da Patricia Figueira, que está no exemplo, mas com um layout diferente. Neste momento, isso é tudo de que precisamos.
+
+# No template, os designers fariam a direção de arte, os htmls, css e javascripts?
+
+A parte que cabe aos designers é a direção de arte e CSS. HTMLs são os que já estão lá e não podem sofrer alterações. Javascripts também são conosco.
+
+# É permitido uso de Image Replacement para convenções como menu e Títulos (h1, h2)?
+
+Se estivéssemos construindo um layout personalizado para um cliente do Be on the Net, não haveria nenhum problema em usar Image Replacement para estes elementos. Entretanto, em se tratando de um template, isso certamente seria problemático. O que acontece é que boa parte dos títulos, bem como o menu, são formados de conteúdo dinâmico. Por exemplo, cada cliente vai ter, no menu, um conjunto específico de opções, cada qual com um nome em particular. Enquanto a Pati usa "melhores" e "álbuns completos", outros usarão "fotos de 15 anos", "fotos de formatura" etc. Sendo assim, usar image replacement para substituir o texto seria ok para algo bem personalizado, mas compromete bastante quando se trata de um template.
+
+# Vocês usarão algum tipo de framework Javascript para convenções como animações, tooltip?
+
+Não. Não haverá nenhum tipo de Javascript para isso. A única parte que usa Javascript intensivamente é a seleção de fotos para um álbum.
+
+# Posso usar PNG transparente para alguns elementos?
+
+PNG transparente é problemático com o IE6. Então, você pode usar, desde que faça uma exceção para o IE6, na qual coloque uma alternativa que funcione para ele.
+
+# Vocês estão usando já o CSS3? E é obrigatório somente o uso dele?
+
+Não é necessário que se use CCS3. O que precisamos é que o CSS seja sempre válido e que funcione em todos os principais navegadores: IE (6 e 7), Firefox, Safari, Opera e Chrome. 
