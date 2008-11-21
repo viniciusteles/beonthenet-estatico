@@ -30,6 +30,7 @@
       <ul>
         <li class="best_galleries"><a href="#">Melhores</a></li>
         <li class="full_galleries"><a href="#">Álbuns</a></li>
+        <li class="all_videos"><a href="#">Vídeos</a></li>
         <li class="quem_somos"><a href="#">Quem somos</a></li>
         <li class='contact'><a href="#">Contato</a></li>
       </ul>
@@ -51,10 +52,10 @@
 
       <h2>Para começo de conversa: o que eu, designer, tenho de fazer afinal?</h2>
 
-      <p>Bem simples. Você tem de pegar os arquivos HTML contidos neste pacote e dar <strong>todo um novo CSS a ele</strong>.</p>
+      <p>Bem simples. Você tem de pegar os arquivos HTML contidos neste pacote e dar <strong>todo um novo layout a ele</strong>. Primeiro, através de uma prévia em forma de <strong>imagem de Photoshop</strong>; depois, através de um <strong>CSS</strong> só seu.</p>
       <p>Estas páginas, por enquanto, estão com o CSS que as tornam semelhantes ao site da fotógrafa de casamentos <a href="http://patriciafigueira.com.br">Patricia Figueira</a>. Imagine que ela contratou você pedindo uma reformulação geral do layout do site. Pois é esta a tarefa: usar o HTML já existente e construir um novo template sobre ele, usando <strong>puro CSS</strong>.</p>
       <p>Como designer, você não precisa tocar no HTML nem no JavaScript &mdash; aliás, recomendamos que, para que seu CSS seja compatível com o <strong>Be on the Net</strong>, você realmente mantenha intactos os HTML&rsquo;s destes arquivos! Ou melhor: a <strong>única</strong> parte dos HTML&rsquo;s em que você vai mexer livremente são as tags <code>link</code> dentro do <code>head</code>, que chamam seus arquivos CSS.</p>
-      <p>Como vai ficar a aparência, como vão ser diagramadas os thumbnails das imagens e os outros elementos, isso só é limitado pela sua criatividade. As instruções a seguir vão servir como orientação para você se encontrar no HTML e saber todos os macetes necessários para levar sua arte aos limites.</p>
+      <p>Como vai ficar a aparência, como vão ser diagramados os thumbnails das imagens e os outros elementos, isso só é limitado pela sua criatividade. Envie-nos seu layout de Photoshop e daremos nosso feedback para você começar seu CSS. As instruções a seguir vão servir como orientação para você se encontrar no HTML e saber todos os macetes necessários para levar sua arte aos limites.</p>
 
       <h3>Índice:</h3>
 
@@ -99,7 +100,7 @@
 
       <p>Agora dê uma nova olhada no <strong>código HTML</strong> dos arquivos numerados deste pacote. Mais precisamente na tag <code>body</code> de cada um. Repare que cada um deles tem pelo menos um <code>id</code> e uma <code>classe</code>.</p>
       <p>Se você der a esta tag <code>body</code> e a seus <code>id&rsquo;s</code> e <code>classes</code> carinho, colinho e atenção, já vai dar um grande passo em direção a fazer o sistema se dobrar ao seu design.</p>
-      <p>A última palavra de cada <code>classe</code> reflete um esquema de divisão que criamos (Ex.: <code>body id="index" class="instructions <em>text</em>"</code>). <strong>Be on the Net</strong> é um sistema dividido em &ldquo;módulos&rdquo;, ou <em>bundles</em>, como temos chamado na Improve It. Hoje, existem <strong>quatro</strong> módulos ou <em>bundles</em> básicos:</p>
+      <p>A última palavra de cada <code>classe</code> reflete um esquema de divisão que criamos (Ex.: <code>body id="index" class="instructions <em>text</em>"</code>). <strong>Be on the Net</strong> é um sistema dividido em &ldquo;módulos&rdquo;, ou <em>bundles</em>, como temos chamado na Improve It. Hoje, existem <strong>cinco</strong> módulos ou <em>bundles</em> básicos:</p>
 
       <dl>
         <dt>Pictures</dt>
@@ -110,9 +111,11 @@
           <dd>O módulo de <strong>contato</strong> do sistema. É composto por uma única página de contato, com algumas possibilidades de comportamento;</dd>
         <dt>Application</dt>
           <dd>O módulo das páginas de erro. São três: o erro <strong>404</strong> (página não encontrada), <strong>500</strong> (erro de servidor), e <strong>timeout</strong> (servidor ocupado);</dd>
+        <dt>Videos</dt>
+          <dd>Módulo dos <strong>vídeos</strong>. Compreende basicamente duas páginas: a lista de todos os vídeos, e a visualização de um vídeo em tamanho grande;</dd>
       </dl>
 
-      <p>... Familiar? Agora você pode perceber que o início de cada arquivo deste pacote leva um destes nomes: <em>pictures</em>, <em>text</em>, <em>contact</em> ou <em>application</em>.</p>
+      <p>... Familiar? Agora você pode perceber que o início de cada arquivo deste pacote leva um destes nomes: <em>pictures</em>, <em>text</em>, <em>contact</em>, <em>application</em>, ou [inédito no site da Patricia] <em>videos</em>.</p>
 
       <h2 id="flexibilidade_do_css">HTML e a flexibilidade do CSS:</h2>
 
@@ -146,7 +149,7 @@
 
       <h2 id="modulos_paginas_situacoes">Conhecendo o <code>body</code> &mdash; módulos, páginas e situações:</h2>
 
-      <p>Até hoje, existem, como <a href="#modulos_do_beonthenet" title="Para recapitular.">mencionados antes</a>, <strong>quatro</strong> módulos no Be on the Net: <em>pictures</em>, <em>text</em>, <em>contact</em> e <em>application</em>. Agora você vai entender o porquê dos nomes esquisitos e gigantescos de cada arquivo deste pacote. Depois de explicado, você vai saber se guiar direitinho por entre eles.</p>
+      <p>Até hoje, existem, como <a href="#modulos_do_beonthenet" title="Para recapitular.">mencionados antes</a>, <strong>cinco</strong> módulos no Be on the Net: <em>pictures</em>, <em>text</em>, <em>contact</em>, <em>application</em> e <em>videos</em>. Agora você vai entender o porquê dos nomes esquisitos e gigantescos de cada arquivo deste pacote. Depois de explicado, você vai saber se guiar direitinho por entre eles.</p>
 
       <p>Vamos destrinchar o nome do arquivo <code>04(pictures)_best_galleries_selection(04_pictures_in_cart).html</code> (putz!). É assim:</p>
 
@@ -157,14 +160,14 @@
         <li>O segundo par de parênteses (<code>(04_pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; logo, apresentam vários estágios de comportamento; para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
       </ul>
 
-      <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todos</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>4</strong> módulos distintos, <strong>13</strong> páginas diferentes e <strong>24</strong> situações possíveis.</p>
+      <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todas</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>5</strong> módulos distintos, <strong>15</strong> páginas diferentes e <strong>26</strong> situações possíveis.</p>
       <p>A seguir, uma tabela que mostra a divisão nítida entre módulos, páginas e situações, e aponta os respectivos arquivos deste projeto.</p>
 
       <h3 id="tabela_modulos_paginas_situacoes">Tabela de módulos, páginas e situações:</h3>
 
       <table>
         <tr>
-          <th>4 Módulos</th><th>13 Páginas</th><th>24 situações</th><th>Arquivo / Detalhes da tag body</th>
+          <th>5 Módulos</th><th>15 Páginas</th><th>26 situações</th><th>Arquivo / Detalhes da tag body</th>
         </tr>
         <tr>
           <td rowspan="16">.pictures</td>
@@ -351,6 +354,23 @@
             <code>&lt;body class="application" id="timeout"&gt;</code>
           </td>
         </tr>
+        <tr>
+          <td rowspan="2">.videos</td>
+          <td>#index</td>
+          <td><span>(página inicial do módulo de vídeos, com a lista de todos os vídeos do usuário)</span></td>
+          <td>
+            <a href="14(videos)_all_videos_index.html">14(videos)_all_videos_index.html</a>
+            <code>&lt;body class="all_videos videos" id="index"&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td>#video</td>
+          <td><span>(visualização de um único vídeo, em tamanho grande. Semelhante à página de imagem em tamanho grande.)</span></td>
+          <td>
+            <a href="15(videos)_all_videos_video.html">15(videos)_all_videos_video.html</a>
+            <code>&lt;body class="all_videos videos" id="video"&gt;</code>
+          </td>
+        </tr>
       </table>
 
       <p>Este conhecimento sobre módulos, páginas, situações e tags <code>body</code> vai ser bem útil daqui para frente.</p>
@@ -377,6 +397,7 @@
       <p><strong>Para logotipos de impressão:</strong> a convenção é nomear o arquivo como <strong>&ldquo;logo_print&rdquo;</strong>. O sistema reconhece as mesmas extensões do logo de tela, logo vai aceitar seu logotipo se ele se chamar <strong>logo_print.gif</strong>, <strong>logo_print.jpeg</strong>, <strong>logo_print.jpg</strong> ou <strong>logo_print.png</strong>. Inserir um logotipo de impressão não é obrigatório. Mas fica bonitão!</p>
 
       <p>Se o sistema não encontrar nenhum arquivo de logotipo, vai em vez disso usar o <strong>nome da conta</strong> do usuário como &ldquo;logo textual&rdquo;. Por exemplo, experimente retirar os arquivos de logotipo que vieram neste pacote, e você vai ver que o site vai se chamar somente &ldquo;Patricia Figueira&rdquo;.</p>
+      <h4>Nota: agora que você conhece a convenção de logotipos, experimente trabalhar com logotipo textual &mdash; retire o logo da Patricia Figueira e use o atributo <code>alt</code> que restou da imagem como um logo textual. E estilize-o como bem quiser.</h4>
         
         
 <!--
@@ -402,7 +423,7 @@
 -->
       <h2>Continua no próximo episódio...</h2>
 
-      <p>Este é um arquivo em formato preliminar. O texto contido aqui foi só a ponta do iceberg; há mais coisas que é preciso explicar para você não se perder no código. E os macetes vão dar uma liberdade e uma flexibilidade incríveis ao seu CSS. Aguarde e confie, as atualizações destas instruções vão te dar <strong>o poder</strong>!</p>
+      <p>O texto contido aqui foi só a ponta do iceberg; há mais coisas que é preciso explicar para você não se perder no código. E os macetes vão dar uma liberdade e uma flexibilidade incríveis ao seu CSS. Aguarde e confie, as atualizações destas instruções vão te dar <strong>o poder</strong>!</p>
     </div>
 
     <hr />

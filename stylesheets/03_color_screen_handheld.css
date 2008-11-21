@@ -77,6 +77,7 @@ h4, h4 a {
 
 body.best_galleries #header li.best_galleries, 
 body.full_galleries #header li.full_galleries, 
+body.videos #header li.all_videos, 
 body.quem_somos #header li.quem_somos, 
 body.contact #header li.contact, 
 body.blog #header li.blog {
@@ -84,7 +85,8 @@ body.blog #header li.blog {
 }
 
 body.best_galleries #header li.best_galleries a,
-body.full_galleries #header li.full_galleries a,
+body.full_galleries #header li.full_galleries a, 
+body.videos #header li.all_videos a, 
 body.quem_somos #header li.quem_somos a,
 body.contact #header li.contact a, 
 body.blog #header li.blog a {
@@ -104,6 +106,13 @@ body.best_galleries #header li.best_galleries {
 }
 body.full_galleries #header li.full_galleries {
 	background-image:       url(../images/tab_full_galleries_current.gif);
+}
+
+#header li.all_videos {
+	background-image:       url(../images/tab_videos.gif);
+}
+body.videos #header li.all_videos {
+	background-image:       url(../images/tab_videos_current.gif);
 }
 
 #header li.blog {
@@ -248,23 +257,23 @@ ul#thumbnails a:hover label {
 /* /Data sheet */
 
 
-/* Big picture page */
-#big_picture a span {
+/* Big picture, big video */
+#big_picture a span, #big_video span {
 	background:             transparent url(../images/arrow_previous.gif) no-repeat center right;
 }
-#big_picture a#previous:hover span {
+#big_picture a#previous:hover span, #big_video a#previous:hover span {
 	background-image:       url(../images/arrow_previous_hover.gif);
 }
-#big_picture a#previous:active span {
+#big_picture a#previous:active span, #big_video a#previous:active span {
 	background-image:       url(../images/arrow_previous_active.gif);
 }
-#big_picture #next span {
+#big_picture #next span, #big_video #next span {
 	background:             transparent url(../images/arrow_next.gif) no-repeat center left;
 }
-#big_picture a#next:hover span {
+#big_picture a#next:hover span, #big_video a#next:hover span {
 	background-image:       url(../images/arrow_next_hover.gif);
 }
-#big_picture a#next:active span {
+#big_picture a#next:active span, #big_video a#next:active span {
 	background-image:       url(../images/arrow_next_active.gif);
 }
 
@@ -274,10 +283,13 @@ ul#thumbnails a:hover label {
 }
 
 #big_picture label {
-  color:                  #940029;
   background:             #F6F0DB;
 }
-/* /Big picture page */
+
+#big_video label span {
+  background:             none;
+}
+/* /Big picture, big video */
 
 
 /* Tags */

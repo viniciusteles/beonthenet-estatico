@@ -14,7 +14,7 @@ Não. Caso o cliente tenha um logotipo em forma de imagem, ele poderá fazer o u
 * Se houver um arquivo chamado logo_print.gif (ou .jpg, .jpeg, .png), será gerada outra tag <img> no source do HTML para que este logo seja mostrado apenas no caso de impressão da página.
 * Se nenhum destes arquivos for localizado, o sistema simplesmente mostrará o nome fantasia do domínio (nome do site). No caso da Patricia, por exemplo, seria "Patricia Figueira". Este nome é cadastrado na área administrativa do Be on the Net.
 
-Em suma, um cliente pode ter um logo em formato de imagem, desde que ele nos forneça um. No exercício que você irá fazer de criar um template, se você quiser criar um negócio fictício e associar um logo a ele, sinta-se à vontade para fazê-lo.
+Em suma, um cliente pode ter um logo em formato de imagem, desde que ele nos forneça um. Mas há aqueles que vão usar logos textuais mesmo. No exercício que você irá fazer de criar um template, sugerimos que você **ignore o atual logotipo da Patricia Figueira e estilize o atributo ``alt`` como se fosse um logotipo textual**.
 
 # Será possível inserir tags de CSS e/ou Script adicionais (para image replacement, talvez)?
 
@@ -51,6 +51,8 @@ A parte que cabe aos designers é a direção de arte e CSS. HTMLs são os que j
 # É permitido uso de Image Replacement para convenções como menu e Títulos (h1, h2)?
 
 Se estivéssemos construindo um layout personalizado para um cliente do Be on the Net, não haveria nenhum problema em usar Image Replacement para estes elementos. Entretanto, em se tratando de um template, isso certamente seria problemático. O que acontece é que boa parte dos títulos, bem como o menu, são formados de conteúdo dinâmico. Por exemplo, cada cliente vai ter, no menu, um conjunto específico de opções, cada qual com um nome em particular. Enquanto a Pati usa "melhores" e "álbuns completos", outros usarão "fotos de 15 anos", "fotos de formatura" etc. Sendo assim, usar image replacement para substituir o texto seria ok para algo bem personalizado, mas compromete bastante quando se trata de um template.
+
+Há, no entanto, espaço para image replacement em dois pontos: na paginação (div="pages") e na página de imagens e vídeos grandes, nos links Anterior e Próximo. Nestes casos, há um ``span`` vazio à espera de image replacement, para imagens como setas.
 
 # Vocês usarão algum tipo de framework Javascript para convenções como animações, tooltip?
 

@@ -70,11 +70,12 @@ a {
 
 #header li a {
   padding:                .5em 1.2em 1em 2.4em;
-  margin-right:           -.25em;
+  margin-right:           -.5em;
 }
 
 body.best_galleries #header li.best_galleries, 
 body.full_galleries #header li.full_galleries, 
+body.all_videos #header li.all_videos, 
 body.quem_somos #header li.quem_somos, 
 body.contact #header li.contact, 
 body.blog #header li.blog {
@@ -117,6 +118,7 @@ ul#thumbnails {
 
 ul#thumbnails li {
 	float:                  left;
+	width:                  250px;
   margin:                 0 3.9em 2.5em 0;
 }
 
@@ -141,6 +143,15 @@ ul#thumbnails li div a label {
 	position:               absolute;
 	bottom:                 3px;
 	left:                   6px;
+}
+
+
+body.videos #thumbnails h3 {
+  height:                 2em;
+}
+
+body.videos #thumbnails img {
+  width:                  240px;
 }
 /* /Thumbnails */
 
@@ -226,8 +237,8 @@ ul#thumbnails li div a label {
 /* /Data sheet */
 
 
-/* Big picture page */
-#big_picture {
+/* Big picture, big video */
+#big_picture, #big_video {
 	width:                  54.5em;
 	min-height:             33.25em;
 	height:                 auto !important;
@@ -236,27 +247,27 @@ ul#thumbnails li div a label {
 	position:               relative;
 }
 
-#big_picture a {
+#big_picture a, #big_video a {
 	width:                  4.75em;
-	position:               absolute;
+  position:               absolute;
 	top:                    18em;
 }
 
-#big_picture #previous {
+#big_picture #previous, #big_video #previous {
 	left:                   -2.5em;
 }
-#big_picture #next {
+#big_picture #next, #big_video #next {
 	right:                  -2.5em;
 }
 
-#big_picture a span {
+#big_picture a span, #big_video a span {
 	width:                  101%;
 	height:                 60px;
 	position:               absolute;
 }
 
 #big_picture img {
-	padding:                2px;
+  padding:                2px;
 	border:                 1px solid;
 }
 
@@ -268,7 +279,25 @@ ul#thumbnails li div a label {
 	right:                  43.5%;
 	left:                   43.5%;
 }
-/* /Big picture page */
+
+#big_video object p {
+  margin:                 1.5em 10em;
+}
+
+#big_video label {
+  display:                block;
+  margin:                 .25em auto 0 auto;
+  width:                  auto;
+}
+
+#big_video label span {
+  display:                block;
+}
+
+#big_video object a {
+  position:               static;
+}
+/* /Big picture, big video */
 
 
 /* Tags */
@@ -473,7 +502,7 @@ body#checkout #order_form p {
 	padding-left:           25px;
 	position:               absolute;
 	top:                    .8em;
-	right:                  2.5em;
+	right:                  1.85em;
 }
 
 #global_search fieldset {
@@ -673,6 +702,6 @@ pre {
 }
 
 .instructions #main_content h4 {
-  margin-top:             -1em;
+  margin-top:             -.8em;
 }
 /* /Instructions */

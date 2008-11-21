@@ -30,3 +30,16 @@
 * Inserimos uma nova folha de estilos: 04_layout_print.css, para demonstrar como fica o logotipo de impressão.
 * Fizemos pequenas mudanças no ``div#header``, ajustando o ``alt`` e o ``title`` dos logotipos para melhor ilustrar o caso do logotipo de impressão.
 * Novas perguntas e respostas foram acrescentas ao final do arquivo de FAQ.
+
+# 20/nov/2008
+
+* Inserimos a nova aba do menu: Vídeos.
+* Modificamos um pouco a introdução das instruções (arquivo ``instrucoes.html``), para dizer aos designers que é uma boa fazer o template em Photoshop antes e, só depois de nosso feedback, prosseguir para o CSS.
+* Atualizamos o FAQ: em resposta à pergunta "Os logotipos serão sempre em padrão texto estilizado?", sugerimos que o designer passe a ignorar o logotipo da Patricia Figueira e estilize o ``alt`` da imagem como logotipo textual.
+
+# 21/nov/2008
+
+* Apresentamos o novo módulo: _videos_, com duas páginas.
+* Acrescentamos os dois arquivos do módulo de vídeos: ``14(videos)_all_videos_index.html`` e ``15(videos)_all_videos_video.html``
+* Adaptamos a página de instruções para acomodar o novo módulo: a tabela de módulos, páginas e situações aumentou: 5 módulos, 15 páginas e 26 situações.
+* Adicionamos thumbnails horizontais na página inicial do módulo _pictures_ (arquivo ``01(pictures)_best_galleries_index.html``), para ajudar o designer a prever ambas as situações.

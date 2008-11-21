@@ -136,12 +136,12 @@ ul#thumbnails a img {
 /* /Data sheet */
 
 
-/* Big picture page */
-#big_picture {
+/* Big picture, big video */
+#big_picture, #big_video {
 	text-align:             center;
 }
 
-#big_picture a {
+#big_picture a, #big_video a {
   font-size:              75%;
 	text-align:             left;
 }
@@ -152,12 +152,33 @@ ul#thumbnails a img {
 	line-height:            1.5em;
 }
 
-#big_picture label {
+#big_video object * {
+  text-align:             justify;
+}
+
+#big_video object h1 {
+  text-align:             left;
+}
+
+#big_video object p {
+  font-size:              90%;
+  line-height:            1.75em;
+}
+
+#big_video object a {
+  font-size:              100%;
+}
+
+#big_picture label, #big_video label {
 	font-size:              140%;
   text-align:             center;
   letter-spacing:         -.05em;
 }
-/* /Big picture page */
+
+#big_video label span {
+  font-size:              55%;
+}
+/* /Big picture, big video */
 
 
 /* Tags */
