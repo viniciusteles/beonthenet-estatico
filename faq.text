@@ -65,3 +65,34 @@ PNG transparente é problemático com o IE6. Então, você pode usar, desde que 
 # Vocês estão usando já o CSS3? E é obrigatório somente o uso dele?
 
 Não é necessário que se use CCS3. O que precisamos é que o CSS seja sempre válido e que funcione em todos os principais navegadores: IE (6 e 7), Firefox, Safari, Opera e Chrome. 
+
+# Posso usar os ícones e ilustrações que se encontram no exemplo da Patricia Figueira?
+
+Não. O designer deverá criar seus próprios ícones e ilustrações, ou obtê-los na internet. 
+
+Caso o designer crie seus próprios ícones ou ilustrações, os arquivos fontes deverão ser incluídos no template. Portanto, deveremos receber o arquivo fonte no formato PSD (Photoshop), ou AI (Adobe Illustrator), ou CDR (Corel) ou outro de sua preferência. Eventuais camadas que tenham sido produzidas devem vir abertas, de modo a permitir fácil edição futura.
+
+Se preferir, o designer pode obter imagens na internet desde que elas estejam disponíveis como [Creative Commons Atribuição 2.5][1] ou [Domínio Público][2]. O link onde as imagens foram obtidas tem que ser informado para que possamos comprovar que o autor delas realmente as libera como [Creative Commons Atribuição 2.5][1] ou [Domínio Público][2].
+
+# Devo criar imagens específicas para as páginas de erro?
+
+Sim. Nas páginas de erro, é importante o recurso de usar uma imagem divertida para ajudar o usuário a não se desesperar quando dá um erro no site. Você deve criar suas próprias imagens ou pode usar imagens obtidas nas internet, desde que estas respeitem as condições citadas anteriormente sobre licenciamento (Creative Commons ou Domínio Público).
+
+# Posso usar fontes com serifa?
+
+Em princípio sim, mas recomendamos extrema cautela no uso de fontes com serifa. Elas podem ser perigosas, porque serrilham muito em browsers e monitores não tão modernos. O Internet Explorer é especialmente ruim em renderizar este tipo de fonte (e ironicamente é o mais usado por aí). Eu (Leandro) pessoalmente sou mais tolerante a elas do que o resto do pessoal aqui -- mas que elas são perigosas, são; portanto, procure usá-las com muita cautela, e testando bem para ver se o serrilhamento não fica muito tosco. Dependendo de como ficar, podemos chegar ao ponto de pedir para que seja substituída por uma fonte sem serifa.
+
+# Posso ter um design muito parecido com o da Patricia Figueira, que está no exemplo?
+
+Muitas pessoas têm adotado a diagramação em três colunas, que ainda é um tanto parecida com a do site da Patricia Figueira. Compreendo (Leandro) que isto é bem típico de "primeiro design", quando ainda não descobrimos toda a liberdade que temos. Afinal, como escapamos a um layout pronto que nos foi dado? Ele vira meio que nosso universo, nosso parâmetro de partida. Imagino. E como encaixar mais ou menos que três colunas? Felizmente, o HTML permite uma flexibilidade enorme, e nós incentivamos os designers a, tanto quanto possível, abstrair o layout da Patricia e inventar a moda que quiserem. Nosso interesse é comprar templates, e para isso daremos todo o suporte que pudermos para ajudar a dar asas à criatividade. Questione tudo o que você vê no layout da Patricia e, nos trabalhos que estão por vir, chute o balde mesmo, viaje alto.
+
+# As medidas usadas no CSS precisam ser em em's? 
+
+Não, você pode usar medidas em px ou qualquer outra unidade de sua preferência.
+
+# Suponha que eu faça um template e este seja aprovado e, portanto, comprado pela Improve It. Digamos que eu queira propor um segundo template onde a única alteração será na paleta de cores. Isso seria considerado válido?
+
+Não. A idéia é que cada template seja basta específico em termos de tipografia, posicionamento de elementos, cores e imagens. Portanto, um template, para ser considerado como tal, precisa ter características específicas em cada uma das dimensões citadas (tipografia, posicionamentos, cores e imagens).
+
+[1]: http://creativecommons.org/licenses/by/2.5/br/
+[2]: http://creativecommons.org/licenses/publicdomain/

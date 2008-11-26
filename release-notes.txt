@@ -43,3 +43,8 @@
 * Acrescentamos os dois arquivos do módulo de vídeos: ``14(videos)_all_videos_index.html`` e ``15(videos)_all_videos_video.html``
 * Adaptamos a página de instruções para acomodar o novo módulo: a tabela de módulos, páginas e situações aumentou: 5 módulos, 15 páginas e 26 situações.
 * Adicionamos thumbnails horizontais na página inicial do módulo _pictures_ (arquivo ``01(pictures)_best_galleries_index.html``), para ajudar o designer a prever ambas as situações.
+
+# 25/nov/2008
+
+* Acrescentamos um outro exemplo de layout. Desta vez trata-se do site do Victor, filho do Leandro e nosso mascotinho na Improve It. Este layout enconta-se no diretório exemplos.
+* Acrescentamos novas perguntas e respostas ao FAQ.
