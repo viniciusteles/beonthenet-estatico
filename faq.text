@@ -72,11 +72,11 @@ Não. O designer deverá criar seus próprios ícones e ilustrações, ou obtê-
 
 Caso o designer crie seus próprios ícones ou ilustrações, os arquivos fontes deverão ser incluídos no template. Portanto, deveremos receber o arquivo fonte no formato PSD (Photoshop), ou AI (Adobe Illustrator), ou CDR (Corel) ou outro de sua preferência. Eventuais camadas que tenham sido produzidas devem vir abertas, de modo a permitir fácil edição futura.
 
-Se preferir, o designer pode obter imagens na internet desde que elas estejam disponíveis como [Creative Commons Atribuição 2.5][1] ou [Domínio Público][2]. O link onde as imagens foram obtidas tem que ser informado para que possamos comprovar que o autor delas realmente as libera como [Creative Commons Atribuição 2.5][1] ou [Domínio Público][2].
+Se preferir, o designer pode obter imagens na internet desde que elas estejam disponíveis como [Creative Commons Atribuição 2.5][1]. O link onde as imagens foram obtidas tem que ser informado para que possamos comprovar que o autor delas realmente as libera explicitamente como [Creative Commons Atribuição 2.5][1] (infelizmente, a imagem ser "royalty-free" não significa o mesmo que ser Creative Commons, portanto tenha o cuidado de verificar). 
 
 # Devo criar imagens específicas para as páginas de erro?
 
-Sim. Nas páginas de erro, é importante o recurso de usar uma imagem divertida para ajudar o usuário a não se desesperar quando dá um erro no site. Você deve criar suas próprias imagens ou pode usar imagens obtidas nas internet, desde que estas respeitem as condições citadas anteriormente sobre licenciamento (Creative Commons ou Domínio Público).
+Sim. Nas páginas de erro, é importante o recurso de usar uma imagem divertida para ajudar o usuário a não se desesperar quando dá um erro no site. Você deve criar suas próprias imagens ou pode usar imagens obtidas nas internet, desde que estas respeitem as condições citadas anteriormente sobre licenciamento (Creative Commons).
 
 # Posso usar fontes com serifa?
 
@@ -95,4 +95,3 @@ Não, você pode usar medidas em px ou qualquer outra unidade de sua preferênci
 Não. A idéia é que cada template seja basta específico em termos de tipografia, posicionamento de elementos, cores e imagens. Portanto, um template, para ser considerado como tal, precisa ter características específicas em cada uma das dimensões citadas (tipografia, posicionamentos, cores e imagens).
 
 [1]: http://creativecommons.org/licenses/by/2.5/br/
-[2]: http://creativecommons.org/licenses/publicdomain/
