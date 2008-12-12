@@ -25,3 +25,7 @@
 # 05/dez/2008
 
 * Adicionamos o modelo do contrato ao pacote.
+
+# 12/dez/2008
+
+* Acrescentamos o arquivo fontes-de-material-creative-commons.txt. Ele contém uma lista de sites onde é possível achar material comumente disponibilizado como Creative Commons Attribution.

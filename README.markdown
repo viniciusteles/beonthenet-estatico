@@ -12,6 +12,8 @@ Para compreender como utilizar este projeto, leia os seguintes arquivos:
 
 * release-notes.txt - Contém uma descrição das modificações que vêm sendo feitas no projeto. Leia para compreender o que mudou desde a última vez que você atualizou os arquivos.
 
+* fontes-de-material-creative-commons.txt - Contém uma lista de sites que costumam conter material disponibilizado como Creative Commons Attribution. 
+
 [1]:    http://beonthe.net
 [2]:    http://www.improveit.com.br/br/contato
 [3]:    http://www.improveit.com.br
