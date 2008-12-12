@@ -14,6 +14,8 @@ Para compreender como utilizar este projeto, leia os seguintes arquivos:
 
 * fontes-de-material-creative-commons.txt - Contém uma lista de sites que costumam conter material disponibilizado como Creative Commons Attribution. 
 
+* modelo-do-contrato.pdf - Este é o modelo do contrato de compra de teplates que a Improve It utiliza com os designers que produzem templates para o Be on the Net. É recomendável que você leia este modelo para conhecer as exatas condições em que as compras de templates são feitas.
+
 [1]:    http://beonthe.net
 [2]:    http://www.improveit.com.br/br/contato
 [3]:    http://www.improveit.com.br
