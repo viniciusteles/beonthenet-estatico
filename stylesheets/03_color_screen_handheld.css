@@ -186,15 +186,15 @@ ul#thumbnails a:hover label {
 
 
 /* Link to Selection */
-#select_pictures a {
+#go_to_selection a {
 	background:             #EFE3C3 url(../images/select_pictures.gif) no-repeat top left;
 }
-#select_pictures a:link, 
-#select_pictures a:visited {
+#go_to_selection a:link, 
+#go_to_selection a:visited {
   color:                  #940029;
 }
 
-#select_pictures a:hover {
+#go_to_selection a:hover {
   color:                  #BF667F;
 }
 /* /Link to Selection */
