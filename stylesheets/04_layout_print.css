@@ -1,0 +1,23 @@
+html * {
+  color:                  #000 !important;
+}
+
+#header h1#logo_print {
+  display:                block;
+}
+#header h1#logo_print img {
+	width:                  43mm !important;
+	height:                 8mm !important;
+}
+
+#header h1#logo_screen {
+	display:                none;
+}
+
+#header ul, #header form {
+  display:                none;
+}
+
+#footer {
+  border-bottom:          none;
+}

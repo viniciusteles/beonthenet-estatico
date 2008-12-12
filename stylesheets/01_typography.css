@@ -42,6 +42,12 @@ h4 a:focus, h4 a:hover {
 
 
 /* Header tabbed menu */
+#header h1 img {
+  font-size:              60%;
+  text-transform:         lowercase;
+  word-spacing:           1em;
+}
+
 #header li {
   font-size:              85%;
 	line-height:            1em;
@@ -130,12 +136,12 @@ ul#thumbnails a img {
 /* /Data sheet */
 
 
-/* Big picture page */
-#big_picture {
+/* Big picture, big video */
+#big_picture, #big_video {
 	text-align:             center;
 }
 
-#big_picture a {
+#big_picture a, #big_video a {
   font-size:              75%;
 	text-align:             left;
 }
@@ -146,12 +152,33 @@ ul#thumbnails a img {
 	line-height:            1.5em;
 }
 
-#big_picture label {
+#big_video object * {
+  text-align:             justify;
+}
+
+#big_video object h1 {
+  text-align:             left;
+}
+
+#big_video object p {
+  font-size:              90%;
+  line-height:            1.75em;
+}
+
+#big_video object a {
+  font-size:              100%;
+}
+
+#big_picture label, #big_video label {
 	font-size:              140%;
   text-align:             center;
   letter-spacing:         -.05em;
 }
-/* /Big picture page */
+
+#big_video label span {
+  font-size:              55%;
+}
+/* /Big picture, big video */
 
 
 /* Tags */
@@ -315,11 +342,41 @@ body.instructions #main_content dt {
   font-size:              80%;
 }
 
-body.instructions #main_content dd {
+.instructions #main_content dd, 
+.instructions #main_content ul li {
   text-align:             justify;
 }
 
+.instructions #main_content ul li {
+  list-style:             circle;
+}
+
+.instructions #main_content ul ul li {
+  list-style:             disc;
+  font-size:              95%;
+}
+
 code {
-  font:                   normal normal normal 110%/1.2em "Lucida Console", "Monaco", monospace; 
+  font:                   normal normal normal 80%/1.2em "Lucida Console", "Monaco", monospace; 
+}
+
+p code {
+  font-size:              110%;
+}
+
+.instructions th {
+  font-size:              90%;
+}
+
+.instructions td {
+  font-size:              85%;
+} 
+
+.instructions td span {
+  font-size:              82%;
+}
+
+.instructions td a {
+  font-size:              80%;
 }
 /* /Instructions */
