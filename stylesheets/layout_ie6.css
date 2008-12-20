@@ -48,7 +48,8 @@ body#selection #selection_size {
   right:                  38.25em;
 }
 
-#checkout #submit_error {
+#checkout #submit_error,
+#pictures_sent #submit_error {
 	margin-top:             1em;
 	margin-left:            0.1em;
 	margin-right:           4.4em;

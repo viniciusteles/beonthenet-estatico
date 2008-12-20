@@ -229,6 +229,7 @@ body#selection #selection_size label {
 }
 
 body#checkout #selection_size label, 
+body#pictures_sent #selection_size label, 
 body#search #search_result_count label {
   font-weight:            bold;
   font-size:              110%;
@@ -282,7 +283,8 @@ button {
   line-height:            1.5em;
 }
 
-body#checkout #order_form p {
+body#checkout #order_form p,
+body#pictures_sent #order_form p {
 	font-size:              90%;
   text-align:             center;
 	line-height:            2.5em;
