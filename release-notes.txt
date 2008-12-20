@@ -29,3 +29,7 @@
 # 12/dez/2008
 
 * Acrescentamos o arquivo fontes-de-material-creative-commons.txt. Ele contém uma lista de sites onde é possível achar material comumente disponibilizado como Creative Commons Attribution.
+
+# 20/dez/2008
+
+* Nos arquivos de CSS, toda vez que o identificador 'checkout' era usado, passou a ser necessário usar também o identificador 'pictures_sent'. A razão disso é uma mudança estrutural que foi implementada, que passa a permitir que, na seleção de imagens, o usuário final coloque mais dados de contato: nome, telefones e email.
