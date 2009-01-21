@@ -33,3 +33,11 @@
 # 20/dez/2008
 
 * Nos arquivos de CSS, toda vez que o identificador 'checkout' era usado, passou a ser necessário usar também o identificador 'pictures_sent'. A razão disso é uma mudança estrutural que foi implementada, que passa a permitir que, na seleção de imagens, o usuário final coloque mais dados de contato: nome, telefones e email.
+
+# 21/jan/2009
+
+* Mudanças no div #header:
+  - Inserimos o h2#slogan, uma tag em que o usuário poderá veicular o slogan de seu negócio.
+  - No menu principal, acrescentamos a classe .current a cada <li> ativo. Isso traz simplicidade e flexibilidade ao CSS deste trecho.
+  - Retiramos os ícones do menu prinicpal, para deixá-lo flexível a qualquer tipo de negócio. Percebemos que os ícones limitavam a versatilidade do template.
+* Atualizamos os thumbnails da página de vídeos 14(videos)_all_videos_index.html; agora os thumbnails aparecem de novo.

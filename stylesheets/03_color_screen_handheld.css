@@ -1,20 +1,4 @@
-/*
-Cores utilizadas no site:
-Input lighting:           #F6F0DF;
-Bege claro:					      #F6F0DB;
-Bege médio:					      #EFE3C3;
-Bege escuro:				      #E0C99B;
-Input shading:				    #BAA984;
-Bege escuro para marrom:  #B09A6F;
-Marrom:						        #7F6B43;
-Cinza claro:				      #555;
-Cinza escuro:				      #111;
-Rosa:						          #BF667F;					
-Vinho:                    #940029;
-
-
-
-  Color global attributes */
+/* Color global attributes */
 html * {
   color:                  #555;
 }
@@ -59,11 +43,11 @@ h4, h4 a {
 }
 
 #header li {
-  background:             #EFE3C3 no-repeat left top;
+  background:             #EFE3C3 url(../images/tab_corner_left.gif) no-repeat left top;
 }
 
 #header li a {
-	background:             url(../images/tab_corner_right.gif) no-repeat right top;
+  background:             url(../images/tab_corner_right.gif) no-repeat right top;
 }
 #header li a:visited {
   color:                  #555;
@@ -75,66 +59,57 @@ h4, h4 a {
   color:                  #940029;
 }
 
-body.best_galleries #header li.best_galleries, 
-body.full_galleries #header li.full_galleries, 
-body.videos #header li.all_videos, 
-body.quem_somos #header li.quem_somos, 
-body.contact #header li.contact, 
-body.blog #header li.blog {
+#header li.current {
 	background-color:       #F6F0DB;
+	background-image:       url(../images/tab_corner_left_current.gif);
 }
 
-body.best_galleries #header li.best_galleries a,
-body.full_galleries #header li.full_galleries a, 
-body.videos #header li.all_videos a, 
-body.quem_somos #header li.quem_somos a,
-body.contact #header li.contact a, 
-body.blog #header li.blog a {
+#header li.current a {
 	background-image:       url(../images/tab_corner_right_current.gif);
 }
 
 #header li.best_galleries {
-	background-image:       url(../images/tab_best_galleries.gif);
+/*  background-image:       url(../images/tab_best_galleries.gif);*/
 }
 
 body.best_galleries #header li.best_galleries {
-	background-image:       url(../images/tab_best_galleries_current.gif);
+/*  background-image:       url(../images/tab_best_galleries_current.gif);*/
 }
 
 #header li.full_galleries {
-	background-image:       url(../images/tab_full_galleries.gif);
+/*  background-image:       url(../images/tab_full_galleries.gif);*/
 }
 body.full_galleries #header li.full_galleries {
-	background-image:       url(../images/tab_full_galleries_current.gif);
+/*  background-image:       url(../images/tab_full_galleries_current.gif);*/
 }
 
 #header li.all_videos {
-	background-image:       url(../images/tab_videos.gif);
+/*  background-image:       url(../images/tab_videos.gif);*/
 }
 body.videos #header li.all_videos {
-	background-image:       url(../images/tab_videos_current.gif);
+/*  background-image:       url(../images/tab_videos_current.gif);*/
 }
 
 #header li.blog {
-	background-image:       url(../images/tab_blog.gif);
+/*  background-image:       url(../images/tab_blog.gif);*/
 }
 body.blog #header li.blog {
-	background-image:       url(../images/tab_blog_current.gif);
+/*  background-image:       url(../images/tab_blog_current.gif);*/
 }
 
 #header li.quem_somos {
-	background-image:       url(../images/tab_who.gif);
+/*  background-image:       url(../images/tab_who.gif);*/
 }
 
 body.quem_somos #header li.quem_somos {
-	background-image:       url(../images/tab_who_current.gif);
+/*  background-image:       url(../images/tab_who_current.gif);*/
 }
 
 #header li.contact {
-	background-image:       url(../images/tab_contact.gif);
+/*  background-image:       url(../images/tab_contact.gif);*/
 }
 body.contact #header li.contact {
-	background-image:       url(../images/tab_contact_current.gif);
+/*  background-image:       url(../images/tab_contact_current.gif);*/
 }
 /* /Header tabbed menu */
 

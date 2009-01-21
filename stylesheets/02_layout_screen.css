@@ -51,6 +51,10 @@ a {
   overflow:               hidden;
 }
 
+#header h2#slogan {
+  display:                none;
+}
+
 #header ul {
   height:                 2.38em;
   margin-left:            168px;
@@ -73,12 +77,7 @@ a {
   margin-right:           -.5em;
 }
 
-body.best_galleries #header li.best_galleries, 
-body.full_galleries #header li.full_galleries, 
-body.all_videos #header li.all_videos, 
-body.quem_somos #header li.quem_somos, 
-body.contact #header li.contact, 
-body.blog #header li.blog {
+#header li.current {
   top:                    .7em;
 }
 /* /Header tabbed menu */
