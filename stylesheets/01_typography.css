@@ -192,6 +192,14 @@ ul#thumbnails a img {
 /* /Tags */
 
 
+/* Picture description */
+#picture_description p {
+  font-size:            70%;
+  line-height:          1em;
+}
+/* /Picture description */
+
+
 /* Selection */
 #thumbnails label, 
 #all_pictures label, #cart_items label, 

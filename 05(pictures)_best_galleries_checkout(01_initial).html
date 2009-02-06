@@ -150,9 +150,13 @@
     
     <form action="selecao/enviar/72157608717164900" id="order_form" method="post">
       <fieldset>
-        <p>Coloque seu e-mail para receber uma cópia (opcional).</p>
-        <label for='email'>Seu e-mail:</label>
-        <input id="email" name="email" type="text" />
+        <p>Coloque seus dados.</p>
+        <label for="selection_message_name">Nome:</label>
+        <input id="selection_message_name" name="selection_message[name]" size="30" type="text" />
+        <label for="selection_message_phones">Telefones (com DDD):</label>
+        <input id="selection_message_phones" name="selection_message[phones]" size="30" type="text" />
+        <label for="selection_message_email">E-mail (obrigatório):</label>
+        <input id="selection_message_email" name="selection_message[email]" size="30" type="text" />
         <button type="submit" value="Enviar">Enviar</button>
       </fieldset>
     </form>

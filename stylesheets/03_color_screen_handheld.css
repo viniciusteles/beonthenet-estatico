@@ -67,50 +67,6 @@ h4, h4 a {
 #header li.current a {
 	background-image:       url(../images/tab_corner_right_current.gif);
 }
-
-#header li.best_galleries {
-/*  background-image:       url(../images/tab_best_galleries.gif);*/
-}
-
-body.best_galleries #header li.best_galleries {
-/*  background-image:       url(../images/tab_best_galleries_current.gif);*/
-}
-
-#header li.full_galleries {
-/*  background-image:       url(../images/tab_full_galleries.gif);*/
-}
-body.full_galleries #header li.full_galleries {
-/*  background-image:       url(../images/tab_full_galleries_current.gif);*/
-}
-
-#header li.all_videos {
-/*  background-image:       url(../images/tab_videos.gif);*/
-}
-body.videos #header li.all_videos {
-/*  background-image:       url(../images/tab_videos_current.gif);*/
-}
-
-#header li.blog {
-/*  background-image:       url(../images/tab_blog.gif);*/
-}
-body.blog #header li.blog {
-/*  background-image:       url(../images/tab_blog_current.gif);*/
-}
-
-#header li.quem_somos {
-/*  background-image:       url(../images/tab_who.gif);*/
-}
-
-body.quem_somos #header li.quem_somos {
-/*  background-image:       url(../images/tab_who_current.gif);*/
-}
-
-#header li.contact {
-/*  background-image:       url(../images/tab_contact.gif);*/
-}
-body.contact #header li.contact {
-/*  background-image:       url(../images/tab_contact_current.gif);*/
-}
 /* /Header tabbed menu */
 
 
@@ -162,7 +118,7 @@ ul#thumbnails a:hover label {
 
 
 /* Summary */
-#summary, #about_us, #data_sheet, .error_hints {
+#summary, #picture_description, #about_us, #data_sheet, body.application #maion_content ul {
 	background-color:       #EFE3C3;
 	border-color:           #F6F0DB;
 }
@@ -281,6 +237,13 @@ ul#thumbnails a:hover label {
   background-color:       #940029;
 }
 /* /Tags */
+
+
+/* Picture description */
+#picture_description p {
+  color:                  #7F6B43;
+}
+/* /Picture description */
 
 
 /* Selection */

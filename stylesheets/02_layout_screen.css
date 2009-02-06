@@ -156,7 +156,7 @@ body.videos #thumbnails img {
 
 
 /* Summary */
-#summary, #about_us, #data_sheet, .error_hints {
+#summary, #picture_description, #about_us, #data_sheet, body.application #maion_content ul {
 	padding:                .65em 7.5em;
 	border:                 3px double;
   margin-bottom:          10px;
@@ -309,6 +309,14 @@ body.videos #thumbnails img {
   margin-right:           .7em;
 }
 /* /Tags */
+
+
+/* Picture description */
+#picture_description {
+  padding:                .5em 8em;
+  margin-top:             1.5em;
+}
+/* /Picture description */
 
 
 /* Selection */

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang='pt-br' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>05(pictures)_best_galleries_checkout(04_form_spinner)</title>
+    <title>05(pictures)_best_galleries_checkout(01_initial)</title>
     <meta content='application/xhtml+xml; charset=utf-8' http-equiv='Content-Type' />
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="stylesheets/01_typography.css" media="all" rel="stylesheet" type="text/css" />
@@ -16,7 +16,7 @@
       <link href="stylesheets/layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
   </head>
-<body class="best_galleries pictures" id="checkout">  
+<body class="best_galleries pictures" id="pictures_sent">  
   <div id='header'>
     <h1 id='logo_print'><img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" /></h1>
     <h1 id='logo_screen'><a href="#"><img alt="Patricia Figueira" src="images/logo.gif" title="Título do logotipo de tela. Existe também um de impressão." /></a></h1>
@@ -30,7 +30,6 @@
     </ul>
 
 <form action="busca" id="global_search" method="get">
-
       <fieldset>
         <input id="search_type" name="search_type" type="hidden" value="text" />
         <input id="query" maxlength="500" name="query" size="60" type="text" value="buscar fotos" />
@@ -148,7 +147,9 @@
       </li>
       <li class='empty'></li>
     </ul>
-    
+
+    <p id="submit_error">Email não pode ser vazio.</p>
+
     <form action="selecao/enviar/72157608717164900" id="order_form" method="post">
       <fieldset>
         <p>Coloque seus dados.</p>
@@ -158,19 +159,17 @@
         <input id="selection_message_phones" name="selection_message[phones]" size="30" type="text" />
         <label for="selection_message_email">E-mail (obrigatório):</label>
         <input id="selection_message_email" name="selection_message[email]" size="30" type="text" />
-        <button type="submit" class="submitting" value="Enviando. Aguarde.">Enviando. Aguarde.</button>
+        <button type="submit" value="Enviar">Enviar</button>
       </fieldset>
-    </form>    
+    </form>
   </div>
-
   <hr />
-
   <div id='footer'>
     <p><strong>&copy; Patinha</strong> &mdash; Nikiti City, RJ &mdash; Brasil
-    <strong>Fone:</strong> (21) 2705-0198 / (21) 8716-7479 &mdash; <strong>e-mail:</strong> <a href="#" rel="protected" title="Um title."></a> ou <a href="#" rel="protected" title="Um title."></a>.</p>
+    <strong>Fone:</strong> (21) 2705-0198 / (21) 8716-7479 &mdash; <strong>e-mail:</strong> <a href="#" rel="protected" title="Ampliar imagem"></a> ou <a href="#" rel="protected" title="Ampliar imagem"></a>.</p>
 
     <h6>
-      Powered by <a href="#" title="Um title.">Beonthe.net</a>, um produto da <a href="#" title="Um title.">Improve It</a>.
+      Powered by <a href="#" title="Ampliar imagem">Beonthe.net</a>, um produto da <a href="#" title="Ampliar imagem">Improve It</a>.
     </h6>
   </div>
 </body></html>
