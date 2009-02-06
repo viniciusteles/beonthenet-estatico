@@ -422,15 +422,15 @@ button:hover {
 
 
 /* Errors (404, 500, timeout, empty search results) */
-.error_description {
+body.application #main_content h2 {
 	background:             #F6F0DB url(../images/error_404.gif) no-repeat center top;
 }
 
-#error_500 {
+body#serve_error #main_content h2 {
 	background-image:       url(../images/error_500.gif);
 }
 
-#error_timeout {
+body#timeout #main_content h2 {
 	background-image:       url(../images/error_timeout.gif);
 }
 

@@ -298,13 +298,13 @@ body#pictures_sent #order_form p {
 
 
 /* Errors (404, 500, timeout, empty search results) */
-p#not_found, .error_description {
+p#not_found, body.application #main_content h2 {
 	font-size:              95%;
   text-align:             center;
 	line-height:            1.7em;
 }
 
-.error_hints li {
+body.application #main_content li {
   list-style-type:        disc;
 }
   
