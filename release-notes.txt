@@ -32,7 +32,7 @@
 
 # 20/dez/2008
 
-* Nos arquivos de CSS, toda vez que o identificador 'checkout' era usado, passou a ser necessário usar também o identificador 'pictures_sent'. A razão disso é uma mudança estrutural que foi implementada, que passa a permitir que, na seleção de imagens, o usuário final coloque mais dados de contato: nome, telefones e email.
+* Nos arquivos de CSS, toda vez que o identificador 'checkout' era usado, passou a ser necessário usar também o identificador 'pictures_sent'. A razão disso é uma mudança estrutural que foi implementada, que passa a permitir que, na seleção de imagens, o usuário final coloque mais dados de contato: nome, telefones e e-mail.
 
 # 21/jan/2009
 
@@ -41,3 +41,11 @@
   - No menu principal, acrescentamos a classe .current a cada <li> ativo. Isso traz simplicidade e flexibilidade ao CSS deste trecho.
   - Retiramos os ícones do menu prinicpal, para deixá-lo flexível a qualquer tipo de negócio. Percebemos que os ícones limitavam a versatilidade do template.
 * Atualizamos os thumbnails da página de vídeos 14(videos)_all_videos_index.html; agora os thumbnails aparecem de novo.
+
+# 06/fev/2009
+
+* Novo formulário de checkout, com três campos em vez de um.
+* Novo arquivo: erro de envio no checkout -- arquivo "05(pictures)_best_galleries_pictures_sent(05_error).html" (ver 20/dez/2008).
+* Novo div: #picture_description, nas páginas de imagem grande -- "03(pictures)_best_galleries_picture(1_horizontal).html" e "03(pictures)_best_galleries_picture(2_vertical).html".
+* CSS para tudo isso.
+* Atualizamos o arquivo "instrucoes.html".
