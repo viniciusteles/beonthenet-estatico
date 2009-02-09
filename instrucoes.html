@@ -4,7 +4,7 @@
     <title>Instruções para fazer CSS para o Be on the Net</title>
     <meta content='application/xhtml+xml; charset=utf-8' http-equiv='Content-Type' />
     <meta content='instruções, CSS, Be on the Net, design' name='keywords' />
-    <meta content='Esta página contém instruções para os designers Be on the Net saberem as manhas sobre como fazer CSS para o Be on the Net. Por enquanto, instruções básicas ainda; dêem feedback para a gente aprimorar esta página.' name='description' />
+    <meta content='Esta página contém instruções para os designers Be on the Net saberem as manhas sobre como fazer CSS para o Be on the Net. Por enquanto, instruções básicas ainda; deem feedback para a gente aprimorar esta página.' name='description' />
     <meta content='pt-BR' http-equiv='content-Language' />
     
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -26,7 +26,7 @@
   <body class="instructions text" id="index">  
     <div id='header'>
       <h1 id='logo_print'><img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" /></h1>
-      <h1 id='logo_screen'><a href="#"><img alt="Patricia Figueira" src="images/logo.gif" title="Título do logotipo de tela. Existe também um de impressão." /></a></h1>
+      <h1 id='logo_screen'><a href="#">Patricia Figueira</a></h1>
       <h2 id='slogan'>A nova cara da fotografia social.</h2>
       <ul>
         <li class="best_galleries"><a href="#">Melhores</a></li>
@@ -55,8 +55,17 @@
 
       <p>Bem simples. Você tem de pegar os arquivos HTML contidos neste pacote e dar <strong>todo um novo layout a ele</strong>. Primeiro, através de uma prévia em forma de <strong>imagem de Photoshop</strong>; depois, através de um <strong>CSS</strong> só seu.</p>
       <p>Estas páginas, por enquanto, estão com o CSS que as tornam semelhantes ao site da fotógrafa de casamentos <a href="http://patriciafigueira.com.br">Patricia Figueira</a>. Imagine que ela contratou você pedindo uma reformulação geral do layout do site. Pois é esta a tarefa: usar o HTML já existente e construir um novo template sobre ele, usando <strong>puro CSS</strong>.</p>
-      <p>Como designer, você não precisa tocar no HTML nem no JavaScript &mdash; aliás, recomendamos que, para que seu CSS seja compatível com o <strong>Be on the Net</strong>, você realmente mantenha intactos os HTML&rsquo;s destes arquivos! Ou melhor: a <strong>única</strong> parte dos HTML&rsquo;s em que você vai mexer livremente são as tags <code>link</code> dentro do <code>head</code>, que chamam seus arquivos CSS.</p>
+      <p>Como designer, você não precisa tocar no HTML nem no JavaScript &mdash; aliás, recomendamos que, para que seu CSS seja compatível com o <strong>Be on the Net</strong>, você realmente mantenha <strong>intactos</strong> os HTML&rsquo;s destes arquivos! Ou melhor: a <strong>única</strong> parte dos HTML&rsquo;s em que você vai mexer livremente são as tags <code>link</code> dentro do <code>head</code>, que chamam seus arquivos CSS.</p>
       <p>Como vai ficar a aparência, como vão ser diagramados os thumbnails das imagens e os outros elementos, isso só é limitado pela sua criatividade. Envie-nos seu layout de Photoshop e daremos nosso feedback para você começar seu CSS. As instruções a seguir vão servir como orientação para você se encontrar no HTML e saber todos os macetes necessários para levar sua arte aos limites.</p>
+
+      <h2>Tá. E o que eu ganho com isso?</h2>
+      
+      <ul>
+        <li><strong>R$ 500,00</strong> para cada layout original que voce criar! (ah, mudança só de cor não caracteriza um layout como original; veja a seção <a href="#divisao_do_css">A divisão do CSS</a> para entender de que raios estamos falando);</li>
+        <li><strong>Seu nome</strong> no site do <a href="http://beonthe.net">Be on the Net</a> e no rodapé de cada site que tiver um template seu (com links e mais links para seu próprio site) &mdash; e acontece mesmo! Dê uma olhada nas fichas técnicas de cada <a href="http://beonthe.net/galerias/templates">template</a>; seu nome pode ser o próximo;</li>
+        <li>Quem gostar de seu template mas quiser algo mais exclusivo vai ser indicado por nós direto a você. E aí você ganha o dindim do template e mais o que negociar com seu próprio cliente!</li>
+        <li>E a médio prazo a coisa tende a ficar mais legal. Leia nosso <a href="http://blog.improveit.com.br/articles/2008/11/19/designers-4-formas-de-se-dar-bem-com-o-be-on-the-net" title="Designers: 4 formas de se dar bem com o Be on the Net">artigo sobre formas de ganhar com o Be on he Net</a>, lá tem tudo mais mastigado.</li>
+      </ul>      
 
       <h3>Índice:</h3>
 
@@ -77,7 +86,7 @@
         </li>
       </ul>
 
-      <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram junto com este no pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma idéia de como é o fluxo de navegação do usuário.</p>
+      <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram junto com este no pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma ideia de como é o fluxo de navegação do usuário.</p>
       <p>Não, sério, navegue mesmo. Nos arquivos do pacote e no site da <a href="http://patriciafigueira.com.br" title="Sério. Navegue e compare, isso vai te ajudar a entender a estrutura.">Patricia</a>. Depois que tiver brincado um pouquinho, continue lendo esta página.</p>
 
       <h2 id="o_que_voce_ve">O que você vê no site:</h2>
@@ -124,16 +133,16 @@
 
       <dl>
         <dt>Classes e id&rsquo;s na tag <code>body</code>:</dt>
-          <dd>Como dissemos, a última palavra da <code>classe</code> de cada página indica seu módulo. Mas as próprias <code>classes</code> e <code>id&rsquo;s</code> podem formar várias combinações para que você consiga estilizar páginas inteiras, ou seqüências de páginas semelhantes, ou mesmo inserir uma particularidade numa única página! Mais sobre o assunto lá na frente;</dd>
+          <dd>Como dissemos, a última palavra da <code>classe</code> de cada página indica seu módulo. Mas as próprias <code>classes</code> e <code>id&rsquo;s</code> podem formar várias combinações para que você consiga estilizar páginas inteiras, ou sequências de páginas semelhantes, ou mesmo inserir uma particularidade numa única página! Mais sobre o assunto no futuro;</dd>
         <dt>Tags variadas</dt>
           <dd>Procuramos enxugar em <code>classes</code> e <code>id&rsquo;s</code> nas tags, e em compensação elas são super variadas; cada elemento que há dentro de outro é praticamente único, o que dá excelentes oportunidades para brincadeiras como múltiplas imagens de background, entre outras;</dd>
         <dt>Tags salvadoras para o IEca, image replacement e outras firulas</dt>
-          <dd>Em alguns pontos do código há certas tags quietinhas lá na delas, esperando uma oportunidade de entrar em ação. São como o <code>&lt;span class="ie"&gt;</code> nas páginas de thumbnails para centralizar imagens verticalmente, os <code>spans</code> vazios para <em>image replacement</em> na página de foto full-size, ou o <code>&lt;li="empty"&gt;</code> no final de cada lista de fotos, para quebrar <em>floats</em> com facilidade. Mais detalhes e macetes lá na frente.</dd>
+          <dd>Em alguns pontos do código há certas tags quietinhas lá na delas, esperando uma oportunidade de entrar em ação. São como o <code>&lt;span class="ie"&gt;</code> nas páginas de thumbnails para centralizar imagens verticalmente, os <code>spans</code> vazios para <em>image replacement</em> na página de foto full-size, ou o <code>&lt;li="empty"&gt;</code> no final de cada lista de fotos, para quebrar <em>floats</em> com facilidade. Mais detalhes e macetes no futuro.</dd>
       </dl>
 
       <h2 id="divisao_do_css">A divisão do CSS:</h2>
 
-      <p>Dê uma olhada na pasta <strong>stylesheets</strong>. Lá estão todas as folhas de estilo que compõem este modelo de design, parecido com o da <a href="http://patriciafigueira.com.br" title="Este modelo de design é uma réplica do site da Patricia Figueira, dê uma olhada.">Patricia Figueira</a>. Podemos ver que há uma divisão incomum entre <em>tipografia</em>, <em>layout</em> e <em>cores</em>.</p>
+      <p>Dê uma olhada na pasta <strong>stylesheets</strong>. Lá estão todas as folhas de estilo que compõem este modelo de design, parecido com o da <a href="http://patriciafigueira.com.br" title="Este modelo de design é uma réplica do site da Patricia Figueira, dê uma olhada.">Patricia Figueira</a>. Podemos ver que há uma curiosa divisão entre <em>tipografia</em>, <em>layout</em> e <em>cores</em>.</p>
 
       <p>Esta divisão não é obrigatória. Você pode utilizar quantas folhas de estilo preferir, e dividir a informação entre elas como quiser. Esta foi somente a opção que o <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello é designer da Improve It.">Leandro</a> fez para estilizar as páginas. Esta organização tem-se mostrado bastante útil em nossos projetos, já que é legível para qualquer desenvolvedor, permite-nos encontrar e modificar seletores com facilidade, e leva em consideração as três mídias mais usadas (<em>screen</em>, <em>print</em> e <em>handheld</em>). Há um <a href="http://blog.improveit.com.br/articles/2008/06/26/css-design-o-denominador-comum" title="Entenda por que o Leandro separa layout de tipografia.">artigo dele em nosso blog</a> que explica em detalhes o porquê de separar a tipografia.</p>
 
@@ -148,6 +157,8 @@
           <dd>Cuida dos elementos de cor do site: cor do texto, do fundo, das bordas, e a aplicação de imagens de background. Também é uma folha de estilo bem aceita por todos os browsers, por isso é muito raro dar confusão. Com este arquivo, pode-se manter sob controle toda a paleta de cores do site (repare que no início do arquivo <code>03_color_screen_handheld.css</code> estão anotadas todas as cores usadas, para aplicação rápida e fácil). Todas as imagens usadas no site vêm da pasta <strong>/images</strong> neste pacote e, com exceção do logotipo, são aplicadas na folha de estilo de cor.</dd>
       </dl>
 
+      <h4>Nota: como o color.css é uma folha de estilo bem mais fácil e tranquila de criar e mudar, não consideramos que um template novo com mudanças só nesta folha de estilo seja carcterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
+
       <h2 id="modulos_paginas_situacoes">Conhecendo o <code>body</code> &mdash; módulos, páginas e situações:</h2>
 
       <p>Até hoje, existem, como <a href="#modulos_do_beonthenet" title="Para recapitular.">mencionados antes</a>, <strong>cinco</strong> módulos no Be on the Net: <em>pictures</em>, <em>text</em>, <em>contact</em>, <em>application</em> e <em>videos</em>. Agora você vai entender o porquê dos nomes esquisitos e gigantescos de cada arquivo deste pacote. Depois de explicado, você vai saber se guiar direitinho por entre eles.</p>
@@ -157,18 +168,18 @@
       <ul>
         <li>O número no início (<code>04</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <strong>quarta página</strong> do módulo <em>pictures</em> &mdash; que trata da seleção de fotos;</li>
         <li>O primeiro par de parênteses (<code>(pictures)</code>) apresenta o <strong>módulo</strong>. O arquivo em questão pertence ao módulo <em>pictures</em>;</li>
-        <li>A seqüência de palavras que há entre o primeiro e o segundo pares de parênteses (<code>_best_galleries_selection</code>) reflete a combinação de <code>classes</code> e <code>id&rsquo;s</code> que aparece na tag <code>body</code> deste arquivo. Neste exemplo, o HTML vai exibir <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code> &mdash; ou seja, esta página pertence à categoria <em>best_galleries</em> (melhores galerias de imagens) e sua identidade é <em>selection</em>. Lembre que o &ldquo;pictures&rdquo; que aparece no <code>body</code> é a última palavra da <code>classe</code>, logo reflete o <em>módulo</em>;</li>
-        <li>O segundo par de parênteses (<code>(04_pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; logo, apresentam vários estágios de comportamento; para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
+        <li>A sequência de palavras que há entre o primeiro e o segundo pares de parênteses (<code>_best_galleries_selection</code>) reflete a combinação de <code>classes</code> e <code>id&rsquo;s</code> que aparece na tag <code>body</code> deste arquivo. Neste exemplo, o HTML vai exibir <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code> &mdash; ou seja, esta página pertence à categoria <em>best_galleries</em> (melhores galerias de imagens) e sua identidade é <em>selection</em>. Lembre que o &ldquo;pictures&rdquo; que aparece no <code>body</code> é a última palavra da <code>classe</code>, logo reflete o <em>módulo</em>;</li>
+        <li>O segundo par de parênteses (<code>(04_pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; logo, apresentam vários estágios de comportamento. Para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
       </ul>
 
-      <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todas</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>5</strong> módulos distintos, <strong>15</strong> páginas diferentes e <strong>26</strong> situações possíveis.</p>
+      <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todas</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>5</strong> módulos distintos, <strong>15</strong> páginas diferentes e <strong>27</strong> situações possíveis.</p>
       <p>A seguir, uma tabela que mostra a divisão nítida entre módulos, páginas e situações, e aponta os respectivos arquivos deste projeto.</p>
 
       <h3 id="tabela_modulos_paginas_situacoes">Tabela de módulos, páginas e situações:</h3>
 
       <table>
         <tr>
-          <th>5 Módulos</th><th>15 Páginas</th><th>26 situações</th><th>Arquivo / Detalhes da tag body</th>
+          <th>5 Módulos</th><th>15 Páginas</th><th>27 situações</th><th>Arquivo / Detalhes da tag body</th>
         </tr>
         <tr>
           <td rowspan="17">.pictures</td>

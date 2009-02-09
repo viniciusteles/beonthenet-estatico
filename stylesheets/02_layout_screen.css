@@ -7,6 +7,7 @@
 body {
   width:                  62.5em;
 	margin:                 auto;
+	position:               relative;
 }
 
 #header, #main_content, #footer {
@@ -48,7 +49,6 @@ a {
   margin:                 0;
   width:                  168px;
   height:                 30px;
-  overflow:               hidden;
 }
 
 #header h2#slogan {
@@ -118,11 +118,16 @@ ul#thumbnails {
 ul#thumbnails li {
 	float:                  left;
 	width:                  250px;
-  margin:                 0 3.9em 2.5em 0;
+  margin:                 2.5em 3.9em 2.5em 0;
 }
 
-ul#thumbnails li div {
+ul#thumbnails li, ul#thumbnails li div {
 	position:               relative;
+}
+
+ul#thumbnails li h3 {
+  position:               absolute;
+  bottom:                 272px;
 }
 
 /* Vertically centering images 
@@ -133,20 +138,13 @@ ul#thumbnails li div a {
 	height:                 250px;
 	vertical-align:         middle;
 }
-ul#thumbnails li div img {
-	vertical-align:         middle;
-}
+
 
 ul#thumbnails li div a label {
 	width:                  auto;
 	position:               absolute;
 	bottom:                 3px;
 	left:                   6px;
-}
-
-
-body.videos #thumbnails h3 {
-  height:                 2em;
 }
 
 body.videos #thumbnails img {
@@ -320,6 +318,12 @@ body.videos #thumbnails img {
 
 
 /* Selection */
+body#selection #main_content {
+  min-height:             36.75em;
+  height:                 auto !important;
+  height:                 36.75em;
+}
+
 #all_pictures {
 	float:                  left;
 	width:                  31em;
@@ -560,54 +564,62 @@ body.application #main_content ul {
 
 /* Facebox */
 #facebox {
-	position:               absolute;
-	top:                    5em;
-	z-index:                100;
+  position:               absolute;
+  top:                    5.5em;
+  z-index:                100;
+  margin-bottom:          -10px;
 }
+
 body > #facebox {
 	right:                  0;
 	left:                   0;
 }
 
 #facebox div {
-	min-width:              50px;
-	width:                  50px;
-	padding-top:            10px;
+  min-width:              50px;
+  width:                  50px;
+  padding-top:            10px;
   margin:                 auto;
 }
 #facebox > div {
 	width:                  auto;
-	display:                table;
+  display:                table;
+}
+*:first-child + html #facebox div {
+  padding-right:          36px;
 }
 
 #facebox p {
-	padding:                0 0 0 18px;
-	background-position:    bottom left;
-	position:               relative;
+  padding:                0 0 0 18px;
+  background-position:    bottom left;
+  position:               relative;
 }
 
 #facebox a {
-	padding:                15px 18px 0 0;
-	background-position:    top right;
-	outline:                none;
-	position:               absolute;
-	top:                    -10px;
-	right:                  0;
+  padding:                15px 18px 0 0;
+  background-position:    top right;
+  outline:                none;
+  position:               absolute;
+  top:                    -10px;
+  right:                  0;
 }
 #facebox p > a {
-	left:                   10px;
+  left:                   10px;
+}
+*:first-child + html #facebox a {
+  right:                  -36px;
 }
 
 #facebox img {
-	padding:                20px 18px 18px 0;
-	background-position:    bottom right;
-	margin-bottom:          -3px;
+  padding:                20px 18px 18px 0;
+  background-position:    bottom right;
+  margin-bottom:          -3px;
 }
 #facebox p > img {
 	margin-bottom:          -6px;
 }
 *:first-child + html #facebox img {
-	margin-bottom:          -3px;
+  margin-bottom:          -3px;
 }
 /* /Facebox */
 
@@ -622,6 +634,10 @@ body > #facebox {
 
 #footer p {
 	margin-bottom:          .5em;
+}
+
+body#selection #footer {
+  margin-top:             -15px;
 }
 /* /Footer */
 

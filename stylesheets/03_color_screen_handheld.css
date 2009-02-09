@@ -1,4 +1,19 @@
-/* Color global attributes */
+/* Cores utilizadas no site:
+
+Input lighting:           #F6F0DF;
+Bege claro:					      #F6F0DB;
+Bege médio:					      #EFE3C3;
+Bege escuro:				      #E0C99B;
+Input shading:				    #BAA984;
+Bege escuro para marrom:  #B09A6F;
+Marrom:						        #7F6B43;
+Cinza claro:				      #555;
+Cinza escuro:				      #111;
+Rosa:						          #BF667F;					
+Vinho:                    #940029;
+
+
+Color global attributes */
 html * {
   color:                  #555;
 }
@@ -38,7 +53,7 @@ h4, h4 a {
   background:             #E0C99B url(../images/header_shading.png) repeat-x bottom;
 }
 
-#header h1 img {
+#header h1 a, #header h1 img {
   color:                  #940029;
 }
 
@@ -61,7 +76,7 @@ h4, h4 a {
 
 #header li.current {
 	background-color:       #F6F0DB;
-	background-image:       url(../images/tab_corner_left_current.gif);
+  background-image:       url(../images/tab_corner_left_current.gif);
 }
 
 #header li.current a {

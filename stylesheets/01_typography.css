@@ -42,10 +42,11 @@ h4 a:focus, h4 a:hover {
 
 
 /* Header tabbed menu */
-#header h1 img {
+#header h1 a, #header h1 img {
   font-size:              60%;
   text-transform:         lowercase;
   word-spacing:           1em;
+  text-decoration:        none;
 }
 
 #header li {
@@ -347,6 +348,10 @@ body.application #main_content li {
 
 
 /* Instructions */
+h4 em {
+  font:                   normal italic normal 100%/1.5em "Times New Roman", Times, serif;
+}
+
 body.instructions #main_content dt {
   font-weight:            bold;
   font-size:              80%;
@@ -372,6 +377,10 @@ code {
 
 p code {
   font-size:              110%;
+}
+
+li code, dd code {
+  font-size:              95%;
 }
 
 .instructions th {
