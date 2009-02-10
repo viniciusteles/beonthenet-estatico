@@ -49,3 +49,11 @@
 * Novo div: #picture_description, nas páginas de imagem grande -- "03(pictures)_best_galleries_picture(1_horizontal).html" e "03(pictures)_best_galleries_picture(2_vertical).html".
 * CSS para tudo isso.
 * Atualizamos o arquivo "instrucoes.html".
+
+# 10/fev/2009
+
+* Refatoramos o CSS. Agora o projeto está tinindo no IE6 e 7.
+* Os links para as fichas técnicas agora realmente levam às fichas técnicas.
+* Renomeamos o arquivo "05(pictures)_best_galleries_pictures_sent(05_error).html" (ver dia 06/fev/2009) para "06(pictures)_best_galleries_pictures_sent(01_error).html".
+* Páginas com body.text agora têm padding maior no div#main_content. Vimos que é uma boa prática.
+* Atualizamos o arquivo "instrucoes.html". Não se esqueça de dar uma olhada neste arquivo!
