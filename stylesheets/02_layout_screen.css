@@ -576,9 +576,7 @@ body.application #main_content ul {
   position:               absolute;
   top:                    5.5em;
   z-index:                100;
-  margin-bottom:          -10px;
 }
-
 body > #facebox {
 	right:                  0;
 	left:                   0;
@@ -595,7 +593,7 @@ body > #facebox {
   display:                table;
 }
 *:first-child + html #facebox div {
-  padding-right:          36px;
+/*  padding-right:          18px;*/
 }
 
 #facebox p {
@@ -616,7 +614,7 @@ body > #facebox {
   left:                   10px;
 }
 *:first-child + html #facebox a {
-  right:                  -36px;
+  right:                  -18px;
 }
 
 #facebox img {
