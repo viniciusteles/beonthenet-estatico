@@ -348,8 +348,12 @@ body.application #main_content li {
 
 
 /* Instructions */
+.instructions #main_content h4 {
+  line-height:            1.2em;
+}
+
 h4 em {
-  font:                   normal italic normal 100%/1.5em "Times New Roman", Times, serif;
+  font:                   normal italic normal 100%/1.2em "Times New Roman", Times, serif;
 }
 
 body.instructions #main_content dt {

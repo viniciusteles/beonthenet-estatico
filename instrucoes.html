@@ -72,9 +72,9 @@
       <ul id="toc">
         <li><a href="#o_que_voce_ve">O que você vê no site</a></li>
         <li><a href="#modulos_do_beonthenet">Os módulos do Be on the Net</a></li>
-        <li><a href="#flexibilidade_do_css">A flexibilidade do CSS</a></li>
+        <li><a href="#flexibilidade_do_css">HTML e a flexibilidade do CSS</a></li>
         <li><a href="#divisao_do_css">A divisão do CSS</a></li>
-        <li><a href="#modulos_paginas_situacoes">Conhecendo o <strong>body</strong> &mdash;<br />módulos, páginas e situações</a>
+        <li><a href="#modulos_paginas_situacoes">Conhecendo o <strong>body</strong> &mdash; módulos, páginas e situações</a>
           <ul>
             <li><a href="#tabela_modulos_paginas_situacoes">Tabela de modulos, páginas e situações</a></li>
           </ul>
@@ -82,8 +82,10 @@
         <li><a href="#convencoes">Convenções</a>
           <ul>
             <li><a href="#logotipos">Logotipos</a></li>
+            <li><a href="#logo_textual">Logo textual</a></li>
           </ul>
         </li>
+        <li><a href="">Depois do primeiro template</a></li>
       </ul>
 
       <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram junto com este no pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma ideia de como é o fluxo de navegação do usuário.</p>
@@ -243,7 +245,7 @@
           </td>
         </tr>
         <tr>
-          <td rowspan="5">#checkout</td>
+          <td rowspan="4">#checkout</td>
           <td>1. initial  <span>(checkout de imagens: estado inicial)</span></td>
           <td>
             <a href="05(pictures)_best_galleries_checkout(01_initial).html">05(pictures)_best_galleries_checkout(01_initial).html</a>
@@ -272,30 +274,30 @@
           </td>
         </tr>
         <tr>
-          <td>5. error <span>(checkout de imagens, quase fim da seleção: erro de envio)</span></td>
+          <td rowspan="2">#pictures_sent</td>
+          <td>1. checkout error <span>(checkout de imagens, quase fim da seleção: erro de envio)</span></td>
           <td>
-            <a href="05(pictures)_best_galleries_pictures_sent(05_error).html">05(pictures)_best_galleries_pictures_sent(05_error).html</a>
+            <a href="06(pictures)_best_galleries_pictures_sent(01_error).html">06(pictures)_best_galleries_pictures_sent(01_error).html</a>
             <code>&lt;body class="best_galleries pictures" id="pictures_sent"&gt;</code>
           </td>
         </tr>
         <tr>
-          <td>#pictures_sent</td>
-          <td><span>(fim da seleção de imagens, com link de volta para a galeria)</span></td>
+          <td>2. success <span>(fim da seleção de imagens, com link de volta para a galeria)</span></td>
           <td>
-            <a href="06(pictures)_best_galleries_pictures_sent.html">06(pictures)_best_galleries_pictures_sent.html</a>
+            <a href="06(pictures)_best_galleries_pictures_sent(02_success).html">06(pictures)_best_galleries_pictures_sent(02_success).html</a>
             <code>&lt;body class="pictures" id="pictures_sent"&gt;</code>
-          </td>
+          </td>          
         </tr>
         <tr>
           <td rowspan="2">#search</td>
-          <td>invalid  <span>(busca inválida, com sugestões válidas de busca)</span></td>
+          <td>1. invalid  <span>(busca inválida, com sugestões válidas de busca)</span></td>
           <td>
             <a href="07(pictures)_search(01_invalid).html">07(pictures)_search(01_invalid).html</a>
             <code>&lt;body class=" pictures" id="search"&gt;</code>
           </td>
         </tr>
         <tr>
-          <td>valid  <span>(busca válida, com imagens vindas de galerias diversas)</span></td>
+          <td>2. valid  <span>(busca válida, com imagens vindas de galerias diversas)</span></td>
           <td>
             <a href="07(pictures)_search(02_valid).html">07(pictures)_search(02_valid).html</a>
             <code>&lt;body class=" pictures" id="search"&gt;</code>
@@ -321,30 +323,30 @@
         <tr>
           <td rowspan="4">.contact</td>
           <td rowspan="4">#index</td>
-          <td>initial <span>(página inicial do módulo de contato, com o formulário de contato em estado inicial)</span></td>
+          <td>1. initial <span>(página inicial do módulo de contato, com o formulário de contato em estado inicial)</span></td>
           <td>
             <a href="10(contact)_index(01_initial).html">10(contact)_index(01_initial).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
-          <td>form spinner <span>(página de contato: envio da mensagem)</span></td>
+          <td>2. form spinner <span>(página de contato: envio da mensagem)</span></td>
           <td>
             <a href="10(contact)_index(02_form_spinner).html">10(contact)_index(02_form_spinner).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
-          <td>error <span>(página de contato: mensagem de erro com destaque para e-mail inválido)</span></td>
+          <td>3. error <span>(página de contato: mensagem de erro com destaque para e-mail inválido)</span></td>
           <td>
             <a href="10(contact)_index(03_error).html">10(contact)_index(03_error).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
-          <td>success <span>(página de contato: mensagem de envio bem-sucedido)</span></td>
+          <td>4. success <span>(página de contato: mensagem de envio bem-sucedido)</span></td>
           <td>
-            <a href="10(contact)_index(03_success).html">10(contact)_index(03_success).html</a>
+            <a href="10(contact)_index(04_success).html">10(contact)_index(04_success).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
@@ -411,12 +413,17 @@
   &lt;/a&gt;
 &lt;/h1&gt;</code></pre>
 
+      <h4>Nota: é só jogar seu arquivo de logotipo dentro da pasta /images, que o sistema do Be on the Net cuida do resto. Não tente inserir o logo como background-image via CSS. É fria.</h4>
       <h4>Nota: as propriedades <code>alt</code> e <code>title</code> vão variar dependendo da configuração da conta do cliente.</h4>
 
       <p><strong>Para logotipos de impressão:</strong> a convenção é nomear o arquivo como <strong>&ldquo;logo_print&rdquo;</strong>. O sistema reconhece as mesmas extensões do logo de tela, logo vai aceitar seu logotipo se ele se chamar <strong>logo_print.gif</strong>, <strong>logo_print.jpeg</strong>, <strong>logo_print.jpg</strong> ou <strong>logo_print.png</strong>. Inserir um logotipo de impressão não é obrigatório. Mas fica bonitão!</p>
 
-      <p>Se o sistema não encontrar nenhum arquivo de logotipo, vai em vez disso usar o <strong>nome da conta</strong> do usuário como &ldquo;logo textual&rdquo;. Por exemplo, experimente retirar os arquivos de logotipo que vieram neste pacote, e você vai ver que o site vai se chamar somente &ldquo;Patricia Figueira&rdquo;.</p>
-      <h4>Nota: agora que você conhece a convenção de logotipos, experimente trabalhar com logotipo textual &mdash; retire o logo da Patricia Figueira e use o atributo <code>alt</code> que restou da imagem como um logo textual. E estilize-o como bem quiser.</h4>
+      <h3 id="logo_textual">Logo textual</h3>
+
+      <p>Se o sistema não encontrar nenhum arquivo de logotipo, não vai gerar a tag <code>&lt;img /&gt;</code> que conteria o logo. Em vez disso, vai usar a tag <code>&lt;a&gt;</code> que fica em volta da <code>&lt;img /&gt;</code> e nela vai exibir o <strong>nome da conta</strong> do usuário como &ldquo;logo textual&rdquo;. Por exemplo, dê uma olhada no cabeçalho desta página, para ver o nome &ldquo;Patricia Figueira&rdquo; sem imagens.</p>
+      <p>É uma boa prática de produção de templates estilizar os atributos textuais da tag <code>&lt;img /&gt;</code> de forma idêntica aos da tag <code>&lt;a&gt;</code> que a contém, de modo a gerar um <strong>belo logotipo textual genérico</strong> e preparar o template para ambas as situações: quando não há imagem de logotipo e quando há imagem mas o browser não a exibe.</p>
+
+      <h4>Nota: agora que você conhece a convenção de logotipos, procure prever o máximo de situações possíveis: espaço para logotipo vertical, espaço para logotipo horizontal, espaço para logotipo textual... Pode (deve!) trocar o logo da Patricia Figueira por logos experimentais e testar à vontade!</h4>
         
         
 <!--
@@ -430,7 +437,7 @@
 
       <h3>HR vs. IEca</h3>
       <h3>Margens negativas nos #thumbnails</h3>
-      <h3>Menu com abas</h3>
+      <h3>Menu com abas (li.current)</h3>
       <h3>Divisão do CSS em seções</h3>
       <h3>logo_screen, logo_print</h3>
       <h3>Centralização vertical de imagens</h3>

@@ -436,6 +436,15 @@ body#search #search_result_count label {
 
 
 /* Who */
+body.text #main_content {
+  padding:                1.56em 10em;
+}
+
+body.text #main_content h1 {
+  margin-right:           -3.1em;
+  margin-left:            -3.1em;
+}
+
 .quem_somos #main_content p {
   margin:                 1em 0;
 }
@@ -664,6 +673,11 @@ body.instructions #toc {
   padding:                1em 0 .75em 0;
 }
 
+.instructions #main_content h4 {
+  padding-left:           30px;
+  margin:                 1.2em 0 1.2em -30px;
+}
+
 .instructions #main_content dl, 
 .instructions #main_content ul {
   margin:                 1.6em 6em;
@@ -686,8 +700,10 @@ code {
 }
 
 .instructions table {
+  width:                  900px;
   border-collapse:        collapse;
   margin:                 auto;
+  margin-left:            -6.9em;
 }
 
 .instructions table * {

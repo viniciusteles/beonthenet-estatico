@@ -450,6 +450,10 @@ body.instructions #toc {
   border-color:           #E0C99B;
 }
 
+.instructions #main_content h4 {
+  background:             transparent url(../images/important.gif) no-repeat left top;
+}
+
 body.instructions #main_content dt {
   color:                  #940029;
 }
