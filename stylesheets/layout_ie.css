@@ -1,4 +1,8 @@
-/* Style sheet with conditions for Internet Explorer. */
+/* Style sheet with conditions for Internet Explorer lower than 8. */
+
+body, .pages, #submit_result, body.application #main_content h2 {
+  position:               relative;
+}
 
 hr {
   margin:                 -8px 0 -7px 0;
@@ -11,42 +15,36 @@ hr {
 
 /* Vertically centering images */
 ul#thumbnails li div a {
-	display:                block;
+  display:                block;
 }
 ul#thumbnails li div span.ie {
-	display:                inline-block;
-	vertical-align:         middle;
-	height:                 100%;
+  display:                inline-block;
+  vertical-align:         middle;
+  height:                 100%;
 }
 ul#thumbnails li div img {
-	vertical-align:         middle;
+  vertical-align:         middle;
 }
 /* /Vertically centering images */
 
 
 .second {
-  bottom:                 40px;
+  bottom:                 50px;
 }
 
 #all_pictures label, #cart_items label, 
 #selected_pictures label {
-	filter:                 alpha(opacity=70);
+  filter:                 alpha(opacity=70);
 }
 
+.moved_to_cart {
+  filter:                 alpha(opacity=30);
+}
 
 body#selection #selection_size {
   right:                  34.25em;
 }
 
-.moved_to_cart {
-	filter:                 alpha(opacity=30);
-}
-
 label {
-	margin-top:             .3em;
-}
-
-#submit_button {
-	width:                  12em;
-	margin-left:            43%;
+  margin-top:             .3em;
 }

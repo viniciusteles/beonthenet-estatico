@@ -7,7 +7,6 @@
 body {
   width:                  62.5em;
 	margin:                 auto;
-	position:               relative;
 }
 
 #header, #main_content, #footer {
@@ -323,6 +322,12 @@ body#selection #main_content {
   height:                 auto !important;
   height:                 36.75em;
 }
+body#checkout #main_content, 
+body#pictures_sent #main_content {
+  min-height:             10em;
+  height:                 auto !important;
+  height:                 10em;
+}
 
 #all_pictures {
 	float:                  left;
@@ -469,7 +474,7 @@ body.text #main_content h1 {
 label {
 	display:                block;
 	width:                  29%;
-	margin-top:             .2em;
+  margin-top:             .2em;
 	margin-right:           1em;
 }
 
@@ -643,7 +648,9 @@ body > #facebox {
 	margin-bottom:          .5em;
 }
 
-body#selection #footer {
+body#selection #footer, 
+body#checkout #footer, 
+body#pictures_sent #footer {
   margin-top:             -15px;
 }
 /* /Footer */
@@ -698,10 +705,9 @@ code {
 }
 
 .instructions table {
-  width:                  900px;
+  width:                  100%;
   border-collapse:        collapse;
-  margin:                 auto;
-  margin-left:            -6.9em;
+  margin-left:            -5em;
 }
 
 .instructions table * {
