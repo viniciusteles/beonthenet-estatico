@@ -25,15 +25,19 @@
 
   <body class="instructions text" id="index">  
     <div id='header'>
-      <h1 id='logo_print'><img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" /></h1>
-      <h1 id='logo_screen'><a href="#">Patricia Figueira</a></h1>
+      <h1 id='logo_print'>
+        <img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" />
+      </h1>
+      <h1 id='logo_screen'>
+        <a href="01(pictures)_best_galleries_index.html">Patricia Figueira</a>
+      </h1>
       <h2 id='slogan'>A nova cara da fotografia social.</h2>
       <ul>
-        <li class="best_galleries"><a href="#">Melhores</a></li>
-        <li class="full_galleries"><a href="#">Álbuns</a></li>
-        <li class="all_videos"><a href="#">Vídeos</a></li>
-        <li class="quem_somos"><a href="#">Quem somos</a></li>
-        <li class='contact'><a href="#">Contato</a></li>
+        <li class="best_galleries"><a href="01(pictures)_best_galleries_index.html">Melhores</a></li>
+        <li class="full_galleries"><a href="01(pictures)_best_galleries_index.html">Álbuns</a></li>
+        <li class="all_videos"><a href="14(videos)_all_videos_index.html">Vídeos</a></li>
+        <li class="quem_somos"><a href="09(text)_quem_somos_index.html">Quem somos</a></li>
+        <li class='contact'><a href="10(contact)_index(01_initial).html">Contato</a></li>
       </ul>
 
       <form action="busca" id="global_search" method="get">
@@ -59,13 +63,13 @@
       <p>Como vai ficar a aparência, como vão ser diagramados os thumbnails das imagens e os outros elementos, isso só é limitado pela sua criatividade. Envie-nos seu layout de Photoshop e daremos nosso feedback para você começar seu CSS. As instruções a seguir vão servir como orientação para você se encontrar no HTML e saber todos os macetes necessários para levar sua arte aos limites.</p>
 
       <h2>Tá. E o que eu ganho com isso?</h2>
-      
+
       <ul>
         <li><strong>R$ 500,00</strong> para cada layout original que voce criar! (ah, mudança só de cor não caracteriza um layout como original; veja a seção <a href="#divisao_do_css">A divisão do CSS</a> para entender de que raios estamos falando);</li>
         <li><strong>Seu nome</strong> no site do <a href="http://beonthe.net">Be on the Net</a> e no rodapé de cada site que tiver um template seu (com links e mais links para seu próprio site) &mdash; e acontece mesmo! Dê uma olhada nas fichas técnicas de cada <a href="http://beonthe.net/galerias/templates">template</a>; seu nome pode ser o próximo;</li>
         <li>Quem gostar de seu template mas quiser algo mais exclusivo vai ser indicado por nós direto a você. E aí você ganha o dindim do template e mais o que negociar com seu próprio cliente!</li>
         <li>E a médio prazo a coisa tende a ficar mais legal. Leia nosso <a href="http://blog.improveit.com.br/articles/2008/11/19/designers-4-formas-de-se-dar-bem-com-o-be-on-the-net" title="Designers: 4 formas de se dar bem com o Be on the Net">artigo sobre formas de ganhar com o Be on he Net</a>, lá tem tudo mais mastigado.</li>
-      </ul>      
+      </ul>
 
       <h3>Índice:</h3>
 
@@ -76,7 +80,7 @@
         <li><a href="#divisao_do_css">A divisão do CSS</a></li>
         <li><a href="#modulos_paginas_situacoes">Conhecendo o <strong>body</strong> &mdash; módulos, páginas e situações</a>
           <ul>
-            <li><a href="#tabela_modulos_paginas_situacoes">Tabela de modulos, páginas e situações</a></li>
+            <li><a href="#tabela_modulos_paginas_situacoes">Tabela de módulos, páginas e situações</a></li>
           </ul>
         </li>
         <li><a href="#convencoes">Convenções</a>
@@ -413,18 +417,22 @@
   &lt;/a&gt;
 &lt;/h1&gt;</code></pre>
 
-      <h4>Nota: é só jogar seu arquivo de logotipo dentro da pasta /images, que o sistema do Be on the Net cuida do resto. Não tente inserir o logo como background-image via CSS. É fria.</h4>
+      <h4>Nota: é só jogar seus arquivos de logotipo dentro da pasta /images, que o sistema do Be on the Net cuida do resto. Não tente inserir o logo como background-image via CSS. É fria.</h4>
       <h4>Nota: as propriedades <code>alt</code> e <code>title</code> vão variar dependendo da configuração da conta do cliente.</h4>
 
       <p><strong>Para logotipos de impressão:</strong> a convenção é nomear o arquivo como <strong>&ldquo;logo_print&rdquo;</strong>. O sistema reconhece as mesmas extensões do logo de tela, logo vai aceitar seu logotipo se ele se chamar <strong>logo_print.gif</strong>, <strong>logo_print.jpeg</strong>, <strong>logo_print.jpg</strong> ou <strong>logo_print.png</strong>. Inserir um logotipo de impressão não é obrigatório. Mas fica bonitão!</p>
 
       <h3 id="logo_textual">Logo textual</h3>
 
-      <p>Se o sistema não encontrar nenhum arquivo de logotipo, não vai gerar a tag <code>&lt;img /&gt;</code> que conteria o logo. Em vez disso, vai usar a tag <code>&lt;a&gt;</code> que fica em volta da <code>&lt;img /&gt;</code> e nela vai exibir o <strong>nome da conta</strong> do usuário como &ldquo;logo textual&rdquo;. Por exemplo, dê uma olhada no cabeçalho desta página, para ver o nome &ldquo;Patricia Figueira&rdquo; sem imagens.</p>
+      <p>Se o sistema não encontrar nenhum arquivo de logotipo, não vai gerar a tag <code>&lt;img /&gt;</code> que conteria o logo. Em vez disso, vai usar a tag <code>&lt;a&gt;</code> que fica em volta da <code>&lt;img /&gt;</code> e nela vai exibir o <strong>nome da conta</strong> do usuário como logo textual. Por exemplo, dê uma olhada no cabeçalho desta página, para ver o nome &ldquo;Patricia Figueira&rdquo; sem imagens.</p>
       <p>É uma boa prática de produção de templates estilizar os atributos textuais da tag <code>&lt;img /&gt;</code> de forma idêntica aos da tag <code>&lt;a&gt;</code> que a contém, de modo a gerar um <strong>belo logotipo textual genérico</strong> e preparar o template para ambas as situações: quando não há imagem de logotipo e quando há imagem mas o browser não a exibe.</p>
 
       <h4>Nota: agora que você conhece a convenção de logotipos, procure prever o máximo de situações possíveis: espaço para logotipo vertical, espaço para logotipo horizontal, espaço para logotipo textual... Pode (deve!) trocar o logo da Patricia Figueira por logos experimentais e testar à vontade!</h4>
-        
+
+      <h3 id="css_e_midia">CSS e mídia</h3>
+
+
+
         
 <!--
       <h3>CSS e mídia</h3>
@@ -459,7 +467,7 @@
         Instruções para fazer CSS para o <strong>Be on the Net</strong>: por <strong><a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello é designer da Improve It.">Leandro Mello</a></strong>, designer da <a href="http://improveit.com.br/br" title="Improve It rules.">Improve it</a>.<br /> Se você, designer, tiver <em>qualquer</em> dúvida em relação ao HTML, ao CSS ou a estas instruções, não se avexe, entre em <a href="http://improveit.com.br/contato" title="entre em contato, nós vamos tirar suas dúvidas.">contato</a>!
       </p>
       <h6>
-        Powered by <a href="http://beonthe.net" title="Be on the Net. Finalmente, online de verdade.">Beonthe.net</a>, um produto da <a href="http://improveit.com.br/br" title="Improve It rules.">Improve it</a>.
+        Powered by <a href="http://beonthe.net" title="Be on the Net. Finalmente, online de verdade.">Beonthe.net</a>, um produto da <a href="http://improveit.com.br" title="Improve It">Improve It</a>.
       </h6>
     </div>
   </body>

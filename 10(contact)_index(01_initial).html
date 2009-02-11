@@ -18,57 +18,66 @@
   </head>
 <body class="contact" id="index">  
   <div id='header'>
-    <h1 id='logo_print'><img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" /></h1>
-    <h1 id='logo_screen'><a href="#"><img alt="Patricia Figueira" src="images/logo.gif" title="Título do logotipo de tela. Existe também um de impressão." /></a></h1>
+    <h1 id='logo_print'>
+      <img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" />
+    </h1>
+    <h1 id='logo_screen'>
+      <a href="01(pictures)_best_galleries_index.html">
+        <img alt="Patricia Figueira" src="images/logo.gif" title="Título do logotipo de tela. Existe também um de impressão." />
+      </a>
+    </h1>
     <h2 id='slogan'>A nova cara da fotografia social.</h2>
     <ul>
-      <li class="best_galleries"><a href="#">Melhores</a></li>
-      <li class="full_galleries"><a href="#">Álbuns</a></li>
-      <li class="all_videos"><a href="#">Vídeos</a></li>
-      <li class="quem_somos"><a href="#">Quem somos</a></li>
-      <li class='contact current'><a href="#">Contato</a></li>
+      <li class="best_galleries"><a href="01(pictures)_best_galleries_index.html">Melhores</a></li>
+      <li class="full_galleries"><a href="01(pictures)_best_galleries_index.html">Álbuns</a></li>
+      <li class="all_videos"><a href="14(videos)_all_videos_index.html">Vídeos</a></li>
+      <li class="quem_somos"><a href="09(text)_quem_somos_index.html">Quem somos</a></li>
+      <li class='contact current'><a href="10(contact)_index(01_initial).html">Contato</a></li>
     </ul>
+
 <form action="busca" id="global_search" method="get">
       <fieldset>
         <input id="search_type" name="search_type" type="hidden" value="text" />
         <input id="query" maxlength="500" name="query" size="60" type="text" value="buscar fotos" />
       </fieldset>
-
 </form>
   </div>
+
   <hr />
+
   <div id='main_content'>
-    <h1>
-      Contato
-    </h1>
+    <h1>Contato</h1>
+
     <div id='submit_result'></div>
+
     <div id='contact_content'>
-    <form action="contact/send_message" method="post">
-
-        <fieldset>
-          <label for='message_name' id='name'>Nome:</label>
-          <input id="message_name" name="message[name]" size="30" type="text" />
-          <label for='message_email' id='email'>E-mail:</label>
-          <input id="message_email" name="message[email]" onfocus="clearField(this);" size="30" type="text" />
-          <label for='message_phone' id='phone_number'>Telefone:</label>
-          <input id="message_phone" name="message[phone]" size="30" type="text" />
-
-          <label for='message_subject' id='subject'>Assunto:</label>
-          <input id="message_subject" name="message[subject]" size="30" type="text" />
-          <label for='message_message' id='message'>Mensagem:</label>
-          <textarea cols="45" id="message_message" name="message[message]" rows="20"></textarea>
-          <button type="submit" value="Enviar">Enviar</button>
-        </fieldset>
+    <form action="10(contact)_index(02_form_spinner).html" method="post">
+      <fieldset>
+        <label for='message_name' id='name'>Nome:</label>
+        <input id="message_name" name="message[name]" size="30" type="text" />
+        <label for='message_email' id='email'>E-mail:</label>
+        <input id="message_email" name="message[email]" onfocus="clearField(this);" size="30" type="text" />
+        <label for='message_phone' id='phone_number'>Telefone:</label>
+        <input id="message_phone" name="message[phone]" size="30" type="text" />
+        <label for='message_subject' id='subject'>Assunto:</label>
+        <input id="message_subject" name="message[subject]" size="30" type="text" />
+        <label for='message_message' id='message'>Mensagem:</label>
+        <textarea cols="45" id="message_message" name="message[message]" rows="20"></textarea>
+        <button type="submit" value="Enviar">Enviar</button>
+      </fieldset>
     </form>
     </div>
+
   </div>
+
   <hr />
+
   <div id='footer'>
     <p><strong>&copy; Patinha</strong> &mdash; Nikiti City, RJ &mdash; Brasil
     <strong>Fone:</strong> (21) 2705-0198 / (21) 8716-7479 &mdash; <strong>e-mail:</strong> <a href="#" rel="protected" title="Um title."></a> ou <a href="#" rel="protected" title="Um title."></a>.</p>
 
     <h6>
-      Powered by <a href="#" title="Um title.">Beonthe.net</a>, um produto da <a href="#" title="Um title.">Improve It</a>.
+      Powered by <a href="http://beonthe.net" title="Be on the Net. Finalmente, online de verdade.">Beonthe.net</a>, um produto da <a href="http://improveit.com.br" title="Improve It">Improve It</a>.
     </h6>
   </div>
 </body></html>

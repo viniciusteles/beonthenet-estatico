@@ -153,7 +153,7 @@ body.videos #thumbnails img {
 
 
 /* Summary */
-#summary, #picture_description, #about_us, #data_sheet, body.application #maion_content ul {
+#summary, #picture_description, #about_us, #data_sheet, body.application #main_content ul {
 	padding:                .65em 7.5em;
 	border:                 3px double;
   margin-bottom:          10px;

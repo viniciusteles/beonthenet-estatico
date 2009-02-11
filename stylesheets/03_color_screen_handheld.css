@@ -133,7 +133,7 @@ ul#thumbnails a:hover label {
 
 
 /* Summary */
-#summary, #picture_description, #about_us, #data_sheet, body.application #maion_content ul {
+#summary, #picture_description, #about_us, #data_sheet, body.application #main_content ul {
 	background-color:       #EFE3C3;
 	border-color:           #F6F0DB;
 }
