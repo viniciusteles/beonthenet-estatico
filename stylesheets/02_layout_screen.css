@@ -348,6 +348,9 @@ body#pictures_sent #main_content {
 	position:               relative;
 	z-index:                2;
 }
+#cart_items.instructions {
+  margin-top:             3.75em;
+}
 
 #all_pictures li, #cart_items li, #selected_pictures li {
 	float:                  left;
@@ -395,18 +398,14 @@ body#pictures_sent #main_content {
 
 
 body#selection #selection_size {
-  float:                  right;
-  margin-right:           -22.75em;
-	position:               relative;
-	top:                    .5em;
-  right:                  37em;
-	z-index:                1;
+  margin:                 1em 0 -3em 0;
+  position:               relative;
+  right:                  15.5em;
 }
 body#selection #selection_size label {
-	display:                inline;
-	padding:                .34em 1.5em .35em .8em;
-	margin-left:            3em;
-	visibility:             visible;
+  display:                inline;
+  padding:                .34em 1.5em .35em .8em;
+  margin:                 0;
 }
 
 body#checkout #selection_size,

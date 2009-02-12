@@ -303,7 +303,7 @@ body#selection #selection_size label {
 }
 
 body#selection #selection_size label {
-	background:             #940029 url(../images/tab_selection_size.gif) no-repeat left center;
+	background:             #940029 url(../images/tab_selection_size.gif) repeat-y left center;
 }
 
 .go_to_checkout {

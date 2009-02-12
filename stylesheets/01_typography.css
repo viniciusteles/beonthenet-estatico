@@ -1,7 +1,7 @@
 /* Typography global attributes */
 html * {
   list-style-type:        none;
-  font:                   normal normal normal 1em/1em Geneva, Helvetica, "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+  font:                   normal normal normal 1em/1em "Geneva", Helvetica, "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
 }
 
 p, li, dd, dt {
@@ -232,9 +232,8 @@ ul#thumbnails a img {
 
 body#selection #selection_size, 
 body#selection #selection_size label {
-	font-size:              100%;
-	font-weight:            bold;
-	line-height:            2em;
+  font:                   normal bold normal 103%/32px "Trebuchet MS", Arial, sans-serif;
+  text-align:             right;
 }
 
 body#checkout #selection_size label, 

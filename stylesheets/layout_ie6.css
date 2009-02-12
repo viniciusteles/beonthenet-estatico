@@ -26,11 +26,6 @@ body.pictures#index, body.pictures#gallery, body.pictures#search {
   right:                  0;
 }
 
-body#selection #selection_size {
-  right:                  38.25em;
-}
-
-
 .instructions table {
   margin-right:            -6.9em;
 }

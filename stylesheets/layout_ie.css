@@ -19,8 +19,8 @@ ul#thumbnails li div a {
 }
 ul#thumbnails li div span.ie {
   display:                inline-block;
-  vertical-align:         middle;
   height:                 100%;
+  vertical-align:         middle;
 }
 ul#thumbnails li div img {
   vertical-align:         middle;
@@ -39,10 +39,6 @@ ul#thumbnails li div img {
 
 .moved_to_cart {
   filter:                 alpha(opacity=30);
-}
-
-body#selection #selection_size {
-  right:                  34.25em;
 }
 
 label {
