@@ -4,7 +4,7 @@ html * {
   font:                   normal normal normal 1em/1em "Geneva", Helvetica, "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
 }
 
-p, li, dd, dt {
+p, li, dd, dt, dt a {
 	font-size:              75%;
 	line-height:            1.7em;
 }
@@ -286,9 +286,16 @@ body.text #main_content h4 {
   line-height:            1.2em;
 }
 
-body.text #main_content dt {
+body.text #main_content dt, 
+body.text #main_content dt a {
   font-weight:            bold;
   font-size:              80%;
+}
+body.text #main_content dt a {
+  font-size:              100%;
+}
+body.text #main_content dt a:hover {
+  text-decoration:        none;
 }
 
 body.text #main_content dd, 
@@ -385,9 +392,13 @@ body.application #main_content li {
 
 
 /* Footer */
-#footer p, #footer h6 {
+#footer * {
   text-align:             right;
   line-height:						1.25em;
+}
+
+#footer h5 {
+  font-size:              75%;
 }
 
 #footer h6 {

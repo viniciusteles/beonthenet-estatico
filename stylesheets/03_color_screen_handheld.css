@@ -350,9 +350,14 @@ body.text #main_content h4 {
 }
 
 body.text #main_content dt, 
+body.text #main_content dt a, 
 body.text #main_content strong, 
 cite {
   color:                  #940029;
+}
+body.text #main_content dt a:hover {
+  color:                  #FFF;
+  background:             #940029;
 }
 /* Text pages */
 
@@ -468,5 +473,9 @@ body#timeout #main_content h2 {
 
 #footer p {
 	margin-bottom:          .5em;
+}
+
+#footer h5 {
+  color:                  #940029;
 }
 /* /Footer */

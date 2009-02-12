@@ -1,71 +1,75 @@
-# 17/nov/2008
+# Release notes:
 
-* Retiramos o conteúdo da tag <title> para deixar os arquivos menos poluídos, e os substituímos pelos respectivos nomes dos arquivo HTML.
-* Retiramos a maior parte das tags <meta> para reduzir a poluição dos arquivos.
-* Renomeamos form_spinner.gif para spinner_form.gif.
-* Renomeados facebox_spinner.gif para spinner_selection.gif.
-* Retiramos os números que havia após os nomes dos arquivos CSS. Exemplo: layout_ie.css?1234567890 passou a ser apenas layout_ie.css. Estes números não tinham nenhuma importância para o trabalho de estilização, mas tornavam o código ligeiramente mais poluído.
-* Retiramos as referências para os arquivos javascript, pois são desnecessárias para o processo de estilização.
-* Retiramos as referências para o arquivo 04_admin.css. A parte de admin não é englobada pelo template.
-* Reduzimos o tamanho das propriedades alt e title para reduzir a poluição.
-* Fizemos com que todos os links passem a apontar apenas para "#". Isso também ajudou a reduzir a poluição visual.
-* Retiramos uma chamada javascript relativa ao Google Analytics que aparecia ao final de cada arquivo.
-* Indentação nos links para os arquivos CSS.
-* Movemos os diretórios images e stylesheets para a raiz.
-* Retiramos todos os eventos de javascript que estavam presentes em algumas páginas HTML.
-* Melhoramos a formatação da ficha técnica para facilitar a compreensão de sua organização.
+## 12/fev/2009
 
-# 18/nov/2008
+* Mais links funcionam; aumentou a usabilidade.
+* Eliminamos o scroll horizontal que browsers tipo Webkit (Safari e Chrome) mostravam na página de seleção. Deu uma enxugada no CSS.
+* Páginas do módulo de texto (aquelas com body.text) agora têm CSS unificado. São a página Quem Somos (arquivo "09(text)_quem_somos_index.html") e a de Instruções (arquivo "instrucoes.html").
+* Reformatamos o release-notes para vir com as mudanças mais recentes no topo.
+* Implementamos no rodapé de todas as das páginas um sistema de links para _todos_ os arquivos de informações do Be on the Net estático.
+
+## 11/fev/2009
+
+* A maioria dos links agora funciona. Agora, o beonthenet-estatico é um pouco menos estático: é possível navegar por todas as páginas clicando nos links, menus, tags, imagens e botões. O designer vai ter uma noção melhor do workflow do sistema, e de que página leva a que página.
+* Melhoramos a legibilidade dos arquivos HTML, com melhores indentações em trechos relevantes.
+* Retocamos o CSS da página de erros.
+
+## 10/fev/2009
+
+* Refatoramos o CSS. Agora o projeto está tinindo no IE6 e 7.
+* Os links para as fichas técnicas agora realmente levam às fichas técnicas.
+* Renomeamos o arquivo "05(pictures)_best_galleries_pictures_sent(05_error).html" (ver dia 06/fev/2009) para "06(pictures)_best_galleries_pictures_sent(01_error).html".
+* Páginas com body.text agora têm padding maior no div##main_content. Vimos que é uma boa prática manter estreitas as colunas de texto corrido.
+* Atualizamos o arquivo "instrucoes.html". Não se esqueça de dar uma olhada neste arquivo!
+
+## 06/fev/2009
+
+* Novo formulário de checkout, com três campos em vez de um.
+* Novo arquivo: erro de envio no checkout -- arquivo "05(pictures)_best_galleries_pictures_sent(05_error).html" (ver 20/dez/2008).
+* Novo div: ##picture_description, nas páginas de imagem grande -- "03(pictures)_best_galleries_picture(1_horizontal).html" e "03(pictures)_best_galleries_picture(2_vertical).html".
+* CSS para tudo isso.
+* Atualizamos o arquivo "instrucoes.html".
+
+## 21/jan/2009
+
+* Mudanças no div ##header:
+  - Inserimos o h2##slogan, uma tag em que o usuário poderá veicular o slogan de seu negócio.
+  - No menu principal, acrescentamos a classe .current a cada <li> ativo. Isso traz simplicidade e flexibilidade ao CSS deste trecho.
+  - Retiramos os ícones do menu prinicpal, para deixá-lo flexível a qualquer tipo de negócio. Percebemos que os ícones limitavam a versatilidade do template.
+* Atualizamos os thumbnails da página de vídeos 14(videos)_all_videos_index.html; agora os thumbnails aparecem de novo.
+
+## 20/dez/2008
+
+* Nos arquivos de CSS, toda vez que o identificador 'checkout' era usado, passou a ser necessário usar também o identificador 'pictures_sent'. A razão disso é uma mudança estrutural que foi implementada, que passa a permitir que, na seleção de imagens, o usuário final coloque mais dados de contato: nome, telefones e e-mail.
+
+## 12/dez/2008
+
+* Acrescentamos o arquivo fontes-de-material-creative-commons.txt. Ele contém uma lista de sites onde é possível achar material comumente disponibilizado como Creative Commons Attribution.
+
+## 05/dez/2008
+
+* Adicionamos o modelo do contrato ao pacote.
+
+## 18/nov/2008
 
 * Página de instruções atualizada, com índice.
 * Consertamos os links da página instrucoes.html. Agora eles levam a algum lugar.
 * Inserimos uma linha com a folha de estilo 03_color_screen_handheld contendo efetivamente o media="handheld".
 * Novas seções, e uma tabela com todas as situações possíveis.
 
-# 05/dez/2008
+## 17/nov/2008
 
-* Adicionamos o modelo do contrato ao pacote.
-
-# 12/dez/2008
-
-* Acrescentamos o arquivo fontes-de-material-creative-commons.txt. Ele contém uma lista de sites onde é possível achar material comumente disponibilizado como Creative Commons Attribution.
-
-# 20/dez/2008
-
-* Nos arquivos de CSS, toda vez que o identificador 'checkout' era usado, passou a ser necessário usar também o identificador 'pictures_sent'. A razão disso é uma mudança estrutural que foi implementada, que passa a permitir que, na seleção de imagens, o usuário final coloque mais dados de contato: nome, telefones e e-mail.
-
-# 21/jan/2009
-
-* Mudanças no div #header:
-  - Inserimos o h2#slogan, uma tag em que o usuário poderá veicular o slogan de seu negócio.
-  - No menu principal, acrescentamos a classe .current a cada <li> ativo. Isso traz simplicidade e flexibilidade ao CSS deste trecho.
-  - Retiramos os ícones do menu prinicpal, para deixá-lo flexível a qualquer tipo de negócio. Percebemos que os ícones limitavam a versatilidade do template.
-* Atualizamos os thumbnails da página de vídeos 14(videos)_all_videos_index.html; agora os thumbnails aparecem de novo.
-
-# 06/fev/2009
-
-* Novo formulário de checkout, com três campos em vez de um.
-* Novo arquivo: erro de envio no checkout -- arquivo "05(pictures)_best_galleries_pictures_sent(05_error).html" (ver 20/dez/2008).
-* Novo div: #picture_description, nas páginas de imagem grande -- "03(pictures)_best_galleries_picture(1_horizontal).html" e "03(pictures)_best_galleries_picture(2_vertical).html".
-* CSS para tudo isso.
-* Atualizamos o arquivo "instrucoes.html".
-
-# 10/fev/2009
-
-* Refatoramos o CSS. Agora o projeto está tinindo no IE6 e 7.
-* Os links para as fichas técnicas agora realmente levam às fichas técnicas.
-* Renomeamos o arquivo "05(pictures)_best_galleries_pictures_sent(05_error).html" (ver dia 06/fev/2009) para "06(pictures)_best_galleries_pictures_sent(01_error).html".
-* Páginas com body.text agora têm padding maior no div#main_content. Vimos que é uma boa prática.
-* Atualizamos o arquivo "instrucoes.html". Não se esqueça de dar uma olhada neste arquivo!
-
-# 11/fev/2009
-
-* A maioria dos links agora funciona. Agora, o beonthenet-estatico é um pouco menos estático: é possível navegar por todas as páginas clicando nos links, menus, tags, imagens e botões. O designer vai ter uma noção melhor do workflow do sistema, e de que página leva a que página.
-* Melhoramos a legibilidade dos arquivos HTML, com melhores indentações em trechos relevantes.
-* Retocamos o CSS da página de erros.
-
-# 12/fev/2009
-
-* Mais links funcionam; aumentou a usabilidade.
-* Eliminamos o scroll horizontal que browsers tipo Webkit (Safari e Chrome) mostravam na página de seleção. Deu uma enxugada no CSS.
-* Página de texto (aquelas com body.text) agora têm CSS unificado. São a página Quem Somos (arquivo "09(text)_quem_somos_index.html") e a de Instruções (arquivo "instrucoes.html").
+* Retiramos o conteúdo da tag <title> para deixar os arquivos menos poluídos, e os substituímos pelos respectivos nomes dos arquivo HTML.
+* Retiramos a maior parte das tags <meta> para reduzir a poluição dos arquivos.
+* Renomeamos form_spinner.gif para spinner_form.gif.
+* Renomeados facebox_spinner.gif para spinner_selection.gif.
+* Retiramos os números que havia após os nomes dos arquivos CSS. Exemplo: layout_ie.css?1234567890 passou a ser apenas layout_ie.css. Estes números não tinham nenhuma importância para o trabalho de estilização, mas tornavam o código ligeiramente mais poluído.
+* Retiramos as referências para os arquivos JavaScript, pois são desnecessárias para o processo de estilização.
+* Retiramos as referências para o arquivo 04_admin.css. A parte de admin não é englobada pelo template.
+* Reduzimos o tamanho das propriedades alt e title para reduzir a poluição.
+* Fizemos com que todos os links passem a apontar apenas para "##". Isso também ajudou a reduzir a poluição visual.
+* Retiramos uma chamada JavaScript relativa ao Google Analytics que aparecia ao final de cada arquivo.
+* Indentação nos links para os arquivos CSS.
+* Movemos os diretórios images e stylesheets para a raiz.
+* Retiramos todos os eventos de JavaScript que estavam presentes em algumas páginas HTML.
+* Melhoramos a formatação da ficha técnica para facilitar a compreensão de sua organização.

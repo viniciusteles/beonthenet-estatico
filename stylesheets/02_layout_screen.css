@@ -539,7 +539,11 @@ body.text #main_content ul li {
 }
 
 body.text #main_content ul ul {
-  margin:                 0 1em;
+  margin:                 1em 1.5em;
+}
+
+body.text #main_content ul ul li {
+  margin-bottom:          .5em;
 }
 /* Text pages */
 
@@ -720,6 +724,10 @@ body > #facebox {
 
 #footer p {
 	margin-bottom:          .5em;
+}
+
+#footer h5 {
+  margin:                 2em 0 .5em 0;
 }
 
 body#selection #footer, 

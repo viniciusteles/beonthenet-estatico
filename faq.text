@@ -1,12 +1,12 @@
-# A marcação (HTML) poderá ser alterada?
+## A marcação (HTML) poderá ser alterada?
 
 Em princípio não, isto é, o designer não tem como alterar o HTML. Entretanto, até a data do lançamento, podemos fazer alterações no HTML com base nas sugestões de vocês, caso consideremos adequado ao sistema como um todo. Sendo assim, se houver algo que você queira sugerir, por favor, faça isso.
 
-# Caso o item acima seja falso, sem poder alterar a marcação, as imagens deverão ter sempre os mesmos nomes das imagens da pasta /images, correto?
+## Caso o item acima seja falso, sem poder alterar a marcação, as imagens deverão ter sempre os mesmos nomes das imagens da pasta /images, correto?
 
 Não, as imagens podem assumir o nome que você considerar mais conveniente. Na área administrativa do site de cada cliente do Be on the Net, ele poderá fazer upload das imagens com o nome que achar melhor. No seu CSS, coloque os nomes correspondentes das imagens que você for utilizar. Em princípio, você como designer só tem como alterar nomes de imagens que são referenciadas no CSS como imagens de fundo. Uma exceção é a parte de logotipo que será explicada a seguir. 
 
-# Os logotipos serão sempre em padrão texto estilizado? (até porque o cliente vai escolher o template e vai desejar dar um nome qualquer ao site)
+## Os logotipos serão sempre em padrão texto estilizado? (até porque o cliente vai escolher o template e vai desejar dar um nome qualquer ao site)
 
 Não. Caso o cliente tenha um logotipo em forma de imagem, ele poderá fazer o upload através da área administrativa. O Be on the Net segue uma convenção que determina o seguinte: 
 
@@ -14,21 +14,21 @@ Não. Caso o cliente tenha um logotipo em forma de imagem, ele poderá fazer o u
 * Se houver um arquivo chamado logo_print.gif (ou .jpg, .jpeg, .png), será gerada outra tag <img> no source do HTML para que este logo seja mostrado apenas no caso de impressão da página.
 * Se nenhum destes arquivos for localizado, o sistema simplesmente mostrará o nome fantasia do domínio (nome do site). No caso da Patricia, por exemplo, seria "Patricia Figueira". Este nome é cadastrado na área administrativa do Be on the Net.
 
-Em suma, um cliente pode ter um logo em formato de imagem, desde que ele nos forneça um. Mas há aqueles que vão usar logos textuais mesmo. No exercício que você irá fazer de criar um template, sugerimos que você **ignore o atual logotipo da Patricia Figueira e estilize o atributo ``alt`` como se fosse um logotipo textual**.
+Em suma, um cliente pode ter um logo em formato de imagem, desde que ele nos forneça um. Mas há aqueles que vão usar logos textuais mesmo. No exercício que você irá fazer de criar um template, sugerimos que você **ignore o atual logotipo da Patricia Figueira e estilize o atributo ``alt`` como se fosse um logotipo textual e a tag ``a`` que fica em volta da imagem**.
 
-# Será possível inserir tags de CSS e/ou Script adicionais (para image replacement, talvez)?
+## Será possível inserir tags de CSS e/ou Script adicionais (para image replacement, talvez)?
 
 Scripts adicionais não são permitidos em princípio. Porém, se você tiver alguma sugestão neste sentido, por favor nos envie explicando a motivação e, dependendo de como for, poderemos adotar.
 
-# O layout poderá sofrer modificações "drásticas"? Tipo menu na lateral ou algo parecido?
+## O layout poderá sofrer modificações "drásticas"? Tipo menu na lateral ou algo parecido?
 
 Sim. O layout pode ser feito da maneira que você preferir, desde que, para isso, você utilize apenas CSS. Mas, voltando à primeira pergunta, se você tiver alguma sugestão de mudança nas marcações, por favor nos envie.
 
-# Os arquivos CSS estão divididos de modo a separar tipografia, formatação e cores. Nunca trabalhei desta forma. Sou obrigado a usar este padrão?
+## Os arquivos CSS estão divididos de modo a separar tipografia, formatação e cores. Nunca trabalhei desta forma. Sou obrigado a usar este padrão?
 
-Não. Este padrão reflete uma organização que o Leandro adotou e vem funcionando bem para nós. Entretanto, se você preferir se organizar de outra forma, sinta-se à vontade para fazê-lo. Apenas sugerimos que, como exercício, você tente se organizar também neste padrão para ver se funciona para você. Em nossa experiência, ele tem sido bastante útil e facilita bastante as modificações.
+**Não**. Este padrão reflete uma organização que o Leandro adotou e vem funcionando bem para nós. Entretanto, se você preferir se organizar de outra forma, sinta-se à vontade para fazê-lo. Apenas sugerimos que, como exercício, você tente se organizar também neste padrão para ver se funciona para você. Em nossa experiência, ele tem sido bastante útil e facilita bastante as modificações.
 
-# Como é o funcionamento dos spinners?
+## Como é o funcionamento dos spinners?
 
 Chamamos de spinners aqueles gifs animados que são apresentados ao usuário quando alguma operação mais lenta precisa ser efetuada pelo sistema. Os dois casos de uso disso no Be on the Net são:
 
@@ -40,58 +40,66 @@ Os spinners seguem uma convenção de nomes que deve ser respeitada pelo desgine
 * Spinners para formulário: spinner_form.gif
 * Spinner para a ampliação de foto na seleção: spinner_selection.gif 
 
-# Existe algum briefing mesmo que mínimo para ser seguido?
+## Existe algum briefing mesmo que mínimo para ser seguido?
 
-Não há nenhum briefing. Mas, nossa sugestão inicial é que você leia com atenção as instruções que seguem juntamente com os arquivos HTML. Em seguida, pense em como você refaria o site da Patricia Figueira, que está no exemplo, mas com um layout diferente. Neste momento, isso é tudo de que precisamos.
+Não há nenhum briefing. Mas, nossa sugestão inicial é que você leia com atenção as instruções que seguem juntamente com os arquivos HTML (arquivo ``instrucoes.html``). Em seguida, pense em como você refaria o site da Patricia Figueira, que está no exemplo, mas com um layout diferente. Neste momento, isso é tudo de que precisamos.
 
-# No template, os designers fariam a direção de arte, os htmls, css e javascripts?
+## No template, os designers fariam a direção de arte, os htmls, css e javascripts?
 
 A parte que cabe aos designers é a direção de arte e CSS. HTMLs são os que já estão lá e não podem sofrer alterações. Javascripts também são conosco.
 
-# É permitido uso de Image Replacement para convenções como menu e Títulos (h1, h2)?
+## É permitido uso de Image Replacement para convenções como menu e Títulos (h1, h2)?
 
 Se estivéssemos construindo um layout personalizado para um cliente do Be on the Net, não haveria nenhum problema em usar Image Replacement para estes elementos. Entretanto, em se tratando de um template, isso certamente seria problemático. O que acontece é que boa parte dos títulos, bem como o menu, são formados de conteúdo dinâmico. Por exemplo, cada cliente vai ter, no menu, um conjunto específico de opções, cada qual com um nome em particular. Enquanto a Pati usa "melhores" e "álbuns completos", outros usarão "fotos de 15 anos", "fotos de formatura" etc. Sendo assim, usar image replacement para substituir o texto seria ok para algo bem personalizado, mas compromete bastante quando se trata de um template.
 
-Há, no entanto, espaço para image replacement em dois pontos: na paginação (div="pages") e na página de imagens e vídeos grandes, nos links Anterior e Próximo. Nestes casos, há um ``span`` vazio à espera de image replacement, para imagens como setas.
+Há, no entanto, espaço para image replacement em dois pontos: na paginação (p="pages") e na página de imagens e vídeos grandes, nos links Anterior e Próximo. Nestes casos, há um ``span`` vazio à espera de image replacement, para imagens como setas.
 
-# Vocês usarão algum tipo de framework Javascript para convenções como animações, tooltip?
+## Vocês usarão algum tipo de framework Javascript para convenções como animações, tooltip?
 
 Não. Não haverá nenhum tipo de Javascript para isso. A única parte que usa Javascript intensivamente é a seleção de fotos para um álbum.
 
-# Posso usar PNG transparente para alguns elementos?
+## Posso usar PNG transparente para alguns elementos?
 
-PNG transparente é problemático com o IE6. Então, você pode usar, desde que faça uma exceção para o IE6, na qual coloque uma alternativa que funcione para ele.
+PNG transparente é problemático com o IE6. Então, você pode usar, desde que faça uma exceção para o IE6, na qual coloque uma alternativa que funcione para ele (como um PNG de 8 bits ou um GIF com transparência).
 
-# Vocês estão usando já o CSS3? E é obrigatório somente o uso dele?
+## Vocês estão usando já o CSS3? E é obrigatório somente o uso dele?
 
 Não é necessário que se use CCS3. O que precisamos é que o CSS seja sempre válido e que funcione em todos os principais navegadores: IE (6 e 7), Firefox, Safari, Opera e Chrome. 
 
-# Posso usar os ícones e ilustrações que se encontram no exemplo da Patricia Figueira?
+## Posso usar os ícones e ilustrações que se encontram no exemplo da Patricia Figueira?
 
 Não. O designer deverá criar seus próprios ícones e ilustrações, ou obtê-los na internet. 
 
-Caso o designer crie seus próprios ícones ou ilustrações, os arquivos fontes deverão ser incluídos no template. Portanto, deveremos receber o arquivo fonte no formato PSD (Photoshop), ou AI (Adobe Illustrator), ou CDR (Corel) ou outro de sua preferência. Eventuais camadas que tenham sido produzidas devem vir abertas, de modo a permitir fácil edição futura.
+Caso o designer crie seus próprios ícones ou ilustrações, os arquivos fontes deverão ser incluídos no template. Ou seja, deveremos receber o arquivo fonte no formato PSD (Photoshop), ou AI (Adobe Illustrator), ou CDR (Corel) ou outro de sua preferência. Eventuais camadas que tenham sido produzidas devem vir abertas, de modo a permitir fácil edição futura.
 
-Se preferir, o designer pode obter imagens na internet desde que elas estejam disponíveis como [Creative Commons Atribuição (a partir do 2.0)][1]. O link onde as imagens foram obtidas tem que ser informado para que possamos comprovar que o autor delas realmente as libera explicitamente como [Creative Commons Atribuição (2.0 para cima)][1] (infelizmente, a imagem ser "royalty-free" não significa o mesmo que ser Creative Commons, portanto tenha o cuidado de verificar). 
+Se preferir, o designer pode obter imagens na internet desde que elas estejam disponíveis como [Creative Commons Atribuição (a partir do 2.0)][1]. O link onde as imagens foram obtidas **tem que ser informado**, para que possamos comprovar que o autor delas realmente as libera explicitamente como [Creative Commons Atribuição (2.0 para cima)][1] (infelizmente, a imagem ser "royalty-free" não significa o mesmo que ser Creative Commons, portanto tenha o cuidado de verificar).
 
-# Devo criar imagens específicas para as páginas de erro?
+Há inúmeras fontes de imagens que seguem o padrão [Creative Commons Atribuição)][1]. Algumas delas estão citadas no arquivo "fontes-de-material-creative-commons.txt" que vem com este pacote.
+
+## Devo criar imagens específicas para as páginas de erro?
 
 Sim. Nas páginas de erro, é importante o recurso de usar uma imagem divertida para ajudar o usuário a não se desesperar quando dá um erro no site. Você deve criar suas próprias imagens ou pode usar imagens obtidas nas internet, desde que estas respeitem as condições citadas anteriormente sobre licenciamento (Creative Commons).
 
-# Posso usar fontes com serifa?
+## Posso usar fontes com serifa?
 
-Em princípio sim, mas recomendamos extrema cautela no uso de fontes com serifa. Elas podem ser perigosas, porque serrilham muito em browsers e monitores não tão modernos. O Internet Explorer é especialmente ruim em renderizar este tipo de fonte (e ironicamente é o mais usado por aí). Eu (Leandro) pessoalmente sou mais tolerante a elas do que o resto do pessoal aqui -- mas que elas são perigosas, são; portanto, procure usá-las com muita cautela, e testando bem para ver se o serrilhamento não fica muito tosco. Dependendo de como ficar, podemos chegar ao ponto de pedir para que seja substituída por uma fonte sem serifa.
+Em princípio sim, mas recomendamos extrema cautela no uso de fontes com serifa. Elas podem ser perigosas, porque serrilham muito em browsers e monitores não tão modernos. O Internet Explorer é especialmente ruim em renderizar este tipo de fonte (e ironicamente é o mais usado por aí). Eu (Leandro) pessoalmente sou mais tolerante a elas do que o resto do pessoal aqui -- mas que elas são perigosas, são; portanto, procure usá-las com muita cautela, e testando bem para ver se o serrilhamento não fica muito tosco. Dependendo de como ficar, podemos deixar passar ou chegar ao ponto de pedir para que seja substituída por uma fonte sem serifa.
 
-# Posso ter um design muito parecido com o da Patricia Figueira, que está no exemplo?
+## Posso ter um design muito parecido com o da Patricia Figueira, que está no exemplo?
 
 Muitas pessoas têm adotado a diagramação em três colunas, que ainda é um tanto parecida com a do site da Patricia Figueira. Compreendo (Leandro) que isto é bem típico de "primeiro design", quando ainda não descobrimos toda a liberdade que temos. Afinal, como escapamos a um layout pronto que nos foi dado? Ele vira meio que nosso universo, nosso parâmetro de partida. Imagino. E como encaixar mais ou menos que três colunas? Felizmente, o HTML permite uma flexibilidade enorme, e nós incentivamos os designers a, tanto quanto possível, abstrair o layout da Patricia e inventar a moda que quiserem. Nosso interesse é comprar templates, e para isso daremos todo o suporte que pudermos para ajudar a dar asas à criatividade. Questione tudo o que você vê no layout da Patricia e, nos trabalhos que estão por vir, chute o balde mesmo, viaje alto.
 
-# As medidas usadas no CSS precisam ser em em's? 
+Para ajudar:
+
+* Há neste pacote uma pasta "exemplos", com imagens de um outro CSS feito sobre este mesmo beonthenet-estatico. É um caso real, de um site que está no ar.
+* Dê uma olhada nos [templates já produzidos][templates], para se inspirar. Você pode baixar o CSS de qualquer um deles livremente, para aprender como se chegou a tal e tal resultado.
+
+## As medidas usadas no CSS precisam ser em em's? 
 
 Não, você pode usar medidas em px ou qualquer outra unidade de sua preferência.
 
-# Suponha que eu faça um template e este seja aprovado e, portanto, comprado pela Improve It. Digamos que eu queira propor um segundo template onde a única alteração será na paleta de cores. Isso seria considerado válido?
+## Suponha que eu faça um template e este seja aprovado e, portanto, comprado pela Improve It. Digamos que eu queira propor um segundo template no qual a única alteração será na paleta de cores. Isso seria considerado válido?
 
-Não. A idéia é que cada template seja basta específico em termos de tipografia, posicionamento de elementos, cores e imagens. Portanto, um template, para ser considerado como tal, precisa ter características específicas em cada uma das dimensões citadas (tipografia, posicionamentos, cores e imagens).
+Não. A ideia é que cada template seja bastante específico em termos de tipografia, posicionamento de elementos, cores e imagens. Portanto, um template, para ser considerado como tal, precisa ter características específicas em cada uma das dimensões citadas (tipografia, posicionamentos, cores e imagens).
 
 [1]: http://creativecommons.org/licenses/by/2.5/br/
+[templates]: http://github.com/search?q=beonthenet-template&type=Repositories

@@ -1,51 +1,42 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang='pt-br' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Instruções para fazer CSS para o Be on the Net</title>
+    <title>Instruções para fazer CSS para o Be on the Net - Be on the Net estático</title>
     <meta content='application/xhtml+xml; charset=utf-8' http-equiv='Content-Type' />
     <meta content='instruções, CSS, Be on the Net, design' name='keywords' />
     <meta content='Esta página contém instruções para os designers Be on the Net saberem as manhas sobre como fazer CSS para o Be on the Net. Por enquanto, instruções básicas ainda; deem feedback para a gente aprimorar esta página.' name='description' />
     <meta content='pt-BR' http-equiv='content-Language' />
     
-    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="stylesheets/01_typography.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/02_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/03_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/03_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/04_layout_print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../stylesheets/01_typography.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/02_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/03_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/03_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/04_layout_print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
-      <link href="stylesheets/layout_ie.css" media="all" rel="stylesheet" type="text/css" />
+      <link href="../stylesheets/layout_ie.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
     <!--[if IE 6]>
-      <link href="stylesheets/layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
+      <link href="../stylesheets/layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
-
-    <script src="javascripts/application.js?1223978700" type="text/javascript"></script>
   </head>
 
   <body class="instructions text" id="index">  
     <div id='header'>
       <h1 id='logo_print'>
-        <img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" />
+        <img alt="Patricia Figueira" height="0" src="../images/logo_print.gif" width="0" />
       </h1>
       <h1 id='logo_screen'>
-        <a href="01(pictures)_best_galleries_index.html">Patricia Figueira</a>
+        <a href="../01(pictures)_best_galleries_index.html">Patricia Figueira</a>
       </h1>
       <h2 id='slogan'>A nova cara da fotografia social.</h2>
       <ul>
-        <li class="best_galleries"><a href="01(pictures)_best_galleries_index.html">Melhores</a></li>
-        <li class="full_galleries"><a href="01(pictures)_best_galleries_index.html">Álbuns</a></li>
-        <li class="all_videos"><a href="14(videos)_all_videos_index.html">Vídeos</a></li>
-        <li class="quem_somos"><a href="09(text)_quem_somos_index.html">Quem somos</a></li>
-        <li class='contact'><a href="10(contact)_index(01_initial).html">Contato</a></li>
+        <li class="best_galleries"><a href="../01(pictures)_best_galleries_index.html">Melhores</a></li>
+        <li class="full_galleries"><a href="../01(pictures)_best_galleries_index.html">Álbuns</a></li>
+        <li class="all_videos"><a href="../14(videos)_all_videos_index.html">Vídeos</a></li>
+        <li class="quem_somos"><a href="../09(text)_quem_somos_index.html">Quem somos</a></li>
+        <li class='contact'><a href="../10(contact)_index(01_initial).html">Contato</a></li>
       </ul>
-
-      <form action="busca" id="global_search" method="get">
-        <fieldset>
-          <input id="search_type" name="search_type" type="hidden" value="text" />
-          <input id="query" maxlength="500" name="query" size="60" type="text" value="buscar fotos" />
-        </fieldset>
-      </form>
     </div>
 
     <hr />
@@ -89,7 +80,7 @@
             <li><a href="#logo_textual">Logo textual</a></li>
           </ul>
         </li>
-        <!-- <li><a href="">Depois do primeiro template</a></li> -->
+        <!-- <li><a href="../">Depois do primeiro template</a></li> -->
       </ul>
 
       <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram junto com este no pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma ideia de como é o fluxo de navegação do usuário.</p>
@@ -192,7 +183,7 @@
           <td>#index</td>
           <td><span>(página inicial do módulo de imagens, com todas as melhores galerias de imagens)</span></td>
           <td>
-            <a href="01(pictures)_best_galleries_index.html">01(pictures)_best_galleries_index.html</a>
+            <a href="../01(pictures)_best_galleries_index.html">01(pictures)_best_galleries_index.html</a>
             <code>&lt;body class="best_galleries pictures" id="index"&gt;</code>
           </td>
         </tr>
@@ -200,7 +191,7 @@
           <td>#gallery</td>
           <td><span>(interior de uma galeria de imagens)</span></td>
           <td>
-            <a href="02(pictures)_best_galleries_gallery.html">02(pictures)_best_galleries_gallery.html</a>
+            <a href="../02(pictures)_best_galleries_gallery.html">02(pictures)_best_galleries_gallery.html</a>
             <code>&lt;body class="best_galleries pictures" id="gallery"&gt;</code>
           </td>
         </tr>
@@ -208,14 +199,14 @@
           <td rowspan="2">#picture</td>
           <td>1. horizontal <span>(imagem em tamanho grande, deitada)</span></td>
           <td>
-            <a href="03(pictures)_best_galleries_picture(1_horizontal).html">03(pictures)_best_galleries_picture(1_horizontal).html</a>
+            <a href="../03(pictures)_best_galleries_picture(1_horizontal).html">03(pictures)_best_galleries_picture(1_horizontal).html</a>
             <code>&lt;body class="best_galleries pictures" id="picture"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. vertical <span>(imagem em tamanho grande, em pé)</span></td>
           <td>
-            <a href="03(pictures)_best_galleries_picture(2_vertical).html">03(pictures)_best_galleries_picture(2_vertical).html</a>
+            <a href="../03(pictures)_best_galleries_picture(2_vertical).html">03(pictures)_best_galleries_picture(2_vertical).html</a>
             <code>&lt;body class="best_galleries pictures" id="picture"&gt;</code>
           </td>
         </tr>
@@ -223,28 +214,28 @@
           <td rowspan="4">#selection</td>
           <td>1. initial <span>(seleção de imagens: estado inicial)</span></td>
           <td>
-            <a href="04(pictures)_best_galleries_selection(01_initial).html">04(pictures)_best_galleries_selection(01_initial).html</a>
+            <a href="../04(pictures)_best_galleries_selection(01_initial).html">04(pictures)_best_galleries_selection(01_initial).html</a>
             <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. facebox spinner <span>(seleção de imagens: spinner de ampliação de imagem)</span></td>
           <td>
-            <a href="04(pictures)_best_galleries_selection(02_facebox_spinner).html">04(pictures)_best_galleries_selection(02_facebox_spinner).html</a>
+            <a href="../04(pictures)_best_galleries_selection(02_facebox_spinner).html">04(pictures)_best_galleries_selection(02_facebox_spinner).html</a>
             <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>3. facebox <span>(seleção de imagens: imagem ampliada via &ldquo;facebox&rdquo;)</span></td>
           <td>
-            <a href="04(pictures)_best_galleries_selection(03_facebox).html">04(pictures)_best_galleries_selection(03_facebox).html</a>
+            <a href="../04(pictures)_best_galleries_selection(03_facebox).html">04(pictures)_best_galleries_selection(03_facebox).html</a>
             <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>4. pictures in cart <span>(seleção de imagens: imagens selecionas)</span></td>
           <td>
-            <a href="04(pictures)_best_galleries_selection(04_pictures_in_cart).html">04(pictures)_best_galleries_selection(04_pictures_in_cart).html</a>
+            <a href="../04(pictures)_best_galleries_selection(04_pictures_in_cart).html">04(pictures)_best_galleries_selection(04_pictures_in_cart).html</a>
             <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
           </td>
         </tr>
@@ -252,28 +243,28 @@
           <td rowspan="4">#checkout</td>
           <td>1. initial  <span>(checkout de imagens: estado inicial)</span></td>
           <td>
-            <a href="05(pictures)_best_galleries_checkout(01_initial).html">05(pictures)_best_galleries_checkout(01_initial).html</a>
+            <a href="../05(pictures)_best_galleries_checkout(01_initial).html">05(pictures)_best_galleries_checkout(01_initial).html</a>
             <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. facebox spinner <span>(checkout de imagens: spinner de ampliação de imagem)</span></td>
           <td>
-            <a href="05(pictures)_best_galleries_checkout(02_facebox_spinner).html">05(pictures)_best_galleries_checkout(02_facebox_spinner).html</a>
+            <a href="../05(pictures)_best_galleries_checkout(02_facebox_spinner).html">05(pictures)_best_galleries_checkout(02_facebox_spinner).html</a>
             <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>3. facebox <span>(checkout de imagens: imagem ampliada via &ldquo;facebox&rdquo;)</span></td>
           <td>
-            <a href="05(pictures)_best_galleries_checkout(03_facebox).html">05(pictures)_best_galleries_checkout(03_facebox).html</a>
+            <a href="../05(pictures)_best_galleries_checkout(03_facebox).html">05(pictures)_best_galleries_checkout(03_facebox).html</a>
             <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>4. form spinner <span>(checkout de imagens: envio da confirmação)</span></td>
           <td>
-            <a href="05(pictures)_best_galleries_checkout(04_form_spinner).html">05(pictures)_best_galleries_checkout(04_form_spinner).html</a>
+            <a href="../05(pictures)_best_galleries_checkout(04_form_spinner).html">05(pictures)_best_galleries_checkout(04_form_spinner).html</a>
             <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
           </td>
         </tr>
@@ -281,14 +272,14 @@
           <td rowspan="2">#pictures_sent</td>
           <td>1. checkout error <span>(checkout de imagens, quase fim da seleção: erro de envio)</span></td>
           <td>
-            <a href="06(pictures)_best_galleries_pictures_sent(01_error).html">06(pictures)_best_galleries_pictures_sent(01_error).html</a>
+            <a href="../06(pictures)_best_galleries_pictures_sent(01_error).html">06(pictures)_best_galleries_pictures_sent(01_error).html</a>
             <code>&lt;body class="best_galleries pictures" id="pictures_sent"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. success <span>(fim da seleção de imagens, com link de volta para a galeria)</span></td>
           <td>
-            <a href="06(pictures)_best_galleries_pictures_sent(02_success).html">06(pictures)_best_galleries_pictures_sent(02_success).html</a>
+            <a href="../06(pictures)_best_galleries_pictures_sent(02_success).html">06(pictures)_best_galleries_pictures_sent(02_success).html</a>
             <code>&lt;body class="pictures" id="pictures_sent"&gt;</code>
           </td>          
         </tr>
@@ -296,14 +287,14 @@
           <td rowspan="2">#search</td>
           <td>1. invalid  <span>(busca inválida, com sugestões válidas de busca)</span></td>
           <td>
-            <a href="07(pictures)_search(01_invalid).html">07(pictures)_search(01_invalid).html</a>
+            <a href="../07(pictures)_search(01_invalid).html">07(pictures)_search(01_invalid).html</a>
             <code>&lt;body class=" pictures" id="search"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. valid  <span>(busca válida, com imagens vindas de galerias diversas)</span></td>
           <td>
-            <a href="07(pictures)_search(02_valid).html">07(pictures)_search(02_valid).html</a>
+            <a href="../07(pictures)_search(02_valid).html">07(pictures)_search(02_valid).html</a>
             <code>&lt;body class=" pictures" id="search"&gt;</code>
           </td>
         </tr>
@@ -311,7 +302,7 @@
           <td>#search_picture</td>
           <td><span>(imagem em tamanho grande encontrada numa busca, com link para sua respectiva galeria)</span></td>
           <td>
-            <a href="08(pictures)_full_galleries_search_picture.html">08(pictures)_full_galleries_search_picture.html</a>
+            <a href="../08(pictures)_full_galleries_search_picture.html">08(pictures)_full_galleries_search_picture.html</a>
             <code>&lt;body class="full_galleries pictures" id="search_picture"&gt;</code>
           </td>
         </tr>
@@ -320,7 +311,7 @@
           <td>#index</td>
           <td><span>(página inicial do módulo de texto, com texto institucional)</span></td>
           <td>
-            <a href="09(text)_quem_somos_index.html">09(text)_quem_somos_index.html</a>
+            <a href="../09(text)_quem_somos_index.html">09(text)_quem_somos_index.html</a>
             <code>&lt;body class="quem_somos text" id="index"&gt;</code>
           </td>
         </tr>
@@ -329,28 +320,28 @@
           <td rowspan="4">#index</td>
           <td>1. initial <span>(página inicial do módulo de contato, com o formulário de contato em estado inicial)</span></td>
           <td>
-            <a href="10(contact)_index(01_initial).html">10(contact)_index(01_initial).html</a>
+            <a href="../10(contact)_index(01_initial).html">10(contact)_index(01_initial).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. form spinner <span>(página de contato: envio da mensagem)</span></td>
           <td>
-            <a href="10(contact)_index(02_form_spinner).html">10(contact)_index(02_form_spinner).html</a>
+            <a href="../10(contact)_index(02_form_spinner).html">10(contact)_index(02_form_spinner).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>3. error <span>(página de contato: mensagem de erro com destaque para e-mail inválido)</span></td>
           <td>
-            <a href="10(contact)_index(03_error).html">10(contact)_index(03_error).html</a>
+            <a href="../10(contact)_index(03_error).html">10(contact)_index(03_error).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>4. success <span>(página de contato: mensagem de envio bem-sucedido)</span></td>
           <td>
-            <a href="10(contact)_index(04_success).html">10(contact)_index(04_success).html</a>
+            <a href="../10(contact)_index(04_success).html">10(contact)_index(04_success).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
@@ -359,7 +350,7 @@
           <td>#page_not_found</td>
           <td><span>(página de erro 404: página não encontrada)</span></td>
           <td>
-            <a href="11(application)_page_not_found.html">11(application)_page_not_found.html</a>
+            <a href="../11(application)_page_not_found.html">11(application)_page_not_found.html</a>
             <code>&lt;body class="application" id="page_not_found"&gt;</code>
           </td>
         </tr>
@@ -367,7 +358,7 @@
           <td>#server_error</td>
           <td><span>(página de erro 500: erro no servidor remoto)</span></td>
           <td>
-            <a href="12(application)_server_error.html">12(application)_server_error.html</a>
+            <a href="../12(application)_server_error.html">12(application)_server_error.html</a>
             <code>&lt;body class="application" id="server_error"&gt;</code>
           </td>
         </tr>
@@ -375,7 +366,7 @@
           <td>#timeout</td>
           <td><span>(página de erro timeout: demora do repositório em enviar as fotos ao servidor)</span></td>
           <td>
-            <a href="13(application)_timeout.html">13(application)_timeout.html</a>
+            <a href="../13(application)_timeout.html">13(application)_timeout.html</a>
             <code>&lt;body class="application" id="timeout"&gt;</code>
           </td>
         </tr>
@@ -384,7 +375,7 @@
           <td>#index</td>
           <td><span>(página inicial do módulo de vídeos, com a lista de todos os vídeos do usuário)</span></td>
           <td>
-            <a href="14(videos)_all_videos_index.html">14(videos)_all_videos_index.html</a>
+            <a href="../14(videos)_all_videos_index.html">14(videos)_all_videos_index.html</a>
             <code>&lt;body class="all_videos videos" id="index"&gt;</code>
           </td>
         </tr>
@@ -392,7 +383,7 @@
           <td>#video</td>
           <td><span>(visualização de um único vídeo, em tamanho grande. Semelhante à página de imagem em tamanho grande.)</span></td>
           <td>
-            <a href="15(videos)_all_videos_video.html">15(videos)_all_videos_video.html</a>
+            <a href="../15(videos)_all_videos_video.html">15(videos)_all_videos_video.html</a>
             <code>&lt;body class="all_videos videos" id="video"&gt;</code>
           </td>
         </tr>
@@ -469,6 +460,8 @@
       <h6>
         Powered by <a href="http://beonthe.net" title="Be on the Net. Finalmente, online de verdade.">Beonthe.net</a>, um produto da <a href="http://improveit.com.br" title="Improve It">Improve It</a>.
       </h6>
+      <h5>Links do projeto Be on the Net estático:</h5>
+      <h6><a href="readme.html">Mapa da Mina, o ponto de partida</a> / <a href="#">Instruções para fazer CSS</a> / <a href="faq.html">F.A.Q.</a> / <a href="release-notes.html">Release notes</a> / <a href="fontes-de-material-creative-commons.html">Fontes de material Creative Commons</a> / <a href="../modelo-do-contrato.pdf">Modelo do contrato (.PDF)</a></h6>
     </div>
   </body>
 </html>
