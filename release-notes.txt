@@ -63,3 +63,7 @@
 * A maioria dos links agora funciona. Agora, o beonthenet-estatico é um pouco menos estático: é possível navegar por todas as páginas clicando nos links, menus, tags, imagens e botões. O designer vai ter uma noção melhor do workflow do sistema, e de que página leva a que página.
 * Melhoramos a legibilidade dos arquivos HTML, com melhores indentações em trechos relevantes.
 * Retocamos o CSS da página de erros.
+
+# 12/fev/2009
+
+* Mais links funcionam; aumentou a usabilidade.
