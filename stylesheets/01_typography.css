@@ -249,20 +249,71 @@ body#search #search_result_count label {
 /* /Selection */
 
 
-/* Who */
-.quem_somos h1 + p:first-letter {
+/* Text pages */
+code {
+  font:                   normal normal normal 80%/1.2em "Lucida Console", "Monaco", monospace; 
+}
+
+p code {
+  font-size:              110%;
+}
+
+li code, dd code {
+  font-size:              95%;
+}
+
+th {
+  font-size:              90%;
+}
+
+td {
+  font-size:              85%;
+} 
+
+td span {
+  font-size:              82%;
+}
+
+td a {
+  font-size:              80%;
+}
+
+h4 em {
+  font:                   normal italic normal 100%/1.2em "Times New Roman", Times, serif;
+}
+
+body.text #main_content h4 {
+  line-height:            1.2em;
+}
+
+body.text #main_content dt {
+  font-weight:            bold;
+  font-size:              80%;
+}
+
+body.text #main_content dd, 
+body.text #main_content ul li {
+  text-align:             justify;
+}
+
+body.text #main_content ul li {
+  list-style:             circle;
+}
+
+body.text #main_content ul ul li {
+  list-style:             disc;
+  font-size:              95%;
+}
+
+body.text h1 + p:first-letter {
   font-size:              150%;
   line-height:            2em;
 }
 
-.quem_somos #main_content strong {
-  font-weight:            normal;
-}
-
-.quem_somos cite {
+body.text cite {
   text-align:             right;
 }
-/* /Who */
+/* /Text pages */
 
 
 /* Forms (contact, checkout, search) */
@@ -343,62 +394,3 @@ body.application #main_content li {
   font-size:							70%;
 }
 /* /Footer */
-
-
-
-/* Instructions */
-.instructions #main_content h4 {
-  line-height:            1.2em;
-}
-
-h4 em {
-  font:                   normal italic normal 100%/1.2em "Times New Roman", Times, serif;
-}
-
-body.instructions #main_content dt {
-  font-weight:            bold;
-  font-size:              80%;
-}
-
-.instructions #main_content dd, 
-.instructions #main_content ul li {
-  text-align:             justify;
-}
-
-.instructions #main_content ul li {
-  list-style:             circle;
-}
-
-.instructions #main_content ul ul li {
-  list-style:             disc;
-  font-size:              95%;
-}
-
-code {
-  font:                   normal normal normal 80%/1.2em "Lucida Console", "Monaco", monospace; 
-}
-
-p code {
-  font-size:              110%;
-}
-
-li code, dd code {
-  font-size:              95%;
-}
-
-.instructions th {
-  font-size:              90%;
-}
-
-.instructions td {
-  font-size:              85%;
-} 
-
-.instructions td span {
-  font-size:              82%;
-}
-
-.instructions td a {
-  font-size:              80%;
-}
-/* /Instructions */

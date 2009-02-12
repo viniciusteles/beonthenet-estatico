@@ -67,3 +67,5 @@
 # 12/fev/2009
 
 * Mais links funcionam; aumentou a usabilidade.
+* Eliminamos o scroll horizontal que browsers tipo Webkit (Safari e Chrome) mostravam na página de seleção. Deu uma enxugada no CSS.
+* Página de texto (aquelas com body.text) agora têm CSS unificado. São a página Quem Somos (arquivo "09(text)_quem_somos_index.html") e a de Instruções (arquivo "instrucoes.html").

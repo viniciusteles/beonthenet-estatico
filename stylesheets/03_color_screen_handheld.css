@@ -316,16 +316,45 @@ body#selection #selection_size label {
 /* /Selection */
 
 
-/* Who */
-.quem_somos dt, 
-.quem_somos #main_content strong {
-  color:                  #940029;
+/* Text pages */
+pre {
+  background:             #EFE3C3;
+  border-color:           #E0C99B;
 }
 
-.quem_somos cite {
-	background:             transparent url(../images/signature_patfig.gif) no-repeat right top;
+code {
+  color:                  #111;
+  background:             #EFE3C3; 
 }
-/* /Who */
+
+table * {
+  border-color:           #E0C99B;
+}
+
+th {
+  color:                  #940029;
+  background:             #EFE3C3;
+}
+
+td span {
+  color:                  #BAA984;
+}
+
+#toc {
+  background:             #EFE3C3;
+  border-color:           #E0C99B;
+}
+
+body.text #main_content h4 {
+  background:             transparent url(../images/important.gif) no-repeat left top;
+}
+
+body.text #main_content dt, 
+body.text #main_content strong, 
+cite {
+  color:                  #940029;
+}
+/* Text pages */
 
 
 /* Forms (contact, checkout, search) */
@@ -441,43 +470,3 @@ body#timeout #main_content h2 {
 	margin-bottom:          .5em;
 }
 /* /Footer */
-
-
-
-/* Instructions */
-body.instructions #toc {
-  background:             #EFE3C3;
-  border-color:           #E0C99B;
-}
-
-.instructions #main_content h4 {
-  background:             transparent url(../images/important.gif) no-repeat left top;
-}
-
-body.instructions #main_content dt {
-  color:                  #940029;
-}
-
-code {
-  color:                  #111;
-  background:             #EFE3C3; 
-}
-
-.instructions table * {
-  border-color:           #E0C99B;
-}
-
-.instructions th {
-  color:                  #940029;
-  background:             #EFE3C3;
-}
-
-.instructions td span {
-  color:                  #BAA984;
-}
-
-pre {
-  background:             #EFE3C3;
-  border-color:           #E0C99B;
-}
-/* /Instructions */

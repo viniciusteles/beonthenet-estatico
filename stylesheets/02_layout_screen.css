@@ -439,7 +439,7 @@ body#search #search_result_count label {
 /* /Selection */
 
 
-/* Who */
+/* Text pages */
 body.text #main_content {
   padding:                1.56em 10em;
 }
@@ -449,24 +449,99 @@ body.text #main_content h1 {
   margin-left:            -3.1em;
 }
 
-.quem_somos #main_content p {
+#toc {
+  float:                  left;
+  padding:                .75em .75em .75em 1.5em;
+  border:                 1px solid;
+  margin:                 0 2em 1em 0 !important;
+}
+
+pre {
+  padding:                .5em 3em;
+  border:                 1px solid;
+  margin:                 1em 0;
+  overflow:               auto;
+}
+
+code {
+  padding:                .3em .5em;
+}
+
+cite {
+  display:                block;
+}
+
+table {
+  width:                  100%;
+  border-collapse:        collapse;
+  margin-left:            -5em;
+}
+
+table * {
+  border:                 1px solid;
+}
+
+th {
+  padding:                .5em 1.5em;
+}
+
+td {
+  padding:                .5em 1.5em;
+}
+
+td span {
+  display:                block;
+  border:                 none;
+  margin:                 0 1.5em;
+}
+
+td a, 
+td code {
+  border:                 none;
+  margin:                 0 -1em;
+  white-space:            nowrap;
+}
+
+td code {
+  display:                block;
+  margin-top:             .75em;
+}
+
+body.text #main_content p {
   margin:                 1em 0;
 }
 
-.quem_somos dt {
-  float:                  left;
-  margin-right:           .5em;
+body.text #main_content h2 {
+  clear:                  left;
+  padding:                1.5em 0 1em 0;
 }
 
-.quem_somos dd {
-  margin:                 .25em 0 1em 2.5em;
+body.text #main_content h3 {
+  padding:                1em 0 .75em 0;
 }
 
-.quem_somos #main_content cite {
-  display:                block;
-	padding:                46px 58px 14px 0;
+body.text #main_content h4 {
+  padding-left:           30px;
+  margin:                 -.8em 0 1.2em -30px;
 }
-/* /Who */
+
+body.text #main_content dl, 
+body.text #main_content ul {
+  margin:                 1.6em 4em;
+}
+
+body.text #main_content dd {
+  margin:                 0 0 1em 2.5em;
+}
+
+body.text #main_content ul li {
+  margin-bottom:          1em;
+}
+
+body.text #main_content ul ul {
+  margin:                 0 1em;
+}
+/* Text pages */
 
 
 /* Forms (contact, checkout, search) */
@@ -653,100 +728,3 @@ body#pictures_sent #footer {
   margin-top:             -15px;
 }
 /* /Footer */
-
-
-
-/* Instructions */
-body.instructions #toc {
-  float:                  left;
-  padding:                .75em .75em .75em 1.5em;
-  border:                 1px solid;
-  margin:                 0 2em 1em 0 !important;
-}
-
-.instructions #main_content p {
-  margin:                 1em 0;
-}
-
-.instructions #main_content h2 {
-  clear:                  left;
-  padding:                1.5em 0 1em 0;
-}
-
-.instructions #main_content h3 {
-  padding:                1em 0 .75em 0;
-}
-
-.instructions #main_content h4 {
-  padding-left:           30px;
-  margin:                 1.2em 0 1.2em -30px;
-}
-
-.instructions #main_content dl, 
-.instructions #main_content ul {
-  margin:                 1.6em 6em;
-}
-
-.instructions #main_content dd {
-  margin:                 0 0 1em 2.5em;
-}
-
-.instructions #main_content ul li {
-  margin-bottom:          1em;
-}
-
-.instructions #main_content ul ul {
-  margin:                 0 1em;
-}
-
-code {
-  padding:                .3em .5em;
-}
-
-.instructions table {
-  width:                  100%;
-  border-collapse:        collapse;
-  margin-left:            -5em;
-}
-
-.instructions table * {
-  border:                 1px solid;
-}
-
-.instructions th {
-  padding:                .5em 1.5em;
-}
-
-.instructions td {
-  padding:                .5em 1.5em;
-}
-
-.instructions td span {
-  display:                block;
-  border:                 none;
-  margin:                 0 1.5em;
-}
-
-.instructions td a, 
-.instructions td code {
-  border:                 none;
-  margin:                 0 -1em;
-  white-space:            nowrap;
-}
-
-.instructions td code {
-  display:                block;
-  margin-top:             .75em;
-}
-
-pre {
-  padding:                .5em 3em;
-  border:                 1px solid;
-  margin:                 1em 0;
-  overflow:               auto;
-}
-
-.instructions #main_content h4 {
-  margin-top:             -.8em;
-}
-/* /Instructions */
