@@ -9,10 +9,9 @@
     
     <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="../stylesheets/01_typography.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/03_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/02_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/03_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/03_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/04_layout_print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
       <link href="../stylesheets/layout_ie.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -28,7 +27,7 @@
       </h1>
       <h1 id='logo_screen'>
         <a href="../01(pictures)_best_galleries_index.html">Patricia Figueira</a>
-      </h1>
+      </h1> 
       <h2 id='slogan'>A nova cara da fotografia social.</h2>
       <ul>
         <li class="best_galleries"><a href="../01(pictures)_best_galleries_index.html">Melhores</a></li>
@@ -44,15 +43,92 @@
     <div id='main_content'>
       <h1>F.A.Q.: Perguntas mais frequentes</h1>
 
-      <h2>A marcação (HTML) poderá ser alterada?</h2>
+      <ul id="toc">
+        <li><a href="#comeco_de_conversa">Para começo de conversa: o que eu, designer, tenho de fazer afinal?</a></li>
+        <li><a href="#o_que_eu_ganho">Tá. E o que eu ganho com isso?</a></li>
+        <li><a href="#meu_primeiro_template">OK, quero fazer meu primeiro template. Como é que é?</a></li> 
+        <li><a href="#meu_segundo_template">Já fiz meu primeiro template! E daí pra frente, como é?</a></li>               
+        <li><a href="#segundo_template_alteracao_so_de_cor">Deixa eu entender. Suponha que eu faça um template e este seja aprovado e, portanto, comprado pela Improve It. Digamos que eu queira propor um segundo template no qual a única alteração será na paleta de cores. Isso seria considerado válido?</a></li>
+        <!-- <li><a href="#alteracao_sobre_template">Vai. Já fiz templates, vocês já me indicaram clientes, e agora um cliente quer uma versão exclusiva feita a partir da alteração de um template já existente. Como fazer?</a></li> -->
+        <li><a href="#o_que_o_designer_faz">No template, os designers fariam a direção de arte, os HTMLs, CSS e JavaScripts?</a></li>
+        <li><a href="#marcacao_html">A marcação (HTML) poderá ser alterada?</a></li>
+        <li><a href="#nomes_das_imagens">Caso o item acima seja falso, sem poder alterar a marcação, as imagens deverão ter sempre os mesmos nomes das imagens da pasta /images, correto?</a></li>
+        <li><a href="#logotipos">Os logotipos serão sempre em padrão texto estilizado? (até porque o cliente vai escolher o template e vai desejar dar um nome qualquer ao site)</a></li>
+        <li><a href="#tags_ou_script_adicionais">Será possível inserir tags de CSS e/ou Script adicionais (para image replacement, talvez)?</a></li>
+        <li><a href="#alteracoes_drasticas">O layout poderá sofrer modificações &ldquo;drásticas&rdquo;? Tipo menu na lateral ou algo parecido?</a></li>
+        <li><a href="#tipografia_layout_cor">Os arquivos CSS estão divididos de modo a separar tipografia, formatação e cores. Nunca trabalhei desta forma. Sou obrigado a usar este padrão?</a></li>
+        <li><a href="#funcionamento_dos_spinners">Como é o funcionamento dos spinners?</a></li>
+        <li><a href="#existe_briefing">Existe algum briefing mesmo que mínimo para ser seguido?</a></li>
+        <li><a href="#image_replacement">É permitido uso de Image Replacement para convenções como menu e Títulos (h1, h2)?</a></li>
+        <li><a href="#framework_javascript">Vocês usarão algum tipo de framework JavaScript para convenções como animações, tooltip?</a></li>
+        <li><a href="#png_transparente">Posso usar PNG transparente para alguns elementos?</a></li>
+        <li><a href="#ccs3_obrigatorio">Vocês estão usando já o CSS3? E é obrigatório somente o uso dele?</a></li>
+        <li><a href="#icones_e_ilustracoes_da_pati">Posso usar os ícones e ilustrações que se encontram no exemplo da Patricia Figueira?</a></li>
+        <li><a href="#imagens_para_paginas_de_erro">Devo criar imagens específicas para as páginas de erro?</a></li>
+        <li><a href="#fontes_com_serifa">Posso usar fontes com serifa?</a></li>
+        <li><a href="#design_parecido_com_o_da_pati">Posso ter um design muito parecido com o da Patricia Figueira, que está no exemplo?</a></li>
+        <li><a href="#medidas_em_ems">As medidas usadas no CSS precisam ser em em&rsquo;s?</a></li>
+      </ul>
+
+      <h2 id="comeco_de_conversa">
+        Para começo de conversa: o que eu, designer, tenho de fazer afinal?
+      </h2>
+
+      <p>Bem simples. Você tem de pegar os arquivos HTML contidos na raiz deste pacote e dar <strong>todo um novo layout a ele</strong>. Primeiro, através de uma prévia em forma de <strong>imagem de Photoshop</strong>; depois, através de um <strong>CSS</strong> só seu.</p>
+      <p>Estas páginas, por enquanto, estão com o CSS que as tornam semelhantes ao site da fotógrafa de casamentos <a href="http://patriciafigueira.com.br">Patricia Figueira</a>. Imagine que ela contratou você pedindo uma reformulação geral do layout do site. Pois é esta a tarefa: usar o HTML já existente e construir um novo template sobre ele, usando <strong>puro CSS</strong>.</p>
+      <p>Como designer, você não pode tocar no HTML nem no JavaScript &mdash; aliás, recomendamos que, para que seu CSS seja compatível com o <strong>Be on the Net</strong>, você realmente mantenha <strong>intactos</strong> os HTML&rsquo;s destes arquivos! Ou melhor: a <strong>única</strong> parte dos HTML&rsquo;s em que você vai mexer livremente são as tags <code>link</code> dentro do <code>head</code>, que chamam seus arquivos CSS.</p>
+      <p>Como vai ficar a aparência, como vão ser diagramados os thumbnails das imagens e os outros elementos, isso só é limitado pela sua criatividade. Envie-nos seu layout de Photoshop e daremos nosso feedback para você começar seu CSS.</p>
+
+      <h2 id="o_que_eu_ganho">
+        Tá. E o que eu ganho com isso?
+      </h2>
+
+      <ul>
+        <li><strong>R$ 500,00</strong> para cada layout original que você criar! (ah, mudança só de cor não caracteriza um layout como original; veja na página &ldquo;instrucoes.html&rdquo; a seção <a href="instrucoes.html#divisao_do_css">A divisão do CSS</a> para entender de que raios estamos falando);</li>
+        <li><strong>Seu nome</strong> no site do <a href="http://beonthe.net">Be on the Net</a> e no rodapé de cada site que tiver um template seu (com links e mais links para seu próprio site) &mdash; e acontece mesmo! Dê uma olhada nas fichas técnicas de cada <a href="http://beonthe.net/galerias/templates">template</a>; seu nome pode ser o próximo;</li>
+        <li>Quem gostar de seu template mas quiser algo mais exclusivo vai ser indicado por nós direto a você. E aí você ganha o dindim do template e mais o que negociar com seu próprio cliente!</li>
+        <li>E a médio prazo a coisa tende a ficar mais legal. Leia nosso <a href="http://blog.improveit.com.br/articles/2008/11/19/designers-4-formas-de-se-dar-bem-com-o-be-on-the-net" title="Designers: 4 formas de se dar bem com o Be on the Net">artigo sobre formas de ganhar com o Be on he Net</a>, lá tem tudo mais mastigado.</li>
+      </ul>
+
+      <h2 id="meu_primeiro_template">
+        OK, quero fazer meu primeiro template. Como é que é?
+      </h2>
+
+      <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram na raiz deste pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma ideia de como é o fluxo de navegação do usuário.</p>
+      <p>Não, sério, navegue mesmo. Nos arquivos do pacote e no site da <a href="http://patriciafigueira.com.br" title="Sério. Navegue e compare, isso vai te ajudar a entender a estrutura.">Patricia</a>. Depois que tiver brincado um pouquinho, continue lendo esta página.</p>
+      <p>Basicamente, é o seguinte: <strong>todos</strong> os arquivos devem permanecer intactos e imutáveis. Para a brincadeira funcionar, os únicos arquivos que você, designer, vai mexer e remexer são os conteúdos das pastas <strong>/images</strong> e <strong>/stylesheets</strong>. O que existir lá dentro você pode detonar e reconstruir à vontade. Quando terminar, envie-nos seu conteúdo <em>e também uma pasta com os arquivos originais das imagens que você produziu</em>.</p>
+      <p>E é isso aí, em resumo. Invente seu CSS e suas imagens. Para fazer seu primeiro template, tudo o que é preciso fazer é <em>substituir o conteúdo que já está nessas pastas por conteúdo criado por você</em>, e mandar tudo para nós. Os detalhes e regras avançados estão ao longo desta página e da página de <a href="instrucoes.html">instruções</a>.</p>
+
+      <h2 id="meu_segundo_template">
+        Já fiz meu primeiro template! E daí pra frente, como é?
+      </h2>
+
+      <p>Que beleza! Faça outros! Nosso interesse é comprar templates bonitos, espalhar aos ventos o nome de seus autores e tudo mais <a href="#o_que_eu_ganho">que você já leu</a>.</p>
+      <p>Só um detalhe: se quiser mudar somente a paleta de cores, fique à vontade. Mas como mudanças só nas cores não são consideradas template original, infelizmente não poderemos pagar. Queremos com isso incentivar a proliferação de templates originais, únicos e variados. Mas fique à vontade para nos ceder sua variante! &nbsp; ;D</p>
+
+      <h2 id="segundo_template_alteracao_so_de_cor">
+        Deixa eu entender. Suponha que eu faça um template e este seja aprovado e, portanto, comprado pela Improve It. Digamos que eu queira propor um segundo template no qual a única alteração será na paleta de cores. Isso seria considerado válido?
+      </h2>
+
+      <p>Não. A ideia é que cada template seja bastante específico em termos de tipografia, posicionamento de elementos, cores e imagens. Portanto, um template, para ser considerado como tal, precisa ter características específicas em cada uma das dimensões citadas (tipografia, posicionamentos, cores e imagens). Mais detalhes sobre este assunto na seção <a href="#divisao_do_css">A divisão do CSS</a>, na página de instruções.</p>
+
+      <!-- <h2 id="alteracao_sobre_template">Vai. Já fiz templates, vocês já me indicaram clientes, e agora um cliente quer uma versão exclusiva feita a partir da alteração de um template já existente. Como fazer?</h2> -->
+
+      <!-- <p>Ficando requisitado, hein? Para fazer uma alteração exclusiva sobre um template (seu ou de outrem), siga as instruções detalhadas na seção <a href="instrucoes.html#como_alterar_templates">Como fazer alterações sobre um template já existente</a>, na página de <a href="instrucoes.html">instruções</a>. Está tudo mastigado lá.</p> -->
+
+      <h2 id="o_que_o_designer_faz">No template, os designers fariam a direção de arte, os HTMLs, CSS e JavaScripts?</h2>
+
+      <p>A parte que cabe aos designers é a direção de arte e <strong>CSS</strong>. HTMLs são os que já estão lá e não podem sofrer alterações. JavaScripts também são conosco.</p>
+
+      <h2 id="marcacao_html">A marcação (HTML) poderá ser alterada?</h2>
 
       <p>Em princípio não, isto é, o designer não tem como alterar o HTML. Entretanto, até a data do lançamento, podemos fazer alterações no HTML com base nas sugestões de vocês, caso consideremos adequado ao sistema como um todo. Sendo assim, se houver algo que você queira sugerir, por favor, faça isso.</p>
 
-      <h2>Caso o item acima seja falso, sem poder alterar a marcação, as imagens deverão ter sempre os mesmos nomes das imagens da pasta /images, correto?</h2>
+      <h2 id="nomes_das_imagens">Caso o item acima seja falso, sem poder alterar a marcação, as imagens deverão ter sempre os mesmos nomes das imagens da pasta /images, correto?</h2>
 
       <p>Não, as imagens podem assumir o nome que você considerar mais conveniente. Na área administrativa do site de cada cliente do Be on the Net, ele poderá fazer upload das imagens com o nome que achar melhor. No seu CSS, coloque os nomes correspondentes das imagens que você for utilizar. Em princípio, você como designer só tem como alterar nomes de imagens que são referenciadas no CSS como imagens de fundo. Uma exceção é a parte de logotipo que será explicada a seguir.</p>
 
-      <h2>Os logotipos serão sempre em padrão texto estilizado? (até porque o cliente vai escolher o template e vai desejar dar um nome qualquer ao site)</h2>
+      <h2 id="logotipos">Os logotipos serão sempre em padrão texto estilizado? (até porque o cliente vai escolher o template e vai desejar dar um nome qualquer ao site)</h2>
 
       <p>Não. Caso o cliente tenha um logotipo em forma de imagem, ele poderá fazer o upload através da área administrativa. O Be on the Net segue uma convenção que determina o seguinte:</p>
 
@@ -64,19 +140,19 @@
 
       <p>Em suma, um cliente pode ter um logo em formato de imagem, desde que ele nos forneça um. Mas há aqueles que vão usar logos textuais mesmo. No exercício que você irá fazer de criar um template, sugerimos que você <em>ignore o atual logotipo da Patricia Figueira e estilize o atributo <code>alt</code> como se fosse um logotipo textual e a tag <code>&lt;a&gt;</code> que fica em volta da imagem</em>.</p>
 
-      <h2>Será possível inserir tags de CSS e/ou Script adicionais (para image replacement, talvez)?</h2>
+      <h2 id="tags_ou_script_adicionais">Será possível inserir tags de CSS e/ou Script adicionais (para image replacement, talvez)?</h2>
 
       <p>Scripts adicionais não são permitidos em princípio. Porém, se você tiver alguma sugestão neste sentido, por favor nos envie explicando a motivação e, dependendo de como for, poderemos adotar.</p>
 
-      <h2>O layout poderá sofrer modificações &ldquo;drásticas&rdquo;? Tipo menu na lateral ou algo parecido?</h2>
+      <h2 id="alteracoes_drasticas">O layout poderá sofrer modificações &ldquo;drásticas&rdquo;? Tipo menu na lateral ou algo parecido?</h2>
 
       <p>Sim. O layout pode ser feito da maneira que você preferir, desde que, para isso, você utilize apenas CSS. Mas voltando à primeira pergunta, se você tiver alguma sugestão de mudança nas marcações, por favor nos envie.</p>
 
-      <h2>Os arquivos CSS estão divididos de modo a separar tipografia, formatação e cores. Nunca trabalhei desta forma. Sou obrigado a usar este padrão?</h2>
+      <h2 id="tipografia_layout_cor">Os arquivos CSS estão divididos de modo a separar tipografia, formatação e cores. Nunca trabalhei desta forma. Sou obrigado a usar este padrão?</h2>
 
       <p><em>Não</em>. Este padrão reflete uma organização que o Leandro adotou e vem funcionando bem para nós. Entretanto, se você preferir se organizar de outra forma, sinta-se à vontade para fazê-lo. Apenas sugerimos que, como exercício, você tente se organizar também neste padrão para ver se funciona para você. Em nossa experiência, ele tem sido bastante útil e facilita bastante as modificações.</p>
 
-      <h2>Como é o funcionamento dos spinners?</h2>
+      <h2 id="funcionamento_dos_spinners">Como é o funcionamento dos spinners?</h2>
 
       <p>Chamamos de <em>spinners</em> aqueles gifs animados que são apresentados ao usuário quando alguma operação mais lenta precisa ser efetuada pelo sistema. Os dois casos de uso disso no Be on the Net são:</p>
 
@@ -94,68 +170,60 @@
         <li>Spinner para a ampliação de foto na seleção: <strong>spinner_selection.gif</strong></li>
       </ul>
 
-      <h2 id="existe_algum_briefing_mesmo_que_mnimo_para_ser_seguido">Existe algum briefing mesmo que mínimo para ser seguido?</h2>
+      <h2 id="existe_briefing">Existe algum briefing mesmo que mínimo para ser seguido?</h2>
 
       <p>Não há nenhum briefing. Mas nossa sugestão inicial é que você leia com atenção as instruções que seguem juntamente com os arquivos HTML (arquivo <code>instrucoes.html</code>). Em seguida, pense em como você refaria o site da Patricia Figueira, que está no exemplo, mas com um layout diferente. Neste momento, isso é tudo de que precisamos.</p>
 
-      <h2 id="no_template_os_designers_fariam_a_direo_de_arte_os_htmls_css_e_javascripts">No template, os designers fariam a direção de arte, os htmls, css e javascripts?</h2>
-
-      <p>A parte que cabe aos designers é a direção de arte e CSS. HTMLs são os que já estão lá e não podem sofrer alterações. Javascripts também são conosco.</p>
-
-      <h2 id="_permitido_uso_de_image_replacement_para_convenes_como_menu_e_ttulos_h1_h2">É permitido uso de Image Replacement para convenções como menu e Títulos (h1, h2)?</h2>
+      <h2 id="image_replacement">É permitido uso de Image Replacement para convenções como menu e Títulos (h1, h2)?</h2>
 
       <p>Se estivéssemos construindo um layout personalizado para um cliente do Be on the Net, não haveria nenhum problema em usar Image Replacement para estes elementos. Entretanto, em se tratando de um template, isso certamente seria problemático. O que acontece é que boa parte dos títulos, bem como o menu, são formados de conteúdo dinâmico. Por exemplo, cada cliente vai ter, no menu, um conjunto específico de opções, cada qual com um nome em particular. Enquanto a Pati usa &ldquo;melhores&rdquo; e &ldquo;álbuns completos&rdquo;, outros usarão &ldquo;fotos de 15 anos&rdquo;, &ldquo;fotos de formatura&rdquo; etc. Sendo assim, usar image replacement para substituir o texto seria ok para algo bem personalizado, mas compromete bastante quando se trata de um template.</p>
 
       <p>Há, no entanto, espaço para image replacement em dois pontos: na paginação (p.pages) e na página de imagens e vídeos grandes, nos links Anterior e Próximo. Nestes casos, há um <code>span</code> vazio à espera de image replacement, para imagens como setas.</p>
 
-      <h2 id="vocs_usaro_algum_tipo_de_framework_javascript_para_convenes_como_animaes_tooltip">Vocês usarão algum tipo de framework Javascript para convenções como animações, tooltip?</h2>
+      <h2 id="framework_javascript">Vocês usarão algum tipo de framework JavaScript para convenções como animações, tooltip?</h2>
 
-      <p>Não. Não haverá nenhum tipo de Javascript para isso. A única parte que usa Javascript intensivamente é a seleção de fotos para um álbum.</p>
+      <p>Não. Não haverá nenhum tipo de JavaScript para isso. A única parte que usa JavaScript intensivamente é a seleção de fotos para um álbum.</p>
 
-      <h2 id="posso_usar_png_transparente_para_alguns_elementos">Posso usar PNG transparente para alguns elementos?</h2>
+      <h2 id="png_transparente">Posso usar PNG transparente para alguns elementos?</h2>
 
       <p>PNG transparente é problemático com o IE6. Então, você pode usar, desde que faça uma exceção para o IE6, na qual coloque uma alternativa que funcione para ele (como um PNG de 8 bits ou um GIF com transparência).</p>
 
-      <h2 id="vocs_esto_usando_j_o_css3_e_obrigatrio_somente_o_uso_dele">Vocês estão usando já o CSS3? E é obrigatório somente o uso dele?</h2>
+      <h2 id="ccs3_obrigatorio">Vocês estão usando já o CSS3? E é obrigatório somente o uso dele?</h2>
 
-      <p>Não é necessário que se use CCS3. O que precisamos é que o CSS seja sempre válido e que funcione em todos os principais navegadores: IE (6 e 7), Firefox, Safari, Opera e Chrome. </p>
+      <p>Não é necessário que se use CSS3. O que precisamos é que o CSS seja sempre válido e que funcione em todos os principais navegadores: IE (6 e 7), Firefox, Safari, Opera e Chrome. </p>
 
-      <h2 id="posso_usar_os_cones_e_ilustraes_que_se_encontram_no_exemplo_da_patricia_figueira">Posso usar os ícones e ilustrações que se encontram no exemplo da Patricia Figueira?</h2>
+      <h2 id="icones_e_ilustracoes_da_pati">Posso usar os ícones e ilustrações que se encontram no exemplo da Patricia Figueira?</h2>
 
       <p>Não. O designer deverá criar seus próprios ícones e ilustrações, ou obtê-los na internet. </p>
 
-      <p>Caso o designer crie seus próprios ícones ou ilustrações, os arquivos fontes deverão ser incluídos no template. Ou seja, deveremos receber o arquivo fonte no formato PSD (Photoshop), ou AI (Adobe Illustrator), ou CDR (Corel) ou outro de sua preferência. Eventuais camadas que tenham sido produzidas devem vir abertas, de modo a permitir fácil edição futura.</p>
+      <p>Caso o designer crie seus próprios ícones ou ilustrações, <strong>os arquivos fontes deverão ser incluídos no template</strong>. Ou seja, deveremos receber o arquivo fonte no formato PSD (Photoshop), ou AI (Adobe Illustrator), ou CDR (Corel) ou outro de sua preferência. Eventuais camadas que tenham sido produzidas devem vir abertas, de modo a permitir fácil edição futura.</p>
 
-      <p>Se preferir, o designer pode obter imagens na internet desde que elas estejam disponíveis como <a href="http://creativecommons.org/licenses/by/2.5/br/">Creative Commons Atribuição (a partir do 2.0)</a>. O link onde as imagens foram obtidas <strong>tem que ser informado</strong>, para que possamos comprovar que o autor delas realmente as libera explicitamente como <a href="http://creativecommons.org/licenses/by/2.5/br/">Creative Commons Atribuição (2.0 para cima)</a> (infelizmente, a imagem ser &ldquo;royalty-free&rdquo; não significa o mesmo que ser Creative Commons, portanto tenha o cuidado de verificar).</p>
+      <p>Se preferir, o designer pode obter imagens na internet desde que elas estejam disponíveis como <a href="http://creativecommons.org/licenses/by/2.5/br/">Creative Commons Atribuição (a partir do 2.0)</a>. Os links onde as imagens foram obtidas <strong>têm que ser informados</strong>, para que possamos comprovar que o autor delas realmente as libera explicitamente como <a href="http://creativecommons.org/licenses/by/2.5/br/">Creative Commons Atribuição (2.0 para cima)</a> (infelizmente, a imagem ser &ldquo;royalty-free&rdquo; não significa o mesmo que ser Creative Commons, portanto tenha o cuidado de verificar).</p>
 
-      <p>Há inúmeras fontes de imagens que seguem o padrão <a href="http://creativecommons.org/licenses/by/2.5/br/">Creative Commons Atribuição)</a>. Algumas delas estão citadas no arquivo &ldquo;fontes-de-material-creative-commons.txt&rdquo; que vem com este pacote.</p>
+      <p>Há inúmeras fontes de imagens que seguem o padrão <a href="http://creativecommons.org/licenses/by/2.5/br/">Creative Commons Atribuição)</a>. Algumas delas estão citadas na página <a href="fontes-de-material-creative-commons.html">Fontes de material Creative Commons</a> que vem com este pacote.</p>
 
-      <h2 id="devo_criar_imagens_especficas_para_as_pginas_de_erro">Devo criar imagens específicas para as páginas de erro?</h2>
+      <h2 id="imagens_para_paginas_de_erro">Devo criar imagens específicas para as páginas de erro?</h2>
 
       <p>Sim. Nas páginas de erro, é importante o recurso de usar uma imagem divertida para ajudar o usuário a não se desesperar quando dá um erro no site. Você deve criar suas próprias imagens ou pode usar imagens obtidas nas internet, desde que estas respeitem as condições citadas anteriormente sobre licenciamento (Creative Commons).</p>
 
-      <h2 id="posso_usar_fontes_com_serifa">Posso usar fontes com serifa?</h2>
+      <h2 id="fontes_com_serifa">Posso usar fontes com serifa?</h2>
 
-      <p>Em princípio sim, mas recomendamos extrema cautela no uso de fontes com serifa. Elas podem ser perigosas, porque serrilham muito em browsers e monitores não tão modernos. O Internet Explorer é especialmente ruim em renderizar este tipo de fonte (e ironicamente é o mais usado por aí). Eu (Leandro) pessoalmente sou mais tolerante a elas do que o resto do pessoal aqui &mdash; mas que elas são perigosas, são; portanto, procure usá-las com muita cautela, e testando bem para ver se o serrilhamento não fica muito tosco. Dependendo de como ficar, podemos deixar passar ou chegar ao ponto de pedir para que seja substituída por uma fonte sem serifa.</p>
+      <p>Em princípio sim, mas recomendamos extrema cautela no uso de fontes com serifa. Elas podem ser perigosas, porque serrilham muito em browsers e monitores não tão modernos. O Internet Explorer é especialmente ruim em renderizar este tipo de fonte (e ironicamente é o mais usado por aí). Eu [Leandro] pessoalmente sou mais tolerante a elas do que o resto do pessoal aqui &mdash; mas que elas são perigosas, são; portanto, procure usá-las com muita cautela, e testando bem para ver se o serrilhamento não fica muito tosco. Dependendo de como ficar, podemos deixar passar ou chegar ao ponto de pedir para que seja substituída por uma fonte sem serifa.</p>
 
-      <h2 id="posso_ter_um_design_muito_parecido_com_o_da_patricia_figueira_que_est_no_exemplo">Posso ter um design muito parecido com o da Patricia Figueira, que está no exemplo?</h2>
+      <h2 id="design_parecido_com_o_da_pati">Posso ter um design muito parecido com o da Patricia Figueira, que está no exemplo?</h2>
 
-      <p>Muitas pessoas têm adotado a diagramação em três colunas, que ainda é um tanto parecida com a do site da Patricia Figueira. Compreendo (Leandro) que isto é bem típico de &ldquo;primeiro design&rdquo;, quando ainda não descobrimos toda a liberdade que temos. Afinal, como escapamos a um layout pronto que nos foi dado? Ele vira meio que nosso universo, nosso parâmetro de partida. Imagino. E como encaixar mais ou menos que três colunas? Felizmente, o HTML permite uma flexibilidade enorme, e nós incentivamos os designers a, tanto quanto possível, abstrair o layout da Patricia e inventar a moda que quiserem. Nosso interesse é comprar templates, e para isso daremos todo o suporte que pudermos para ajudar a dar asas à criatividade. Questione tudo o que você vê no layout da Patricia e, nos trabalhos que estão por vir, chute o balde mesmo, viaje alto.</p>
+      <p>Muitas pessoas têm adotado a diagramação em três colunas, que ainda é um tanto parecida com a do site da Patricia Figueira. Compreendo [Leandro] que isto é bem típico de &ldquo;primeiro design&rdquo;, quando ainda não descobrimos toda a liberdade que temos. Afinal, como escapamos a um layout pronto que nos foi dado? Ele vira meio que nosso universo, nosso parâmetro de partida, imagino. E como encaixar mais ou menos que três colunas? Felizmente, o HTML permite uma flexibilidade enorme, e nós incentivamos os designers a, tanto quanto possível, abstrair o layout da Patricia e inventar a moda que quiserem. Nosso interesse é comprar templates, e para isso daremos todo o suporte que pudermos para ajudar a dar asas à criatividade. Questione tudo o que você vê no layout da Patricia e, nos trabalhos que estão por vir, chute o balde mesmo, viaje alto.</p>
 
       <p>Para ajudar:</p>
 
       <ul>
-      <li>Há neste pacote uma pasta &ldquo;exemplos&rdquo;, com imagens de um outro CSS feito sobre este mesmo beonthenet-estatico. É um caso real, de um site que está no ar.</li>
+      <li>Há neste pacote uma pasta &ldquo;exemplos&rdquo;, com imagens de um outro CSS feito sobre este mesmo Be on the Net estático. É um caso real, de um site que está no ar, e ilustra o que é possível fazer com o CSS.</li>
       <li>Dê uma olhada nos <a href="http://beonthe.net/galerias/templates">templates já produzidos</a>, para se inspirar. Você pode <a href="http://github.com/search?q=beonthenet-template&amp;type=Repositories ">baixar o CSS de qualquer um deles</a> livremente, para aprender como se chegou a tal e tal resultado.</li>
       </ul>
 
-      <h2 id="as_medidas_usadas_no_css_precisam_ser_em_em8217s">As medidas usadas no CSS precisam ser em em&#8217;s?</h2>
+      <h2 id="medidas_em_ems">As medidas usadas no CSS precisam ser em em&rsquo;s?</h2>
 
       <p>Não, você pode usar medidas em px ou qualquer outra unidade de sua preferência.</p>
-
-      <h2 id="suponha_que_eu_faa_um_template_e_este_seja_aprovado_e_portanto_comprado_pela_improve_it_digamos_que_eu_queira_propor_um_segundo_template_onde_a_nica_alterao_ser_na_paleta_de_cores_isso_seria_considerado_vlido">Suponha que eu faça um template e este seja aprovado e, portanto, comprado pela Improve It. Digamos que eu queira propor um segundo template no qual a única alteração será na paleta de cores. Isso seria considerado válido?</h2>
-
-      <p>Não. A ideia é que cada template seja bastante específico em termos de tipografia, posicionamento de elementos, cores e imagens. Portanto, um template, para ser considerado como tal, precisa ter características específicas em cada uma das dimensões citadas (tipografia, posicionamentos, cores e imagens).</p>
     </div>
 
     <hr />

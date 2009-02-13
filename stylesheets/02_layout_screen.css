@@ -526,7 +526,8 @@ body.text #main_content h4 {
 }
 
 body.text #main_content dl, 
-body.text #main_content ul {
+body.text #main_content ul, 
+body.text #main_content ol {
   margin:                 1.6em 4em;
 }
 
@@ -534,15 +535,18 @@ body.text #main_content dd {
   margin:                 0 0 1em 2.5em;
 }
 
-body.text #main_content ul li {
+body.text #main_content ul li, 
+body.text #main_content ol li {
   margin-bottom:          1em;
 }
 
-body.text #main_content ul ul {
+body.text #main_content ul ul, 
+body.text #main_content ol ul {
   margin:                 1em 1.5em;
 }
 
-body.text #main_content ul ul li {
+body.text #main_content ul ul li, 
+body.text #main_content ol ul li {
   margin-bottom:          .5em;
 }
 /* Text pages */

@@ -299,17 +299,29 @@ body.text #main_content dt a:hover {
 }
 
 body.text #main_content dd, 
-body.text #main_content ul li {
+body.text #main_content ul li, 
+body.text #main_content ol li {
   text-align:             justify;
 }
 
 body.text #main_content ul li {
   list-style:             circle;
 }
-
-body.text #main_content ul ul li {
+body.text #main_content ul ul li, 
+body.text #main_content ol ul li {
   list-style:             disc;
   font-size:              95%;
+}
+
+body.text #main_content ol li {
+  list-style:             decimal;
+}
+body.text #main_content ol ul li {
+  font-size:              95%;
+}
+
+body.text li h4 {
+  font-size:              120%;
 }
 
 body.text h1 + p:first-letter {

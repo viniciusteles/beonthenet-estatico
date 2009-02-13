@@ -9,10 +9,9 @@
     
     <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="../stylesheets/01_typography.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/03_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/02_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/03_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/03_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/04_layout_print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
       <link href="../stylesheets/layout_ie.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -44,23 +43,8 @@
     <div id='main_content'>
       <h1>Instruções para fazer CSS para o Be on the Net</h1>
 
-      <p>Olá, designer. Você acaba de receber um pacote com todas as páginas que existem no <strong>Be on the Net</strong> até agora. Esta página contém instruções e macetes para entender melhor o sistema <strong>Be on the Net</strong> e seu HTML.</p>
-
-      <h2>Para começo de conversa: o que eu, designer, tenho de fazer afinal?</h2>
-
-      <p>Bem simples. Você tem de pegar os arquivos HTML contidos neste pacote e dar <strong>todo um novo layout a ele</strong>. Primeiro, através de uma prévia em forma de <strong>imagem de Photoshop</strong>; depois, através de um <strong>CSS</strong> só seu.</p>
-      <p>Estas páginas, por enquanto, estão com o CSS que as tornam semelhantes ao site da fotógrafa de casamentos <a href="http://patriciafigueira.com.br">Patricia Figueira</a>. Imagine que ela contratou você pedindo uma reformulação geral do layout do site. Pois é esta a tarefa: usar o HTML já existente e construir um novo template sobre ele, usando <strong>puro CSS</strong>.</p>
-      <p>Como designer, você não precisa tocar no HTML nem no JavaScript &mdash; aliás, recomendamos que, para que seu CSS seja compatível com o <strong>Be on the Net</strong>, você realmente mantenha <strong>intactos</strong> os HTML&rsquo;s destes arquivos! Ou melhor: a <strong>única</strong> parte dos HTML&rsquo;s em que você vai mexer livremente são as tags <code>link</code> dentro do <code>head</code>, que chamam seus arquivos CSS.</p>
-      <p>Como vai ficar a aparência, como vão ser diagramados os thumbnails das imagens e os outros elementos, isso só é limitado pela sua criatividade. Envie-nos seu layout de Photoshop e daremos nosso feedback para você começar seu CSS. As instruções a seguir vão servir como orientação para você se encontrar no HTML e saber todos os macetes necessários para levar sua arte aos limites.</p>
-
-      <h2>Tá. E o que eu ganho com isso?</h2>
-
-      <ul>
-        <li><strong>R$ 500,00</strong> para cada layout original que voce criar! (ah, mudança só de cor não caracteriza um layout como original; veja a seção <a href="#divisao_do_css">A divisão do CSS</a> para entender de que raios estamos falando);</li>
-        <li><strong>Seu nome</strong> no site do <a href="http://beonthe.net">Be on the Net</a> e no rodapé de cada site que tiver um template seu (com links e mais links para seu próprio site) &mdash; e acontece mesmo! Dê uma olhada nas fichas técnicas de cada <a href="http://beonthe.net/galerias/templates">template</a>; seu nome pode ser o próximo;</li>
-        <li>Quem gostar de seu template mas quiser algo mais exclusivo vai ser indicado por nós direto a você. E aí você ganha o dindim do template e mais o que negociar com seu próprio cliente!</li>
-        <li>E a médio prazo a coisa tende a ficar mais legal. Leia nosso <a href="http://blog.improveit.com.br/articles/2008/11/19/designers-4-formas-de-se-dar-bem-com-o-be-on-the-net" title="Designers: 4 formas de se dar bem com o Be on the Net">artigo sobre formas de ganhar com o Be on he Net</a>, lá tem tudo mais mastigado.</li>
-      </ul>
+      <p>Olá, designer. Você acaba de receber um pacote com todas as páginas que existem no <strong>Be on the Net</strong> até agora. Este é o material necessário para produzir belos e originais templates.</p>
+      <p>Esta página contém instruções <!-- e macetes --> para entender melhor o sistema <strong>Be on the Net</strong> e seu HTML.</p>
 
       <h3>Índice:</h3>
 
@@ -78,25 +62,30 @@
           <ul>
             <li><a href="#logotipos">Logotipos</a></li>
             <li><a href="#logo_textual">Logo textual</a></li>
+            <li><a href="#css_e_midia">Declarações de mídia no CSS</a></li>
+            <li><a href="#ordem_do_css">Ordem das folhas de estilo</a></li>
+            <li><a href="#comentarios_condicionais">Comentários condicionais para o IEca</a></li>
+            <!-- <li><a href="#spinners">Spinners</a></li> -->
+            <!-- <li><a href="#favicons">Favicons</a></li> -->
           </ul>
         </li>
-        <!-- <li><a href="../">Depois do primeiro template</a></li> -->
+        <!-- <li><a href="#como_alterar_templates">Como fazer alterações sobre um template já existente</a></li> -->
       </ul>
 
-      <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram junto com este no pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma ideia de como é o fluxo de navegação do usuário.</p>
+      <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram na raiz deste pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma ideia de como é o fluxo de navegação do usuário.</p>
       <p>Não, sério, navegue mesmo. Nos arquivos do pacote e no site da <a href="http://patriciafigueira.com.br" title="Sério. Navegue e compare, isso vai te ajudar a entender a estrutura.">Patricia</a>. Depois que tiver brincado um pouquinho, continue lendo esta página.</p>
 
       <h2 id="o_que_voce_ve">O que você vê no site:</h2>
 
-      <p>Basicamente, o que você viu <em>em comum</em> no site da Patricia e nos arquivos deste pacote foram:</p>
+      <p>Basicamente, o que você viu <em>em comum</em> no site da <a href="http://patriciafigueira.com.br">Patricia</a> e nos arquivos deste pacote foram:</p>
 
       <dl>
         <dt>Imagens</dt>
           <dd>A maior parte do site é feita de <strong>imagens</strong>. Elas são o carro-chefe do Be on the Net. Você vê galerias, vê imagens grandes, brinca com a seleção de imagens. É o maior <em>playground</em> do sistema;</dd>
         <dt>Texto</dt>
-          <dd>Na página &ldquo;Quem somos&rdquo;, há texto. É basicamente um discurso institucional, para dar uma seduzida no usuário com palavras &mdash; se ele já não foi seduzido pelas imagens;</dd>
+          <dd>Na página &ldquo;Quem somos&rdquo;, há texto. É basicamente um discurso institucional, para dar uma seduzida no usuário com palavras &mdash; se ele já não foi seduzido pelas imagens. As páginas de instruções (cujos links estão no <a href="#footer">rodapé</a>) também são do tipo textual.</dd>
         <dt>Um formulário de contato</dt>
-          <dd>Há uma página para o usuário entrar em contato com a Patricia. Se quiser, pode mandar uma mensagem a ela dizendo que está na equipe de designers do Be on the Net!&nbsp;&nbsp;&nbsp;:)</dd>
+          <dd>Uma página para o usuário entrar em contato com a Patricia.</dd>
         <dt>Erros</dt>
           <dd>Se você teve azar o bastante (ou sorte, dependendo do ponto de vista!) acessando o site dela, você se deparou com uma das três divertidas páginas de erro: <a href="http://patriciafigueira.com.br/pagina_nao_encontrada" title="Quando você acessa uma página inexistente ou obsoleta.">página não encontrada</a>, <a href="http://patriciafigueira.com.br/server_error" title="Quando ocorre um erro no servidor remoto.">servidor sentimental</a>, e <a href="http://patriciafigueira.com.br/servidor_ocupado" title="Quando o repositório demora demais para enviar as fotos para o servidor.">repositório preguiçoso</a>.</dd>
       </dl>
@@ -134,14 +123,14 @@
         <dt>Tags variadas</dt>
           <dd>Procuramos enxugar em <code>classes</code> e <code>id&rsquo;s</code> nas tags, e em compensação elas são super variadas; cada elemento que há dentro de outro é praticamente único, o que dá excelentes oportunidades para brincadeiras como múltiplas imagens de background, entre outras;</dd>
         <dt>Tags salvadoras para o IEca, image replacement e outras firulas</dt>
-          <dd>Em alguns pontos do código há certas tags quietinhas lá na delas, esperando uma oportunidade de entrar em ação. São como o <code>&lt;span class="ie"&gt;</code> nas páginas de thumbnails para centralizar imagens verticalmente, os <code>spans</code> vazios para <em>image replacement</em> na página de foto full-size, ou o <code>&lt;li="empty"&gt;</code> no final de cada lista de fotos, para quebrar <em>floats</em> com facilidade. Mais detalhes e macetes no futuro.</dd>
+          <dd>Em alguns pontos do código há certas tags quietinhas lá na delas, esperando uma oportunidade de entrar em ação. São como o <code>&lt;span class="ie"&gt;</code> nas páginas de thumbnails para centralizar imagens verticalmente, os <code>spans</code> vazios para <em>image replacement</em> na página de foto full-size, ou o <code>&lt;li="empty"&gt;</code> no final de cada lista de imagens, para quebrar <em>floats</em> com facilidade. Mais detalhes e macetes no futuro.</dd>
       </dl>
 
       <h2 id="divisao_do_css">A divisão do CSS:</h2>
 
       <p>Dê uma olhada na pasta <strong>stylesheets</strong>. Lá estão todas as folhas de estilo que compõem este modelo de design, parecido com o da <a href="http://patriciafigueira.com.br" title="Este modelo de design é uma réplica do site da Patricia Figueira, dê uma olhada.">Patricia Figueira</a>. Podemos ver que há uma curiosa divisão entre <em>tipografia</em>, <em>layout</em> e <em>cores</em>.</p>
 
-      <p>Esta divisão não é obrigatória. Você pode utilizar quantas folhas de estilo preferir, e dividir a informação entre elas como quiser. Esta foi somente a opção que o <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello é designer da Improve It.">Leandro</a> fez para estilizar as páginas. Esta organização tem-se mostrado bastante útil em nossos projetos, já que é legível para qualquer desenvolvedor, permite-nos encontrar e modificar seletores com facilidade, e leva em consideração as três mídias mais usadas (<em>screen</em>, <em>print</em> e <em>handheld</em>). Há um <a href="http://blog.improveit.com.br/articles/2008/06/26/css-design-o-denominador-comum" title="Entenda por que o Leandro separa layout de tipografia.">artigo dele em nosso blog</a> que explica em detalhes o porquê de separar a tipografia.</p>
+      <p>Esta divisão <em>não é obrigatória</em>. Você pode utilizar quantas folhas de estilo preferir, e dividir a informação entre elas como quiser. Esta foi somente a opção que o <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello é designer da Improve It.">Leandro</a> fez para estilizar as páginas. Esta organização tem-se mostrado bastante útil em nossos projetos, já que é legível para qualquer desenvolvedor, permite-nos encontrar e modificar seletores com facilidade, e leva em consideração as três mídias mais usadas (<em>screen</em>, <em>print</em> e <em>handheld</em>). Há um <a href="http://blog.improveit.com.br/articles/2008/06/26/css-design-o-denominador-comum" title="Entenda por que o Leandro separa layout de tipografia.">artigo dele em nosso blog</a> que explica em detalhes o porquê de separar a tipografia.</p>
 
       <p>Caso você queira experimentar esta divisão, seguem os detalhes:</p>
 
@@ -154,7 +143,7 @@
           <dd>Cuida dos elementos de cor do site: cor do texto, do fundo, das bordas, e a aplicação de imagens de background. Também é uma folha de estilo bem aceita por todos os browsers, por isso é muito raro dar confusão. Com este arquivo, pode-se manter sob controle toda a paleta de cores do site (repare que no início do arquivo <code>03_color_screen_handheld.css</code> estão anotadas todas as cores usadas, para aplicação rápida e fácil). Todas as imagens usadas no site vêm da pasta <strong>/images</strong> neste pacote e, com exceção do logotipo, são aplicadas na folha de estilo de cor.</dd>
       </dl>
 
-      <h4>Nota: como o color.css é uma folha de estilo bem mais fácil e tranquila de criar e mudar, não consideramos que um template novo com mudanças só nesta folha de estilo seja carcterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
+      <h4>Nota: como o color.css é uma folha de estilo bem mais fácil e tranquila de criar e mudar, não consideramos que um template novo com mudanças só nesta folha de estilo seja caracterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
 
       <h2 id="modulos_paginas_situacoes">Conhecendo o <code>body</code> &mdash; módulos, páginas e situações:</h2>
 
@@ -163,7 +152,7 @@
       <p>Vamos destrinchar o nome do arquivo <code>04(pictures)_best_galleries_selection(04_pictures_in_cart).html</code> (putz!). É assim:</p>
 
       <ul>
-        <li>O número no início (<code>04</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <strong>quarta página</strong> do módulo <em>pictures</em> &mdash; que trata da seleção de fotos;</li>
+        <li>O número no início (<code>04</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <em>quarta página</em> do módulo <em>pictures</em> &mdash; que trata da seleção de fotos;</li>
         <li>O primeiro par de parênteses (<code>(pictures)</code>) apresenta o <strong>módulo</strong>. O arquivo em questão pertence ao módulo <em>pictures</em>;</li>
         <li>A sequência de palavras que há entre o primeiro e o segundo pares de parênteses (<code>_best_galleries_selection</code>) reflete a combinação de <code>classes</code> e <code>id&rsquo;s</code> que aparece na tag <code>body</code> deste arquivo. Neste exemplo, o HTML vai exibir <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code> &mdash; ou seja, esta página pertence à categoria <em>best_galleries</em> (melhores galerias de imagens) e sua identidade é <em>selection</em>. Lembre que o &ldquo;pictures&rdquo; que aparece no <code>body</code> é a última palavra da <code>classe</code>, logo reflete o <em>módulo</em>;</li>
         <li>O segundo par de parênteses (<code>(04_pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; logo, apresentam vários estágios de comportamento. Para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
@@ -394,7 +383,8 @@
 
       <h2 id="convencoes">Convenções:</h2>
 
-      <p>Certas partes do seu design vão ser integradas diretamente ao HTML: logotipos, chamadas de CSS, declarações de mídia, favicons etc. Mas como o designer não vai ter acesso direto à estrutura (HTML) dinâmica do <strong>Be on the Net</strong>, a solução é recorrer a certas <strong>convenções</strong>. Se o designer criar seus arquivos seguindo estas convenções, o sistema do <strong>Be on the Net</strong> cuida de automatizar tudo e injeta o que for necessário direto no HTML. São elas:</p>
+      <p>Certas partes do seu design vão ser integradas diretamente ao HTML: logotipos, chamadas de CSS, declarações de mídia, favicons etc. Mas como o designer não vai ter acesso direto à estrutura (HTML) dinâmica do <strong>Be on the Net</strong>, a solução é recorrer a certas <strong>convenções</strong>. Se o designer criar seus arquivos seguindo estas convenções, o sistema do <strong>Be on the Net</strong> cuida de automatizar tudo e injeta o que for necessário direto no HTML.</p>
+      <p>São elas: <a href="#logotipos">logotipos</a>, <a href="#css_e_midia">declarações de mídia no CSS</a>, <a href="#ordem_do_css">ordem das folhas de estilo</a>, <a href="#comentarios_condicionais">comentários condicionais para o IEca</a>, <a href="#spinners">spinners</a> e <a href="#favicons">favicons</a>.</p>
 
       <h3 id="logotipos">Logotipos</h3>
 
@@ -420,15 +410,181 @@
 
       <h4>Nota: agora que você conhece a convenção de logotipos, procure prever o máximo de situações possíveis: espaço para logotipo vertical, espaço para logotipo horizontal, espaço para logotipo textual... Pode (deve!) trocar o logo da Patricia Figueira por logos experimentais e testar à vontade!</h4>
 
-      <h3 id="css_e_midia">CSS e mídia</h3>
+      <h3 id="css_e_midia">Declarações de mídia no CSS</h3>
 
-
-
+      <p>Dê uma olhada no <code>&lt;header&gt;</code> de um dos arquivos de HTML. Lá você vê chamadas para CSS. Por exemplo, a linha <code>&lt;link href="stylesheets/02_layout_screen.css" media="screen" rel="stylesheet" type="text/css" /&gt;</code> faz duas coisas: chama a folha de estilos &ldquo;02_layout_screen.css&rdquo;; e diz que o atributo <code>media</code> dela tem que ser <strong>screen</strong>.</p>
+      <p>O designer não pode escrever direto no HTML qual é a mídia de cada folha de estilos que criar. Mas <em>tem controle indireto</em> sobre esse atributo.</p>
+      <p>Para dizer a que mídia você, designer, deseja atribuir uma determinada folha de estilos, é só <em>escrever a mídia desejada no final do nome do arquivo</em>. Como no exemplo acima, se você criar um arquivo de CSS chamado, <strong>diagramacao_screen.css</strong>, o sistema do Be on the Net vai reconhecer esta convenção e criar a seguinte linha no HTML de seu template:</p>
         
+      <pre><code>&lt;link href="stylesheets/diagramacao_screen.css" media="screen" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
+
+      <p>Repare que o sistema do Be on the Net atribuiu automaticamente <code>media="screen"</code> à chamada da folha de estilos.</p>
+      <h4>Nota: certamente, isso só vai acontecer no sistema verdadeiro. Aqui no Be on the Net estático, é necessário inserir a chamada completa nas páginas HTML. Heh, coisas de sistema estático. </h4>
+
+      <p>Se você chamasse o arquivo de <strong>diagramacao_print.css</strong>, o sistema atribuiria automaticamente <code>media="print"</code>.</p>
+      <p><strong>Para uma folha de estilos ir a múltiplas midias:</strong> é só inserir mais de um nome de mídia depois do nome do seu arquivo CSS. Por exemplo, neste pacote existe o arquivo <strong>03_color_screen_handheld.css</strong>. Isto significa que o CSS trata de <em>cor</em> e que eu quero exibi-lo tanto nas mídias <strong>screen</strong> quanto <strong>handheld</strong>. O sistema do Be on the Net neste caso vai gerar múltiplas chamadas, tantas quantos forem os meios:</p>
+
+      <pre><code>&lt;link href="stylesheets/03_color_screen_handheld.css" media="screen" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;
+
+&lt;link href="stylesheets/03_color_screen_handheld.css" media="handheld" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
+
+      <p>Se você inventasse um arquivo chamado <strong>template_handheld_screen_print.css</strong>, o sistema faria <em>três</em> chamadas, uma para cada mídia.</p>
+      <p>Se você quiser fazer uma folha de estilos que apareça em <em>todas</em> as mídias, é só não escrever <em>nada</em> depois do nome do arquivo. Por exemplo, neste pacote há o arquivo <strong>01_typography.css</strong>. Ele vai para todas as mídias, com <code>media="all"</code>:</p>
+
+      <pre><code>&lt;link href="stylesheets/01_typography.css" media="all" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
+
+      <h4>Nota: a convenção de declaração de mídias consiste em <em>sufixos</em>. Por isso é importante fazer exatamente deste jeito: inserir o(s) nome(s) da(s) mídia(s) <em>depois</em> do nome do arquivo, separado(s) por <em>underlines</em> ( _ ).</h4>
+
+      <h3 id="ordem_do_css">Ordem das folhas de estilo</h3>
+
+      <p>Você já tem o controle das mídias. Mas como ter o controle da <em>ordem</em> em que suas folhas de estilo são chamadas?</p>
+
+      <p>Isto se faz com <strong>prefixos numéricos</strong>. Por exemplo, &ldquo;<strong>01_</strong>typography.css&rdquo;, &ldquo;<strong>02_</strong>layout_screen.css&rdquo;, e por aí vai. Mas vamos explicar melhor como dominar isso.</p>
+
+      <p>OK, nós acabamos de dizer uma <em>quase</em> verdade no <a href="#css_e_midia">tópico anterior</a>. Na verdade, o sistema do Be on the Net não cria exatamente <em>várias</em> chamadas de CSS, cada uma para uma mídia. O que o sistema faz, no final das contas, é concentrar todas as folhas de estilo de uma certa mídia numa <strong>única folha</strong>. Isso é para tornar mais rápido o site da pessoa.</p>
+      <p>Dê uma olhada no próprio site do <a href="http://beonthe.net">Be on the Net</a>, e investigue seu CSS. Você vai ver quatro chamadas mais ou menos assim:</p>
+
+      <pre><code>&lt;link href="stylesheets/cached_all.css" media="all" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;
+
+&lt;link href="stylesheets/cached_handheld.css" media="handheld" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;
+
+&lt;link href="stylesheets/cached_print.css" media="print" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;
+
+&lt;link href="stylesheets/cached_screen.css" media="screen" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
+
+      <p>O que o sistema fez foi pegar <em>todas</em> as folhas de estilo que tivessem, por exemplo, <code>media="screen"</code>, e unir seus códigos em um único arquivo <strong>cached_screen.css</strong> com <code>media="screen"</code>.</p>
+
+      <p>Então vejamos como o sistema faria com as folhas de estilo contidas neste pacote estático. Veja os arquivos <strong>02_layout_screen.css</strong> e <strong>03_color_screen_handheld.css</strong>. O sistema misturaria os arquivos de acordo com suas mídias, e criaria <em>dois</em> arquivos: um com atributos de <em>cor</em> que teria <code>media="handheld"</code>, e outro com atributos de <em>layout</em> e <em>cor</em>, que teria <code>media="screen"</code>.</p>
+
+      <p>Por causa dos prefixos numéricos que estão nos arquivos, eles vão ser ordenados assim:</p>
+
+      <ol>
+        <li>Primeiro, vai ordenar por <em>ordem alfabética da mídia</em>. Ou seja, vai agrupar os arquivos CSS na seguinte ordem: arquivos com <code>media="all"</code>, depois com <code>media="handheld"</code>, depois com <code>media="print"</code> e depois com <code>media="screen"</code>.</li>
+        <li>Depois, sim, vai considerar os prefixos numéricos que usamos. A ordem dos meus arquivos vai ficar assim:
+
+          <pre><code>&lt;link href="stylesheets/03_color_screen_handheld.css" &rarr;
+&rarr; media="handheld" rel="stylesheet" type="text/css" /&gt;
+
+&lt;link href="stylesheets/02_layout_screen.css" &rarr;
+media="screen" rel="stylesheet" type="text/css" /&gt;
+
+&lt;link href="stylesheets/03_color_screen_handheld.css" &rarr;
+media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
+        </li>
+        <li>E por último vai criar os dois arquivos finais:
+
+          <pre><code>&lt;link href="stylesheets/cached_handheld.css" media="handheld" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;
+
+&lt;link href="stylesheets/cached_print.css" media="print" &rarr;
+&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
+        </li>
+      </ol>
+
+      <h4>Nota: a convenção de ordenação dos arquivos CSS consiste em <em>prefixos</em>. Por isso é importante fazer exatamente deste jeito: inserir os números desejados <em>antes</em> do nome do arquivo, separados por <em>underlines</em> ( _ ).</h4>
+
+      <h4>Nota: controlar a ordem das folhas de estilo é conveniente, porque pode-se ter controle total sobre os seletores escritos em cada uma e garantir que as regras certas sobrescrevam as outras de forma desejada. Isso tudo sem precisar tocar no HTML.</h4>
+
+      <h3 id="comentarios_condicionais">Comentários condicionais para o IEca</h3>
+
+      <p>Entra em cena o Internet Explorer. Ah, ele...</p>
+      <p>Como ele não respeita direito as regras do bom CSS, às vezes é preciso recorrer a regras especificamente voltadas para este browser. Há algumas técnicas para fazer isso, como <em>hacks</em> de CSS e até certos <em>workarounds</em> que dispensam hacks. Como preferimos que seu CSS seja válido, optamos pela técnica dos <strong>comentários condicionais</strong>: folhas de estilo que apontam somente para o Internet Explorer.</p>
+
+      <p>Para apontar uma folha de estilos somente para o IEca, o método é parecido com o de <a href="#css_e_midia">declarações de mídia do CSS</a>: através de <em>sufixos específicos</em>. Como, por exemplo, nos nomes dos arquivos &ldquo;layout<strong>_ie</strong>.css&rdquo; e &ldquo;layout<strong>_ie6</strong>.css&rdquo;, ambos presentes neste pacote.</p>
+
+      <p>O sufixo vai corresponder à <em>versão</em> de IE a que você está referindo o arquivo, e vai gerar no sistema um HTML correspondente. No exemplo acima, o sufixo &ldquo;<strong>_ie</strong>&rdquo; do arquivo &ldquo;layout_ie.css&rdquo; vai gerar uma tag condicional para qualquer versão de IE. Repare na primeira linha:</p>
+
+      <pre><code>&lt;!--[if IE] &gt;
+        link href="stylesheets/layout_ie.css" media="all" &rarr;
+        &rarr; rel="stylesheet" type="text/css" /&gt;
+&lt; ![endif]--&gt;</code></pre>
+
+      <p>Os sufixos vão gerar o seguinte código:</p>
+
+      <ul>
+        <li>_ie6 &rArr; <code>&lt;!--[if IE6] &gt;</code> (aplicar as regras somente ao IE6);</li>
+        <li>_ltie7 &rArr; <code>&lt;!--[if lt IE7] &gt;</code> (aplicar as regras se o IE for menor que o 7);</li>
+        <li>_gteie6 &rArr; <code>&lt;!--[if gte IE6] &gt;</code> (aplicar as regras se o IE for maior ou igual ao IE6);</li>
+      </ul>
+
+      <p>Nomeie conforme suas necessidades. As possibilidades são muitas. Por exemplo, um arquivo &ldquo;beonthenet_ltie8.css&rdquo; vai gerar regras somente para versões do IE abaixo da 8:</p>
+
+      <pre><code>&lt;!--[if lt IE8] &gt;
+        link href="stylesheets/beonthenet_ltie8.css" media="all" &rarr;
+        &rarr; rel="stylesheet" type="text/css" /&gt;
+&lt; ![endif]--&gt;</code></pre>
+
+      <p>Também é possível (mas até agora nunca foi necessário chegar a tal ponto) unir sufixos de IE a sufixos de mídia e a prefixos de ordem. Por exemplo, você pode fazer um arquivo &ldquo;06_excecoes_screen_print_gtie5.css&rdquo;, que vai gerar um comentário condicional para versões maiores que 5, contendo duas chamadas CSS, uma para <code>media="print"</code> e outra <code>media="screen"</code>:</p>
+
+      <pre><code>&lt;!--[if gt IE5] &gt;
+        link href="stylesheets/06_excecoes_screen_print_gtie5.css" &rarr;
+        media="print" rel="stylesheet" type="text/css" /&gt;
+        link href="stylesheets/06_excecoes_screen_print_gtie5.css" &rarr;
+        media="screen" rel="stylesheet" type="text/css" /&gt;
+&lt; ![endif]--&gt;</code></pre>
+
+      <p>Putz! O IEca só dá trabalho.</p>
 <!--
-      <h3>CSS e mídia</h3>
-      <h3>Ordenação do CSS por mídia</h3>
-      <h3>Comentários condicionais para o IEca</h3>
+      <h2 id="como_alterar_templates">Como fazer alterações sobre um template já existente:</h2>
+
+      <p>Então, você já fez um template para nós. Nós já divulgamos seu nome seus links na internet, e você atraiu clientes. Agora, um cliente que indicamos quer um Be on the Net parecido com um dos <a href="http://beonthe.net/galerias/templates">templates já existentes</a>, só que com algumas exclusividades &mdash; um esquema de cores diferente, um logotipo personalizado, algumas imagens a mais ou a menos.</p>
+
+      <p>O procedimento para alterar um template pronto é ligeiramente diferente do de criar um novo template. Eis as instruções detalhadas:</p>
+
+      <ol>
+        <li>Para perfeito funcionamento, <strong>todos</strong> os arquivos que existem no template devem permanecer intactos e imutáveis. Os únicos arquivos que podem ser modificados são: uma folha de estilos (ou algumas) que você criar para sobrescrever as atuais (por exemplo, uma chamada &ldquo;<strong>06_exclusivo_cliente.css</strong>&rdquo;, ou o que você preferir) e as imagens novas que você inserir numa pasta dentro da pasta <strong>/images</strong>;</li>
+
+        <li>As mudanças no template são feitas através da folha de estilo que você criar dentro da pasta <strong>/stylesheets</strong>. Neste arquivo devem ser escritas todas as regras que vão sobrescrever o efeito das que estão nas outras folhas de estilo. Por exemplo: se na folha de estilos &ldquo;03_color_screen_handheld.css&rdquo;, o <code>&lt;body&gt;</code> do template é <em>bege</em>, mas a nova cor desejada pelo cliente é <em>cinza</em>, deve-se ir ao seu arquivo &ldquo;06_exclusivo_cliente.css&rdquo; e escrever:
+<pre><code>body {
+      background:         #7D7A7A;
+ }</code></pre>        
+        </li>
+        <li>Se só se deseja sobrescrever <em>um único atributo</em> entre vários de um mesmo seletor, só é necessário mencionar <em>este atributo</em> na sua folha de estilos. Por exemplo, se o template apresenta o <code>#header</code> assim:
+<pre><code>#header {
+      min-height:         38px;
+      height:             2.38em;
+      padding-top:        .44em;
+      padding-bottom:     0;
+      position:           relative;
+ }</code></pre>
+        ... Mas tudo o que se deseja mudar é o <code>padding-top</code>, então na sua folha de estilos exclusiva só é necessário fazer menção ao <code>padding-top</code>:
+<pre><code>#header {
+      padding-top:        10px;
+ }</code></pre>
+        </li>
+        <li>Para usar imagens feitas por você, invente uma pasta dentro da pasta &ldquo;/images&rdquo; (por exemplo, uma pasta <strong>/images/exclusivas</strong>), e insira lá as novas imagens. A seguir, chame-as na sua folha de estilos. Por exemplo, se você criou uma nova imagem para a parte de paginação, chamada &ldquo;paging.png&rdquo;, deve pô-la na pasta &ldquo;/exclusivas&rdquo; e chamá-la da seguinte maneira:
+<pre><code>p.pages {
+      background-image:   url(../images/exclusivas/paging.png);
+ }</code></pre>
+        </li>
+        <li>Se no template original uma imagem de fundo tem vários atributos (posicionamento, repetição, cor de fundo), mas só se deseja mudar <em>a imagem chamada</em> e mais nenhum deles, deve-se seguir o mesmo procedimento do item 3: sobrescrever <em>um único atributo</em>. Por exemplo, se o template mostra o link de ir para o checkout do seguinte modo:
+<pre><code>.go_to_checkout {
+      background:   transparent url(../images/shopping_cart.png) &rarr;
+                    &rarr; no-repeat right center;
+ }</code></pre>
+        ... Mas você tem uma imagem sua e quer deixar <em>intactos</em> os outros atributos, é só jogar sua imagem na pasta que criou dentro da &ldquo;/images&rdquo; e chamar o atributo <code>background-image</code>:
+<pre><code>.go_to_checkout {
+      background-image:   transparent url(../images/exclusivas/shopping_cart.png)
+ }</code></pre>
+          <h4>Nota: repare que, na chamada de imagem acima, a <code>url</code> descrita aponta para a pasta que você criou dentro da pasta &ldquo;/images&rdquo;, ou seja: &ldquo;url(..images/exclusivas/nome_da_sua_imagem.jpg)&rdquo;. Para substituir imagens com sucesso, é importante seguir precisamente este padrão.</h4>
+        </li>
+        <li><strong>Importante:</strong> para cada imagem que você quiser substituir, é <strong>necessário</strong> inseri-la na pasta que você criou dentro da &ldquo;/images&rdquo; (neste caso, &ldquo;/exclusivas&rdquo;) <strong>e também</strong> chamá-la na sua folha de estilos (no caso deste exemplo, &ldquo;06_exclusivo_cliente.css&rdquo;). Se uma imagem tiver o mesmo nome de outra que já existia no template, ela <strong>não</strong> vai aparecer no novo layout, mesmo que o template já a esteja chamando. Por isso é importante chamá-la <strong>novamente</strong>, na folha de estilos que você criou.</li>
+      </ol>
+-->
+
+
+
+<!--
+  
+      
       <h3>Spinners</h3>
       <h3>Favicon</h3>
 
@@ -445,10 +601,11 @@
       <h3>Tirando proveito do body</h3>
       <h3>Módulos, páginas, situações</h3>
       <h3>input[type="hidden"]</h3>
+      <h3>Cada tag é uma boa desculpa</h3>
 -->
-      <h2>Continua no próximo episódio...</h2>
+      <h2>Por enquanto é só, caro designer!</h2>
 
-      <p>O texto contido aqui foi só a ponta do iceberg; há mais coisas que é preciso explicar para você não se perder no código. E os macetes vão dar uma liberdade e uma flexibilidade incríveis ao seu CSS. Aguarde e confie, as atualizações destas instruções vão te dar <strong>o poder</strong>!</p>
+      <p>Você já tem uma base bem sólida para criar arquivos CSS com todo o domínio necessário para o sistema. Há vários macetes que podem agilizar seu trabalho, dar uma liberdade e uma flexibilidade incríveis ao seu CSS e lançar sua criatividade às alturas. E vamos publicar aqui nas instruções. Aguarde e confie, as atualizações destas instruções vão te dar <strong>o poder</strong>!</p>
     </div>
 
     <hr />
