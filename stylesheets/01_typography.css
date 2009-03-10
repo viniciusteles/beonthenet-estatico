@@ -278,6 +278,11 @@ td a {
   font-size:              80%;
 }
 
+td a, 
+td code {
+  white-space:            nowrap;
+}
+
 h4 em {
   font:                   normal italic normal 100%/1.2em "Times New Roman", Times, serif;
 }

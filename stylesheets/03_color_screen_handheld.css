@@ -1,4 +1,4 @@
-/* Cores utilizadas no site:
+/* Cores utilizadas neste exemplo da Patricia Figueira:
 
 Input lighting:           #F6F0DF;
 Bege claro:					      #F6F0DB;
@@ -182,7 +182,7 @@ ul#thumbnails a:hover label {
   background-image:       url(../images/arrow_right_hover.gif);
 }
 .pages a:hover {
-    background-color:     #7F6B43;
+  background-color:       #7F6B43;
 }
 .pages a:hover, 
 .pages a.previous:hover,
@@ -460,6 +460,18 @@ body#timeout #main_content h2 {
 #facebox {
 	background:             none;
 }
+
+#facebox p {
+  background-position:    bottom left;
+}
+
+#facebox a {
+  background-position:    top right;
+}
+
+#facebox img {
+  background-position:    bottom right;
+}
 /* /Facebox */
 
 
@@ -468,11 +480,6 @@ body#timeout #main_content h2 {
 	background:             #F6F0DB url(../images/footer_shading.png) repeat-x;
 	border-top-color:       #EFE3C3;
 	border-bottom-color:    #940029;
-	margin-bottom:          2em;
-}
-
-#footer p {
-	margin-bottom:          .5em;
 }
 
 #footer h5 {

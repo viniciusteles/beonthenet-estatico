@@ -499,7 +499,6 @@ td a,
 td code {
   border:                 none;
   margin:                 0 -1em;
-  white-space:            nowrap;
 }
 
 td code {
@@ -685,13 +684,11 @@ body > #facebox {
 
 #facebox p {
   padding:                0 0 0 18px;
-  background-position:    bottom left;
   position:               relative;
 }
 
 #facebox a {
   padding:                15px 18px 0 0;
-  background-position:    top right;
   outline:                none;
   position:               absolute;
   top:                    -10px;
@@ -706,7 +703,6 @@ body > #facebox {
 
 #facebox img {
   padding:                20px 18px 18px 0;
-  background-position:    bottom right;
   margin-bottom:          -3px;
 }
 #facebox p > img {
