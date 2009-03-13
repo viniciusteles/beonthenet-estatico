@@ -629,6 +629,7 @@ body#pictures_sent #order_form p {
 	border:                 none;
 	border-top:             1px solid;
 	border-bottom:          1px solid;
+	outline:                none;
   margin:                 0;
 }
 /* /Forms (contact, checkout, search) */
