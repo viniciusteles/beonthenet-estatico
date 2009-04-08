@@ -6,6 +6,7 @@ body, .pages, #submit_result, body.application #main_content h2 {
 
 hr {
   margin:                 -8px 0 -7px 0;
+  color:                  transparent;
 }
 
 #header li {

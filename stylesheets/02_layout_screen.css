@@ -17,13 +17,13 @@ body {
 hr, .emtpy, .empty, 
 #thumbnails li.empty, 
 #selected_pictures li.empty {
-	display:                block;
-	float:                  none;
-	height:                 0;
-	padding:                0;
-	margin:                 0;
-	clear:                  both;
-	visibility:             hidden;
+  display:                block;
+  float:                  none;
+  height:                 0;
+  padding:                0;
+  margin:                 0;
+  clear:                  both;
+  visibility:             hidden;
 }
 
 a {
