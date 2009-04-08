@@ -551,7 +551,7 @@ body.text #main_content ol ul li {
 /* Text pages */
 
 
-/* Forms (contact, checkout, search) */
+/* Forms (contact, checkout, search, rsvp) */
 label {
 	display:                block;
 	width:                  29%;
@@ -569,6 +569,24 @@ input, textarea {
 
 input:hover, textarea:hover {
 	border:                 1px solid;
+}
+
+input.rsvp_confirmation {
+  display:                inline;
+  width:                  auto;
+  padding:                0;
+  border:                 none;
+  margin-top:             0;
+  margin-bottom:          0;
+}
+
+#confirmation_yes, #confirmation_no {
+  display:                inline;
+  line-height:            3em;
+}
+
+#message_confirmation_no {
+  margin-left:            3em;
 }
 
 button {
@@ -632,7 +650,7 @@ body#pictures_sent #order_form p {
 	outline:                none;
   margin:                 0;
 }
-/* /Forms (contact, checkout, search) */
+/* /Forms (contact, checkout, search, rsvp) */
 
 
 /* Errors (404, 500, timeout, empty search results) */
