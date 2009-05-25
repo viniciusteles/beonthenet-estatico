@@ -33,8 +33,9 @@ a {
 
 /* Header tabbed menu */
 #header {
-  min-height:             38px;
-  height:                 2.38em;
+/*  min-height:             38px;*/
+/*  height:                 2.38em;*/
+  height:                 75px;
   padding-top:            .44em;
   padding-bottom:         0;
   position:               relative;
@@ -56,11 +57,12 @@ a {
 
 #header ul {
   height:                 2.38em;
-  margin-left:            168px;
+/*  margin-left:            168px;*/
   position:               absolute;
-  right:                  0;
+/*  right:                  0;*/
+  right:                  62px;
   bottom:                 0;
-  left:                   8em;
+/*  left:                   8em;*/
   overflow:               hidden;
 }
 
@@ -629,7 +631,8 @@ body#pictures_sent #order_form p {
 	padding-left:           25px;
 	position:               absolute;
 	top:                    .8em;
-	right:                  1.85em;
+/*  right:                  1.85em;*/
+  right:                  62px;
 }
 
 #global_search fieldset {
