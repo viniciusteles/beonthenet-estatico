@@ -10,8 +10,8 @@ body {
 }
 
 #header, #main_content, #footer {
-  padding-right:          3.9em;
-  padding-left:           3.9em;
+  padding-right:          62px;
+  padding-left:           62px;
 }
 
 hr, .emtpy, .empty, 
@@ -37,11 +37,11 @@ a {
   position:               relative;
 }
 
-#header h1#logo_print {
+#logo_print {
   display:                none;
 }
 
-#header h1#logo_screen {
+#logo_screen {
   float:                  left;
   margin-top:             7px;
 }
@@ -79,7 +79,7 @@ a {
 
 /* Main content top segment */
 #main_content {
-	padding:                1.56em 3.9em;
+	padding:                1.56em 62px;
 }
 
 #subnavigation {
@@ -105,28 +105,32 @@ body#selection h1 {
 
 
 /* Thumbnails */
-ul#thumbnails {
-  margin-right:           -3.9em;
+#thumbnails {
+  margin-right:           -62px;
 }
 
-ul#thumbnails li {
+#thumbnails li {
 	float:                  left;
 	width:                  250px;
-  margin:                 2.5em 3.9em 2.5em 0;
+  margin:                 10px 62px 10px 0;
+}
+.pictures#index #thumbnails li, 
+.videos#index #thumbnails li {
+  margin:                 2.5em 62px 2.5em 0;  
 }
 
-ul#thumbnails li, ul#thumbnails li div {
+#thumbnails li, #thumbnails li div {
 	position:               relative;
 }
 
-ul#thumbnails li h3 {
+#thumbnails li h3 {
   position:               absolute;
   bottom:                 272px;
 }
 
 /* Vertically centering images 
 (conditional comments for IE required) */
-ul#thumbnails li div a {
+#thumbnails li div a {
 	display:                table-cell;
 	width:                  250px;
 	height:                 250px;
@@ -134,7 +138,7 @@ ul#thumbnails li div a {
 }
 
 
-ul#thumbnails li div a label {
+#thumbnails li div a label {
 	width:                  auto;
 	position:               absolute;
 	bottom:                 3px;
@@ -200,11 +204,6 @@ body.videos #thumbnails img {
 
 .pages a.next {
   padding-right:          15px;
-}
-
-.second {
-  position:               relative;
-  bottom:                 35px;
 }
 /* /Paging */
 
@@ -731,7 +730,7 @@ body > #facebox {
 
 /* Footer */
 #footer {
-  padding:                1.25em 3.9em;
+  padding:                1.25em 62px;
 	border-top:             2px solid;
 	border-bottom:          .2em solid;
 	margin-bottom:          2em;

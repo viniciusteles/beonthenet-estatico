@@ -15,22 +15,23 @@ hr {
 
 
 /* Vertically centering images */
-ul#thumbnails li div a {
+#thumbnails li div a {
   display:                block;
 }
-ul#thumbnails li div span.ie {
+#thumbnails li div span.ie {
   display:                inline-block;
   height:                 100%;
   vertical-align:         middle;
 }
-ul#thumbnails li div img {
+#thumbnails li div img {
   vertical-align:         middle;
 }
 /* /Vertically centering images */
 
 
 .second {
-  bottom:                 50px;
+  position:               relative;
+  bottom:                 20px;
 }
 
 #all_pictures label, #cart_items label, 

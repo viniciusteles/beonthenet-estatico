@@ -66,16 +66,16 @@ h4 a:focus, h4 a:hover {
 
 
 /* Thumbnails */
-ul#thumbnails li {
+#thumbnails li {
   font-size:     	         100%;
 }
 
-ul#thumbnails li div a {
+#thumbnails li div a {
   text-align:             center;
   text-decoration:        none;
 }
 
-ul#thumbnails a img {
+#thumbnails a img {
 	font-size:              80%;
 }
 /* /Thumbnails */

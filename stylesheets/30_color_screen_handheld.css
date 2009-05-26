@@ -108,25 +108,25 @@ h4, h4 a {
 
 /* Vertically centering images 
 (conditional comments for IE required) */
-ul#thumbnails li div a {
+#thumbnails li div a {
 	background:             #E0C99B url(../images/thumbnail_box.gif);
 }
 
-ul#thumbnails li div a:visited {
+#thumbnails li div a:visited {
 	background:             #EFE3C3 url(../images/thumbnail_box_visited.gif);
 }
-ul#thumbnails li div a:hover {
+#thumbnails li div a:hover {
 	background:             #940029 url(../images/thumbnail_box_hover.gif);
 }
 
 
-ul#thumbnails a img, 
+#thumbnails a img, 
 #thumbnails label {
 	color:                  #7F6B43;
 }
 
-ul#thumbnails a:hover img, 
-ul#thumbnails a:hover label {
+#thumbnails a:hover img, 
+#thumbnails a:hover label {
 	color:                  #FFF;
 }
 /* /Thumbnails */
