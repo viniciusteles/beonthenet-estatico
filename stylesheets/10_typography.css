@@ -55,10 +55,10 @@ h4 a:focus, h4 a:hover {
 
 #header li {
   font-size:              85%;
-	line-height:            1em;
 }
 
 #header li a {
+  line-height:            30px;
   text-decoration:        none;
 	text-transform:         lowercase;
 }
