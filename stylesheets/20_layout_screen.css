@@ -33,11 +33,7 @@ a {
 
 /* Header tabbed menu */
 #header {
-/*  min-height:             38px;*/
-/*  height:                 2.38em;*/
   height:                 75px;
-  padding-top:            .44em;
-  padding-bottom:         0;
   position:               relative;
 }
 
@@ -46,40 +42,39 @@ a {
 }
 
 #header h1#logo_screen {
-  margin:                 0;
-  width:                  168px;
-  height:                 30px;
+  float:                  left;
+  margin-top:             7px;
 }
 
-#header h2#slogan {
-  display:                none;
+#slogan {
+  padding-top:            1em;
+  margin-left:            220px;
 }
 
 #header ul {
-  height:                 2.38em;
-/*  margin-left:            168px;*/
   position:               absolute;
-/*  right:                  0;*/
-  right:                  62px;
+  right:                  55px;
   bottom:                 0;
-/*  left:                   8em;*/
-  overflow:               hidden;
 }
 
 #header li {
-  display:                inline;
-  padding:                .5em 0 1.1em 0;
-  position:               relative;
-  top:                    1em;
+  float:                  left;
+  margin-top:             5px;
 }
 
 #header li a {
-  padding:                .5em 1.2em 1em 2.4em;
-  margin-right:           -.5em;
+  line-height:            30px;
+
+  display:                block;
+  height:                 30px;
+  padding:                0 20px 0 30px;
 }
 
 #header li.current {
-  top:                    .7em;
+  margin-top:             0;
+}
+#header li.current a {
+  height:                 35px;
 }
 /* /Header tabbed menu */
 

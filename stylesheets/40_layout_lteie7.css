@@ -9,8 +9,8 @@ hr {
   color:                  transparent;
 }
 
-#header li {
-  padding:                0;
+#header li a {
+  display:                inline-block;
 }
 
 

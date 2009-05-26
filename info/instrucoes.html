@@ -8,15 +8,15 @@
     <meta content='pt-BR' http-equiv='content-Language' />
     
     <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="../stylesheets/01_typography.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/03_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/02_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/03_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/10_typography.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/30_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/20_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/30_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
     <!--[if lte IE 7]>
-      <link href="../stylesheets/layout_lteie7.css" media="all" rel="stylesheet" type="text/css" />
+      <link href="../stylesheets/40_layout_lteie7.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
     <!--[if IE 6]>
-      <link href="../stylesheets/layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
+      <link href="../stylesheets/50_layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
   </head>
 
@@ -137,9 +137,9 @@
         <dt>typography.css</dt>
           <dd>É a folha de estilo que cuida de tudo relacionado a tipografia: tamanho de fonte, maiúsculas, minúsculas, negrito, itálico, espaçamento entre letras, palavras e linhas etc. É aceita sem qualquer bug por <strong>todos</strong> os browsers, não precisando de qualquer regra de exceção. É também a <strong>única</strong> folha de estilo que leva o atributo <code>media="all"</code>, garantindo um mínimo de identidade visual mesmo quando o meio é limitado em cores (print) ou em imagens (handheld);</dd>
         <dt>layout.css</dt>
-          <dd>A folha de estilo que cuida da diagramação dos elementos na página: margens, paddings, posicionamento, disposição em camadas, entre outros. Como a diagramação é o fator que mais depende do meio veiculado e do browser, geralmente precisa de outros arquivos de suporte (nota: Leandro só cuidou do layout de tela; poderia ter feito também arquivos <code>layout_print</code> e <code>layout_handheld</code> &mdash; e você também pode ficar à vontade para criar os seus!). Por causa da possibilidade de o IEca não obedecer a certas regras de layout, o <code>layout.css</code> é a única folha de estilos que pode necessitar de exceções para o IE (repare nos arquivos <code>layout_ie.css</code> e <code>layout_ie6.css</code>: neles, só há seletores relativos à diagramação de elementos);</dd>
+          <dd>A folha de estilo que cuida da diagramação dos elementos na página: margens, paddings, posicionamento, disposição em camadas, entre outros. Como a diagramação é o fator que mais depende do meio veiculado e do browser, geralmente precisa de outros arquivos de suporte (nota: Leandro só cuidou do layout de tela; poderia ter feito também arquivos <code>layout_print</code> e <code>layout_handheld</code> &mdash; e você também pode ficar à vontade para criar os seus!). Por causa da possibilidade de o IEca não obedecer a certas regras de layout, o <code>layout.css</code> é a única folha de estilos que pode necessitar de exceções para o IE (repare nos arquivos <code>layout_ie.css</code> e <code>50_layout_ie6.css</code>: neles, só há seletores relativos à diagramação de elementos);</dd>
         <dt>color.css</dt>
-          <dd>Cuida dos elementos de cor do site: cor do texto, do fundo, das bordas, e a aplicação de imagens de background. Também é uma folha de estilo bem aceita por todos os browsers, por isso é muito raro dar confusão. Com este arquivo, pode-se manter sob controle toda a paleta de cores do site (repare que no início do arquivo <code>03_color_screen_handheld.css</code> estão anotadas todas as cores usadas, para aplicação rápida e fácil). Todas as imagens usadas no site vêm da pasta <strong>/images</strong> neste pacote e, com exceção do logotipo, são aplicadas na folha de estilo de cor.</dd>
+          <dd>Cuida dos elementos de cor do site: cor do texto, do fundo, das bordas, e a aplicação de imagens de background. Também é uma folha de estilo bem aceita por todos os browsers, por isso é muito raro dar confusão. Com este arquivo, pode-se manter sob controle toda a paleta de cores do site (repare que no início do arquivo <code>30_color_screen_handheld.css</code> estão anotadas todas as cores usadas, para aplicação rápida e fácil). Todas as imagens usadas no site vêm da pasta <strong>/images</strong> neste pacote e, com exceção do logotipo, são aplicadas na folha de estilo de cor.</dd>
       </dl>
 
       <h4>Nota: como o color.css é uma folha de estilo bem mais fácil e tranquila de criar e mudar, não consideramos que um template novo com mudanças só nesta folha de estilo seja caracterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
@@ -411,7 +411,7 @@
 
       <h3 id="css_e_midia">Declarações de mídia no CSS</h3>
 
-      <p>Dê uma olhada no <code>&lt;header&gt;</code> de um dos arquivos de HTML. Lá você vê chamadas para CSS. Por exemplo, a linha <code>&lt;link href="stylesheets/02_layout_screen.css" media="screen" rel="stylesheet" type="text/css" /&gt;</code> faz duas coisas: chama a folha de estilos &ldquo;02_layout_screen.css&rdquo;; e diz que o atributo <code>media</code> dela tem que ser <strong>screen</strong>.</p>
+      <p>Dê uma olhada no <code>&lt;header&gt;</code> de um dos arquivos de HTML. Lá você vê chamadas para CSS. Por exemplo, a linha <code>&lt;link href="stylesheets/20_layout_screen.css" media="screen" rel="stylesheet" type="text/css" /&gt;</code> faz duas coisas: chama a folha de estilos &ldquo;20_layout_screen.css&rdquo;; e diz que o atributo <code>media</code> dela tem que ser <strong>screen</strong>.</p>
       <p>O designer não pode escrever direto no HTML qual é a mídia de cada folha de estilos que criar. Mas <em>tem controle indireto</em> sobre esse atributo.</p>
       <p>Para dizer a que mídia você, designer, deseja atribuir uma determinada folha de estilos, é só <em>escrever a mídia desejada no final do nome do arquivo</em>. Como no exemplo acima, se você criar um arquivo de CSS chamado, <strong>diagramacao_screen.css</strong>, o sistema do Be on the Net vai reconhecer esta convenção e criar a seguinte linha no HTML de seu template:</p>
         
@@ -422,18 +422,18 @@
       <h4>Nota: certamente, isso só vai acontecer no sistema verdadeiro. Aqui no Be on the Net estático, é necessário inserir a chamada completa nas páginas HTML. Heh, coisas de sistema estático. </h4>
 
       <p>Se você chamasse o arquivo de <strong>diagramacao_print.css</strong>, o sistema atribuiria automaticamente <code>media="print"</code>.</p>
-      <p><strong>Para uma folha de estilos ir a múltiplas midias:</strong> é só inserir mais de um nome de mídia depois do nome do seu arquivo CSS. Por exemplo, neste pacote existe o arquivo <strong>03_color_screen_handheld.css</strong>. Isto significa que o CSS trata de <em>cor</em> e que eu quero exibi-lo tanto nas mídias <strong>screen</strong> quanto <strong>handheld</strong>. O sistema do Be on the Net neste caso vai gerar múltiplas chamadas, tantas quantos forem os meios:</p>
+      <p><strong>Para uma folha de estilos ir a múltiplas midias:</strong> é só inserir mais de um nome de mídia depois do nome do seu arquivo CSS. Por exemplo, neste pacote existe o arquivo <strong>30_color_screen_handheld.css</strong>. Isto significa que o CSS trata de <em>cor</em> e que eu quero exibi-lo tanto nas mídias <strong>screen</strong> quanto <strong>handheld</strong>. O sistema do Be on the Net neste caso vai gerar múltiplas chamadas, tantas quantos forem os meios:</p>
 
-      <pre><code>&lt;link href="stylesheets/03_color_screen_handheld.css" media="screen" &rarr;
+      <pre><code>&lt;link href="stylesheets/30_color_screen_handheld.css" media="screen" &rarr;
 &rarr; rel="stylesheet" type="text/css" /&gt;
 
-&lt;link href="stylesheets/03_color_screen_handheld.css" media="handheld" &rarr;
+&lt;link href="stylesheets/30_color_screen_handheld.css" media="handheld" &rarr;
 &rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
 
       <p>Se você inventasse um arquivo chamado <strong>template_handheld_screen_print.css</strong>, o sistema faria <em>três</em> chamadas, uma para cada mídia.</p>
-      <p>Se você quiser fazer uma folha de estilos que apareça em <em>todas</em> as mídias, é só não escrever <em>nada</em> depois do nome do arquivo. Por exemplo, neste pacote há o arquivo <strong>01_typography.css</strong>. Ele vai para todas as mídias, com <code>media="all"</code>:</p>
+      <p>Se você quiser fazer uma folha de estilos que apareça em <em>todas</em> as mídias, é só não escrever <em>nada</em> depois do nome do arquivo. Por exemplo, neste pacote há o arquivo <strong>10_typography.css</strong>. Ele vai para todas as mídias, com <code>media="all"</code>:</p>
 
-      <pre><code>&lt;link href="stylesheets/01_typography.css" media="all" &rarr;
+      <pre><code>&lt;link href="stylesheets/10_typography.css" media="all" &rarr;
 &rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
 
       <h4>Nota: a convenção de declaração de mídias consiste em <em>sufixos</em>. Por isso é importante fazer exatamente deste jeito: inserir o(s) nome(s) da(s) mídia(s) <em>depois</em> do nome do arquivo, separado(s) por <em>underlines</em> ( _ ).</h4>
@@ -461,7 +461,7 @@
 
       <p>O que o sistema fez foi pegar <em>todas</em> as folhas de estilo que tivessem, por exemplo, <code>media="screen"</code>, e unir seus códigos em um único arquivo <strong>cached_screen.css</strong> com <code>media="screen"</code>.</p>
 
-      <p>Então vejamos como o sistema faria com as folhas de estilo contidas neste pacote estático. Veja os arquivos <strong>02_layout_screen.css</strong> e <strong>03_color_screen_handheld.css</strong>. O sistema misturaria os arquivos de acordo com suas mídias, e criaria <em>dois</em> arquivos: um com atributos de <em>cor</em> que teria <code>media="handheld"</code>, e outro com atributos de <em>layout</em> e <em>cor</em>, que teria <code>media="screen"</code>.</p>
+      <p>Então vejamos como o sistema faria com as folhas de estilo contidas neste pacote estático. Veja os arquivos <strong>20_layout_screen.css</strong> e <strong>30_color_screen_handheld.css</strong>. O sistema misturaria os arquivos de acordo com suas mídias, e criaria <em>dois</em> arquivos: um com atributos de <em>cor</em> que teria <code>media="handheld"</code>, e outro com atributos de <em>layout</em> e <em>cor</em>, que teria <code>media="screen"</code>.</p>
 
       <p>Por causa dos prefixos numéricos que estão nos arquivos, eles vão ser ordenados assim:</p>
 
@@ -469,13 +469,13 @@
         <li>Primeiro, vai ordenar por <em>ordem alfabética da mídia</em>. Ou seja, vai agrupar os arquivos CSS na seguinte ordem: arquivos com <code>media="all"</code>, depois com <code>media="handheld"</code>, depois com <code>media="print"</code> e depois com <code>media="screen"</code>.</li>
         <li>Depois, sim, vai considerar os prefixos numéricos que usamos. A ordem dos meus arquivos vai ficar assim:
 
-          <pre><code>&lt;link href="stylesheets/03_color_screen_handheld.css" &rarr;
+          <pre><code>&lt;link href="stylesheets/30_color_screen_handheld.css" &rarr;
 &rarr; media="handheld" rel="stylesheet" type="text/css" /&gt;
 
-&lt;link href="stylesheets/02_layout_screen.css" &rarr;
+&lt;link href="stylesheets/20_layout_screen.css" &rarr;
 media="screen" rel="stylesheet" type="text/css" /&gt;
 
-&lt;link href="stylesheets/03_color_screen_handheld.css" &rarr;
+&lt;link href="stylesheets/30_color_screen_handheld.css" &rarr;
 media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
         </li>
         <li>E por último vai criar os dois arquivos finais:
@@ -541,7 +541,7 @@ media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
       <ol>
         <li>Para perfeito funcionamento, <strong>todos</strong> os arquivos que existem no template devem permanecer intactos e imutáveis. Os únicos arquivos que podem ser modificados são: uma folha de estilos (ou algumas) que você criar para sobrescrever as atuais (por exemplo, uma chamada &ldquo;<strong>06_exclusivo_cliente.css</strong>&rdquo;, ou o que você preferir) e as imagens novas que você inserir numa pasta dentro da pasta <strong>/images</strong>;</li>
 
-        <li>As mudanças no template são feitas através da folha de estilo que você criar dentro da pasta <strong>/stylesheets</strong>. Neste arquivo devem ser escritas todas as regras que vão sobrescrever o efeito das que estão nas outras folhas de estilo. Por exemplo: se na folha de estilos &ldquo;03_color_screen_handheld.css&rdquo;, o <code>&lt;body&gt;</code> do template é <em>bege</em>, mas a nova cor desejada pelo cliente é <em>cinza</em>, deve-se ir ao seu arquivo &ldquo;06_exclusivo_cliente.css&rdquo; e escrever:
+        <li>As mudanças no template são feitas através da folha de estilo que você criar dentro da pasta <strong>/stylesheets</strong>. Neste arquivo devem ser escritas todas as regras que vão sobrescrever o efeito das que estão nas outras folhas de estilo. Por exemplo: se na folha de estilos &ldquo;30_color_screen_handheld.css&rdquo;, o <code>&lt;body&gt;</code> do template é <em>bege</em>, mas a nova cor desejada pelo cliente é <em>cinza</em>, deve-se ir ao seu arquivo &ldquo;06_exclusivo_cliente.css&rdquo; e escrever:
 <pre><code>body {
       background:         #7D7A7A;
  }</code></pre>        
