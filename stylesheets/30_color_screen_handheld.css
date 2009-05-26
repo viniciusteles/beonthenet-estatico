@@ -482,6 +482,10 @@ body#timeout #main_content h2 {
 	border-bottom-color:    #940029;
 }
 
+#footer h1 {
+  color:                  #555;
+}
+
 #footer h5 {
   color:                  #940029;
 }

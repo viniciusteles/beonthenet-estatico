@@ -422,7 +422,8 @@ body.application #main_content li {
   font-size:              75%;
 }
 
-#footer h6 {
+#footer h1, #footer h6 {
   font-size:							70%;
+  font-variant:           normal;
 }
 /* /Footer */
