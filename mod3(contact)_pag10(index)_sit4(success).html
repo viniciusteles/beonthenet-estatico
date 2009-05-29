@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"><head>
-  <title>10(contact)_index(03_error)</title>
+  <title>mod3(contact)_pag10(index)_sit4(success)</title>
     <meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type" />
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="stylesheets/10_typography.css" media="all" rel="stylesheet" type="text/css" />
@@ -14,23 +14,23 @@
       <link href="stylesheets/50_layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
   </head>
-
-  <body class="contact" id="index">
-  <div id="header">
+<body class="contact" id="index">  
+  <div id='header'>
     <h1 id='logo_print'>
       <img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" />
     </h1>
     <h1 id='logo_screen'>
-      <a href="01(pictures)_best_galleries_index.html">
+      <a href="mod1(pictures)_pag01(index).html">
         <img alt="Patricia Figueira" src="images/logo.gif" title="Título do logotipo de tela. Existe também um de impressão." />
       </a>
     </h1>
     <h2 id='slogan'>A nova cara da fotografia social.</h2>
     <ul>
-      <li class="best_galleries"><a href="01(pictures)_best_galleries_index.html">Melhores fotos</a></li>
-      <li class="all_videos"><a href="14(videos)_all_videos_index.html">Vídeos</a></li>
-      <li class="quem_somos"><a href="09(text)_quem_somos_index.html">Quem somos</a></li>
-      <li class='contact current'><a href="10(contact)_index(01_initial).html">Contato</a></li>
+      <li class="best_galleries"><a href="mod1(pictures)_pag01(index).html">Melhores fotos</a></li>
+      <li class="all_videos"><a href="mod5(videos)_pag14(index).html">Vídeos</a></li>
+      <li class="quem_somos"><a href="mod2(text)_pag09(index).html">Quem somos</a></li>
+      <li class='contact current'><a href="mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
+      <li class='rsvp'><a href="mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
     </ul>
   </div>
 
@@ -39,38 +39,40 @@
   <div id="main_content">
     <h1>Contato</h1>
 
-    <div id="submit_result">
-      <p id="submit_error">O e-mail informado é inválido.</p>
-    </div>
+    <div id="submit_result"><p id="submit_success">Sua mensagem foi enviada.</p></div>
 
-    <div id="contact_content">
-      <form action="10(contact)_index(04_success).html" method="post">
+    <div id="contact_content" style="display: none;">
+    <form action="#" method="post">
         <fieldset>
           <label for="message_name" id="name">Nome:</label>
           <input id="message_name" name="message[name]" size="30" type="text" />
           <label for="message_email" id="email">E-mail:</label>
-          <input class="email_field_with_errors" id="message_email" name="message[email]" onfocus="clearField(this);" size="30" type="text" />
+          <input class="contact_input" id="message_email" name="message[email]" onfocus="clearField(this);" size="30" type="text" />
           <label for="message_phone" id="phone_number">Telefone:</label>
           <input id="message_phone" name="message[phone]" size="30" type="text" />
           <label for="message_subject" id="subject">Assunto:</label>
           <input id="message_subject" name="message[subject]" size="30" type="text" />
           <label for="message_message" id="message">Mensagem:</label>
           <textarea cols="45" id="message_message" name="message[message]" rows="20"></textarea>
-          <button class="" type="submit" value="Enviar">Enviar</button>
+          <button type="submit">Enviar</button>
         </fieldset>
-      </form>
+    </form>
     </div>
-
   </div>
-
   <hr />
-
   <div id="footer">
     <p><strong>© Patinha</strong> — Nikiti City, RJ — Brasil
     <strong>Fone:</strong> (21) 2705-0198 / (21) 8716-7479 — <strong>e-mail:</strong> <a href="#" rel="" title="Um title.">patinha@patfig.com.br</a> ou <a href="#" rel="" title="Um title.">contato@patfig.com.br</a>.</p>
+
     <h1>
-      Criação de sites por <a href="http://beonthe.net" title="Be on the Net. Finalmente, online de verdade.">Beonthe.net</a>, um produto da <a href="http://improveit.com.br" title="Improve It">Improve It</a>.
+      <strong><a href="http://beonthe.net" title="Um title.">Criação do site</a></strong>: 
+      <a id="beonthenet" href="http://beonthe.net" title="Um title.">
+        <img src="images/logo_footer.gif" alt="Be on the Net &mdash; fazer um site em 24h é com o Be on the Net. Montar um site agora é fácil. Crie seu site em minutos e tenha espaço ilimitado para imagens, fotos e vídeos. Modelos de sites (templates de sites) prontos para agilizar seu desenvolvimento web" title="Um title." /></a>.
+      Um <a href="http://beonthe.net" title="Um title.">produto</a> da <a id="improveit" href="http://improveit.com.br" title="Um title.">Improve It</a>.
     </h1>
+
+    <h2>Design de <a href="http://improveit.com.br/empresa/leandro">Leandro Mello</a> para o <a href="http://beonthe.net" title="Um title.">Be on the Net</a>.</h2>
+
     <h5>Links do projeto Be on the Net estático:</h5>
     <h6>
       <a href="info/readme.html">Mapa da Mina, o ponto de partida</a> / 

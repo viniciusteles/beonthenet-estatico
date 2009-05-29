@@ -482,8 +482,14 @@ body#timeout #main_content h2 {
 	border-bottom-color:    #940029;
 }
 
-#footer h1 {
+#footer h1, 
+#footer h1 a {
   color:                  #555;
+}
+
+#beonthenet:hover img, 
+#improveit:hover {
+  color:                  #940029;
 }
 
 #footer h5 {

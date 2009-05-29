@@ -26,14 +26,15 @@
         <img alt="Patricia Figueira" height="0" src="../images/logo_print.gif" width="0" />
       </h1>
       <h1 id='logo_screen'>
-        <a href="../01(pictures)_best_galleries_index.html">Patricia Figueira</a>
+        <a href="../mod1(pictures)_pag01(index).html">Patricia Figueira</a>
       </h1>
       <h2 id='slogan'>A nova cara da fotografia social.</h2>
       <ul>
-        <li class="best_galleries"><a href="../01(pictures)_best_galleries_index.html">Melhores fotos</a></li>
-        <li class="all_videos"><a href="../14(videos)_all_videos_index.html">Vídeos</a></li>
-        <li class="quem_somos"><a href="../09(text)_quem_somos_index.html">Quem somos</a></li>
-        <li class='contact'><a href="../10(contact)_index(01_initial).html">Contato</a></li>
+        <li class="best_galleries"><a href="../mod1(pictures)_pag01(index).html">Melhores fotos</a></li>
+        <li class="all_videos"><a href="../mod5(videos)_pag14(index).html">Vídeos</a></li>
+        <li class="quem_somos"><a href="../mod2(text)_pag09(index).html">Quem somos</a></li>
+        <li class='contact'><a href="../mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
+        <li class='rsvp'><a href="../mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
       </ul>
     </div>
 
@@ -95,7 +96,7 @@
 
       <p>Agora dê uma nova olhada no <strong>código HTML</strong> dos arquivos numerados deste pacote. Mais precisamente na tag <code>body</code> de cada um. Repare que cada um deles tem pelo menos um <code>id</code> e uma <code>classe</code>.</p>
       <p>Se você der a esta tag <code>body</code> e a seus <code>id&rsquo;s</code> e <code>classes</code> carinho, colinho e atenção, já vai dar um grande passo em direção a fazer o sistema se dobrar ao seu design.</p>
-      <p>A última palavra de cada <code>classe</code> reflete um esquema de divisão que criamos (Ex.: <code>body id="index" class="instructions <em>text</em>"</code>). <strong>Be on the Net</strong> é um sistema dividido em &ldquo;módulos&rdquo;, ou <em>bundles</em>, como temos chamado na Improve It. Hoje, existem <strong>cinco</strong> módulos ou <em>bundles</em> básicos:</p>
+      <p>A última palavra de cada <code>classe</code> reflete um esquema de divisão que criamos (Ex.: <code>body id="index" class="instructions <em>text</em>"</code>). <strong>Be on the Net</strong> é um sistema dividido em &ldquo;módulos&rdquo;, ou <em>bundles</em>, como temos chamado na Improve It. Hoje, existem <strong>seis</strong> módulos ou <em>bundles</em> básicos:</p>
 
       <dl>
         <dt>Pictures</dt>
@@ -103,14 +104,16 @@
         <dt>Text</dt>
           <dd>O módulo institucional. Compreende páginas <strong>textuais</strong> &mdash; neste caso, a página &ldquo;Quem somos&rdquo;;</dd>
         <dt>Contact</dt>
-          <dd>O módulo de <strong>contato</strong> do sistema. É composto por uma única página de contato, com algumas possibilidades de comportamento;</dd>
+          <dd>O módulo de <strong>contato</strong> do sistema. É composto por uma única página de contato, com algumas possibilidades de comportamento e campos extra;</dd>
         <dt>Application</dt>
           <dd>O módulo das páginas de erro. São três: o erro <strong>404</strong> (página não encontrada), <strong>500</strong> (erro de servidor), e <strong>timeout</strong> (servidor ocupado);</dd>
         <dt>Videos</dt>
           <dd>Módulo dos <strong>vídeos</strong>. Compreende basicamente duas páginas: a lista de todos os vídeos, e a visualização de um vídeo em tamanho grande;</dd>
+        <dt>R.S.V.P.</dt>
+          <dd>Módulo <strong>répondez s&rsquo;il vous plaît</strong>, ou <em>&ldquo;responda, por favor&rdquo;</em>. Tem uma única página com um formulário parecido com o de contato (e algumas possibilidades de comportamento), mas serve ao propósito específico que pedir que o usuário responda a um convite formal.</dd>
       </dl>
 
-      <p>... Familiar? Agora você pode perceber que o início de cada arquivo deste pacote leva um destes nomes: <em>pictures</em>, <em>text</em>, <em>contact</em>, <em>application</em>, ou [inédito no site da Patricia] <em>videos</em>.</p>
+      <p>... Familiar? Agora você pode perceber que o início de cada arquivo deste pacote leva um destes nomes: <em>pictures</em>, <em>text</em>, <em>contact</em>, <em>application</em>, ou [inédito no site da Patricia] <em>videos</em> e <em>rsvp</em>.</p>
 
       <h2 id="flexibilidade_do_css">HTML e a flexibilidade do CSS:</h2>
 
@@ -127,51 +130,51 @@
 
       <h2 id="divisao_do_css">A divisão do CSS:</h2>
 
-      <p>Dê uma olhada na pasta <strong>stylesheets</strong>. Lá estão todas as folhas de estilo que compõem este modelo de design, parecido com o da <a href="http://patriciafigueira.com.br" title="Este modelo de design é uma réplica do site da Patricia Figueira, dê uma olhada.">Patricia Figueira</a>. Podemos ver que há uma curiosa divisão entre <em>tipografia</em>, <em>layout</em> e <em>cores</em>.</p>
+      <p>Dê uma olhada na pasta <strong>stylesheets</strong>. Lá estão todas as folhas de estilo que compõem este modelo de design, parecido com o da <a href="http://patriciafigueira.com.br" title="Este modelo de design é uma réplica do site da Patricia Figueira, dê uma olhada.">Patricia Figueira</a>. Podemos ver que há uma curiosa divisão entre <strong>tipografia</strong>, <strong>layout</strong> e <strong>cores</strong>.</p>
 
-      <p>Esta divisão <em>não é obrigatória</em>. Você pode utilizar quantas folhas de estilo preferir, e dividir a informação entre elas como quiser. Esta foi somente a opção que o <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello é designer da Improve It.">Leandro</a> fez para estilizar as páginas. Esta organização tem-se mostrado bastante útil em nossos projetos, já que é legível para qualquer desenvolvedor, permite-nos encontrar e modificar seletores com facilidade, e leva em consideração as três mídias mais usadas (<em>screen</em>, <em>print</em> e <em>handheld</em>). Há um <a href="http://blog.improveit.com.br/articles/2008/06/26/css-design-o-denominador-comum" title="Entenda por que o Leandro separa layout de tipografia.">artigo dele em nosso blog</a> que explica em detalhes o porquê de separar a tipografia.</p>
+      <p>Hoje em dia, esta divisão <em>é obrigatória</em>. Houve uma época em que não era, mas percebemos, com o tempo e o relacionamento com os designers, que adotar esta divisão como convenção torna muito mais fácil e simples, a médio e longo prazo, a manutenção dos arquivos de CSS vindos de cada designer. Esta organização tem-se mostrado bastante útil em nossos projetos, já que é legível para qualquer desenvolvedor, permite-nos encontrar e modificar seletores com facilidade, e leva em consideração as três mídias mais usadas (<em>screen</em>, <em>print</em> e <em>handheld</em>). Há um <a href="http://blog.improveit.com.br/articles/2008/06/26/css-design-o-denominador-comum" title="Entenda por que o Leandro separa layout de tipografia.">artigo em nosso blog</a> que explica em detalhes o porquê de separar a tipografia.</p>
 
-      <p>Caso você queira experimentar esta divisão, seguem os detalhes:</p>
+      <p>A seguir, os detalhes da nomenclatura padronizada:</p>
 
       <dl>
-        <dt>typography.css</dt>
-          <dd>É a folha de estilo que cuida de tudo relacionado a tipografia: tamanho de fonte, maiúsculas, minúsculas, negrito, itálico, espaçamento entre letras, palavras e linhas etc. É aceita sem qualquer bug por <strong>todos</strong> os browsers, não precisando de qualquer regra de exceção. É também a <strong>única</strong> folha de estilo que leva o atributo <code>media="all"</code>, garantindo um mínimo de identidade visual mesmo quando o meio é limitado em cores (print) ou em imagens (handheld);</dd>
-        <dt>layout.css</dt>
-          <dd>A folha de estilo que cuida da diagramação dos elementos na página: margens, paddings, posicionamento, disposição em camadas, entre outros. Como a diagramação é o fator que mais depende do meio veiculado e do browser, geralmente precisa de outros arquivos de suporte (nota: Leandro só cuidou do layout de tela; poderia ter feito também arquivos <code>layout_print</code> e <code>layout_handheld</code> &mdash; e você também pode ficar à vontade para criar os seus!). Por causa da possibilidade de o IEca não obedecer a certas regras de layout, o <code>layout.css</code> é a única folha de estilos que pode necessitar de exceções para o IE (repare nos arquivos <code>layout_ie.css</code> e <code>50_layout_ie6.css</code>: neles, só há seletores relativos à diagramação de elementos);</dd>
-        <dt>color.css</dt>
-          <dd>Cuida dos elementos de cor do site: cor do texto, do fundo, das bordas, e a aplicação de imagens de background. Também é uma folha de estilo bem aceita por todos os browsers, por isso é muito raro dar confusão. Com este arquivo, pode-se manter sob controle toda a paleta de cores do site (repare que no início do arquivo <code>30_color_screen_handheld.css</code> estão anotadas todas as cores usadas, para aplicação rápida e fácil). Todas as imagens usadas no site vêm da pasta <strong>/images</strong> neste pacote e, com exceção do logotipo, são aplicadas na folha de estilo de cor.</dd>
+        <dt>10_typography.css</dt>
+          <dd>É a folha de estilo que cuida de tudo relacionado a tipografia: tamanho de fonte, maiúsculas, minúsculas, negrito, itálico, espaçamento entre letras, palavras e linhas etc. É aceita sem qualquer bug por <strong>todos</strong> os browsers, não precisando de qualquer regra de exceção. E, porque não é especificada no nome do arquivo a mídia, é também a <strong>única</strong> folha de estilo que leva o atributo <code>media="all"</code>, garantindo um mínimo de identidade visual mesmo quando o meio é limitado em cores (print) ou em imagens (handheld);</dd>
+        <dt>20_layout_screen.css</dt>
+          <dd>A folha de estilo que cuida da diagramação dos elementos na página: margens, paddings, posicionamento, disposição em camadas, entre outros. Como a diagramação é o fator que mais depende do meio veiculado e do browser, geralmente precisa de outros arquivos de suporte (nota: repare no <code>screen</code> no final do nome. Isso que dizer que <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello, designer da Improve It.">Leandro</a> só cuidou do layout de <em>tela</em>; poderia ter feito também arquivos <code>22_layout_print.css</code> e <code>24_layout_handheld.css</code> &mdash; e você também pode ficar à vontade para usá-los!). Por causa da possibilidade de o IEca não obedecer a certas regras de layout, o <code>layout.css</code> é a única folha de estilos que pode necessitar de exceções para o IE (repare nos arquivos <code>40_layout_lteie7.css</code> e <code>50_layout_ie6.css</code>: neles, só há seletores relativos à diagramação de elementos);</dd>
+        <dt>30_color_screen_handheld.css</dt>
+          <dd>Cuida dos elementos de cor do site: cor do texto, do fundo, das bordas, e a aplicação de imagens de background. Também é uma folha de estilo bem aceita por todos os browsers, por isso é muito raro dar confusão. Note que as mídias especificadas aqui são <code>screen</code> e <code>handheld</code>, ou seja, esta folha de estilo torna consistentes as cores em <em>tela</em> e em <em>dispositivos móveis</em>. Com este arquivo, pode-se manter sob controle toda a paleta de cores do site (repare que no início deste arquivo estão anotadas todas as cores usadas, para aplicação rápida e fácil &mdash; isto não é obrigatório). Todas as imagens usadas no site vêm da pasta <strong>/images</strong> neste pacote e, com exceção do logotipo, são aplicadas na folha de estilo de cor.</dd>
       </dl>
 
-      <h4>Nota: como o color.css é uma folha de estilo bem mais fácil e tranquila de criar e mudar, não consideramos que um template novo com mudanças só nesta folha de estilo seja caracterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
+      <h4>Nota: como o 30_color_screen_handheld.css é uma folha de estilo bem mais fácil e tranquila de criar e mudar, não consideramos que um template novo com mudanças só nesta folha de estilo seja caracterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
 
       <h2 id="modulos_paginas_situacoes">Conhecendo o <code>body</code> &mdash; módulos, páginas e situações:</h2>
 
-      <p>Até hoje, existem, como <a href="#modulos_do_beonthenet" title="Para recapitular.">mencionados antes</a>, <strong>cinco</strong> módulos no Be on the Net: <em>pictures</em>, <em>text</em>, <em>contact</em>, <em>application</em> e <em>videos</em>. Agora você vai entender o porquê dos nomes esquisitos e gigantescos de cada arquivo deste pacote. Depois de explicado, você vai saber se guiar direitinho por entre eles.</p>
+      <p>Até hoje, existem, como <a href="#modulos_do_beonthenet" title="Para recapitular.">mencionados antes</a>, <strong>seis</strong> módulos no Be on the Net: <em>pictures</em>, <em>text</em>, <em>contact</em>, <em>application</em>, <em>videos</em> e <em>rsvp</em>. Agora você vai entender o porquê dos nomes esquisitos e gigantescos de cada arquivo deste pacote. Depois de explicado, você vai saber se guiar direitinho por entre eles.</p>
 
-      <p>Vamos destrinchar o nome do arquivo <code>04(pictures)_best_galleries_selection(04_pictures_in_cart).html</code> (putz!). É assim:</p>
+      <p>Vamos destrinchar o nome do arquivo <code>mod1(pictures)_pag04(selection)_sit4(pictures_in_cart).html</code> (putz!). É assim:</p>
 
       <ul>
-        <li>O número no início (<code>04</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <em>quarta página</em> do módulo <em>pictures</em> &mdash; que trata da seleção de fotos;</li>
-        <li>O primeiro par de parênteses (<code>(pictures)</code>) apresenta o <strong>módulo</strong>. O arquivo em questão pertence ao módulo <em>pictures</em>;</li>
-        <li>A sequência de palavras que há entre o primeiro e o segundo pares de parênteses (<code>_best_galleries_selection</code>) reflete a combinação de <code>classes</code> e <code>id&rsquo;s</code> que aparece na tag <code>body</code> deste arquivo. Neste exemplo, o HTML vai exibir <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code> &mdash; ou seja, esta página pertence à categoria <em>best_galleries</em> (melhores galerias de imagens) e sua identidade é <em>selection</em>. Lembre que o &ldquo;pictures&rdquo; que aparece no <code>body</code> é a última palavra da <code>classe</code>, logo reflete o <em>módulo</em>;</li>
-        <li>O segundo par de parênteses (<code>(04_pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; logo, apresentam vários estágios de comportamento. Para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
+        <li>O primeiro trecho (<code>mod1(pictures)</code>) apresenta o <strong>módulo</strong>, ou <strong>classe</strong> da tag <code>body</code>. O arquivo em questão pertence ao primeiro módulo do Be on the Net, <em>pictures</em>. Repare na tag <code>body</code> de cada arquivo deste pacote: você vai ver que a classe dessa tag reflete o módulo a que a página pertence (neste caso, <code>body class="pictures"</code>).</li>
+        <li>A sequência seguinte (<code>pag04(selection)</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <em>quarta página</em> do módulo <em>pictures</em> &mdash; que trata da seleção de fotos. Repare que o nome da página reflete o <strong>id</strong> da tag <code>body</code> de cada arquivo (neste exemplo, o HTML do arquivo em questão diz <code>body class="pictures" id="selection"</code>).</li>
+        <li>O terceiro par de parênteses (<code>sit4(pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; portanto, apresentam vários estágios de comportamento. Para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
+        <li><strong>Uma observação:</strong> a maioria das páginas tem <em>mais de uma classe</em> na tag <code>body</code>. No exemplo dado, o HTML diz <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>. Esta classe extra é para uso da equipe Be on the Net e, por ser variável dependendo do cliente, não recomendamos que você baseie seu CSS nela. Concentre-se na <em>classe do módulo</em> e no <em>id da página</em>.</li>
       </ul>
 
-      <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todas</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>5</strong> módulos distintos, <strong>15</strong> páginas diferentes e <strong>27</strong> situações possíveis.</p>
+      <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todas</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>6</strong> módulos distintos, <strong>16</strong> páginas diferentes e <strong>30</strong> situações possíveis.</p>
       <p>A seguir, uma tabela que mostra a divisão nítida entre módulos, páginas e situações, e aponta os respectivos arquivos deste projeto.</p>
 
       <h3 id="tabela_modulos_paginas_situacoes">Tabela de módulos, páginas e situações:</h3>
 
       <table>
         <tr>
-          <th>5 Módulos</th><th>15 Páginas</th><th>27 situações</th><th>Arquivo / Detalhes da tag body</th>
+          <th>6 Módulos</th><th>16 Páginas</th><th>30 situações</th><th>Arquivo / Detalhes da tag body</th>
         </tr>
         <tr>
           <td rowspan="17">.pictures</td>
           <td>#index</td>
           <td><span>(página inicial do módulo de imagens, com todas as melhores galerias de imagens)</span></td>
           <td>
-            <a href="../01(pictures)_best_galleries_index.html">01(pictures)_best_galleries_index.html</a>
+            <a href="../mod1(pictures)_pag01(index).html">mod1(pictures)_pag01(index).html</a>
             <code>&lt;body class="best_galleries pictures" id="index"&gt;</code>
           </td>
         </tr>
@@ -179,7 +182,7 @@
           <td>#gallery</td>
           <td><span>(interior de uma galeria de imagens)</span></td>
           <td>
-            <a href="../02(pictures)_best_galleries_gallery.html">02(pictures)_best_galleries_gallery.html</a>
+            <a href="../mod1(pictures)_pag02(gallery).html">mod1(pictures)_pag02(gallery).html</a>
             <code>&lt;body class="best_galleries pictures" id="gallery"&gt;</code>
           </td>
         </tr>
@@ -187,14 +190,14 @@
           <td rowspan="2">#picture</td>
           <td>1. horizontal <span>(imagem em tamanho grande, deitada)</span></td>
           <td>
-            <a href="../03(pictures)_best_galleries_picture(1_horizontal).html">03(pictures)_best_galleries_picture(1_horizontal).html</a>
+            <a href="../mod1(pictures)_pag03(picture)_sit1(horizontal).html">mod1(pictures)_pag03(picture)_sit1(horizontal).html</a>
             <code>&lt;body class="best_galleries pictures" id="picture"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. vertical <span>(imagem em tamanho grande, em pé)</span></td>
           <td>
-            <a href="../03(pictures)_best_galleries_picture(2_vertical).html">03(pictures)_best_galleries_picture(2_vertical).html</a>
+            <a href="../mod1(pictures)_pag03(picture)_sit2(vertical).html">mod1(pictures)_pag03(picture)_sit2(vertical).html</a>
             <code>&lt;body class="best_galleries pictures" id="picture"&gt;</code>
           </td>
         </tr>
@@ -202,28 +205,28 @@
           <td rowspan="4">#selection</td>
           <td>1. initial <span>(seleção de imagens: estado inicial)</span></td>
           <td>
-            <a href="../04(pictures)_best_galleries_selection(01_initial).html">04(pictures)_best_galleries_selection(01_initial).html</a>
+            <a href="../mod1(pictures)_pag04(selection)_sit1(initial).html">mod1(pictures)_pag04(selection)_sit1(initial).html</a>
             <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. facebox spinner <span>(seleção de imagens: spinner de ampliação de imagem)</span></td>
           <td>
-            <a href="../04(pictures)_best_galleries_selection(02_facebox_spinner).html">04(pictures)_best_galleries_selection(02_facebox_spinner).html</a>
+            <a href="../mod1(pictures)_pag04(selection)_sit2(facebox_spinner).html">mod1(pictures)_pag04(selection)_sit2(facebox_spinner).html</a>
             <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>3. facebox <span>(seleção de imagens: imagem ampliada via &ldquo;facebox&rdquo;)</span></td>
           <td>
-            <a href="../04(pictures)_best_galleries_selection(03_facebox).html">04(pictures)_best_galleries_selection(03_facebox).html</a>
+            <a href="../mod1(pictures)_pag04(selection)_sit3(facebox).html">mod1(pictures)_pag04(selection)_sit3(facebox).html</a>
             <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>4. pictures in cart <span>(seleção de imagens: imagens selecionas)</span></td>
           <td>
-            <a href="../04(pictures)_best_galleries_selection(04_pictures_in_cart).html">04(pictures)_best_galleries_selection(04_pictures_in_cart).html</a>
+            <a href="../mod1(pictures)_pag04(selection)_sit4(pictures_in_cart).html">mod1(pictures)_pag04(selection)_sit4(pictures_in_cart).html</a>
             <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>
           </td>
         </tr>
@@ -231,28 +234,28 @@
           <td rowspan="4">#checkout</td>
           <td>1. initial  <span>(checkout de imagens: estado inicial)</span></td>
           <td>
-            <a href="../05(pictures)_best_galleries_checkout(01_initial).html">05(pictures)_best_galleries_checkout(01_initial).html</a>
+            <a href="../mod1(pictures)_pag05(checkout)_sit1(initial).html">mod1(pictures)_pag05(checkout)_sit1(initial).html</a>
             <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. facebox spinner <span>(checkout de imagens: spinner de ampliação de imagem)</span></td>
           <td>
-            <a href="../05(pictures)_best_galleries_checkout(02_facebox_spinner).html">05(pictures)_best_galleries_checkout(02_facebox_spinner).html</a>
+            <a href="../mod1(pictures)_pag05(checkout)_sit2(facebox_spinner).html">mod1(pictures)_pag05(checkout)_sit2(facebox_spinner).html</a>
             <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>3. facebox <span>(checkout de imagens: imagem ampliada via &ldquo;facebox&rdquo;)</span></td>
           <td>
-            <a href="../05(pictures)_best_galleries_checkout(03_facebox).html">05(pictures)_best_galleries_checkout(03_facebox).html</a>
+            <a href="../mod1(pictures)_pag05(checkout)_sit3(facebox).html">mod1(pictures)_pag05(checkout)_sit3(facebox).html</a>
             <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>4. form spinner <span>(checkout de imagens: envio da confirmação)</span></td>
           <td>
-            <a href="../05(pictures)_best_galleries_checkout(04_form_spinner).html">05(pictures)_best_galleries_checkout(04_form_spinner).html</a>
+            <a href="../mod1(pictures)_pag05(checkout)_sit4(form_spinner).html">mod1(pictures)_pag05(checkout)_sit4(form_spinner).html</a>
             <code>&lt;body class="best_galleries pictures" id="checkout"&gt;</code>
           </td>
         </tr>
@@ -260,14 +263,14 @@
           <td rowspan="2">#pictures_sent</td>
           <td>1. checkout error <span>(checkout de imagens, quase fim da seleção: erro de envio)</span></td>
           <td>
-            <a href="../06(pictures)_best_galleries_pictures_sent(01_error).html">06(pictures)_best_galleries_pictures_sent(01_error).html</a>
+            <a href="../mod1(pictures)_pag06(pictures_sent)_sit1(error).html">mod1(pictures)_pag06(pictures_sent)_sit1(error).html</a>
             <code>&lt;body class="best_galleries pictures" id="pictures_sent"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. success <span>(fim da seleção de imagens, com link de volta para a galeria)</span></td>
           <td>
-            <a href="../06(pictures)_best_galleries_pictures_sent(02_success).html">06(pictures)_best_galleries_pictures_sent(02_success).html</a>
+            <a href="../mod1(pictures)_pag06(pictures_sent)_sit2(success).html">mod1(pictures)_pag06(pictures_sent)_sit2(success).html</a>
             <code>&lt;body class="pictures" id="pictures_sent"&gt;</code>
           </td>          
         </tr>
@@ -275,14 +278,14 @@
           <td rowspan="2">#search</td>
           <td>1. invalid  <span>(busca inválida, com sugestões válidas de busca)</span></td>
           <td>
-            <a href="../07(pictures)_search(01_invalid).html">07(pictures)_search(01_invalid).html</a>
+            <a href="../mod1(pictures)_pag07(search)_sit1(invalid).html">mod1(pictures)_pag07(search)_sit1(invalid).html</a>
             <code>&lt;body class=" pictures" id="search"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. valid  <span>(busca válida, com imagens vindas de galerias diversas)</span></td>
           <td>
-            <a href="../07(pictures)_search(02_valid).html">07(pictures)_search(02_valid).html</a>
+            <a href="../mod1(pictures)_pag07(search)_sit2(valid).html">mod1(pictures)_pag07(search)_sit2(valid).html</a>
             <code>&lt;body class=" pictures" id="search"&gt;</code>
           </td>
         </tr>
@@ -290,7 +293,7 @@
           <td>#search_picture</td>
           <td><span>(imagem em tamanho grande encontrada numa busca, com link para sua respectiva galeria)</span></td>
           <td>
-            <a href="../08(pictures)_full_galleries_search_picture.html">08(pictures)_full_galleries_search_picture.html</a>
+            <a href="../mod1(pictures)_pag08(search_picture).html">mod1(pictures)_pag08(search_picture).html</a>
             <code>&lt;body class="full_galleries pictures" id="search_picture"&gt;</code>
           </td>
         </tr>
@@ -299,7 +302,7 @@
           <td>#index</td>
           <td><span>(página inicial do módulo de texto, com texto institucional)</span></td>
           <td>
-            <a href="../09(text)_quem_somos_index.html">09(text)_quem_somos_index.html</a>
+            <a href="../mod2(text)_pag09(index).html">mod2(text)_pag09(index).html</a>
             <code>&lt;body class="quem_somos text" id="index"&gt;</code>
           </td>
         </tr>
@@ -308,28 +311,28 @@
           <td rowspan="4">#index</td>
           <td>1. initial <span>(página inicial do módulo de contato, com o formulário de contato em estado inicial)</span></td>
           <td>
-            <a href="../10(contact)_index(01_initial).html">10(contact)_index(01_initial).html</a>
+            <a href="../mod3(contact)_pag10(index)_sit1(initial).html">mod3(contact)_pag10(index)_sit1(initial).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. form spinner <span>(página de contato: envio da mensagem)</span></td>
           <td>
-            <a href="../10(contact)_index(02_form_spinner).html">10(contact)_index(02_form_spinner).html</a>
+            <a href="../mod3(contact)_pag10(index)_sit2(form_spinner).html">mod3(contact)_pag10(index)_sit2(form_spinner).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>3. error <span>(página de contato: mensagem de erro com destaque para e-mail inválido)</span></td>
           <td>
-            <a href="../10(contact)_index(03_error).html">10(contact)_index(03_error).html</a>
+            <a href="../mod3(contact)_pag10(index)_sit3(error).html">mod3(contact)_pag10(index)_sit3(error).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>4. success <span>(página de contato: mensagem de envio bem-sucedido)</span></td>
           <td>
-            <a href="../10(contact)_index(04_success).html">10(contact)_index(04_success).html</a>
+            <a href="../mod3(contact)_pag10(index)_sit4(success).html">mod3(contact)_pag10(index)_sit4(success).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
@@ -338,7 +341,7 @@
           <td>#page_not_found</td>
           <td><span>(página de erro 404: página não encontrada)</span></td>
           <td>
-            <a href="../11(application)_page_not_found.html">11(application)_page_not_found.html</a>
+            <a href="../mod4(application)_pag11(page_not_found).html">mod4(application)_pag11(page_not_found).html</a>
             <code>&lt;body class="application" id="page_not_found"&gt;</code>
           </td>
         </tr>
@@ -346,7 +349,7 @@
           <td>#server_error</td>
           <td><span>(página de erro 500: erro no servidor remoto)</span></td>
           <td>
-            <a href="../12(application)_server_error.html">12(application)_server_error.html</a>
+            <a href="../mod4(application)_pag12(server_error).html">mod4(application)_pag12(server_error).html</a>
             <code>&lt;body class="application" id="server_error"&gt;</code>
           </td>
         </tr>
@@ -354,7 +357,7 @@
           <td>#timeout</td>
           <td><span>(página de erro timeout: demora do repositório em enviar as fotos ao servidor)</span></td>
           <td>
-            <a href="../13(application)_timeout.html">13(application)_timeout.html</a>
+            <a href="../mod4(application)_pag13(timeout).html">mod4(application)_pag13(timeout).html</a>
             <code>&lt;body class="application" id="timeout"&gt;</code>
           </td>
         </tr>
@@ -363,7 +366,7 @@
           <td>#index</td>
           <td><span>(página inicial do módulo de vídeos, com a lista de todos os vídeos do usuário)</span></td>
           <td>
-            <a href="../14(videos)_all_videos_index.html">14(videos)_all_videos_index.html</a>
+            <a href="../mod5(videos)_pag14(index).html">mod5(videos)_pag14(index).html</a>
             <code>&lt;body class="all_videos videos" id="index"&gt;</code>
           </td>
         </tr>
@@ -371,8 +374,31 @@
           <td>#video</td>
           <td><span>(visualização de um único vídeo, em tamanho grande. Semelhante à página de imagem em tamanho grande.)</span></td>
           <td>
-            <a href="../15(videos)_all_videos_video.html">15(videos)_all_videos_video.html</a>
+            <a href="../mod5(videos)_pag15(video).html">mod5(videos)_pag15(video).html</a>
             <code>&lt;body class="all_videos videos" id="video"&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="3">.rsvp</td>
+          <td rowspan="3">#index</td>
+          <td>1. initial <span>(página inicial do módulo de rsvp, com o formulário de R.S.V.P. em estado inicial)</span></td>
+          <td>
+            <a href="../mod6(rsvp)_pag16(index)_sit1(initial).html">mod6(rsvp)_pag16(index)_sit1(initial).html</a>
+            <code>&lt;body class="rsvp" id="index"&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td>2. form spinner <span>(página de R.S.V.P.: envio da resposta ao convite)</span></td>
+          <td>
+            <a href="../mod6(rsvp)_pag16(index)_sit2(form_spinner).html">mod6(rsvp)_pag16(index)_sit2(form_spinner).html</a>
+            <code>&lt;body class="rsvp" id="index"&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td>3. success <span>(página de R.S.V.P.: mensagem de envio bem-sucedido)</span></td>
+          <td>
+            <a href="../mod6(rsvp)_pag16(index)_sit3(success).html">mod6(rsvp)_pag16(index)_sit3(success).html</a>
+            <code>&lt;body class="rsvp" id="index"&gt;</code>
           </td>
         </tr>
       </table>
@@ -613,11 +639,25 @@ media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
       <p>
         Instruções para fazer CSS para o <strong>Be on the Net</strong>: por <strong><a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello é designer da Improve It.">Leandro Mello</a></strong>, designer da <a href="http://improveit.com.br/br" title="Improve It rules.">Improve it</a>.<br /> Se você, designer, tiver <em>qualquer</em> dúvida em relação ao HTML, ao CSS ou a estas instruções, não se avexe, entre em <a href="http://improveit.com.br/contato" title="entre em contato, nós vamos tirar suas dúvidas.">contato</a>!
       </p>
+
       <h1>
-        Criação de sites por <a href="http://beonthe.net" title="Be on the Net. Finalmente, online de verdade.">Beonthe.net</a>, um produto da <a href="http://improveit.com.br" title="Improve It">Improve It</a>.
+        <strong><a href="http://beonthe.net" title="Um title.">Criação do site</a></strong>: 
+        <a id="beonthenet" href="http://beonthe.net" title="Um title.">
+          <img src="../images/logo_footer.gif" alt="Be on the Net &mdash; fazer um site em 24h é com o Be on the Net. Montar um site agora é fácil. Crie seu site em minutos e tenha espaço ilimitado para imagens, fotos e vídeos. Modelos de sites (templates de sites) prontos para agilizar seu desenvolvimento web" title="Um title." /></a>.
+        Um <a href="http://beonthe.net" title="Um title.">produto</a> da <a id="improveit" href="http://improveit.com.br" title="Um title.">Improve It</a>.
       </h1>
+
+      <h2>Design de <a href="http://improveit.com.br/empresa/leandro">Leandro Mello</a> para o <a href="http://beonthe.net" title="Um title.">Be on the Net</a>.</h2>
+
       <h5>Links do projeto Be on the Net estático:</h5>
-      <h6><a href="readme.html">Mapa da Mina, o ponto de partida</a> / <a href="#">Instruções para fazer CSS</a> / <a href="faq.html">F.A.Q.</a> / <a href="release-notes.html">Release notes</a> / <a href="fontes-de-material-creative-commons.html">Fontes de material Creative Commons</a> / <a href="../modelo-do-contrato.pdf">Modelo do contrato (.PDF)</a></h6>
+      <h6>
+        <a href="readme.html">Mapa da Mina, o ponto de partida</a> / 
+        <a href="#">Instruções para fazer CSS</a> / 
+        <a href="faq.html">F.A.Q.</a> / 
+        <a href="release-notes.html">Release notes</a> / 
+        <a href="fontes-de-material-creative-commons.html">Fontes de material Creative Commons</a> / 
+        <a href="../modelo-do-contrato.pdf">Modelo do contrato (.PDF)</a>
+      </h6>
     </div>
   </body>
 </html>

@@ -98,7 +98,7 @@ a {
 h1 {
 	margin-bottom:          .7em;
 }
-body#selection h1 {
+#selection #main_content h1 {
 	float:                  left;
 }
 /* /Main content top segment */
@@ -569,6 +569,7 @@ input.rsvp_confirmation {
   display:                inline;
   width:                  auto;
   padding:                0;
+  background:             none;
   border:                 none;
   margin-top:             0;
   margin-bottom:          0;
@@ -738,6 +739,12 @@ body > #facebox {
 
 #footer p {
 	margin-bottom:          .5em;
+}
+
+#beonthenet img {
+  width:                  95px;
+  height:                 22px;
+  margin:                 0 -4px -3px 0;
 }
 
 #footer h5 {

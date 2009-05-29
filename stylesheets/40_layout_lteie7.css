@@ -46,3 +46,8 @@ hr {
 label {
   margin-top:             .3em;
 }
+
+
+#message_confirmation_yes {
+  margin-left:            16.5em;
+}

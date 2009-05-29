@@ -417,12 +417,20 @@ body.application #main_content li {
   line-height:						1.25em;
 }
 
-#footer h5 {
-  font-size:              75%;
-}
-
-#footer h1, #footer h6 {
+#footer h1, #footer h2, #footer h6 {
   font-size:							70%;
   font-variant:           normal;
+}
+
+#footer h1 a {
+  text-decoration:        none;
+}
+#footer #beonthenet, 
+#footer #improveit {
+  text-decoration:        underline;
+}
+
+#footer h5 {
+  font-size:              75%;
 }
 /* /Footer */
