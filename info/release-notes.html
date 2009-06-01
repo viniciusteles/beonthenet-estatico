@@ -22,12 +22,15 @@
 
   <body class="release-notes text" id="index">  
     <div id='header'>
-      <h1 id='logo_print'>
-        <img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" />
-      </h1>
-      <h1 id='logo_screen'>
-        <a href="../mod1(pictures)_pag01(index).html">Patricia Figueira</a>
-      </h1>
+      <p>
+        <strong id='logo_print'>
+          <img alt="Patricia Figueira" height="0" src="images/logo_print.gif" width="0" />
+        </strong>
+        <strong id='logo_screen'>
+          <a href="../mod1(pictures)_pag01(index).html">Patricia Figueira</a>
+        </strong>
+      </p>
+
       <h2 id='slogan'>A nova cara da fotografia social.</h2>
       <ul>
         <li class="best_galleries"><a href="../mod1(pictures)_pag01(index).html">Melhores fotos</a></li>
@@ -38,10 +41,19 @@
       </ul>
     </div>
 
-    <hr />
+    <hr id="header_delimiter" />
 
     <div id='main_content'>
       <h1 id="release_notes">Release notes:</h1>
+
+      <h2 id="on_01_jun_2009">1&ordm;/jun/2009</h2>
+
+      <ul>
+        <li>Tornamos o nome da seção a única tag <strong>h1</strong> da página inteira, para melhorar o <acronym title="Search Engine Optimization, ou Otimização para Motores de Busca">SEO</acronym>.</li>
+        <li>No header, tiramos o logotipo de dentro de tags h1 e o pusemos dentro de tags <strong>strong</strong>, por sua vez englobadas por uma tag <strong>p</strong>.</li>
+        <li>Corrigimos o footer: o <strong>h1</strong> que havíamos implementado no dia <a href="#on_26_mai_2009">26/mai/2009</a> passa a ser um <strong>h2</strong>.</li>
+        <li>Incrementamos as tags <strong>hr</strong> com atributos <code>id</code>: agora as tags se chamam <code>&lt;hr id="header_delimiter" /&gt;</code> e <code>&lt;hr id="footer_delimiter" /&gt;</code>.</li>
+      </ul>
 
       <h2 id="on_29_mai_2009">29/mai/2009</h2>
 
@@ -188,21 +200,21 @@
       </ul>
     </div>
 
-    <hr />
+    <hr id="footer_delimiter" />
 
     <div id='footer'>
       <p>
         Be on the Net estático: por <strong><a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello é designer da Improve It.">Leandro Mello</a></strong>, designer da <a href="http://improveit.com.br/br" title="Improve It rules.">Improve it</a>.<br /> Se você, designer, tiver <em>qualquer</em> dúvida em relação ao HTML, ao CSS ou a estas instruções, não se avexe, entre em <a href="http://improveit.com.br/contato" title="entre em contato, nós vamos tirar suas dúvidas.">contato</a>!
       </p>
 
-      <h1>
+      <h2>
         <strong><a href="http://beonthe.net" title="Um title.">Criação do site</a></strong>: 
         <a id="beonthenet" href="http://beonthe.net" title="Um title.">
           <img src="../images/logo_footer.gif" alt="Be on the Net &mdash; fazer um site em 24h é com o Be on the Net. Montar um site agora é fácil. Crie seu site em minutos e tenha espaço ilimitado para imagens, fotos e vídeos. Modelos de sites (templates de sites) prontos para agilizar seu desenvolvimento web" title="Um title." /></a>.
         Um <a href="http://beonthe.net" title="Um title.">produto</a> da <a id="improveit" href="http://improveit.com.br" title="Um title.">Improve It</a>.
-      </h1>
+      </h2>
 
-      <h2>Design de <a href="http://improveit.com.br/empresa/leandro">Leandro Mello</a> para o <a href="http://beonthe.net" title="Um title.">Be on the Net</a>.</h2>
+      <h3>Design de <a href="http://improveit.com.br/empresa/leandro">Leandro Mello</a> para o <a href="http://beonthe.net" title="Um title.">Be on the Net</a>.</h3>
 
       <h5>Links do projeto Be on the Net estático:</h5>
       <h6>

@@ -53,7 +53,7 @@ h4, h4 a {
   background:             #E0C99B url(../images/header_shading.png) repeat-x bottom;
 }
 
-#header h1 a, #header h1 img {
+#header strong a, #header strong img {
   color:                  #940029;
 }
 
@@ -482,8 +482,8 @@ body#timeout #main_content h2 {
 	border-bottom-color:    #940029;
 }
 
-#footer h1, 
-#footer h1 a {
+#footer h2, 
+#footer h2 a {
   color:                  #555;
 }
 

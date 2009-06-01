@@ -42,10 +42,12 @@ h4 a:focus, h4 a:hover {
 
 
 /* Header tabbed menu */
-#header h1 a, #header h1 img {
-  font-size:              60%;
+#header strong a, #header strong img {
+  font-size:              150%;
+  line-height:            1.7em;
+  letter-spacing:         .1em;
   text-transform:         lowercase;
-  word-spacing:           1em;
+  word-spacing:           .5em;
   text-decoration:        none;
 }
 
@@ -417,12 +419,17 @@ body.application #main_content li {
   line-height:						1.25em;
 }
 
-#footer h1, #footer h2, #footer h6 {
+#footer h2, 
+#footer h3, #footer h3 a, 
+#footer h6 {
   font-size:							70%;
   font-variant:           normal;
 }
+#footer h3 a {
+  font-size:							100%;
+}
 
-#footer h1 a {
+#footer h2 a {
   text-decoration:        none;
 }
 #footer #beonthenet, 
