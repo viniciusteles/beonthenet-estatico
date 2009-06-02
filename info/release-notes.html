@@ -9,9 +9,9 @@
     
     <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="../stylesheets/10_typography.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/30_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/20_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/30_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/20_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/20_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/30_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
     <!--[if lte IE 7]>
       <link href="../stylesheets/40_layout_lteie7.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -31,13 +31,14 @@
         </strong>
       </p>
 
-      <h2 id='slogan'>A nova cara da fotografia social.</h2>
+      <em id='slogan'>A nova cara da fotografia social.</em>
       <ul>
         <li class="best_galleries"><a href="../mod1(pictures)_pag01(index).html">Melhores fotos</a></li>
         <li class="all_videos"><a href="../mod5(videos)_pag14(index).html">Vídeos</a></li>
         <li class="quem_somos"><a href="../mod2(text)_pag09(index).html">Quem somos</a></li>
         <li class='contact'><a href="../mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
         <li class='rsvp'><a href="../mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
+        <li class="blog"><a href="../mod4(application)_pag11(page_not_found).html">Erros</a></li>
       </ul>
     </div>
 
@@ -45,6 +46,15 @@
 
     <div id='main_content'>
       <h1 id="release_notes">Release notes:</h1>
+
+      <h2 id="on_02_jun_2009">02/jun/2009</h2>
+
+      <ul>
+        <li>Inauguramos uma nova aba, &ldquo;Erros&rdquo;, que leva às páginas de erro (módulo <em>application</em>). Em cada erro, clicar de novo na aba Blog leva ao erro seguinte.</li>
+        <li>O slogan, que era uma elemento <strong>h2</strong>, agora virou um <strong>em</strong>. Concentramos a força dos <em>headings</em> no <code>#main_content</code>.</li>
+        <li>Adicionamos novas folhas de estilo, para layout em outras mídias: dispositivos móveis, impressão e iPhone. No Be on the Net Estático, elas estão vazias: não há CSS para esses meios. Mas quando o designer quiser fazer esse CSS em seu template, são essas as folhas que ele tem de usar.</li>
+        <li>Reordenamos as folhas de estilo. Adotamos um esquema de folhas que vai da mais genérica à mais específica, para facilitar ao designer a leitura: agora vem primeiro a tipografia (para todos os meios), depois a cor (para meios eletrônicos), depois os layouts (um para cada meio), e por último as exceções (para o IE).</li>
+      </ul>
 
       <h2 id="on_01_jun_2009">1&ordm;/jun/2009</h2>
 

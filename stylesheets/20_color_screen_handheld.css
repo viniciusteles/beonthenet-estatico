@@ -38,11 +38,8 @@ h2 {
   color:                  #7F6B43;
 }
 
-h3, h3 a {
-  color:                  #555;
-}
-
-h4, h4 a {
+h3, h3 a, 
+.text h4 {
   color:                  #940029;
 }
 /* /Color global attributes */
@@ -55,6 +52,10 @@ h4, h4 a {
 
 #header strong a, #header strong img {
   color:                  #940029;
+}
+
+#slogan {
+  color:                  #7F6B43;
 }
 
 #header li {
@@ -108,6 +109,10 @@ h4, h4 a {
 
 /* Vertically centering images 
 (conditional comments for IE required) */
+#thumbnails h2, #thumbnails h2 a {
+  color:                  #555;
+}
+
 #thumbnails li div a {
 	background:             #E0C99B url(../images/thumbnail_box.gif);
 }
@@ -197,7 +202,7 @@ h4, h4 a {
 
 
 /* Data sheet */
-#data_sheet li {
+#data_sheet h2, #data_sheet li {
 	color:                  #7F6B43;
 }
 /* /Data sheet */
@@ -239,6 +244,10 @@ h4, h4 a {
 
 
 /* Tags */
+#tags h3 {
+  color:                  #555;
+}
+
 #tags a {
   color:                  #940029;
 }
@@ -248,7 +257,7 @@ h4, h4 a {
 }
 
 #tags a:hover {
-  color:                  #fff;
+  color:                  #FFF;
   background-color:       #940029;
 }
 /* /Tags */
@@ -483,7 +492,8 @@ body#timeout #main_content h2 {
 }
 
 #footer h2, 
-#footer h2 a {
+#footer h2 a, 
+#footer h3 {
   color:                  #555;
 }
 

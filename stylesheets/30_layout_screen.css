@@ -47,7 +47,8 @@ a {
 }
 
 #slogan {
-  padding-top:            1em;
+  display:                block;
+  padding-top:            1.15em;
   margin-left:            220px;
 }
 
@@ -123,7 +124,7 @@ h1 {
 	position:               relative;
 }
 
-#thumbnails li h3 {
+#thumbnails li h2 {
   position:               absolute;
   bottom:                 272px;
 }
@@ -159,12 +160,14 @@ body.videos #thumbnails img {
 }
 
 #summary {
+	position:               relative;
+	clear:                  both;
+}
+#gallery #summary, #picture #summary {
 	min-height:             4.5em;
 	height:                 auto !important;
 	height:                 4.5em;
 	padding-right:          20em;
-	position:               relative;
-	clear:                  both;
 }
 /* /Summary */
 

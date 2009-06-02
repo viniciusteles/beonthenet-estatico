@@ -21,21 +21,27 @@ h1 {
   font-variant:           small-caps;
   font-size:              200%;
 }
-
-h2 {
+#gallery h1, #search h1 {
+  color:                #7F6B43;
+  font-variant:           normal;
   font-size:              95%;
+  
 }
-
-h3, h3 a {
+#gallery h1 em, #search h1 em {
+  color:#940029;
+  display:block;
+  font-style:             normal;
   font-variant:           small-caps;
+  font-size:              200%; 
 }
 
-h4, h4 a {
+h3, h3 a, 
+.text h4 {
   font:                   92%/1.5em "Times New Roman", Times, serif;
   text-decoration:        none;
 }
 
-h4 a:focus, h4 a:hover {
+h3 a:focus, h3 a:hover {
   text-decoration:        underline;
 }
 /* /Typography global attributes */
@@ -52,7 +58,8 @@ h4 a:focus, h4 a:hover {
 }
 
 #slogan {
-  font-family:            Arial, sans-serif;
+  font-style:             normal;
+  font-size:              90%;
 }
 
 #header li {
@@ -69,7 +76,11 @@ h4 a:focus, h4 a:hover {
 
 /* Thumbnails */
 #thumbnails li {
-  font-size:     	         100%;
+  font-size:     	        100%;
+}
+
+#thumbnails h2, #thumbnails h2 a {
+  font-variant:           small-caps;
 }
 
 #thumbnails li div a {
@@ -122,10 +133,6 @@ h4 a:focus, h4 a:hover {
 
 
 /* Data sheet */
-#data_sheet h2 {
-  font-size:              120%;
-}
-
 #data_sheet li {
 	font-weight:            bold;
   line-height:            2.5em;
@@ -177,7 +184,7 @@ h4 a:focus, h4 a:hover {
 }
 
 #big_picture label, #big_video label {
-	font-size:              140%;
+  font-size:              140%;
   text-align:             center;
   letter-spacing:         -.05em;
 }
@@ -189,6 +196,11 @@ h4 a:focus, h4 a:hover {
 
 
 /* Tags */
+#tags h3 {
+  font:                   normal normal normal 1em/1em "Geneva", Helvetica, "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+  font-variant:           small-caps;
+}
+
 #tags p {
   line-height:            .5em;
 }
@@ -211,10 +223,8 @@ h4 a:focus, h4 a:hover {
 #thumbnails label, 
 #all_pictures label, #cart_items label, 
 #selected_pictures label {
-  line-height:            1.3em;
-}
-#thumbnails label {
-	font-size:              58%;
+  font-size:              55%;
+	line-height:            1.3em;
 }
 
 #all_pictures a, #cart_items a, #selected_pictures a {
@@ -346,7 +356,7 @@ body.text cite {
 
 
 /* Forms (contact, checkout, search) */
-label {
+form label {
   font-size:              75%;
 	text-align:             right;
 	line-height:            1.2em;
@@ -387,7 +397,6 @@ body#pictures_sent #order_form p {
 
 /* Errors (404, 500, timeout, empty search results) */
 p#not_found, body.application #main_content h2 {
-	font-size:              95%;
   text-align:             center;
 	line-height:            1.7em;
 }
@@ -419,22 +428,28 @@ body.application #main_content li {
   line-height:						1.25em;
 }
 
-#footer h2, 
-#footer h3, #footer h3 a, 
+#footer h2, #footer h2 a, 
 #footer h6 {
   font-size:							70%;
   font-variant:           normal;
 }
-#footer h3 a {
-  font-size:							100%;
-}
 
 #footer h2 a {
+  font-size:							100%;
   text-decoration:        none;
 }
+
 #footer #beonthenet, 
-#footer #improveit {
+#footer #improveit, 
+#footer h3 a {
   text-decoration:        underline;
+}
+
+#footer h3 {
+  font-size:              80%;
+}
+#footer h3 a {
+  font-size:              100%;
 }
 
 #footer h5 {
