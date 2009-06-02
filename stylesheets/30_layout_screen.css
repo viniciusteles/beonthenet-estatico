@@ -635,7 +635,7 @@ body#pictures_sent #order_form p {
 
 /* Specific for global search form */
 #global_search {
-	width:                  7.5em;
+	width:                  8em;
 	padding-left:           25px;
 	position:               absolute;
 	top:                    .8em;
