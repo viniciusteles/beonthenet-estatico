@@ -109,8 +109,11 @@ h3, h3 a,
 
 /* Vertically centering images 
 (conditional comments for IE required) */
-#thumbnails h2, #thumbnails h2 a {
+#thumbnails h2, #thumbnails h2 a:link {
   color:                  #555;
+}
+#thumbnails h3, #thumbnails h3 a:link {
+  color:                  #940029;
 }
 
 #thumbnails li div a {
