@@ -22,14 +22,11 @@ h1 {
   font-size:              200%;
 }
 #gallery h1, #search h1 {
-  color:                #7F6B43;
   font-variant:           normal;
   font-size:              95%;
   
 }
 #gallery h1 em, #search h1 em {
-  color:#940029;
-  display:block;
   font-style:             normal;
   font-variant:           small-caps;
   font-size:              200%; 

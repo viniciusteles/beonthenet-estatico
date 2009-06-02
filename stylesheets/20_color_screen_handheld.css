@@ -33,6 +33,13 @@ a:focus, a:hover, a:active {
 h1 {
   color:                  #940029;
 }
+#gallery h1, #search h1 {
+  color:                  #7F6B43;
+  
+}
+#gallery h1 em, #search h1 em {
+  color:                  #940029;
+}
 
 h2 {
   color:                  #7F6B43;

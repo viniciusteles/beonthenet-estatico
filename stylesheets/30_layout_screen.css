@@ -100,6 +100,9 @@ a {
 h1 {
 	margin-bottom:          .7em;
 }
+#gallery h1 em, #search h1 em {
+  display:                block;
+}
 #selection #main_content h1 {
 	float:                  left;
 }
