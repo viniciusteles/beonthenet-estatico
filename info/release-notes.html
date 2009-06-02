@@ -10,6 +10,9 @@
     <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="../stylesheets/10_typography.css" media="all" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/20_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/33_layout_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/37_layout_iphone.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/35_layout_print.css" media="print" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/20_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/30_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
     <!--[if lte IE 7]>
@@ -54,6 +57,7 @@
         <li>O slogan, que era uma elemento <strong>h2</strong>, agora virou um <strong>em</strong>. Concentramos a força dos <em>headings</em> no <code>#main_content</code>.</li>
         <li>Adicionamos novas folhas de estilo, para layout em outras mídias: dispositivos móveis, impressão e iPhone. No Be on the Net Estático, elas estão vazias: não há CSS para esses meios. Mas quando o designer quiser fazer esse CSS em seu template, são essas as folhas que ele tem de usar.</li>
         <li>Reordenamos as folhas de estilo. Adotamos um esquema de folhas que vai da mais genérica à mais específica, para facilitar ao designer a leitura: agora vem primeiro a tipografia (para todos os meios), depois a cor (para meios eletrônicos), depois os layouts (um para cada meio), e por último as exceções (para o IE).</li>
+        <li>Acrescentamos ao HTML as chamadas às novas folhas de estilo, para quando você quiser fazer CSS de layout para um dos meios citados anteriormente.</li>
       </ul>
 
       <h2 id="on_01_jun_2009">1&ordm;/jun/2009</h2>

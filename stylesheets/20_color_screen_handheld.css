@@ -326,18 +326,16 @@ body#selection #selection_size label {
 
 
 /* Text pages */
-pre {
-  background:             #EFE3C3;
-  border-color:           #E0C99B;
-}
-
 code {
   color:                  #111;
-  background:             #EFE3C3; 
 }
 
-table * {
-  border-color:           #E0C99B;
+pre, code {
+  background:             #EFE3C3;
+}
+
+pre, table * {
+  border-color:           #E0C99B !important;
 }
 
 th {
@@ -379,11 +377,11 @@ label {
 input, textarea {
   color:                  #111;
 	background-color:       #EFE3C3;
-	border-color:           #7F6B43;
+	border-color:           #7F6B43 !important;
 }
 
 input:hover, textarea:hover {
-	border-color:           #940029;
+	border-color:           #940029 !important;
 }
 
 input:active, input:focus,
@@ -395,13 +393,13 @@ textarea:active, textarea:focus {
 button {
   color:                  #111;
 	background-color:       #E0C99B;
-	border-color:           #E0C99B;
+	border-color:           #E0C99B !important;
 }
 button:hover {
 	border-color:           #7F6B43;
 }
 
-.submitting {
+.submitting, .submitting:hover {
 	color:                  #B09A6F;
 	background:             #EFE3C3 url(../images/spinner_form.gif) no-repeat 95% center;
 	border-color:           #EFE3C3;

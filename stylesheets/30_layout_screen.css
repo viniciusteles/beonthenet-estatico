@@ -1,6 +1,7 @@
 ﻿html * {
 	padding:                0;
-	border:                 none;
+  border-width:           0;
+  border-style:           none;
 	margin:                 0;
 }
 
@@ -155,7 +156,8 @@ body.videos #thumbnails img {
 /* Summary */
 #summary, #picture_description, #about_us, #data_sheet, body.application #main_content ul {
 	padding:                .65em 7.5em;
-	border:                 3px double;
+  border-width:           3px;
+  border-style:           double;
   margin-bottom:          10px;
 }
 
@@ -188,7 +190,8 @@ body.videos #thumbnails img {
 .pages {
   padding:                1px 20px 3px 20px;
   margin:                 5px 0;
-  border:                 3px double;
+  border-width:           3px;
+  border-style:           double;
   clear:                  both;
 }
 
@@ -261,7 +264,8 @@ body.videos #thumbnails img {
 
 #big_picture img {
   padding:                2px;
-	border:                 1px solid;
+  border-width:           1px;
+  border-style:           solid;
 }
 
 #big_picture label {
@@ -339,7 +343,8 @@ body#pictures_sent #main_content {
   width:                  20.25em;
 	min-height:             405px;
 	height:                 25.3em;
-	border:                 1px solid;
+	border-width:           1px;
+	border-style:           solid;
 	margin-top:             .75em;
 	margin-left:            34.35em;
 	position:               relative;
@@ -449,13 +454,15 @@ body.text #main_content h1 {
 #toc {
   float:                  left;
   padding:                .75em .75em .75em 1.5em;
-  border:                 1px solid;
+  border-width:           1px;
+  border-style:           solid;
   margin:                 0 2em 1em 0 !important;
 }
 
 pre {
   padding:                .5em 3em;
-  border:                 1px solid;
+  border-width:           1px;
+  border-style:           solid;
   margin:                 1em 0;
   overflow:               auto;
 }
@@ -475,7 +482,8 @@ table {
 }
 
 table * {
-  border:                 1px solid;
+  border-width:           1px;
+  border-style:           solid;
 }
 
 th {
@@ -560,12 +568,13 @@ input, textarea {
 	display:                block;
 	width:                  40%;
 	padding:                0 .3em;
-	border:                 1px inset;
+  border-width:           1px;
+  border-style:           inset;
   margin:                 -1.25em 0 .75em 18em;
 }
 
 input:hover, textarea:hover {
-	border:                 1px solid;
+  border-style:           solid;
 }
 
 input.rsvp_confirmation {
@@ -590,7 +599,7 @@ input.rsvp_confirmation {
 button {
 	display:                block;
   padding:                .2em .5em;
-	border:                 1px outset;
+  border:                 1px outset;
   margin:                 auto;
 }
 button:active {
@@ -643,9 +652,8 @@ body#pictures_sent #order_form p {
 	width:                  100%;
 	height:                 1.22em;
 	padding:                0;
-	border:                 none;
-	border-top:             1px solid;
-	border-bottom:          1px solid;
+	border-width:           1px 0;
+	border-style:           solid;
 	outline:                none;
   margin:                 0;
 }
@@ -735,8 +743,8 @@ body > #facebox {
 /* Footer */
 #footer {
   padding:                1.25em 62px;
-	border-top:             2px solid;
-	border-bottom:          .2em solid;
+  border-width:           2px 0 .2em;
+	border-style:           solid;
 	margin-bottom:          2em;
 }
 
