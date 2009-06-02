@@ -434,8 +434,8 @@ button:hover {
 #global_search #query {
 	color:                  #555;
   background:             #EFE3C3 url(../images/search_input_shading.gif) repeat-x left top;
-  border-top-color:       #BAA984;
-  border-bottom-color:    #F6F0DF;
+  border-top-color:       #BAA984 !important;
+  border-bottom-color:    #F6F0DF !important;
 }
 /* /Forms (contact, checkout, search) */
 
