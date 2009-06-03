@@ -1,0 +1,12 @@
+#logo_print {
+  display:      inline;
+}
+
+#logo_print img {
+  width:        45mm;
+  height:       8.38mm;
+}
+
+#logo_screen {
+  display:      none;
+}

@@ -94,7 +94,7 @@
         <dt>Um formulário de contato</dt>
           <dd>Uma página para o usuário entrar em contato com a Patricia.</dd>
         <dt>Erros</dt>
-          <dd>Se você teve azar o bastante (ou sorte, dependendo do ponto de vista!) acessando o site dela, você se deparou com uma das três divertidas páginas de erro: <a href="http://patriciafigueira.com.br/pagina_nao_encontrada" title="Quando você acessa uma página inexistente ou obsoleta.">página não encontrada</a>, <a href="http://patriciafigueira.com.br/server_error" title="Quando ocorre um erro no servidor remoto.">servidor sentimental</a>, e <a href="http://patriciafigueira.com.br/servidor_ocupado" title="Quando o repositório demora demais para enviar as fotos para o servidor.">repositório preguiçoso</a>.</dd>
+          <dd>Se você teve azar o bastante (ou sorte, dependendo do ponto de vista!) acessando o site dela, você se deparou com uma das três divertidas páginas de erro: <a href="http://patriciafigueira.com.br/pagina_nao_encontrada" title="Quando você acessa uma página inexistente ou obsoleta.">página não encontrada</a>, <a href="http://patriciafigueira.com.br/server_error" title="Quando ocorre um erro no servidor remoto.">servidor sentimental</a>, e <a href="http://patriciafigueira.com.br/servidor_ocupado" title="Quando o repositório demora demais para enviar as imagens para o servidor.">repositório preguiçoso</a>.</dd>
       </dl>
 
       <p>Um sistema bem simples, como você pode ver.</p>
@@ -132,7 +132,7 @@
         <dt>Tags variadas</dt>
           <dd>Procuramos enxugar em <code>classes</code> e <code>id&rsquo;s</code> nas tags, e em compensação elas são super variadas; cada elemento que há dentro de outro é praticamente único, o que dá excelentes oportunidades para brincadeiras como múltiplas imagens de background, entre outras;</dd>
         <dt>Tags salvadoras para o IEca, image replacement e outras firulas</dt>
-          <dd>Em alguns pontos do código há certas tags quietinhas lá na delas, esperando uma oportunidade de entrar em ação. São como o <code>&lt;span class="ie"&gt;</code> nas páginas de thumbnails para centralizar imagens verticalmente, os <code>spans</code> vazios para <em>image replacement</em> na página de foto full-size, ou o <code>&lt;li="empty"&gt;</code> no final de cada lista de imagens, para quebrar <em>floats</em> com facilidade. Mais detalhes e macetes no futuro.</dd>
+          <dd>Em alguns pontos do código há certas tags quietinhas lá na delas, esperando uma oportunidade de entrar em ação. São como o <code>&lt;span class="ie"&gt;</code> nas páginas de thumbnails para centralizar imagens verticalmente, os <code>spans</code> vazios para <em>image replacement</em> na página de imagem full-size, ou o <code>&lt;li="empty"&gt;</code> no final de cada lista de imagens, para quebrar <em>floats</em> com facilidade. Mais detalhes e macetes no futuro.</dd>
       </dl>
 
       <h2 id="divisao_do_css">A divisão do CSS:</h2>
@@ -162,7 +162,7 @@
 
       <ul>
         <li>O primeiro trecho (<code>mod1(pictures)</code>) apresenta o <strong>módulo</strong>, ou <strong>classe</strong> da tag <code>body</code>. O arquivo em questão pertence ao primeiro módulo do Be on the Net, <em>pictures</em>. Repare na tag <code>body</code> de cada arquivo deste pacote: você vai ver que a classe dessa tag reflete o módulo a que a página pertence (neste caso, <code>body class="pictures"</code>).</li>
-        <li>A sequência seguinte (<code>pag04(selection)</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <em>quarta página</em> do módulo <em>pictures</em> &mdash; que trata da seleção de fotos. Repare que o nome da página reflete o <strong>id</strong> da tag <code>body</code> de cada arquivo (neste exemplo, o HTML do arquivo em questão diz <code>body class="pictures" id="selection"</code>).</li>
+        <li>A sequência seguinte (<code>pag04(selection)</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <em>quarta página</em> do módulo <em>pictures</em> &mdash; que trata da seleção de imagens. Repare que o nome da página reflete o <strong>id</strong> da tag <code>body</code> de cada arquivo (neste exemplo, o HTML do arquivo em questão diz <code>body class="pictures" id="selection"</code>).</li>
         <li>O terceiro par de parênteses (<code>sit4(pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; portanto, apresentam vários estágios de comportamento. Para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
         <li><strong>Uma observação:</strong> a maioria das páginas tem <em>mais de uma classe</em> na tag <code>body</code>. No exemplo dado, o HTML diz <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>. Esta classe extra é para uso da equipe Be on the Net e, por ser variável dependendo do cliente, não recomendamos que você baseie seu CSS nela. Concentre-se na <em>classe do módulo</em> e no <em>id da página</em>.</li>
       </ul>
@@ -362,7 +362,7 @@
         </tr>
         <tr>
           <td>#timeout</td>
-          <td><span>(página de erro timeout: demora do repositório em enviar as fotos ao servidor)</span></td>
+          <td><span>(página de erro timeout: demora do repositório em enviar as imagens ao servidor)</span></td>
           <td>
             <a href="../mod4(application)_pag13(timeout).html">mod4(application)_pag13(timeout).html</a>
             <code>&lt;body class="application" id="timeout"&gt;</code>
