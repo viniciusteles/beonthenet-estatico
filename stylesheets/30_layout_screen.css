@@ -1,13 +1,13 @@
 ﻿html * {
-	padding:                0;
+  padding:                0;
   border-width:           0;
   border-style:           none;
-	margin:                 0;
+  margin:                 0;
 }
 
 body {
   width:                  62.5em;
-	margin:                 auto;
+  margin:                 auto;
 }
 
 #header, #main_content, #footer {
@@ -639,7 +639,6 @@ body#pictures_sent #order_form p {
 	padding-left:           25px;
 	position:               absolute;
 	top:                    .8em;
-/*  right:                  1.85em;*/
   right:                  62px;
 }
 

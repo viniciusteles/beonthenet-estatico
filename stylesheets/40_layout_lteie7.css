@@ -1,7 +1,46 @@
 /* Style sheet with conditions for Internet Explorer lower than 8. */
 
+
+/* HTML 5 experiment */
+body.pictures#index {
+  text-align:             center;
+}
+body.pictures#index * {
+  text-align:             left;
+}
+
+.pictures#index #header, 
+.pictures#index #main_content, 
+.pictures#index #footer {
+  width:                  1000px;
+  margin:                 auto;
+}
+.pictures#index #main_content {
+  padding-right:          0;
+}
+.pictures#index #footer * {
+  text-align:             right;
+}
+
+.pictures#index #header ul {
+  bottom:                 -1px;
+}
+
+.pictures#index #thumbnails div a {
+  text-align:             center;
+}
+
+.pictures#index #global_search {
+  width:                  9.5em;
+}
+.pictures#index #query {
+  height:                 1.35em;
+}
+/* /HTML 5 experiment */
+
+
 body, .pages, #submit_result, body.application #main_content h2 {
-  position:               relative;
+    position:             relative;
 }
 
 hr {
