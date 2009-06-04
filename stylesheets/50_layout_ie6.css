@@ -4,11 +4,11 @@ body.pictures#index, body.pictures#gallery, body.pictures#search {
   overflow:               hidden;
 }
 
-/* HTML 5 experiment */
+/* HTML 5 experiment 
 body.pictures#index {
   overflow:               auto;
 }
-/* /HTML 5 experiment */
+ /HTML 5 experiment */
 
 
 #header ul {

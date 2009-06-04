@@ -1,7 +1,7 @@
 /* Style sheet with conditions for Internet Explorer lower than 8. */
 
 
-/* HTML 5 experiment */
+/* HTML 5 experiment 
 body.pictures#index {
   text-align:             center;
 }
@@ -36,7 +36,7 @@ body.pictures#index * {
 .pictures#index #query {
   height:                 1.35em;
 }
-/* /HTML 5 experiment */
+ /HTML 5 experiment */
 
 
 body, .pages, #submit_result, body.application #main_content h2 {
