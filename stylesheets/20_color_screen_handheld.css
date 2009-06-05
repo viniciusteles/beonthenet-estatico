@@ -35,7 +35,6 @@ h1 {
 }
 #gallery h1, #search h1 {
   color:                  #7F6B43;
-  
 }
 #gallery h1 em, #search h1 em {
   color:                  #940029;
@@ -130,7 +129,6 @@ h3, h3 a,
 #thumbnails li div a:hover {
 	background:             #940029 url(../images/thumbnail_box_hover.gif);
 }
-
 
 #thumbnails a img, 
 #thumbnails label {
