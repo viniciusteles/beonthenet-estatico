@@ -1,7 +1,6 @@
 ﻿html * {
   padding:                0;
   border-width:           0;
-  border-style:           none;
   margin:                 0;
 }
 
@@ -229,8 +228,8 @@ body.videos #thumbnails img {
 }
 
 #data_sheet dt {
-	float:                  left;
-	clear:                  left;
+  float:                  left;
+  clear:                  left;
   margin-right:           .5em;
 }
 /* /Data sheet */
