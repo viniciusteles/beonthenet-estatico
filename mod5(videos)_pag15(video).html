@@ -53,8 +53,10 @@
     <div id='big_video'>
       <a href="#subnavigation" id="previous" title="Vídeo anterior"><span></span>Anterior</a>
 
+      <!--[if lte IE 7]>
       <object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' id='viddler_video' width='720' height='560'>
         <param name='movie' value='http://www.viddler.com/simple/3a92c1c2/' />
+        <![endif]-->
         <!--[if !IE]> -->
         <object type="application/x-shockwave-flash" data="http://www.viddler.com/simple/3a92c1c2/" width="720" height="560">
         <!--<![endif]-->
@@ -66,7 +68,9 @@
         <!--[if !IE] -->
         </object>
         <!--<![endif]-->
+      <!--[if IE]>  
       </object>
+      <![endif]-->
 
       <label>
         Flávia e Leonardo: melhores momentos
