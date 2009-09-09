@@ -260,21 +260,130 @@
     <div id="sidebar">
       <!-- <h3 id="search-title">Search</h3> -->
 
-      <p><a href="{RSS}">RSS</a></p>
-      <p><a href="/archive">Histórico</a></p>
+      <h3><a href="{RSS}">RSS</a></h3>
+      <h3><a href="/archive">Histórico</a></h3>
       
       <!-- <h3 id="about">About</h3> -->
       <p>{Description}</p>
 
       <!-- Twitter Badge -->
       <!-- Uncomment and change username to use -->
-      <!--
-      <h3 id="twitter">Latest Tweet</h3>
-      <ul id="twitter_update_list">
-        <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/username.json?count=1&amp;callback=twitterCallback2"></script>
+      <!-- <h3 id="twitter">Recentemente no <a href="http://twitter.com/beonthenet">Twitter</a>:</h3>
+            <ul id="twitter_update_list">
+              <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+              <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/username.json?count=1&amp;callback=twitterCallback2"></script>
+            </ul> -->
+
+      <!-- {block:Twitter}
+          <div id="twitter" style="display:none;">
+              <h3><a href="http://twitter.com/{TwitterUsername}">Latest Tweets</a></h3>
+
+              <div id="tweets"></div>        
+          </div>
+
+          <script type="text/javascript">
+              function recent_tweets(data) {
+                  for (i=0; i<data.length; i++) {
+                      document.getElementById("tweets").innerHTML = 
+                          document.getElementById("tweets").innerHTML + 
+                          '<a href="http://twitter.com/{TwitterUsername}/status/' + 
+                          data[i].id + '"><div class="content">' + data[i].text + 
+                          '</div></a>';
+                  }
+                  document.getElementById("twitter").style.display = 'block';
+              }
+          </script>
+      {/block:Twitter} -->
+
+      <h3><a href="http://beonthe.net/clientes/pagina">Cientes do Be on the Net:</a></h3>
+      <ul>
+        <li><a href="http://patriciafigueira.com.br">Patricia Figueira</a></li>
+        <li><a href="http://miguelcastello.com.br">Miguel Castello</a></li>
+        <li><a href="http://nandagomes.com.br">Nanda Gomes</a></li>
+        <li><a href="http://lucianaaith.com.br">Luciana Aith</a></li>
+        <li><a href="http://pousadamaresias.net">Pousada Maresias</a></li>
+        <li><a href="http://nelsonrodriguessilva.com.br">Nelson Rodrigues Silva</a></li>
+        <li><a href="http://actionsproducoes.com.br">Actions Produções</a></li>
+        <li><a href="http://dlacombefoto.com.br">Durval Lacombe</a></li>
+        <li><a href="http://buosifotografias.com.br">Buosi Fotografias</a></li>
+        <li><a href="http://dyfproducoes.com.br">DYF Produções</a></li>
+        <li><a href="http://danicarneiro.com">Dani Carneiro</a></li>
+        <li><a href="http://robertacadore.com.br">Roberta Cadore</a></li>
+        <li><a href="http://uminstante.com.br">Um Instante</a></li>
+        <li><a href="http://nucleoa.com.br">Núcleo A</a></li>
+        <li><a href="http://kenia.art.br">Kenia Ribeiro</a></li>
+        <li><a href="http://socialclick.com.br">Social Click</a></li>
+        <li><a href="http://suzanesabbag.com">Suzane Sabbag</a></li>
+        <li><a href="http://carlaflores.com.br">Carla Flores</a></li>
+        <li><a href="http://rejanewolff.com.br">Rejane Wolff</a></li>
+        <li><a href="http://danirochafotografias.com.br">Dani Rocha</a></li>
+        <li><a href="http://flaviacobucci.com.br">Flavia Cobucci</a></li>
+        <li><a href="http://mouramori.com">Moura Mori</a></li>
+        <li><a href="http://maqueteeletronica.eng.br">Maquete Eletrônica</a></li>
+        <li><a href="http://jrprodutora.com.br">JR Produtora</a></li>
+        <li><a href="http://balbifotografias.com.br">Balbi Fotografias e Vídeo</a></li>
+        <li><a href="http://leticiabarroseventos.com.br">Leticia Barros Eventos</a></li>
+        <li><a href="http://monicadantasfotografias.com.br">Monica Dantas</a></li>
+        <li><a href="http://mairlopes.com.br">Mair Lopes</a></li>
+        <li><a href="http://fernandopriamo.com.br">Fernando Priamo</a></li>
+        <li><a href="http://lilianecariello.com.br">Liliane Cariello</a></li>
+        <li><a href="http://carlacamp.com.br">Carla Camp</a></li>
+        <li><a href="http://juliomachadovideo.com.br">Júlio Machado</a></li>
+        <li><a href="http://fotostudioandreas.com.br">Foto Stúdio Andréa's</a></li>
+        <li><a href="http://windsurfbrasil.com.br">MGW Brasil</a></li>
+        <li><a href="http://adrianodiogo.com">Adriano Diogo</a></li>
+        <li><a href="http://susanaaraujo.com.br">Susana Araujo</a></li>
+        <li><a href="http://aleborges.com.br">Ale Borges</a></li>
+        <li><a href="http://olliverproducoesvideo.com.br">Olliver Produções</a></li>
+        <li><a href="http://wagnerevanessa.com.br">Wagner e Vanessa</a></li>
+        <li><a href="http://artemforminhas.com.br">Arte em Forminhas</a></li>
+        <li><a href="http://izabelkahneventos.com.br">Izabel Kahn Eventos</a></li>
+        <li><a href="http://moment.com.br">Moment</a></li>
+        <li><a href="http://alepapeterie.com.br">Ale Papeterie</a></li>
+        <li><a href="http://hernani.com.br">Hernani</a></li>
+        <li><a href="http://antoniocarlosferreira.com.br">Antonio Carlos Ferreira</a></li>
+        <li><a href="http://studiowellingtonbarbosa.com.br">Studio Wellington Barbosa</a></li>
+        <li><a href="http://cappelli.beonthe.net">Cappelli &amp; Guanabara</a></li>
+        <li><a href="http://marceloverdial.com.br">Marcelo Verdial</a></li>
+        <li><a href="http://edumarques.com.br">Edu Marques</a></li>
+        <li><a href="http://fabriciasoares.com.br">Fabricia Soares</a></li>
+        <li><a href="http://stillart.com.br">Stillart</a></li>
+        <li><a href="http://www.carrega.com.br">Carrega Foto Digital</a></li>
+        <li><a href="http://carlosleandro.com.br">Carlos Leandro</a></li>
+        <li><a href="http://juniorpereira.com.br">Junior Pereira</a></li>
+        <li><a href="http://silviasantanafoto.com.br">Silvia Santana</a></li>
+        <li><a href="http://gabrielolivera.com">Gabriel Olivera</a></li>
+        <li><a href="http://levipereira.com.br">Levi Pereira</a></li>
+        <li><a href="http://fotolegal.art.br">Foto Legal</a></li>
+        <li><a href="http://studiovivace.com.br">Studio Vivace</a></li>
+        <li><a href="http://www.nopalco.com.br">No Palco Fotografia</a></li>
+        <li><a href="http://franmatos.com.br">Fran Matos</a></li>
+        <li><a href="http://rogeriojr.com.br">Rogerio Jr</a></li>
+        <li><a href="http://marcosgrossi.com.br">Marcos Grossi</a></li>
+        <li><a href="http://objetivafotos.com.br">Objetiva Fotos</a></li>
+        <li><a href="http://maquiagemtatianealves.com.br">Tatiane Alves</a></li>
+        <li><a href="http://meninadosolhos.fot.br">Menina dos Olhos</a></li>
+        <li><a href="http://manoelpimentel.com">Manoel Pimentel</a></li>
+        <li><a href="http://caramurufotografia.com.br">Caramuru Produções Fotográficas</a></li>
+        <li><a href="http://estudiogama.com.br">Estúdio Gama</a></li>
+        <li><a href="http://ruyfotografo.com.br">Ruy Barbosa Jr.</a></li>
+        <li><a href="http://grafiadaluz.com.br">Grafia da Luz</a></li>
+        <li><a href="http://atelierdeimagens.com.br">Atelier de Imagens</a></li>
+        <li><a href="http://carolb.com.br">Carol Bussière</a></li>
+        <li><a href="http://casamentos.meliess.com">Meliess</a></li>
+        <li><a href="http://arttecfotografias.com.br">Art Tec</a></li>
+        <li><a href="http://decorartrio.com.br">Decorart</a></li>
+        <li><a href="http://lcproducoesdigitais.com.br">LC Produções</a></li>
+        <li><a href="http://mamonteiro.com.br">Má Monteiro</a></li>
+        <li><a href="http://nicolemarcelo.com.br">Nicole Marcelo</a></li>
+        <li><a href="http://rosicaires.com.br">Rosi Caires</a></li>
+        <li><a href="http://sophotoecia.com.br">SóPhoto&amp;Cia</a></li>
+        <li><a href="http://photoversasi.com.br">Photo Versasi</a></li>
+        <li><a href="http://photonline.com.br">Photonline</a></li>
+        <li><a href="http://fuzueeventos.com.br">Fuzuê Eventos</a></li>
+        <li><a href="http://theflashproducoes.com.br">The Flash Produções</a></li>
+        <li><a href="http://adrianapimenta.com.br">Adriana Pimenta</a></li>
       </ul>
-      -->
 
       <!-- <h3 id="blogroll">Blogroll</h3> -->
         <!-- {block:Following} -->
@@ -307,5 +416,19 @@
       Design de <a href="http://improveit.com.br/empresa/leandro">Leandro Mello</a> para o <a href="http://beonthe.net" title="Criar site em 24h é com o Be on the Net, o jeito fácil de criar sites na internet. Crie seu site em minutos e tenha espaço ilimitado para imagens, fotos e vídeos. Modelos de sites (templates de sites) prontos para agilizar seu desenvolvimento web.">Be on the Net</a> e para o <a href="http://tumblr.com/">Tumblr</a>.
     </h3>
   </div>
+
+<!-- Put this at the bottom of the page -->
+{block:Twitter}
+    <!-- <script type="text/javascript" src="/tweets.js"></script> -->
+{/block:Twitter}
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9389455-30");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 </body>
 </html>
