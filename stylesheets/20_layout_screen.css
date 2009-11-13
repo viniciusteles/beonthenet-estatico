@@ -230,7 +230,13 @@ body.videos #thumbnails img {
 #data_sheet dt {
   float:                  left;
   clear:                  left;
+  margin-left:            40px;
   margin-right:           .5em;
+}
+
+#data_sheet dd {
+  margin-left:            40px;
+  margin-bottom:          .25em;
 }
 /* /Data sheet */
 
