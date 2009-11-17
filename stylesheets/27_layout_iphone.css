@@ -1,3 +1,11 @@
 html, html * {
 /*  display:none !important;*/
 }
+
+#main_content, #footer {
+  display:    none;
+}
+
+#header:after {
+  content: "BLAAH!";
+}
