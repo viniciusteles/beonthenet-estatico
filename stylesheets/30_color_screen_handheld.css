@@ -352,9 +352,8 @@ td span {
   color:                  #BAA984;
 }
 
-#toc {
-  background:             #EFE3C3;
-  border-color:           #E0C99B;
+.text #main_content h3 {
+  color:                  #555;
 }
 
 body.text #main_content h4 {

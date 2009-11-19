@@ -299,6 +299,10 @@ h4 em {
   font:                   normal italic normal 100%/1.2em "Times New Roman", Times, serif;
 }
 
+.text #main_content h3 {
+  font:                   normal normal small-caps 1em/1em "Geneva", Helvetica, "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+}
+
 body.text #main_content h4 {
   line-height:            1.2em;
 }
@@ -324,17 +328,19 @@ body.text #main_content ol li {
 body.text #main_content ul li {
   list-style:             circle;
 }
-body.text #main_content ul ul li, 
-body.text #main_content ol ul li {
-  list-style:             disc;
-  font-size:              95%;
-}
-
 body.text #main_content ol li {
   list-style:             decimal;
 }
-body.text #main_content ol ul li {
+body.text #main_content li ul li {
+  list-style:             disc;
+}
+
+.text #main_content li li {
   font-size:              95%;
+}
+
+.text #main_content li p {
+  font-size:              100%;
 }
 
 body.text li h4 {
@@ -345,8 +351,19 @@ body.text h1 + p:first-letter {
   font-size:              150%;
 }
 
+.text #main_content blockquote p {
+  font-style:             italic;
+  font-size:              80%;
+  line-height:            1.8em;
+}
+
 body.text cite {
+  font-variant:           small-caps;
+  font-size:              115%;
   text-align:             right;
+}
+.text cite a {
+  font-variant:           inherit;
 }
 /* /Text pages */
 
