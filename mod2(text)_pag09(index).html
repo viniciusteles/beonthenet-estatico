@@ -19,7 +19,7 @@
       <link href="stylesheets/50_layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
   </head>
-<body class="quem_somos text" id="index">  
+<body class="text_pages text" id="index">  
   <div id="header">
     <p>
       <strong id="logo_print">
@@ -35,7 +35,7 @@
     <ul>
       <li class="best_galleries"><a href="mod1(pictures)_pag01(index).html">Fotos</a></li>
       <li class="all_videos"><a href="mod5(videos)_pag14(index).html">Vídeos</a></li>
-      <li class="quem_somos current"><a href="#">Quem somos</a></li>
+      <li class="text_pages current"><a href="#">Páginas de texto</a></li>
       <li class="contact"><a href="mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
       <li class="rsvp"><a href="mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
       <li class="erros"><a href="mod4(application)_pag11(page_not_found).html">Erros</a></li>
@@ -46,27 +46,68 @@
 
   <div id="main_content">
 
-    <h1>Quem somos</h1>
-    <p>Somos a nova cara da fotografia social. Uma equipe de fotografia e design que vai fazer a diferença no dia mais feliz de sua vida, porque é:</p>
+    <h1>Sobre as páginas de texto</h1>
+<!--
+    <div id="summary">
+      <p>Este é um #summary escondido. Isso é porque, por padrão, os divs #summary só aparecem no <a href="mod1(pictures)_pag02(gallery).html#summary">interior das galerias</a> e nas <a href="mod1(pictures)_pag03(picture)_sit2(vertical).html#summary">páginas de imagem grande</a>. O #summary só aparece por padrão nas páginas citadas porque é lá que aparecem também os links para a ficha técnica e para a seleção de imagens. Aqui, como não há links, o #summary serve só como um resumo descritivo do que vem abaixo.</p>
+      <p>Por isso, prepare-se também para esta situação. Experimente "descomentar" este div para fazê-lo aparecer e estilize-o.</p>
+    </div>
+-->
+    <p>Páginas de texto são bem menos frequentes do que páginas de fotos ou vídeos, e por isso não são o coração do Be on the Net. Mas elas são bem mais <em>versáteis</em> do que as de fotos e vídeos, porque permitem ao cliente pôr todo tipo de conteúdo HTML &mdash; até mesmo uma ou outra foto ou vídeo.</p>
+    <p>Por causa desta versatilidade, as páginas do módulo de texto são também as mais <strong>imprevisíveis</strong>. Ao contrário das dos módulos de <a href="mod1(pictures)_pag01(index).html">imagem</a>, <a href="mod5(videos)_pag14(index).html">vídeo</a>, <a href="mod3(contact)_pag10(index)_sit1(initial).html">contato</a>, <a href="mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a> e <a href="mod4(application)_pag11(page_not_found).html">erros</a>, não há como saber o que o cliente pretende exibir em seu site, em termos de conteúdo escrito. Por isso, neste caso, é preciso fazer um esforço para tentar prever toda espécie aplicação de HTML possível, fazendo um estilo abrangente o suficiente para tornar agradável a leitura e visualização de diversos tipos de conteúdo.</p>
+    <p>Nesta página, vamos exibir algumas das tags mais usadas em nossa experiência com os 100 primeiros usuários do Be on the Net.</p>
+
+    <h2>O que você vai precisar dominar</h2>
+
+    <h3>Listas</h3>
+
+    <ul>
+      <li>Você vai precisar dominar listas de texto. Elas são muito usadas no Be on the Net;</li>
+      <li>
+        <p>Vai ser muito útil dominar listas com parágrafos dentro.</p>
+        <p>Apesar de parecer mais interessante usar tags <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> e <code>&lt;dd&gt;</code> nestes casos (as <em>definiton lists</em>), listas com mais de um parágrafo são bem capazes de aparecer;</p>
+      </li>
+      <li>Listas dentro de listas:
+        <ul>
+          <li>Páginas com listas mais complexas ou páginas de FAQ podem conter listas dentro de listas;</li>
+          <li>O Be on the Net não dá suporte a listas dentro de listas no menu principal. Todo o menu é uma lista com um único nível. Por isso, não se preocupe em estilizar listas dentro de listas no menu: isso nunca vai acontecer;</li>
+          <li>A página de <a href="http://beonthe.net/faq/pagina">perguntas frequentes</a> do Be on the Net tem listas dentro de listas! Acontece, não?</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol>
+      <li>Também vai ser bem útil domar listas numéricas (ou ordenadas). Elas aparecem de vez em quando;</li>
+      <li>Os tipos de listas são três:
+        <ol>
+          <li>As listas de marcadores, ou não ordenadas (unordered). São as da tag <code>&lt;ul&gt;</code>;</li>
+          <li>As listas ordenadas, que são estas da tag <code>&lt;ol&gt;</code>;</li>
+          <li>E por último as <em>listas de definição</em>, que você vai ver logo abaixo;</li>
+        </ol>
+      </li>
+      <li>Mas isso tudo sobre listas você já sabia, certo? OK, só estou enchendo espaço para termos o que estilizar. Vamos à próxima lista.</li>
+    </ol>
+
     <dl>
-      <dt>Enxuta.</dt>
-      <dd>Duas fotógrafas, uma obra. Discreta, Sem luzes intrusivas, sem excesso de equipamentos, sem interferir na sua alegria. Quando você vê, já fizemos um montão de fotos;</dd>
-      <dt>Moderna.</dt>
-      <dd>Nossa tecnologia de fotografia e edição é de ponta. O tratamento das imagens é esmerado e cuidadoso;</dd>
-      <dt>Inovadora.</dt>
-      <dd>Cobrimos a parte tradicional das fotos posadas, que não pode faltar no registro de seu casamento; mas nossa linha fotojornalística vai além, buscando no espontâneo as emoções mais fortes de cada momento;</dd>
-      <dt>Diferente.</dt>
-      <dd>Sob nossos ângulos a cerimônia fica mais criativa. A recepção ganha mais movimento. E você curte tudo isso em um <strong>DVD com fotos em qualidade de impressão!</strong></dd>
-      <dt>Flexível.</dt>
-      <dd>Você participa da confecção de seu álbum, desde as fotos à diagramação. Adoramos sua participação, porque assim o álbum fica a sua cara;</dd>
-      <dt>Elegante.</dt>
-      <dd>Seu álbum vai ter estilo e simplicidade; ser leve, <em>clean</em>. Sem excesso de informação, vai prevalecer a beleza da foto. Para você mergulhar nas suas lembranças, não em efeitos especiais;</dd>
-      <dt>Com cobertura completa. E cereja em cima.</dt>
-      <dd>Do <em>making-of</em> da noiva até o final da festa &mdash; todas as cenas mais memoráveis são captadas.</dd>
+      <dt>Listas de definição</dt>
+      <dd>São listas muito úteis, que dão um <em>termo</em> (tag <code>&lt;dt&gt;</code>) e logo a seguir sua <em>definição</em> ou <em>descrição</em> (tag <code>&lt;dd&gt;</code>). Têm aplicabilidade em muitos casos;</dd>
+      <dt>Exemplos de aplicação</dt>
+      <dd>Um dicionário. O dicionário é feito de termos e definições, e uma versão online de um dicionário poderia muito bem ser representada através de uma lista de definição. Outro exemplo: um diálogo escrito num roteiro. O nome da pessoa que fala pode ser o termo, e sua fala pode ser a definição. Fica bonitão, até sem CSS;</dd>
     </dl>
-    <p>Nós somos o toque de naturalidade e humanidade que faz de cada foto do seu casamento um instante inesquecível.</p>
-    <p>Beijos,</p>
-    <p><cite>Patricia Figueira</cite></p>
+
+    <h3>Depoimentos e testemunhos</h3>
+
+    <blockquote>
+      <p>Não há conjunto melhor de tags para um depoimento do que um <code>&lt;blockquote&gt;</code> com alguns parágrafos dentro, seguido por um parágrafo com a tag <code>&lt;cite&gt;</code>. O <code>&lt;blockquote&gt;</code> fica sendo o testemunho propriamente dito, e o <code>&lt;cite&gt;</code> representa a pessoa que o disse. Fica bacana até sem o CSS!</p>
+    </blockquote>
+
+    <p><cite>Equipe Be on the Net</cite></p>
+
+    <blockquote>
+      <p>Há alguns clientes do Be on the Net que usam bastante depoimentos em seus sites. Descubra quem são em nossa <a href="http://beonthe.net/clientes/pagina">página de clientes</a>.</p>
+    </blockquote>
+
+    <p><cite><a href="http://improveit.com.br/empresa/leandro">Leandro Mello</a></cite></p>
   </div>
 
   <hr id="footer_delimiter" />

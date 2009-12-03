@@ -1,3 +1,5 @@
+/* Use esta folha de estilos para fazer tipografia para todos os meios. */
+
 /* Typography global attributes */
 html * {
   list-style-type:        none;
@@ -339,7 +341,8 @@ body.text #main_content li ul li {
   font-size:              95%;
 }
 
-.text #main_content li p {
+.text #main_content li p, 
+.text #main_content dd p {
   font-size:              100%;
 }
 

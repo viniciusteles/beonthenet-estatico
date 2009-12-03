@@ -1,4 +1,4 @@
-/* Style sheet with conditions for Internet Explorer lower than 8. */
+/* Use esta folha de estilos se desejar fazer ajustes de layout exclusivos para IE7 e abaixo. */
 
 body, .pages, #submit_result, body.application #main_content h2 {
     position:             relative;

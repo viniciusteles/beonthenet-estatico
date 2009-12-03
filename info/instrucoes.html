@@ -38,7 +38,7 @@
       <ul>
         <li class="best_galleries"><a href="../mod1(pictures)_pag01(index).html">Fotos</a></li>
         <li class="all_videos"><a href="../mod5(videos)_pag14(index).html">Vídeos</a></li>
-        <li class="quem_somos"><a href="../mod2(text)_pag09(index).html">Quem somos</a></li>
+        <li class="text_pages"><a href="../mod2(text)_pag09(index).html">Páginas de texto</a></li>
         <li class="contact"><a href="../mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
         <li class="rsvp"><a href="../mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
         <li class="erros"><a href="../mod4(application)_pag11(page_not_found).html">Erros</a></li>
@@ -53,29 +53,30 @@
       <p>Olá, designer. Você acaba de receber um pacote com todas as páginas que existem no <strong>Be on the Net</strong> até agora. Este é o material necessário para produzir belos e originais templates.</p>
       <p>Esta página contém instruções <!-- e macetes --> para entender melhor o sistema <strong>Be on the Net</strong> e seu HTML.</p>
 
-      <h3>Índice:</h3>
+      <h2>Índice:</h2>
 
       <ul id="toc">
         <li><a href="#o_que_voce_ve">O que você vê no site</a></li>
         <li><a href="#modulos_do_beonthenet">Os módulos do Be on the Net</a></li>
         <li><a href="#flexibilidade_do_css">HTML e a flexibilidade do CSS</a></li>
-        <li><a href="#divisao_do_css">A divisão do CSS</a></li>
+        <li><a href="#divisao_do_css">Vamos começar &mdash; a divisão do CSS</a></li>
         <li><a href="#modulos_paginas_situacoes">Conhecendo o <strong>body</strong> &mdash; módulos, páginas e situações</a>
           <ul>
             <li><a href="#tabela_modulos_paginas_situacoes">Tabela de módulos, páginas e situações</a></li>
           </ul>
         </li>
-        <li><a href="#convencoes">Convenções</a>
+        <li><a href="#prepare_seu_template">Prepare seu template para o que der e vier</a></li>
+        <!-- <li><a href="#convencoes">Convenções</a>
           <ul>
             <li><a href="#logotipos">Logotipos</a></li>
             <li><a href="#logo_textual">Logo textual</a></li>
             <li><a href="#css_e_midia">Declarações de mídia no CSS</a></li>
             <li><a href="#ordem_do_css">Ordem das folhas de estilo</a></li>
             <li><a href="#comentarios_condicionais">Comentários condicionais para o IEca</a></li>
-            <!-- <li><a href="#spinners">Spinners</a></li> -->
-            <!-- <li><a href="#favicons">Favicons</a></li> -->
+            <li><a href="#spinners">Spinners</a></li>
+            <li><a href="#favicons">Favicons</a></li>
           </ul>
-        </li>
+        </li> -->
         <!-- <li><a href="#como_alterar_templates">Como fazer alterações sobre um template já existente</a></li> -->
       </ul>
 
@@ -90,7 +91,7 @@
         <dt>Imagens</dt>
           <dd>A maior parte do site é feita de <strong>imagens</strong>. Elas são o carro-chefe do Be on the Net. Você vê galerias, vê imagens grandes, brinca com a seleção de imagens. É o maior <em>playground</em> do sistema;</dd>
         <dt>Texto</dt>
-          <dd>Na página &ldquo;Quem somos&rdquo;, há texto. É basicamente um discurso institucional, para dar uma seduzida no usuário com palavras &mdash; se ele já não foi seduzido pelas imagens. As páginas de instruções (cujos links estão no <a href="#footer">rodapé</a>) também são do tipo textual.</dd>
+          <dd>Na página &ldquo;Páginas de texto&rdquo;, há texto. É basicamente um texto qualquer, livre, com ou sem alguma foto ou vídeo. Por exemplo, as páginas de instruções (cujos links estão no <a href="#footer">rodapé</a>) também são do tipo textual.</dd>
         <dt>Um formulário de contato</dt>
           <dd>Uma página para o usuário entrar em contato com a Patricia.</dd>
         <dt>Erros</dt>
@@ -101,7 +102,7 @@
 
       <h2 id="modulos_do_beonthenet">Os módulos do Be on the Net:</h2>
 
-      <p>Agora dê uma nova olhada no <strong>código HTML</strong> dos arquivos numerados deste pacote. Mais precisamente na tag <code>body</code> de cada um. Repare que cada um deles tem pelo menos um <code>id</code> e uma <code>classe</code>.</p>
+      <p>Agora dê uma nova olhada no <strong>código HTML</strong> dos arquivos numerados deste pacote. Mais precisamente na tag <code>body</code> de cada um. Repare que cada uma delas tem pelo menos um <code>id</code> e uma <code>classe</code>.</p>
       <p>Se você der a esta tag <code>body</code> e a seus <code>id&rsquo;s</code> e <code>classes</code> carinho, colinho e atenção, já vai dar um grande passo em direção a fazer o sistema se dobrar ao seu design.</p>
       <p>A última palavra de cada <code>classe</code> reflete um esquema de divisão que criamos (Ex.: <code>body id="index" class="instructions <em>text</em>"</code>). <strong>Be on the Net</strong> é um sistema dividido em &ldquo;módulos&rdquo;, ou <em>bundles</em>, como temos chamado na Improve It. Hoje, existem <strong>seis</strong> módulos ou <em>bundles</em> básicos:</p>
 
@@ -109,7 +110,7 @@
         <dt>Pictures</dt>
           <dd>É o módulo das <strong>imagens</strong>, o carro-chefe do Be on the Net. É o que concentra o maior número de páginas e funcionalidades;</dd>
         <dt>Text</dt>
-          <dd>O módulo institucional. Compreende páginas <strong>textuais</strong> &mdash; neste caso, a página &ldquo;Quem somos&rdquo;;</dd>
+          <dd>O módulo institucional. Compreende páginas <strong>textuais</strong> &mdash; neste caso, por exemplo, a página &ldquo;Páginas de texto&rdquo;;</dd>
         <dt>Contact</dt>
           <dd>O módulo de <strong>contato</strong> do sistema. É composto por uma única página de contato, com algumas possibilidades de comportamento e campos extra;</dd>
         <dt>Application</dt>
@@ -135,7 +136,7 @@
           <dd>Em alguns pontos do código há certas tags quietinhas lá na delas, esperando uma oportunidade de entrar em ação. São como o <code>&lt;span class="ie"&gt;</code> nas páginas de thumbnails para centralizar imagens verticalmente, os <code>spans</code> vazios para <em>image replacement</em> na página de imagem full-size, ou o <code>&lt;li="empty"&gt;</code> no final de cada lista de imagens, para quebrar <em>floats</em> com facilidade. Mais detalhes e macetes no futuro.</dd>
       </dl>
 
-      <h2 id="divisao_do_css">A divisão do CSS:</h2>
+      <h2 id="divisao_do_css">Vamos começar &mdash; a divisão do CSS:</h2>
 
       <p>Dê uma olhada na pasta <strong>stylesheets</strong>. Lá estão todas as folhas de estilo que compõem este modelo de design, parecido com o da <a href="http://patriciafigueira.com.br" title="Este modelo de design é uma réplica do site da Patricia Figueira, dê uma olhada.">Patricia Figueira</a>. Podemos ver que há uma curiosa divisão entre <strong>tipografia</strong>, <strong>layout</strong> e <strong>cores</strong>.</p>
 
@@ -147,12 +148,19 @@
         <dt>10_typography.css</dt>
           <dd>É a folha de estilo que cuida de tudo relacionado a tipografia: tamanho de fonte, maiúsculas, minúsculas, negrito, itálico, espaçamento entre letras, palavras e linhas etc. É aceita sem qualquer bug por <strong>todos</strong> os browsers, não precisando de qualquer regra de exceção. E, porque não é especificada no nome do arquivo a mídia, é também a <strong>única</strong> folha de estilo que leva o atributo <code>media="all"</code>, garantindo um mínimo de identidade visual mesmo quando o meio é limitado em cores (print) ou em imagens (handheld);</dd>
         <dt>20_layout_screen.css</dt>
-          <dd>A folha de estilo que cuida da diagramação dos elementos na página: margens, paddings, posicionamento, disposição em camadas, entre outros. Como a diagramação é o fator que mais depende do meio veiculado e do browser, geralmente precisa de outros arquivos de suporte (nota: repare no <code>screen</code> no final do nome. Isso que dizer que <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello, designer da Improve It.">Leandro</a> só cuidou do layout de <em>tela</em>; poderia ter feito também arquivos <code>22_layout_print.css</code> e <code>24_layout_handheld.css</code> &mdash; e você também pode ficar à vontade para usá-los!). Por causa da possibilidade de o IEca não obedecer a certas regras de layout, o <code>layout.css</code> é a única folha de estilos que pode necessitar de exceções para o IE (repare nos arquivos <code>40_layout_lteie7.css</code> e <code>50_layout_ie6.css</code>: neles, só há seletores relativos à diagramação de elementos);</dd>
+          <dd>
+            <p>A folha de estilo que cuida da diagramação dos elementos na página: margens, paddings, posicionamento, disposição em camadas, entre outros. Como a diagramação é o fator que mais depende do meio veiculado e do browser, geralmente precisa de outros arquivos de suporte (nota: repare no <code>screen</code> no final do nome. Isso que dizer que <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello, designer da Improve It.">Leandro</a> só cuidou do layout de <em>tela</em>. Você pode também usar os outros arquivos de layout para fazer layout para outros meios: <code>23_layout_handheld.css</code> para diagramação num mobile, <code>25_layout_print.css</code> para impressão e, futuramente, <code>27_layout_iphone.css</code> especificamente para iPhone e iPod Touch!</p>
+            <p>Por causa da possibilidade de o IEca não obedecer a certas regras de layout, o <code>layout.css</code> é o único tipo de folha de estilos que pode necessitar de exceções para o IE (repare nos arquivos <code>40_layout_lteie7.css</code> e <code>50_layout_ie6.css</code>: neles, só há seletores relativos a diagramação);</p>
+          </dd>
         <dt>30_color_screen_handheld.css</dt>
-          <dd>Cuida dos elementos de cor do site: cor do texto, do fundo, das bordas, e a aplicação de imagens de background. Também é uma folha de estilo bem aceita por todos os browsers, por isso é muito raro dar confusão. Note que as mídias especificadas aqui são <code>screen</code> e <code>handheld</code>, ou seja, esta folha de estilo torna consistentes as cores em <em>tela</em> e em <em>dispositivos móveis</em>. Com este arquivo, pode-se manter sob controle toda a paleta de cores do site (repare que no início deste arquivo estão anotadas todas as cores usadas, para aplicação rápida e fácil &mdash; isto não é obrigatório). Todas as imagens usadas no site vêm da pasta <strong>/images</strong> neste pacote e, com exceção do logotipo, são aplicadas na folha de estilo de cor.</dd>
+          <dd>
+            <p>Cuida dos elementos de cor do site: cor do texto, do fundo, das bordas, e a aplicação de imagens de background. Também é uma folha de estilo bem aceita por todos os browsers, por isso é muito raro dar confusão. Note que as mídias especificadas aqui são <code>screen</code> e <code>handheld</code>, ou seja, esta folha de estilo torna consistentes as cores em <em>tela</em> e em <em>dispositivos móveis</em>.</p>
+            <p>Com este arquivo, pode-se manter sob controle toda a paleta de cores do site (repare que no início deste arquivo estão anotadas todas as cores usadas, para aplicação rápida e fácil &mdash; recomendamos <em>fortemente</em> que você faça o mesmo). Todas as imagens usadas no site vêm da pasta <strong>/images</strong> neste pacote e, com exceção do logotipo, são aplicadas na folha de estilo de cor.
+            </p>
+          </dd>
       </dl>
 
-      <h4>Nota: como o 30_color_screen_handheld.css é uma folha de estilo bem mais fácil e tranquila de alterar, não consideramos que um template novo com mudanças só nesta folha de estilo seja caracterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
+      <h4>Nota: como o 30_color_screen_handheld.css é uma folha de estilo relativamente mais fácil e tranquila de alterar, não consideramos que um template novo com mudanças só nesta folha de estilo seja caracterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
 
       <h2 id="modulos_paginas_situacoes">Conhecendo o <code>body</code> &mdash; módulos, páginas e situações:</h2>
 
@@ -310,7 +318,7 @@
           <td><span>(página inicial do módulo de texto, com texto institucional)</span></td>
           <td>
             <a href="../mod2(text)_pag09(index).html">mod2(text)_pag09(index).html</a>
-            <code>&lt;body class="quem_somos text" id="index"&gt;</code>
+            <code>&lt;body class="text_pages text" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
@@ -412,8 +420,26 @@
 
       <p>Este conhecimento sobre módulos, páginas, situações e tags <code>body</code> vai ser bem útil daqui para frente.</p>
 
+      <h2 id="prepare_seu_template">Prepare seu template para o que der e vier:</h2>
 
+      <p>Pode ser que o cliente deseje ter uma página para falar de si ou postar <a href="../mod2(text)_pag09(index).html">depoimentos</a> de seus usuários. Pode ser que ele queira usar a funcionalidade de <a href="../mod1(pictures)_pag04(selection)_sit1(initial).html">seleção de imagens</a>, pode ser que ele não queira. Os resumos (#summary) aparecem por padrão no <a href="../mod1(pictures)_pag02(gallery).html#summary">interior de cada galeria de imagens</a> e nas <a href="../mod1(pictures)_pag03(picture)_sit1(horizontal).html#summary">páginas de imagem grande</a>, mas não aparecem por padrão no <a href="../mod1(pictures)_pag01(index).html">exterior das galerias</a> e <a href="../mod5(videos)_pag14(index).html">páginas de vídeos</a>... mas é possível que apareçam.</p>
+
+      <p>Ao longo do primeiro ano de existência do Be on the Net, passamos pela experiência de precisar oferecer ao cliente soluções de CSS que não previmos no início. Por exemplo, capacidade do template para suportar até 15 itens no menu; ou então, usar imagens nas páginas do módulo de texto, que são as mais flexíveis e imprevisíveis do sistema. Por isso, é preciso que o template esteja preparado para as situações mais comuns entre os clientes.</p>
+
+      <p>Aqui vai uma pequena lista (sujeita a ampliação à medida que você nos passar feedback) do que você pode fazer para preparar seu template para o que der e vier:</p>
+
+      <ol>
+        <li><strong>Ignore o logotipo que vem com o Be on the Net estático:</strong> alguns clientes têm logotipo, outros não. Por isso, o Be on the Net estático foi preparado com algumas páginas com logotipo e outras sem, para que você possa se preparar para ambas as situações;</li>
+        <li><strong>Arranje algum espaço para o logotipo:</strong> os logotipos podem tomar mais espaço na horizontal ou na vertical. Prepare algum espaço para ele respirar. Você pode inventar um logotipo genérico e substituir o que vem neste pacote, para experimentar;</li>
+        <li><strong>Espere muitos itens no menu:</strong> como os menus do Be on the Net têm um único nível (sem submenus) e nem sempre as pessoas têm boa capacidade de síntese, às vezes aparecem menus com até 15 itens. Seu template precisa resistir a poucos e muitos itens no menu;</li>
+        <li><strong>Algumas funcionalidades não são usadas:</strong> às vezes os clientes não usam a Ficha técnica ou a Seleção de imagens, e nestes casos os divs #summary passam a não conter os respectivos links. Simule estes casos dando <code>display: none</code> nestes links;</li>
+        <li><strong>Preveja o imprevisível nas páginas de texto:</strong> como nunca se sabe o que os clientes vão usar numa página de texto, é preciso estar preparado para tudo. Um bom exercício é estilizar as páginas cujos links se encontram no <a href="#footer">rodapé</a> &mdash; inclusive esta. A página que fala <a href="../mod2(text)_pag09(index).html">sobre as páginas de texto</a> também contém muitas tags comuns em situações diversas. Às vezes o cliente põe somente uma única figura na homepage, com link para as galerias. Quer uma verdadeira galeria de situações possíveis? Acesse nossa <a href="http://beonthe.net/clientes/pagina">página de clientes</a>.</li>
+        </ol>
+
+<!--
       <h2 id="convencoes">Convenções:</h2>
+
+      <h4>Nota: esta parte de convenções foi comentada porque agora padronizamos a nomenclatura das folhas de estilo. Elas era livres para ser renomeadas à vontade, mas agora não são mais. Por favor, mantenha comentado todos este trecho.</h4>
 
       <p>Certas partes do seu design vão ser integradas diretamente ao HTML: logotipos, chamadas de CSS, declarações de mídia, favicons etc. Mas como o designer não vai ter acesso direto à estrutura (HTML) dinâmica do <strong>Be on the Net</strong>, a solução é recorrer a certas <strong>convenções</strong>. Se o designer criar seus arquivos seguindo estas convenções, o sistema do <strong>Be on the Net</strong> cuida de automatizar tudo e injeta o que for necessário direto no HTML.</p>
       <p>São elas: <a href="#logotipos">logotipos</a>, <a href="#css_e_midia">declarações de mídia no CSS</a>, <a href="#ordem_do_css">ordem das folhas de estilo</a>, <a href="#comentarios_condicionais">comentários condicionais para o IEca</a>, <a href="#spinners">spinners</a> e <a href="#favicons">favicons</a>.</p>
@@ -564,6 +590,8 @@ media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
 &lt; ![endif]--&gt;</code></pre>
 
       <p>Putz! O IEca só dá trabalho.</p>
+-->
+
 <!--
       <h2 id="como_alterar_templates">Como fazer alterações sobre um template já existente:</h2>
 
@@ -638,6 +666,8 @@ media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
       <h2>Por enquanto é só, caro designer!</h2>
 
       <p>Você já tem uma base bem sólida para criar arquivos CSS com todo o domínio necessário para o sistema. Há vários macetes que podem agilizar seu trabalho, dar uma liberdade e uma flexibilidade incríveis ao seu CSS e lançar sua criatividade às alturas. E vamos publicar aqui nas instruções. Aguarde e confie, as atualizações destas instruções vão te dar <strong>o poder</strong>!</p>
+
+      <p>Por favor, <a href="http://improveit.com.br/empresa/leandro">envie seu feedback</a>! É a partir das suas dúvidas e sugestões que vamos aprimorando o Be on the Net estático e deixando mais precisas estas instruções.</p>
     </div>
 
     <hr id="footer_delimiter" />

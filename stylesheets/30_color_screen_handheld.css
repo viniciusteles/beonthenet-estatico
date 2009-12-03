@@ -1,5 +1,9 @@
-/* Cores utilizadas neste exemplo da Patricia Figueira:
+/*
+Use esta folha de estilos para fazer cor para tela e celular.
+Por favor, liste logo no início TODAS as cores que usar, e procure ater-se a menos de 15.
+*/
 
+/*
 Input lighting:           #F6F0DF;
 Bege claro:					      #F6F0DB;
 Bege médio:					      #EFE3C3;
@@ -11,9 +15,9 @@ Cinza claro:				      #555;
 Cinza escuro:				      #111;
 Rosa:						          #BF667F;					
 Vinho:                    #940029;
+*/
 
-
-Color global attributes */
+/* Color global attributes */
 html * {
   color:                  #555;
 }

@@ -1,4 +1,6 @@
-﻿html * {
+﻿/* Use esta folha de estilos para fazer um layout exclusivo para tela. */
+
+html * {
   padding:                0;
   border-width:           0;
   margin:                 0;
@@ -166,12 +168,22 @@ body.videos #thumbnails img {
 #summary {
 	position:               relative;
 	clear:                  both;
+	margin-bottom:          30px;
 }
 #gallery #summary, #picture #summary {
 	min-height:             4.5em;
 	height:                 auto !important;
 	height:                 4.5em;
 	padding-right:          20em;
+	margin-bottom:          10px;
+}
+.text #summary {
+  margin-right:           -98px;
+  margin-left:            -98px;
+}
+
+#main_content #summary p {
+  margin:                 5px 0 5px;
 }
 /* /Summary */
 
@@ -450,11 +462,11 @@ body#search #search_result_count label {
 
 
 /* Text pages */
-body.text #main_content {
+.text #main_content {
   padding:                1.56em 10em;
 }
 
-body.text #main_content h1 {
+.text h1 {
   margin-right:           -3.1em;
   margin-left:            -3.1em;
 }
@@ -560,7 +572,8 @@ body.text #main_content ol ul li {
   margin-bottom:          .5em;
 }
 
-.text #main_content li p {
+.text #main_content li p, 
+.text #main_content dd p {
   margin-top:             .5em;
   margin-bottom:          .5em;
 }

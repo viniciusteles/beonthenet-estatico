@@ -1,4 +1,4 @@
-/* Style sheet with conditions for IE6. */
+/* Use esta folha de estilos se desejar fazer ajustes de layout exclusivos para IE6. */
 
 body.pictures#index, body.pictures#gallery, body.pictures#search {
   overflow:               hidden;
