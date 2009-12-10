@@ -155,15 +155,15 @@ h3, h3 a,
 
 
 /* Link to Selection */
-#go_to_selection a {
+#go_to_selection {
 	background:             #EFE3C3 url(../images/select_pictures.gif) no-repeat top left;
 }
-#go_to_selection a:link, 
-#go_to_selection a:visited {
+#go_to_selection:link, 
+#go_to_selection:visited {
   color:                  #940029;
 }
 
-#go_to_selection a:hover {
+#go_to_selection:hover {
   color:                  #BF667F;
 }
 /* /Link to Selection */

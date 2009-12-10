@@ -101,7 +101,7 @@ h3 a:focus, h3 a:hover {
 
 
 /* Link to Selection */
-#go_to_selection a {
+#go_to_selection {
   line-height:            1.4em;
 }
 /* /Link to Selection */
