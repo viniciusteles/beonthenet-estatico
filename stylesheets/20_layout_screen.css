@@ -711,21 +711,25 @@ body.application #main_content ul {
   position:               absolute;
   top:                    5.5em;
   z-index:                100;
+  border:1px dotted red;
+  left:0;
+  right:0;
 }
 body > #facebox {
-	right:                  0;
-	left:                   0;
+/*  right:                  0;*/
+/*  left:                   0;*/
 }
 
 #facebox div {
   min-width:              50px;
-  width:                  50px;
-  padding-top:            10px;
+/*  width:                  50px;*/
+/*  padding-top:            10px;*/
   margin:                 auto;
+    border:1px dotted blue;
 }
 #facebox > div {
-	width:                  auto;
-  display:                table;
+/*  width:                  auto;*/
+/*  display:                table;*/
 }
 *:first-child + html #facebox div {
 /*  padding-right:          18px;*/
