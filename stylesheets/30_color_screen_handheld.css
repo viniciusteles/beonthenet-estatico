@@ -49,7 +49,8 @@ h2 {
 }
 
 h3, h3 a, 
-.text h4 {
+.text h4, 
+.blog h4 {
   color:                  #940029;
 }
 /* /Color global attributes */
@@ -253,19 +254,19 @@ h3, h3 a,
 
 
 /* Tags */
-#tags h3 {
+#tags h3, .tags h3 {
   color:                  #555;
 }
 
-#tags a {
+#tags a, .tags a {
   color:                  #940029;
 }
 
-#tags a:visited {
+#tags a:visited, .tags a:visited {
   color:                  #7F6B43;
 }
 
-#tags a:hover {
+#tags a:hover, .tags a:hover {
   color:                  #FFF;
   background-color:       #940029;
 }
@@ -334,7 +335,7 @@ body#selection #selection_size label {
 /* /Selection */
 
 
-/* Text pages */
+/* Text and blog pages */
 code {
   color:                  #111;
 }
@@ -356,25 +357,38 @@ td span {
   color:                  #BAA984;
 }
 
-.text #main_content h3 {
+.text #main_content h3, 
+.blog #main_content h3 {
   color:                  #555;
 }
 
-body.text #main_content h4 {
+.text #main_content h4, 
+.blog #main_content h4 {
   background:             transparent url(../images/important.gif) no-repeat left top;
 }
 
-body.text #main_content dt, 
-body.text #main_content dt a, 
-body.text #main_content strong, 
+.text #main_content dt, 
+.text #main_content dt a, 
+.text #main_content strong, 
+.blog #main_content dt, 
+.blog #main_content dt a, 
+.blog #main_content strong, 
 cite {
   color:                  #940029;
 }
-body.text #main_content dt a:hover {
+.text #main_content dt a:hover, 
+.blog #main_content dt a:hover {
   color:                  #FFF;
   background:             #940029;
 }
-/* Text pages */
+/* Text and blog pages */
+
+
+/* Blog */
+#rss a {
+  background:             transparent url(../images/rss.png) no-repeat left center;
+}
+/* /Blog */
 
 
 /* Forms (contact, checkout, search) */

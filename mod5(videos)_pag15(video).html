@@ -19,7 +19,7 @@
       <link href="stylesheets/50_layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
     <![endif]-->
   </head>
-<body class="all_videos videos" id="video">  
+<body class="videos" id="video">  
   <div id="header">
     <p>
       <strong id="logo_print">
@@ -34,12 +34,13 @@
 
     <em id="slogan">A nova cara da fotografia social.</em>
     <ul>
-      <li class="best_galleries"><a href="mod1(pictures)_pag01(index).html">Fotos</a></li>
-      <li class="all_videos current"><a href="mod5(videos)_pag14(index).html">Vídeos</a></li>
-      <li class="text_pages"><a href="mod2(text)_pag09(index).html">Páginas de texto</a></li>
-      <li class="contact"><a href="mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
-      <li class="rsvp"><a href="mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
-      <li class="erros"><a href="mod4(application)_pag11(page_not_found).html">Erros</a></li>
+      <li><a href="mod1(pictures)_pag01(index).html">Fotos</a></li>
+      <li class="current"><a href="mod5(videos)_pag14(index).html">Vídeos</a></li>
+      <li><a href="mod2(text)_pag09(index).html">Páginas de texto</a></li>
+      <li><a href="mod7(blog)_pag17(index).html">Blog</a></li>
+      <li><a href="mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
+      <li><a href="mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
+      <li><a href="mod4(application)_pag11(page_not_found).html">Erros</a></li>
     </ul>
   </div>
 
@@ -54,19 +55,25 @@
     <div id="big_video">
       <a href="#subnavigation" id="previous" title="Vídeo anterior"><span></span>Anterior</a>
 
-      <!--[if lte IE 7]>
+      <!--[if IE]>
       <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="external_video" width="640" height="480">
         <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=4719055&amp;server=vimeo.com&amp;show_portrait=0&amp;color=d1a931&amp;fullscreen=1" />
+        <param name="wmode" value="transparent" />
         <![endif]-->
         <!--[if !IE]> -->
         <object type="application/x-shockwave-flash" data="http://vimeo.com/moogaloop.swf?clip_id=4719055&amp;server=vimeo.com&amp;show_portrait=0&amp;color=d1a931&amp;fullscreen=1" width="640" height="480">
+          <object type="video/mp4" data="http://ats.vimeo.com/126/794/12679426_640.jpg" width="640" height="480">
+            <param name="src" value="http://ats.vimeo.com/126/794/12679426_640.jpg" />
+            <param name="href" value="http://vimeo.com/play_redirect?clip_id=4719055" />
+            <param name="target" value="myself" />
         <!--<![endif]-->
-          <div>
-            <h1>Vanessa e Rodrigo: melhores momentos</h1>
-            <p>Este é um texto alternativo para o vídeo. É como se fosse o atributo &ldquo;alt&rdquo; das imagens. Vale a pena estilizar.</p>
-            <p>Para assistir a este vídeo, <a href="http://www.adobe.com/go/getflashplayer">baixe o Adobe Flash Player</a>.</p>
-          </div>
+            <div>
+              <h1>Vanessa e Rodrigo: melhores momentos</h1>
+              <p>Este é um texto alternativo para o vídeo. É como se fosse o atributo &ldquo;alt&rdquo; das imagens. Vale a pena estilizar.</p>
+              <p>Para assistir a este vídeo, <a href="http://www.adobe.com/go/getflashplayer">baixe o Adobe Flash Player</a>.</p>
+            </div>
         <!--[if !IE] -->
+          </object>
         </object>
         <!--<![endif]-->
       <!--[if IE]>  

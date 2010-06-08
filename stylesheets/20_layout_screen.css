@@ -177,7 +177,7 @@ body.videos #thumbnails img {
 	padding-right:          20em;
 	margin-bottom:          10px;
 }
-.text #summary {
+.text #summary, .blog #summary {
   margin-right:           -98px;
   margin-left:            -98px;
 }
@@ -318,11 +318,12 @@ body.videos #thumbnails img {
 
 
 /* Tags */
-#tags {
+#tags, .tags {
   margin:                 .6em 0;
 }
 
-#tags h3, #tags p, #tags a {
+#tags h3, #tags p, #tags a, 
+.tags h3, .tags p, .tags a {
 	display:                inline;
   margin-right:           .7em;
 }
@@ -461,12 +462,14 @@ body#search #search_result_count label {
 /* /Selection */
 
 
-/* Text pages */
-.text #main_content {
+/* Text and blog pages */
+.text #main_content, 
+.blog #main_content {
   padding:                1.56em 10em;
 }
 
-.text h1 {
+.text h1, 
+.blog h1 {
   margin-right:           -3.1em;
   margin-left:            -3.1em;
 }
@@ -496,7 +499,6 @@ cite {
 table {
   width:                  100%;
   border-collapse:        collapse;
-  margin-left:            -5em;
 }
 
 table * {
@@ -505,17 +507,17 @@ table * {
 }
 
 th {
-  padding:                .5em 1.5em;
+  padding:                .5em 1em;
 }
 
 td {
-  padding:                .5em 1.5em;
+  padding:                .5em 1em;
 }
 
 td span {
   display:                block;
   border:                 none;
-  margin:                 0 1.5em;
+  margin:                 0 1em;
 }
 
 td a, 
@@ -529,55 +531,82 @@ td code {
   margin-top:             .75em;
 }
 
-body.text #main_content p {
+.text #main_content p, 
+.blog #main_content p {
   margin:                 1em 0;
 }
 
-body.text #main_content h2 {
+.text #main_content h2, 
+.blog #main_content h2 {
   clear:                  left;
   padding:                1.5em 0 1em 0;
 }
 
-body.text #main_content h3 {
+.text #main_content h3, 
+.blog #main_content h3 {
   padding:                1em 0 .75em 0;
 }
 
-body.text #main_content h4 {
+.text #main_content h4, 
+.blog #main_content h4 {
   padding-left:           30px;
   margin:                 -.8em 0 1.2em -30px;
 }
 
-body.text #main_content dl, 
-body.text #main_content ul, 
-body.text #main_content ol {
+.blog #main_content object {
+  display:                block;
+  width:                  640px;
+  height:                 360px;
+  margin:                 0 auto;
+}
+
+.text #main_content dl, .text #main_content ul, .text #main_content ol, 
+.blog #main_content dl, .blog #main_content ul, .blog #main_content ol {
   margin:                 1.6em 4em;
 }
 
-body.text #main_content dd {
+.text #main_content dd, 
+.blog #main_content dd, {
   margin:                 0 0 1em 2.5em;
 }
 
-body.text #main_content ul li, 
-body.text #main_content ol li {
+.text #main_content ul li, .text #main_content ol li, 
+.blog #main_content ul li, .blog #main_content ol li {
   margin-bottom:          1em;
 }
 
-body.text #main_content li ul, 
-body.text #main_content li ol {
+.text #main_content li ul, .text #main_content li ol, 
+.blog #main_content li ul, .blog #main_content li ol {
   margin:                 1em 1.5em;
 }
 
-body.text #main_content ul ul li, 
-body.text #main_content ol ul li {
+.text #main_content ul ul li, .text #main_content ol ul li, 
+.blog #main_content ul ul li, .blog #main_content ol ul li {
   margin-bottom:          .5em;
 }
 
-.text #main_content li p, 
-.text #main_content dd p {
+.text #main_content li p, .text #main_content dd p, 
+.blog #main_content li p, .blog #main_content dd p {
   margin-top:             .5em;
   margin-bottom:          .5em;
 }
-/* Text pages */
+/* Text and blog pages */
+
+
+/* Posterous blog */
+#rss a {
+  padding-left:           20px;
+}
+
+.posterousGalleryMainDiv {
+  width:                  500px;
+  margin:                 0 auto;
+}
+
+.posterousGalleryMainDiv .show {
+  display:                none;
+}
+/* /Posterous blog */
 
 
 /* Forms (contact, checkout, search, rsvp) */
