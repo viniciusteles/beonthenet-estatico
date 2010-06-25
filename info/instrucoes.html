@@ -23,7 +23,7 @@
     <![endif]-->
   </head>
 
-  <body class="instructions text" id="index">  
+  <body class="text" id="index">  
     <div id="header">
       <p>
         <strong id="logo_print">
@@ -36,12 +36,13 @@
 
       <em id="slogan">A nova cara da fotografia social.</em>
       <ul>
-        <li class="best_galleries"><a href="../mod1(pictures)_pag01(index).html">Fotos</a></li>
-        <li class="all_videos"><a href="../mod5(videos)_pag14(index).html">Vídeos</a></li>
-        <li class="text_pages"><a href="../mod2(text)_pag09(index).html">Páginas de texto</a></li>
-        <li class="contact"><a href="../mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
-        <li class="rsvp"><a href="../mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
-        <li class="erros"><a href="../mod4(application)_pag11(page_not_found).html">Erros</a></li>
+        <li><a href="../mod1(pictures)_pag01(index).html">Fotos</a></li>
+        <li><a href="../mod2(videos)_pag09(index).html">Vídeos</a></li>
+        <li><a href="../mod3(text)_pag11(index).html">Páginas de texto</a></li>
+        <li><a href="../mod7(blog)_pag17(index).html">Blog</a></li>
+        <li><a href="../mod4(contact)_pag12(index)_sit1(initial).html">Contato</a></li>
+        <li><a href="../mod5(rsvp)_pag13(index)_sit1(initial).html">R.S.V.P.</a></li>
+        <li><a href="../mod6(application)_pag14(page_not_found).html">Erros</a></li>
       </ul>
     </div>
 
@@ -59,13 +60,17 @@
         <li><a href="#o_que_voce_ve">O que você vê no site</a></li>
         <li><a href="#modulos_do_beonthenet">Os módulos do Be on the Net</a></li>
         <li><a href="#flexibilidade_do_css">HTML e a flexibilidade do CSS</a></li>
-        <li><a href="#divisao_do_css">Vamos começar &mdash; a divisão do CSS</a></li>
+        <li><a href="#divisao_do_css">A divisão do CSS</a></li>
         <li><a href="#modulos_paginas_situacoes">Conhecendo o <strong>body</strong> &mdash; módulos, páginas e situações</a>
           <ul>
             <li><a href="#tabela_modulos_paginas_situacoes">Tabela de módulos, páginas e situações</a></li>
           </ul>
         </li>
-        <li><a href="#prepare_seu_template">Prepare seu template para o que der e vier</a></li>
+        <li><a href="#estilizando">Estilizando o Be on the Net</a>
+          <ul>
+            <li><a href="#prepare_seu_template">Prepare seu template para o que der e vier</a></li>
+          </ul>
+        </li>
         <!-- <li><a href="#convencoes">Convenções</a>
           <ul>
             <li><a href="#logotipos">Logotipos</a></li>
@@ -80,22 +85,26 @@
         <!-- <li><a href="#como_alterar_templates">Como fazer alterações sobre um template já existente</a></li> -->
       </ul>
 
-      <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram na raiz deste pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue no site da <a href="http://patriciafigueira.com.br" title="Compare estes arquivos às páginas do site da Patricia Figueira.">Patricia Figueira</a>, e você vai ter uma ideia de como é o fluxo de navegação do usuário.</p>
-      <p>Não, sério, navegue mesmo. Nos arquivos do pacote e no site da <a href="http://patriciafigueira.com.br" title="Sério. Navegue e compare, isso vai te ajudar a entender a estrutura.">Patricia</a>. Depois que tiver brincado um pouquinho, continue lendo esta página.</p>
+      <p>Em primeiro lugar, <strong>dê uma olhada nos arquivos</strong> numerados que vieram na raiz deste pacote: são as páginas que vão se dobrar ao seu bel-prazer. Abra no seu browser os arquivos na ordem em que estão numerados e em comparação navegue nos sites dos <a href="http://beonthe.net/clientes/pagina" title="Compare estes arquivos às páginas dos sites de nossos clientes.">clientes Be on the Net</a>, e você vai ter uma ideia de como é o fluxo de navegação do usuário.</p>
+      <p>Não, sério, navegue mesmo. Nos arquivos do pacote e nos sites de alguns de <a href="http://beonthe.net/clientes/pagina" title="Sério, compare mesmo estes arquivos às páginas dos sites de nossos clientes.">nossos clientes</a>. Depois que tiver brincado um pouquinho, continue lendo esta página.</p>
 
       <h2 id="o_que_voce_ve">O que você vê no site:</h2>
 
-      <p>Basicamente, o que você viu <em>em comum</em> no site da <a href="http://patriciafigueira.com.br">Patricia</a> e nos arquivos deste pacote foram:</p>
+      <p>Basicamente, o que você viu em comum nos sites dos <a href="http://beonthe.net/clientes/pagina">clientes Be on the Net</a> e nos arquivos deste pacote foram:</p>
 
       <dl>
         <dt>Imagens</dt>
-          <dd>A maior parte do site é feita de <strong>imagens</strong>. Elas são o carro-chefe do Be on the Net. Você vê galerias, vê imagens grandes, brinca com a seleção de imagens. É o maior <em>playground</em> do sistema;</dd>
+        <dd>A maior parte dos sites é feita de <strong>imagens</strong>. Elas são o carro-chefe do Be on the Net. Você vê galerias, vê imagens grandes, brinca com a seleção de imagens. É o maior <em>playground</em> do sistema;</dd>
+        <dt>Vídeos</dt>
+        <dd>A segunda maior especialidade do Be on the Net são os <strong>vídeos</strong>. Você pode ver listas de vídeos e visualizá-los isoladamente, em tamanho maior;</dd>
         <dt>Texto</dt>
-          <dd>Na página &ldquo;Páginas de texto&rdquo;, há texto. É basicamente um texto qualquer, livre, com ou sem alguma foto ou vídeo. Por exemplo, as páginas de instruções (cujos links estão no <a href="#footer">rodapé</a>) também são do tipo textual.</dd>
+        <dd>Na página &ldquo;Páginas de texto&rdquo;, há texto. É basicamente um texto qualquer, livre, com ou sem alguma foto ou vídeo. Por exemplo, as páginas de instruções (cujos links estão no <a href="#footer">rodapé</a>) também são do tipo textual.</dd>
         <dt>Um formulário de contato</dt>
-          <dd>Uma página para o usuário entrar em contato com a Patricia.</dd>
+        <dd>Uma página para o usuário entrar em contato com o dono do site.</dd>
+        <dt>R.S.V.P.</dt>
+        <dd>Em alguns clientes, você vai encontrar um formulário tipo <strong>répondez s&rsquo;il vous plaît</strong>, ou <em>&ldquo;responda, por favor&rdquo;</em>, que serve para usuário responder a um convite formal.</dd>
         <dt>Erros</dt>
-          <dd>Se você teve azar o bastante (ou sorte, dependendo do ponto de vista!) acessando o site dela, você se deparou com uma das três divertidas páginas de erro: <a href="http://patriciafigueira.com.br/pagina_nao_encontrada" title="Quando você acessa uma página inexistente ou obsoleta.">página não encontrada</a>, <a href="http://patriciafigueira.com.br/server_error" title="Quando ocorre um erro no servidor remoto.">servidor sentimental</a>, e <a href="http://patriciafigueira.com.br/servidor_ocupado" title="Quando o repositório demora demais para enviar as imagens para o servidor.">repositório preguiçoso</a>.</dd>
+        <dd>Se você teve azar o bastante (ou sorte, dependendo do ponto de vista!) acessando o site deles, você se deparou com uma das três divertidas páginas de erro: <a href="../mod6(application)_pag14(page_not_found).html" title="Quando você acessa uma página inexistente ou obsoleta.">página não encontrada</a>, <a href="../mod6(application)_pag15(server_error).html" title="Quando ocorre um erro no servidor remoto.">servidor sentimental</a>, e <a href="../mod6(application)_pag16(timeout).html" title="Quando o repositório demora demais para enviar as imagens para o servidor.">repositório preguiçoso</a>.</dd>
       </dl>
 
       <p>Um sistema bem simples, como você pode ver.</p>
@@ -104,24 +113,24 @@
 
       <p>Agora dê uma nova olhada no <strong>código HTML</strong> dos arquivos numerados deste pacote. Mais precisamente na tag <code>body</code> de cada um. Repare que cada uma delas tem pelo menos um <code>id</code> e uma <code>classe</code>.</p>
       <p>Se você der a esta tag <code>body</code> e a seus <code>id&rsquo;s</code> e <code>classes</code> carinho, colinho e atenção, já vai dar um grande passo em direção a fazer o sistema se dobrar ao seu design.</p>
-      <p>A última palavra de cada <code>classe</code> reflete um esquema de divisão que criamos (Ex.: <code>body id="index" class="instructions <em>text</em>"</code>). <strong>Be on the Net</strong> é um sistema dividido em &ldquo;módulos&rdquo;, ou <em>bundles</em>, como temos chamado na Improve It. Hoje, existem <strong>seis</strong> módulos ou <em>bundles</em> básicos:</p>
+      <p>Cada <code>classe</code> reflete um esquema de divisão que criamos (Ex. desta página de Instruções: <code>body id="index" class="text"</code>). <strong>Be on the Net</strong> é um sistema dividido em &ldquo;módulos&rdquo;, ou <em>bundles</em>, como temos chamado por aqui. Hoje, existem <strong>seis</strong> módulos ou <em>bundles</em> básicos:</p>
 
       <dl>
         <dt>Pictures</dt>
-          <dd>É o módulo das <strong>imagens</strong>, o carro-chefe do Be on the Net. É o que concentra o maior número de páginas e funcionalidades;</dd>
-        <dt>Text</dt>
-          <dd>O módulo institucional. Compreende páginas <strong>textuais</strong> &mdash; neste caso, por exemplo, a página &ldquo;Páginas de texto&rdquo;;</dd>
-        <dt>Contact</dt>
-          <dd>O módulo de <strong>contato</strong> do sistema. É composto por uma única página de contato, com algumas possibilidades de comportamento e campos extra;</dd>
-        <dt>Application</dt>
-          <dd>O módulo das páginas de erro. São três: o erro <strong>404</strong> (página não encontrada), <strong>500</strong> (erro de servidor), e <strong>timeout</strong> (servidor ocupado);</dd>
+        <dd>É o módulo das <strong>imagens</strong>, o carro-chefe do Be on the Net. É o que concentra o maior número de páginas e funcionalidades;</dd>
         <dt>Videos</dt>
-          <dd>Módulo dos <strong>vídeos</strong>. Compreende basicamente duas páginas: a lista de todos os vídeos, e a visualização de um vídeo em tamanho grande;</dd>
+        <dd>Módulo dos <strong>vídeos</strong>. Compreende basicamente duas páginas: a lista de todos os vídeos, e a visualização de um vídeo em tamanho grande;</dd>
+        <dt>Text</dt>
+        <dd>O módulo institucional. Compreende páginas <strong>textuais</strong> &mdash; neste caso, por exemplo, a página &ldquo;Páginas de texto&rdquo;;</dd>
+        <dt>Contact</dt>
+        <dd>O módulo de <strong>contato</strong> do sistema. É composto por uma única página de contato, com algumas possibilidades de comportamento e campos extra;</dd>
         <dt>R.S.V.P.</dt>
-          <dd>Módulo <strong>répondez s&rsquo;il vous plaît</strong>, ou <em>&ldquo;responda, por favor&rdquo;</em>. Tem uma única página com um formulário parecido com o de contato (e algumas possibilidades de comportamento), mas serve ao propósito específico que pedir que o usuário responda a um convite formal.</dd>
+        <dd>Módulo <strong>répondez s&rsquo;il vous plaît</strong>, ou <em>&ldquo;responda, por favor&rdquo;</em>. Tem uma única página com um formulário parecido com o de contato (e algumas possibilidades de comportamento), mas serve ao propósito específico que pedir que o usuário responda a um convite formal.</dd>
+        <dt>Application</dt>
+        <dd>O módulo das páginas de erro. São três: o erro <strong>404</strong> (página não encontrada), <strong>500</strong> (erro de servidor), e <strong>timeout</strong> (servidor ocupado);</dd>
       </dl>
 
-      <p>... Familiar? Agora você pode perceber que o início de cada arquivo deste pacote leva um destes nomes: <em>pictures</em>, <em>text</em>, <em>contact</em>, <em>application</em>, ou [inédito no site da Patricia] <em>videos</em> e <em>rsvp</em>.</p>
+      <p>... Familiar? Agora você pode perceber que o início de cada arquivo deste pacote leva um destes nomes: <em>pictures</em>, <em>videos</em>, <em>text</em>, <em>contact</em>, <em>rsvp</em> e <em>application</em>.</p>
 
       <h2 id="flexibilidade_do_css">HTML e a flexibilidade do CSS:</h2>
 
@@ -136,11 +145,11 @@
           <dd>Em alguns pontos do código há certas tags quietinhas lá na delas, esperando uma oportunidade de entrar em ação. São como o <code>&lt;span class="ie"&gt;</code> nas páginas de thumbnails para centralizar imagens verticalmente, os <code>spans</code> vazios para <em>image replacement</em> na página de imagem full-size, ou o <code>&lt;li="empty"&gt;</code> no final de cada lista de imagens, para quebrar <em>floats</em> com facilidade. Mais detalhes e macetes no futuro.</dd>
       </dl>
 
-      <h2 id="divisao_do_css">Vamos começar &mdash; a divisão do CSS:</h2>
+      <h2 id="divisao_do_css">A divisão do CSS:</h2>
 
-      <p>Dê uma olhada na pasta <strong>stylesheets</strong>. Lá estão todas as folhas de estilo que compõem este modelo de design, parecido com o da <a href="http://patriciafigueira.com.br" title="Este modelo de design é uma réplica do site da Patricia Figueira, dê uma olhada.">Patricia Figueira</a>. Podemos ver que há uma curiosa divisão entre <strong>tipografia</strong>, <strong>layout</strong> e <strong>cores</strong>.</p>
+      <p>Dê uma olhada na pasta <strong>stylesheets</strong>. Lá estão todas as folhas de estilo que compõem um template do Be on the Net. Podemos ver que há uma curiosa divisão entre <strong>tipografia</strong>, <strong>layout</strong> e <strong>cores</strong>.</p>
 
-      <p>Hoje em dia, esta divisão <em>é obrigatória</em>. Houve uma época em que não era, mas percebemos, com o tempo e o relacionamento com os designers, que adotar esta divisão como convenção torna muito mais fácil e simples, a médio e longo prazo, a manutenção dos arquivos de CSS vindos de cada designer. Esta organização tem-se mostrado bastante útil em nossos projetos, já que é legível para qualquer desenvolvedor, permite-nos encontrar e modificar seletores com facilidade, e leva em consideração as três mídias mais usadas (<em>screen</em>, <em>print</em> e <em>handheld</em>). Há um <a href="http://blog.improveit.com.br/articles/2008/06/26/css-design-o-denominador-comum" title="Entenda por que o Leandro separa layout de tipografia.">artigo em nosso blog</a> que explica em detalhes o porquê de separar a tipografia.</p>
+      <p>Esta divisão é uma <em>convenção</em>. Ou seja, quando você começar seu CSS para o Be on the Net, será <em>necessário</em> usar bem a divisão que apresentamos na pasta stylesheets. Esta organização tem-se mostrado bastante útil em nossos projetos, já que é legível para qualquer desenvolvedor, permite-nos encontrar e modificar seletores com facilidade, e leva em consideração as três mídias mais usadas (<em>screen</em>, <em>print</em> e <em>handheld</em>). Há um <a href="http://blog.improveit.com.br/articles/2008/06/26/css-design-o-denominador-comum" title="Entenda por que o Leandro separa layout de tipografia.">artigo em nosso blog</a> que explica em detalhes o porquê de separar a tipografia.</p>
 
       <p>A seguir, os detalhes da nomenclatura padronizada:</p>
 
@@ -149,7 +158,7 @@
           <dd>É a folha de estilo que cuida de tudo relacionado a tipografia: tamanho de fonte, maiúsculas, minúsculas, negrito, itálico, espaçamento entre letras, palavras e linhas etc. É aceita sem qualquer bug por <strong>todos</strong> os browsers, não precisando de qualquer regra de exceção. E, porque não é especificada no nome do arquivo a mídia, é também a <strong>única</strong> folha de estilo que leva o atributo <code>media="all"</code>, garantindo um mínimo de identidade visual mesmo quando o meio é limitado em cores (print) ou em imagens (handheld);</dd>
         <dt>20_layout_screen.css</dt>
           <dd>
-            <p>A folha de estilo que cuida da diagramação dos elementos na página: margens, paddings, posicionamento, disposição em camadas, entre outros. Como a diagramação é o fator que mais depende do meio veiculado e do browser, geralmente precisa de outros arquivos de suporte (nota: repare no <code>screen</code> no final do nome. Isso que dizer que <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello, designer da Improve It.">Leandro</a> só cuidou do layout de <em>tela</em>. Você pode também usar os outros arquivos de layout para fazer layout para outros meios: <code>23_layout_handheld.css</code> para diagramação num mobile, <code>25_layout_print.css</code> para impressão e, futuramente, <code>27_layout_iphone.css</code> especificamente para iPhone e iPod Touch!</p>
+            <p>A folha de estilo que cuida da diagramação dos elementos na página: margens, paddings, posicionamento, disposição em camadas, entre outros. Como a diagramação é o fator que mais depende do meio veiculado e do browser, geralmente precisa de outros arquivos de suporte (nota: repare no <code>screen</code> no final do nome. Isso que dizer que <a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello, designer da Improve It.">Leandro</a> só cuidou do layout de <em>tela</em>). Você pode também usar os outros arquivos de layout para fazer layout para outros meios: <code>23_layout_handheld.css</code> para diagramação num mobile, <code>25_layout_print.css</code> para impressão e, futuramente, <code>27_layout_iphone.css</code> especificamente para iPhone e iPod Touch!</p>
             <p>Por causa da possibilidade de o IEca não obedecer a certas regras de layout, o <code>layout.css</code> é o único tipo de folha de estilos que pode necessitar de exceções para o IE (repare nos arquivos <code>40_layout_lteie7.css</code> e <code>50_layout_ie6.css</code>: neles, só há seletores relativos a diagramação);</p>
           </dd>
         <dt>30_color_screen_handheld.css</dt>
@@ -160,7 +169,7 @@
           </dd>
       </dl>
 
-      <h4>Nota: como o 30_color_screen_handheld.css é uma folha de estilo relativamente mais fácil e tranquila de alterar, não consideramos que um template novo com mudanças só nesta folha de estilo seja caracterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4>
+      <!-- <h4>Nota: como o 30_color_screen_handheld.css é uma folha de estilo relativamente mais fácil e tranquila de alterar, não consideramos que um template novo com mudanças só nesta folha de estilo seja caracterizado como um layout original. Para receber mais quinhentinhos, o designer deve investir numa <em>diagramação nova</em> além do esquema de cores variado.</h4> -->
 
       <h2 id="modulos_paginas_situacoes">Conhecendo o <code>body</code> &mdash; módulos, páginas e situações:</h2>
 
@@ -172,7 +181,6 @@
         <li>O primeiro trecho (<code>mod1(pictures)</code>) apresenta o <strong>módulo</strong>, ou <strong>classe</strong> da tag <code>body</code>. O arquivo em questão pertence ao primeiro módulo do Be on the Net, <em>pictures</em>. Repare na tag <code>body</code> de cada arquivo deste pacote: você vai ver que a classe dessa tag reflete o módulo a que a página pertence (neste caso, <code>body class="pictures"</code>).</li>
         <li>A sequência seguinte (<code>pag04(selection)</code>) diz a <strong>página</strong> a que o arquivo se refere. Neste caso, é à <em>quarta página</em> do módulo <em>pictures</em> &mdash; que trata da seleção de imagens. Repare que o nome da página reflete o <strong>id</strong> da tag <code>body</code> de cada arquivo (neste exemplo, o HTML do arquivo em questão diz <code>body class="pictures" id="selection"</code>).</li>
         <li>O terceiro par de parênteses (<code>sit4(pictures_in_cart)</code>) representa a <strong>situação</strong> em que o arquivo se encontra. Certas páginas têm comportamento regulado por JavaScript &mdash; a de seleção de imagens é uma delas &mdash;; portanto, apresentam vários estágios de comportamento. Para transformar as páginas em HTML estático, tivemos de &ldquo;congelar&rdquo; estes estágios de comportamento para que você, designer, possa estilizar com toda precisão possível. Neste caso, esta página-exemplo está no <strong>4º estágio</strong> de seu comportamento, quando algumas imagens já foram passadas para o &ldquo;shopping cart&rdquo; (o nome <code>pictures_in_cart</code> não aparece no HTML &mdash; foi uma escolha arbitrária baseada nessa aparência).</li>
-        <li><strong>Uma observação:</strong> a maioria das páginas tem <em>mais de uma classe</em> na tag <code>body</code>. No exemplo dado, o HTML diz <code>&lt;body class="best_galleries pictures" id="selection"&gt;</code>. Esta classe extra é para uso da equipe Be on the Net e, por ser variável dependendo do cliente, não recomendamos que você baseie seu CSS nela. Concentre-se na <em>classe do módulo</em> e no <em>id da página</em>.</li>
       </ul>
 
       <p>Isso significa que este pacote contém <strong>todas</strong> as páginas, de <strong>todos</strong> os módulos, em <strong>todas</strong> as situações possíveis de comportamento. Você está tendo acesso a <strong>tudo</strong> o que há no <strong>Be on the Net</strong> até agora. São, ao todo, <strong>6</strong> módulos distintos, <strong>16</strong> páginas diferentes e <strong>30</strong> situações possíveis.</p>
@@ -313,11 +321,28 @@
           </td>
         </tr>
         <tr>
+          <td rowspan="2">.videos</td>
+          <td>#index</td>
+          <td><span>(página inicial do módulo de vídeos, com a lista de todos os vídeos do usuário)</span></td>
+          <td>
+            <a href="../mod2(videos)_pag09(index).html">mod2(videos)_pag09(index).html</a>
+            <code>&lt;body class="all_videos videos" id="index"&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td>#video</td>
+          <td><span>(visualização de um único vídeo, em tamanho grande. Semelhante à página de imagem em tamanho grande.)</span></td>
+          <td>
+            <a href="../mod2(videos)_pag10(video).html">mod2(videos)_pag10(video).html</a>
+            <code>&lt;body class="all_videos videos" id="video"&gt;</code>
+          </td>
+        </tr>
+        <tr>
           <td>.text</td>
           <td>#index</td>
           <td><span>(página inicial do módulo de texto, com texto institucional)</span></td>
           <td>
-            <a href="../mod2(text)_pag09(index).html">mod2(text)_pag09(index).html</a>
+            <a href="../mod3(text)_pag11(index).html">mod3(text)_pag11(index).html</a>
             <code>&lt;body class="text_pages text" id="index"&gt;</code>
           </td>
         </tr>
@@ -326,71 +351,29 @@
           <td rowspan="4">#index</td>
           <td>1. initial <span>(página inicial do módulo de contato, com o formulário de contato em estado inicial)</span></td>
           <td>
-            <a href="../mod3(contact)_pag10(index)_sit1(initial).html">mod3(contact)_pag10(index)_sit1(initial).html</a>
+            <a href="../mod4(contact)_pag12(index)_sit1(initial).html">mod4(contact)_pag12(index)_sit1(initial).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. form spinner <span>(página de contato: envio da mensagem)</span></td>
           <td>
-            <a href="../mod3(contact)_pag10(index)_sit2(form_spinner).html">mod3(contact)_pag10(index)_sit2(form_spinner).html</a>
+            <a href="../mod4(contact)_pag12(index)_sit2(form_spinner).html">mod4(contact)_pag12(index)_sit2(form_spinner).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>3. error <span>(página de contato: mensagem de erro com destaque para e-mail inválido)</span></td>
           <td>
-            <a href="../mod3(contact)_pag10(index)_sit3(error).html">mod3(contact)_pag10(index)_sit3(error).html</a>
+            <a href="../mod4(contact)_pag12(index)_sit3(error).html">mod4(contact)_pag12(index)_sit3(error).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>4. success <span>(página de contato: mensagem de envio bem-sucedido)</span></td>
           <td>
-            <a href="../mod3(contact)_pag10(index)_sit4(success).html">mod3(contact)_pag10(index)_sit4(success).html</a>
+            <a href="../mod4(contact)_pag12(index)_sit4(success).html">mod4(contact)_pag12(index)_sit4(success).html</a>
             <code>&lt;body class="contact" id="index"&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td rowspan="3">.application</td>
-          <td>#page_not_found</td>
-          <td><span>(página de erro 404: página não encontrada)</span></td>
-          <td>
-            <a href="../mod4(application)_pag11(page_not_found).html">mod4(application)_pag11(page_not_found).html</a>
-            <code>&lt;body class="application" id="page_not_found"&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td>#server_error</td>
-          <td><span>(página de erro 500: erro no servidor remoto)</span></td>
-          <td>
-            <a href="../mod4(application)_pag12(server_error).html">mod4(application)_pag12(server_error).html</a>
-            <code>&lt;body class="application" id="server_error"&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td>#timeout</td>
-          <td><span>(página de erro timeout: demora do repositório em enviar as imagens ao servidor)</span></td>
-          <td>
-            <a href="../mod4(application)_pag13(timeout).html">mod4(application)_pag13(timeout).html</a>
-            <code>&lt;body class="application" id="timeout"&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td rowspan="2">.videos</td>
-          <td>#index</td>
-          <td><span>(página inicial do módulo de vídeos, com a lista de todos os vídeos do usuário)</span></td>
-          <td>
-            <a href="../mod5(videos)_pag14(index).html">mod5(videos)_pag14(index).html</a>
-            <code>&lt;body class="all_videos videos" id="index"&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td>#video</td>
-          <td><span>(visualização de um único vídeo, em tamanho grande. Semelhante à página de imagem em tamanho grande.)</span></td>
-          <td>
-            <a href="../mod5(videos)_pag15(video).html">mod5(videos)_pag15(video).html</a>
-            <code>&lt;body class="all_videos videos" id="video"&gt;</code>
           </td>
         </tr>
         <tr>
@@ -398,31 +381,60 @@
           <td rowspan="3">#index</td>
           <td>1. initial <span>(página inicial do módulo de rsvp, com o formulário de R.S.V.P. em estado inicial)</span></td>
           <td>
-            <a href="../mod6(rsvp)_pag16(index)_sit1(initial).html">mod6(rsvp)_pag16(index)_sit1(initial).html</a>
+            <a href="../mod5(rsvp)_pag13(index)_sit1(initial).html">mod5(rsvp)_pag13(index)_sit1(initial).html</a>
             <code>&lt;body class="rsvp" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>2. form spinner <span>(página de R.S.V.P.: envio da resposta ao convite)</span></td>
           <td>
-            <a href="../mod6(rsvp)_pag16(index)_sit2(form_spinner).html">mod6(rsvp)_pag16(index)_sit2(form_spinner).html</a>
+            <a href="../mod5(rsvp)_pag13(index)_sit2(form_spinner).html">mod5(rsvp)_pag13(index)_sit2(form_spinner).html</a>
             <code>&lt;body class="rsvp" id="index"&gt;</code>
           </td>
         </tr>
         <tr>
           <td>3. success <span>(página de R.S.V.P.: mensagem de envio bem-sucedido)</span></td>
           <td>
-            <a href="../mod6(rsvp)_pag16(index)_sit3(success).html">mod6(rsvp)_pag16(index)_sit3(success).html</a>
+            <a href="../mod5(rsvp)_pag13(index)_sit3(success).html">mod5(rsvp)_pag13(index)_sit3(success).html</a>
             <code>&lt;body class="rsvp" id="index"&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="3">.application</td>
+          <td>#page_not_found</td>
+          <td><span>(página de erro 404: página não encontrada)</span></td>
+          <td>
+            <a href="../mod6(application)_pag14(page_not_found).html">mod6(application)_pag14(page_not_found).html</a>
+            <code>&lt;body class="application" id="page_not_found"&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td>#server_error</td>
+          <td><span>(página de erro 500: erro no servidor remoto)</span></td>
+          <td>
+            <a href="../mod6(application)_pag15(server_error).html">mod6(application)_pag15(server_error).html</a>
+            <code>&lt;body class="application" id="server_error"&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td>#timeout</td>
+          <td><span>(página de erro timeout: demora do repositório em enviar as imagens ao servidor)</span></td>
+          <td>
+            <a href="../mod6(application)_pag16(timeout).html">mod6(application)_pag16(timeout).html</a>
+            <code>&lt;body class="application" id="timeout"&gt;</code>
           </td>
         </tr>
       </table>
 
       <p>Este conhecimento sobre módulos, páginas, situações e tags <code>body</code> vai ser bem útil daqui para frente.</p>
 
-      <h2 id="prepare_seu_template">Prepare seu template para o que der e vier:</h2>
+      <h2 id="estilizando">Estilizando o Be on the Net:</h2>
 
-      <p>Pode ser que o cliente deseje ter uma página para falar de si ou postar <a href="../mod2(text)_pag09(index).html">depoimentos</a> de seus usuários. Pode ser que ele queira usar a funcionalidade de <a href="../mod1(pictures)_pag04(selection)_sit1(initial).html">seleção de imagens</a>, pode ser que ele não queira. Os resumos (#summary) aparecem por padrão no <a href="../mod1(pictures)_pag02(gallery).html#summary">interior de cada galeria de imagens</a> e nas <a href="../mod1(pictures)_pag03(picture)_sit1(horizontal).html#summary">páginas de imagem grande</a>, mas não aparecem por padrão no <a href="../mod1(pictures)_pag01(index).html">exterior das galerias</a> e <a href="../mod5(videos)_pag14(index).html">páginas de vídeos</a>... mas é possível que apareçam.</p>
+      <p>Agora você já está familiarizado com as convenções que adotamos e as nomenclaturas que usamos. Vamos começar?</p>
+
+      <h3 id="prepare_seu_template">Prepare seu template para o que der e vier:</h3>
+
+      <p>Pode ser que o cliente deseje ter uma página para falar de si ou postar <a href="../mod3(text)_pag11(index).html">depoimentos</a> de seus usuários. Pode ser que ele queira usar a funcionalidade de <a href="../mod1(pictures)_pag04(selection)_sit1(initial).html">seleção de imagens</a>, pode ser que ele não queira. Os resumos (#summary) aparecem por padrão no <a href="../mod1(pictures)_pag02(gallery).html#summary">interior de cada galeria de imagens</a> e nas <a href="../mod1(pictures)_pag03(picture)_sit1(horizontal).html#summary">páginas de imagem grande</a>, mas não aparecem por padrão no <a href="../mod1(pictures)_pag01(index).html">exterior das galerias</a> e <a href="../mod2(videos)_pag09(index).html">páginas de vídeos</a>... mas é possível que apareçam.</p>
 
       <p>Ao longo do primeiro ano de existência do Be on the Net, passamos pela experiência de precisar oferecer ao cliente soluções de CSS que não previmos no início. Por exemplo, capacidade do template para suportar até 15 itens no menu; ou então, usar imagens nas páginas do módulo de texto, que são as mais flexíveis e imprevisíveis do sistema. Por isso, é preciso que o template esteja preparado para as situações mais comuns entre os clientes.</p>
 
@@ -431,15 +443,63 @@
       <ol>
         <li><strong>Ignore o logotipo que vem com o Be on the Net estático:</strong> alguns clientes têm logotipo, outros não. Por isso, o Be on the Net estático foi preparado com algumas páginas com logotipo e outras sem, para que você possa se preparar para ambas as situações;</li>
         <li><strong>Arranje algum espaço para o logotipo:</strong> os logotipos podem tomar mais espaço na horizontal ou na vertical. Prepare algum espaço para ele respirar. Você pode inventar um logotipo genérico e substituir o que vem neste pacote, para experimentar;</li>
-        <li><strong>Espere muitos itens no menu:</strong> como os menus do Be on the Net têm um único nível (sem submenus) e nem sempre as pessoas têm boa capacidade de síntese, às vezes aparecem menus com até 15 itens. Seu template precisa resistir a poucos e muitos itens no menu;</li>
-        <li><strong>Algumas funcionalidades não são usadas:</strong> às vezes os clientes não usam a Ficha técnica ou a Seleção de imagens, e nestes casos os divs #summary passam a não conter os respectivos links. Simule estes casos dando <code>display: none</code> nestes links;</li>
-        <li><strong>Preveja o imprevisível nas páginas de texto:</strong> como nunca se sabe o que os clientes vão usar numa página de texto, é preciso estar preparado para tudo. Um bom exercício é estilizar as páginas cujos links se encontram no <a href="#footer">rodapé</a> &mdash; inclusive esta. A página que fala <a href="../mod2(text)_pag09(index).html">sobre as páginas de texto</a> também contém muitas tags comuns em situações diversas. Às vezes o cliente põe somente uma única figura na homepage, com link para as galerias. Quer uma verdadeira galeria de situações possíveis? Acesse nossa <a href="http://beonthe.net/clientes/pagina">página de clientes</a>.</li>
+        <li><strong>Espere muitos itens no menu:</strong> como os menus do Be on the Net têm um único nível (sem submenus) e nem sempre as pessoas têm boa capacidade de síntese, às vezes aparecem menus com até 15 itens. Seu template precisa resistir a poucos e muitos itens no menu, e ficar bonito sempre;</li>
+        <li><strong>Algumas funcionalidades não são usadas:</strong> às vezes os clientes não usam a Ficha técnica ou a Seleção de imagens, e nestes casos os divs <a href="..//mod1(pictures)_pag02(gallery).html#summary">#summary</a> passam a não conter os respectivos links. Simule estes casos dando <code>display: none</code> nestes links;</li>
+        <li><strong>Preveja o imprevisível nas páginas de texto:</strong> como nunca se sabe o que os clientes vão usar numa página de texto, é preciso estar preparado para tudo. Um bom exercício é estilizar as páginas cujos links se encontram no <a href="#footer">rodapé</a> &mdash; inclusive esta. A página que fala <a href="../mod3(text)_pag11(index).html">sobre as páginas de texto</a> também contém muitas tags comuns em situações diversas. Às vezes o cliente põe somente uma única figura na homepage, com link para as galerias. Quer uma verdadeira galeria de situações possíveis? Acesse nossa <a href="http://beonthe.net/clientes/pagina">página de clientes</a>.</li>
         </ol>
+
+        <h3>Dicas e macetes para agilizar:</h3>
+
+        <p><strong>Baixe sempre a versão mais recente do Be on the Net Estático:</strong> o pacote do Be on the Net Estático é atualizado com relativa frequência. Por isso é importante que você esteja em dia a última versão. Você pode baixar a versão mais recente sempre em: <a href="http://github.com/viniciusteles/beonthenet-estatico/zipball/master">http://github.com/viniciusteles/beonthenet-estatico/zipball/master</a>.</p>
+
+        <p><strong>Divida o CSS em seções:</strong> as folhas de estilo já estão separadas por tipo de mídia, mas você pode facilitar ainda mais a vida dos designers que lerem o seu CSS: recomendamos que você divida cada folha de estilo em seções, especificando que parte do sistema você está estilizando em que trecho. Você pode fazer isso através de comentários no CSS. Observe as folhas de estilo que já vêm neste pacote para saber do que falamos.</p>
+
+        <p><strong>Use poucas cores em sua paleta: </strong> procure fazer uma paleta com no máximo 15 cores sólidas diferentes, para facilitar futuros ajustes de cor. Lembre de pôr tudo que seja relativo a cores na folha de estilos de cor (<code>30_color_screen_handheld.css</code>). Uma dica forte é enumerar, logo no início desta folha, dentro de um comentário, todos os códigos das cores que você usar. Claro, isso vale para as cores sólidas; ilustrações, ícones e fotos poderão ser tão coloridos quanto você quiser.</p>
+
+        <p><strong>Domine a tag &lt;hr&gt;</strong>: o Be on the Net possui algumas tags <code>&lt;hr&gt;</code> em seu HTML, que são bem difíceis de domar. O artigo <a href="http://blog.improveit.com.br/articles/2008/09/02">Margens na tag HR: um caso resolvido</a>, publicado no <a href="http://blog.improveit.com.br">Blog da Improve It</a>, descreve em detalhes como assumir controle total desta tag em todos os browsers, inclusive no IE.</p>
+
+        <p><strong>float: left é coisa da primeira geração. O negócio agora é display: inline-block:</strong> a <a href="http://beonthe.net/layouts/pagina">primeira geração de templates do Be on the Net</a> foi feita quando nem todos os browsers apresentavam o devido comportamento da propriedade <code>display: inline-block</code>. Por isso, lançaram mão da propriedade <code>float: left</code> para diagramar lado a lado itens de menu ou thumbnails das fotos e dos vídeos. Assim:</p>
+        
+<pre><code>#header li, #thumbnails li {
+    float:    left;
+ }</code></pre>
+
+        <p>Ocorre que hoje todos suportam a propriedade <code>display: inline-block</code>, que apresenta várias vantajens de diagramação e simplicidade em relação ao <code>float</code>. Assim, hoje em dia é só usar:</p>
+
+<pre><code>#header li, #thumbnails li {
+    display:  inline-block;
+ }</code></pre>
+
+        <p>Claro, no IE não funciona, se o display padrão do seletor for <code>block</code>. Como no caso acima: como o display padrão de um <code>&lt;li&gt;</code> é <code>block</code>, a transformação para <code>inline-block</code> na funciona no IE. A não ser que você dê uma forcinha.</p>
+
+        <p>Na folha <code>40_layout_lteie7.css</code>, diga que o seletor deve ser <code>inline</code> e adicione uma propriedade de <code>zoom</code>. É tiro e queda:</p>
+
+<pre><code>#header li, #thumbnails li {
+    display:  inline;
+    zoom:     1;
+ }</code></pre>
+
+        <p>Assim, com a nova propriedade <code>display: inline-block</code> para diagramar elementos lado a lado, as novas gerações de templates do Be on the Net terão potencial para ser muito mais flexíveis, belas e poderosas que a primeira.</p>
+
+        <!--
+                <h2>Dicas e truques para agilizar</h2>
+
+                <h3>Margens negativas nos #thumbnails</h3>
+                <h3>Menu com abas (li.current)</h3>
+                <h3>logo_screen, logo_print</h3>
+                <h3>Centralização vertical de imagens</h3>
+                <h3>Spans e image replacement</h3>
+                <h3>li.empty vs. floats</h3>
+                <h3>Tirando proveito do body</h3>
+                <h3>Módulos, páginas, situações</h3>
+                <h3>input[type="hidden"]</h3>
+                <h3>Cada tag é uma boa desculpa</h3>
+        -->
 
 <!--
       <h2 id="convencoes">Convenções:</h2>
 
-      <h4>Nota: esta parte de convenções foi comentada porque agora padronizamos a nomenclatura das folhas de estilo. Elas era livres para ser renomeadas à vontade, mas agora não são mais. Por favor, mantenha comentado todos este trecho.</h4>
+      <h4>Nota: esta parte de convenções foi comentada porque agora padronizamos a nomenclatura das folhas de estilo. Elas eram livres para ser renomeadas à vontade, mas agora não são mais. Por favor, mantenha comentado todo este trecho.</h4>
 
       <p>Certas partes do seu design vão ser integradas diretamente ao HTML: logotipos, chamadas de CSS, declarações de mídia, favicons etc. Mas como o designer não vai ter acesso direto à estrutura (HTML) dinâmica do <strong>Be on the Net</strong>, a solução é recorrer a certas <strong>convenções</strong>. Se o designer criar seus arquivos seguindo estas convenções, o sistema do <strong>Be on the Net</strong> cuida de automatizar tudo e injeta o que for necessário direto no HTML.</p>
       <p>São elas: <a href="#logotipos">logotipos</a>, <a href="#css_e_midia">declarações de mídia no CSS</a>, <a href="#ordem_do_css">ordem das folhas de estilo</a>, <a href="#comentarios_condicionais">comentários condicionais para o IEca</a>, <a href="#spinners">spinners</a> e <a href="#favicons">favicons</a>.</p>
@@ -467,129 +527,6 @@
       <p>É uma boa prática de produção de templates estilizar os atributos textuais da tag <code>&lt;img /&gt;</code> de forma idêntica aos da tag <code>&lt;a&gt;</code> que a contém, de modo a gerar um <strong>belo logotipo textual genérico</strong> e preparar o template para ambas as situações: quando não há imagem de logotipo e quando há imagem mas o browser não a exibe.</p>
 
       <h4>Nota: agora que você conhece a convenção de logotipos, procure prever o máximo de situações possíveis: espaço para logotipo vertical, espaço para logotipo horizontal, espaço para logotipo textual... Pode (deve!) trocar o logo da Patricia Figueira por logos experimentais e testar à vontade!</h4>
-
-      <h3 id="css_e_midia">Declarações de mídia no CSS</h3>
-
-      <p>Dê uma olhada no <code>&lt;header&gt;</code> de um dos arquivos de HTML. Lá você vê chamadas para CSS. Por exemplo, a linha <code>&lt;link href="stylesheets/20_layout_screen.css" media="screen" rel="stylesheet" type="text/css" /&gt;</code> faz duas coisas: chama a folha de estilos &ldquo;20_layout_screen.css&rdquo;; e diz que o atributo <code>media</code> dela tem que ser <strong>screen</strong>.</p>
-      <p>O designer não pode escrever direto no HTML qual é a mídia de cada folha de estilos que criar. Mas <em>tem controle indireto</em> sobre esse atributo.</p>
-      <p>Para dizer a que mídia você, designer, deseja atribuir uma determinada folha de estilos, é só <em>escrever a mídia desejada no final do nome do arquivo</em>. Como no exemplo acima, se você criar um arquivo de CSS chamado, <strong>diagramacao_screen.css</strong>, o sistema do Be on the Net vai reconhecer esta convenção e criar a seguinte linha no HTML de seu template:</p>
-        
-      <pre><code>&lt;link href="stylesheets/diagramacao_screen.css" media="screen" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
-
-      <p>Repare que o sistema do Be on the Net atribuiu automaticamente <code>media="screen"</code> à chamada da folha de estilos.</p>
-      <h4>Nota: certamente, isso só vai acontecer no sistema verdadeiro. Aqui no Be on the Net estático, é necessário inserir a chamada completa nas páginas HTML. Heh, coisas de sistema estático. </h4>
-
-      <p>Se você chamasse o arquivo de <strong>diagramacao_print.css</strong>, o sistema atribuiria automaticamente <code>media="print"</code>.</p>
-      <p><strong>Para uma folha de estilos ir a múltiplas midias:</strong> é só inserir mais de um nome de mídia depois do nome do seu arquivo CSS. Por exemplo, neste pacote existe o arquivo <strong>30_color_screen_handheld.css</strong>. Isto significa que o CSS trata de <em>cor</em> e que eu quero exibi-lo tanto nas mídias <strong>screen</strong> quanto <strong>handheld</strong>. O sistema do Be on the Net neste caso vai gerar múltiplas chamadas, tantas quantos forem os meios:</p>
-
-      <pre><code>&lt;link href="stylesheets/30_color_screen_handheld.css" media="screen" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;
-
-&lt;link href="stylesheets/30_color_screen_handheld.css" media="handheld" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
-
-      <p>Se você inventasse um arquivo chamado <strong>template_handheld_screen_print.css</strong>, o sistema faria <em>três</em> chamadas, uma para cada mídia.</p>
-      <p>Se você quiser fazer uma folha de estilos que apareça em <em>todas</em> as mídias, é só não escrever <em>nada</em> depois do nome do arquivo. Por exemplo, neste pacote há o arquivo <strong>10_typography.css</strong>. Ele vai para todas as mídias, com <code>media="all"</code>:</p>
-
-      <pre><code>&lt;link href="stylesheets/10_typography.css" media="all" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
-
-      <h4>Nota: a convenção de declaração de mídias consiste em <em>sufixos</em>. Por isso é importante fazer exatamente deste jeito: inserir o(s) nome(s) da(s) mídia(s) <em>depois</em> do nome do arquivo, separado(s) por <em>underlines</em> ( _ ).</h4>
-
-      <h3 id="ordem_do_css">Ordem das folhas de estilo</h3>
-
-      <p>Você já tem o controle das mídias. Mas como ter o controle da <em>ordem</em> em que suas folhas de estilo são chamadas?</p>
-
-      <p>Isto se faz com <strong>prefixos numéricos</strong>. Por exemplo, &ldquo;<strong>01_</strong>typography.css&rdquo;, &ldquo;<strong>02_</strong>layout_screen.css&rdquo;, e por aí vai. Mas vamos explicar melhor como dominar isso.</p>
-
-      <p>OK, nós acabamos de dizer uma <em>quase</em> verdade no <a href="#css_e_midia">tópico anterior</a>. Na verdade, o sistema do Be on the Net não cria exatamente <em>várias</em> chamadas de CSS, cada uma para uma mídia. O que o sistema faz, no final das contas, é concentrar todas as folhas de estilo de uma certa mídia numa <strong>única folha</strong>. Isso é para tornar mais rápido o site da pessoa.</p>
-      <p>Dê uma olhada no próprio site do <a href="http://beonthe.net">Be on the Net</a>, e investigue seu CSS. Você vai ver quatro chamadas mais ou menos assim:</p>
-
-      <pre><code>&lt;link href="stylesheets/cached_all.css" media="all" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;
-
-&lt;link href="stylesheets/cached_handheld.css" media="handheld" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;
-
-&lt;link href="stylesheets/cached_print.css" media="print" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;
-
-&lt;link href="stylesheets/cached_screen.css" media="screen" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
-
-      <p>O que o sistema fez foi pegar <em>todas</em> as folhas de estilo que tivessem, por exemplo, <code>media="screen"</code>, e unir seus códigos em um único arquivo <strong>cached_screen.css</strong> com <code>media="screen"</code>.</p>
-
-      <p>Então vejamos como o sistema faria com as folhas de estilo contidas neste pacote estático. Veja os arquivos <strong>20_layout_screen.css</strong> e <strong>30_color_screen_handheld.css</strong>. O sistema misturaria os arquivos de acordo com suas mídias, e criaria <em>dois</em> arquivos: um com atributos de <em>cor</em> que teria <code>media="handheld"</code>, e outro com atributos de <em>layout</em> e <em>cor</em>, que teria <code>media="screen"</code>.</p>
-
-      <p>Por causa dos prefixos numéricos que estão nos arquivos, eles vão ser ordenados assim:</p>
-
-      <ol>
-        <li>Primeiro, vai ordenar por <em>ordem alfabética da mídia</em>. Ou seja, vai agrupar os arquivos CSS na seguinte ordem: arquivos com <code>media="all"</code>, depois com <code>media="handheld"</code>, depois com <code>media="print"</code> e depois com <code>media="screen"</code>.</li>
-        <li>Depois, sim, vai considerar os prefixos numéricos que usamos. A ordem dos meus arquivos vai ficar assim:
-
-          <pre><code>&lt;link href="stylesheets/30_color_screen_handheld.css" &rarr;
-&rarr; media="handheld" rel="stylesheet" type="text/css" /&gt;
-
-&lt;link href="stylesheets/20_layout_screen.css" &rarr;
-media="screen" rel="stylesheet" type="text/css" /&gt;
-
-&lt;link href="stylesheets/30_color_screen_handheld.css" &rarr;
-media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
-        </li>
-        <li>E por último vai criar os dois arquivos finais:
-
-          <pre><code>&lt;link href="stylesheets/cached_handheld.css" media="handheld" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;
-
-&lt;link href="stylesheets/cached_print.css" media="print" &rarr;
-&rarr; rel="stylesheet" type="text/css" /&gt;</code></pre>
-        </li>
-      </ol>
-
-      <h4>Nota: a convenção de ordenação dos arquivos CSS consiste em <em>prefixos</em>. Por isso é importante fazer exatamente deste jeito: inserir os números desejados <em>antes</em> do nome do arquivo, separados por <em>underlines</em> ( _ ).</h4>
-
-      <h4>Nota: controlar a ordem das folhas de estilo é conveniente, porque pode-se ter controle total sobre os seletores escritos em cada uma e garantir que as regras certas sobrescrevam as outras de forma desejada. Isso tudo sem precisar tocar no HTML.</h4>
-
-      <h3 id="comentarios_condicionais">Comentários condicionais para o IEca</h3>
-
-      <p>Entra em cena o Internet Explorer. Ah, ele...</p>
-      <p>Como ele não respeita direito as regras do bom CSS, às vezes é preciso recorrer a regras especificamente voltadas para este browser. Há algumas técnicas para fazer isso, como <em>hacks</em> de CSS e até certos <em>workarounds</em> que dispensam hacks. Como preferimos que seu CSS seja válido, optamos pela técnica dos <strong>comentários condicionais</strong>: folhas de estilo que apontam somente para o Internet Explorer.</p>
-
-      <p>Para apontar uma folha de estilos somente para o IEca, o método é parecido com o de <a href="#css_e_midia">declarações de mídia do CSS</a>: através de <em>sufixos específicos</em>. Como, por exemplo, nos nomes dos arquivos &ldquo;layout<strong>_ie</strong>.css&rdquo; e &ldquo;layout<strong>_ie6</strong>.css&rdquo;, ambos presentes neste pacote.</p>
-
-      <p>O sufixo vai corresponder à <em>versão</em> de IE a que você está referindo o arquivo, e vai gerar no sistema um HTML correspondente. No exemplo acima, o sufixo &ldquo;<strong>_ie</strong>&rdquo; do arquivo &ldquo;layout_ie.css&rdquo; vai gerar uma tag condicional para qualquer versão de IE. Repare na primeira linha:</p>
-
-      <pre><code>&lt;!--[if IE] &gt;
-        link href="stylesheets/layout_ie.css" media="all" &rarr;
-        &rarr; rel="stylesheet" type="text/css" /&gt;
-&lt; ![endif]--&gt;</code></pre>
-
-      <p>Os sufixos vão gerar o seguinte código:</p>
-
-      <ul>
-        <li>_ie6 &rArr; <code>&lt;!--[if IE6] &gt;</code> (aplicar as regras somente ao IE6);</li>
-        <li>_ltie7 &rArr; <code>&lt;!--[if lt IE7] &gt;</code> (aplicar as regras se o IE for menor que o 7);</li>
-        <li>_gteie6 &rArr; <code>&lt;!--[if gte IE6] &gt;</code> (aplicar as regras se o IE for maior ou igual ao IE6);</li>
-      </ul>
-
-      <p>Nomeie conforme suas necessidades. As possibilidades são muitas. Por exemplo, um arquivo &ldquo;beonthenet_ltie8.css&rdquo; vai gerar regras somente para versões do IE abaixo da 8:</p>
-
-      <pre><code>&lt;!--[if lt IE8] &gt;
-        link href="stylesheets/beonthenet_ltie8.css" media="all" &rarr;
-        &rarr; rel="stylesheet" type="text/css" /&gt;
-&lt; ![endif]--&gt;</code></pre>
-
-      <p>Também é possível (mas até agora nunca foi necessário chegar a tal ponto) unir sufixos de IE a sufixos de mídia e a prefixos de ordem. Por exemplo, você pode fazer um arquivo &ldquo;06_excecoes_screen_print_gtie5.css&rdquo;, que vai gerar um comentário condicional para versões maiores que 5, contendo duas chamadas CSS, uma para <code>media="print"</code> e outra <code>media="screen"</code>:</p>
-
-      <pre><code>&lt;!--[if gt IE5] &gt;
-        link href="stylesheets/06_excecoes_screen_print_gtie5.css" &rarr;
-        media="print" rel="stylesheet" type="text/css" /&gt;
-        link href="stylesheets/06_excecoes_screen_print_gtie5.css" &rarr;
-        media="screen" rel="stylesheet" type="text/css" /&gt;
-&lt; ![endif]--&gt;</code></pre>
-
-      <p>Putz! O IEca só dá trabalho.</p>
 -->
 
 <!--
@@ -600,14 +537,14 @@ media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
       <p>O procedimento para alterar um template pronto é ligeiramente diferente do de criar um novo template. Eis as instruções detalhadas:</p>
 
       <ol>
-        <li>Para perfeito funcionamento, <strong>todos</strong> os arquivos que existem no template devem permanecer intactos e imutáveis. Os únicos arquivos que podem ser modificados são: uma folha de estilos (ou algumas) que você criar para sobrescrever as atuais (por exemplo, uma chamada &ldquo;<strong>06_exclusivo_cliente.css</strong>&rdquo;, ou o que você preferir) e as imagens novas que você inserir numa pasta dentro da pasta <strong>/images</strong>;</li>
+        <li>Para perfeito funcionamento, <strong>todos</strong> os arquivos que existem no template devem permanecer intactos e imutáveis. Os únicos arquivos que podem ser modificados são: uma folha de estilos (ou algumas) que você criar para sobrescrever as atuais (por exemplo, uma chamada &ldquo;<strong>06_exclusivo_cliente.css</strong>&rdquo;, ou o que você preferir) e as imagens novas que você inserir numa pasta <strong>/custom</strong> dentro da pasta <strong>/images</strong>;</li>
 
         <li>As mudanças no template são feitas através da folha de estilo que você criar dentro da pasta <strong>/stylesheets</strong>. Neste arquivo devem ser escritas todas as regras que vão sobrescrever o efeito das que estão nas outras folhas de estilo. Por exemplo: se na folha de estilos &ldquo;30_color_screen_handheld.css&rdquo;, o <code>&lt;body&gt;</code> do template é <em>bege</em>, mas a nova cor desejada pelo cliente é <em>cinza</em>, deve-se ir ao seu arquivo &ldquo;06_exclusivo_cliente.css&rdquo; e escrever:
 <pre><code>body {
       background:         #7D7A7A;
  }</code></pre>        
         </li>
-        <li>Se só se deseja sobrescrever <em>um único atributo</em> entre vários de um mesmo seletor, só é necessário mencionar <em>este atributo</em> na sua folha de estilos. Por exemplo, se o template apresenta o <code>#header</code> assim:
+        <li>Se só se deseja sobrescrever <em>uma única propriedade</em> entre vários de um mesmo seletor, só é necessário mencionar <em>esta propriedade</em> na sua folha de estilos. Por exemplo, se o template apresenta o <code>#header</code> assim:
 <pre><code>#header {
       min-height:         38px;
       height:             2.38em;
@@ -625,12 +562,12 @@ media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
       background-image:   url(../images/exclusivas/paging.png);
  }</code></pre>
         </li>
-        <li>Se no template original uma imagem de fundo tem vários atributos (posicionamento, repetição, cor de fundo), mas só se deseja mudar <em>a imagem chamada</em> e mais nenhum deles, deve-se seguir o mesmo procedimento do item 3: sobrescrever <em>um único atributo</em>. Por exemplo, se o template mostra o link de ir para o checkout do seguinte modo:
+        <li>Se no template original uma imagem de fundo tem várias propriedades (posicionamento, repetição, cor de fundo), mas só se deseja mudar <em>a imagem chamada</em> e mais nenhum deles, deve-se seguir o mesmo procedimento do item 3: sobrescrever <em>uma única propriedade</em>. Por exemplo, se o template mostra o link de ir para o checkout do seguinte modo:
 <pre><code>.go_to_checkout {
       background:   transparent url(../images/shopping_cart.png) &rarr;
                     &rarr; no-repeat right center;
  }</code></pre>
-        ... Mas você tem uma imagem sua e quer deixar <em>intactos</em> os outros atributos, é só jogar sua imagem na pasta que criou dentro da &ldquo;/images&rdquo; e chamar o atributo <code>background-image</code>:
+        ... Mas você tem uma imagem sua e quer deixar <em>intactas</em> as outras propriedades, é só jogar sua imagem na pasta que criou dentro da &ldquo;/images&rdquo; e chamar a propriedade <code>background-image</code>:
 <pre><code>.go_to_checkout {
       background-image:   transparent url(../images/exclusivas/shopping_cart.png)
  }</code></pre>
@@ -640,28 +577,9 @@ media="screen" rel="stylesheet" type="text/css" /&gt;</code></pre>
       </ol>
 -->
 
-
-
 <!--
-  
-      
       <h3>Spinners</h3>
       <h3>Favicon</h3>
-
-      <h2>Dicas e truques para agilizar</h2>
-
-      <h3>HR vs. IEca</h3>
-      <h3>Margens negativas nos #thumbnails</h3>
-      <h3>Menu com abas (li.current)</h3>
-      <h3>Divisão do CSS em seções</h3>
-      <h3>logo_screen, logo_print</h3>
-      <h3>Centralização vertical de imagens</h3>
-      <h3>Spans e image replacement</h3>
-      <h3>li.empty vs. floats</h3>
-      <h3>Tirando proveito do body</h3>
-      <h3>Módulos, páginas, situações</h3>
-      <h3>input[type="hidden"]</h3>
-      <h3>Cada tag é uma boa desculpa</h3>
 -->
       <h2>Por enquanto é só, caro designer!</h2>
 
