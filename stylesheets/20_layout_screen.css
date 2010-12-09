@@ -110,6 +110,29 @@ h1 {
 /* /Main content top segment */
 
 
+/* Flickr */
+#main_content h5 {
+  padding:            0;
+  margin:             -3.2em 0 3.2em;
+}
+
+#thumbnails cite {
+  display:            inline;
+  margin:             0;
+  position:           absolute;
+  right:              0;
+  bottom:             236px;
+}
+
+#thumbnails cite a {
+  display:            inline-block;
+  width:              20px;
+  height:             15px;
+  overflow:           hidden;
+}
+/* /Flickr */
+
+
 /* Thumbnails */
 #thumbnails {
   margin-right:           -62px;
