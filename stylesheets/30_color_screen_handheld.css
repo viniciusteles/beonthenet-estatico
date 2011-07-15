@@ -126,7 +126,7 @@ h3, h3 a,
 }
 
 #thumbnails cite a {
-  background:         transparent url(../images/flickr.png) no-repeat left bottom;
+  background:         transparent url(http://beonthe.net/accounts/beonthe.net/images/icons/picasa_hover.png) no-repeat left bottom;
   opacity:            .5;
 }
 #thumbnails cite a:hover {
